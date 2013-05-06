@@ -1,0 +1,272 @@
+a{
+	color:#368732;	
+}
+a:hover{
+	color:#184a17;	
+}
+.front{
+	line-height: 40px;
+	text-indent: 3em;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 0px;
+}
+.center{
+	text-align:center;
+}
+.spacer{
+	height:50px;
+	width:100%;
+}
+.padded{
+	padding-top:10px;
+}
+.lessMargin{
+	margin-bottom: -20px;
+}
+.bolded{
+	font-weight: bold;
+	font-size: 16pt;
+}
+.caption{
+	font-size: 11pt;
+}
+.masonFlag{
+	width:191px;
+	height:140px;
+	position: absolute;
+	z-index:4;
+	left:70px;
+	border: 1px #dadada;
+	border-radius: 0px 0px 42px 42px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 12px rgba(49, 100, 50, 0.57);
+	-moz-box-shadow: 0px 0px 12px rgba(49, 100, 50, 0.57);
+	box-shadow: 0px 0px 12px rgba(49, 50, 100, 0.57);
+}
+.masonLogo{
+	padding-left:28px;
+	padding-top:6px;
+	height: 101px;
+	width: 135px;
+}
+.navBar{
+	width:100%;
+	height:80px;
+	position:relative;
+	right:0;
+	z-index: 2;
+	border-bottom: 8px solid rgba(246,246,246,0.53);
+	background-color: white;
+	background-clip: padding-box; /*Allows for a transparent border*/
+}
+.navList{
+	text-align:center;
+	padding-top:27px;
+}
+.navList li{
+	display:inline;
+	padding-top: 27px;
+	padding-bottom: 34px;
+	padding-left: 18px;
+	padding-right: 18px;
+	font-size: 12pt;
+	color: #7f7f7f;
+	transition:background-color .1s;
+		-o-transition:background-color .1s;
+		-ms-transition:background-color .1s;
+		-moz-transition:background-color .1s;
+		-webkit-transition:background-color .1s;
+}
+.navSelected, .navList li:hover {
+	color: #373737;
+	background-color: #f6f6f6;
+	border-bottom: 8px solid rgba(54,54,54,0.43);
+	background-clip: padding-box; /*Allows for a transparent border*/
+}
+.navSpacer{
+	height: 100px;
+	width:100%;
+}
+a:hover {
+	text-decoration: none;
+}
+.box{
+	position: relative;
+	z-index: 1;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	background-color: #FFF;
+	border: 1px solid #cccccc;
+	box-shadow: 0px 0px 12px rgba(49, 50, 100, 0.57);
+		-webkit-box-shadow: 0px 0px 12px rgba(49, 100, 50, 0.57);
+		-moz-box-shadow: 0px 0px 12px rgba(49, 100, 50, 0.57);
+}
+.slideUp{
+	position: relative;
+	top: -130px; /* Lifts the box to hover over the cover image*/
+	margin-bottom: -100px; /*Negative margin makes up for gap left behind*/
+}
+.bookButton{
+	height:42px;
+	width:170px;
+	position:absolute;
+	top:20px;
+	right:30px;
+	border: solid #841e1e 1px;
+	border-radius: 6px;
+	background-color: #da2929;
+	background-image: linear-gradient(rgba(187,62,62,0) 0%, rgba(108,11,11,0.85) 93.05%);
+	background-image: -webkit-linear-gradient(rgba(187,62,62,0) 0%, rgba(108,11,11,0.85) 93.05%);
+	background-image: -moz-linear-gradient(rgba(187,62,62,0) 0%, rgba(108,11,11,0.85) 93.05%);
+	box-shadow: 0px 0px 8px #799;	
+		-webkit-box-shadow: 0px 0px 8px #799;
+		-moz-box-shadow: 0px 0px 8px #799;	
+	transition:background-color .1s;
+		-o-transition:background-color .1s;
+		-ms-transition:background-color .1s;
+		-moz-transition:background-color .1s;
+		-webkit-transition:background-color .1s;
+}
+.bookButton:hover{
+	background-color:#af2727;
+}
+.bookText{
+	font-size: 16pt;
+	color:white;
+	font-family: Arial;
+	text-align: center;
+	margin: 2px;
+}
+.getStarted{
+	margin-top: 30px;
+	padding: 10px 60px 10px 60px;
+	font-size: 16pt;
+	font-weight: 500;
+	color: #383838;
+	border: solid #bbbbbb 1px;
+	background-color: #fafafa;
+	background-image: -webkit-linear-gradient(rgba(184,184,184,0) 0%, rgba(199,199,199,0.85) 93.05%);
+	box-shadow: 0px 0px 8px #999;
+		-webkit-box-shadow: 0px 0px 8px #999;
+		-moz-box-shadow: 0px 0px 8px #999;
+	transition:background-color .1s;
+		-o-transition:background-color .1s;
+		-ms-transition:background-color .1s;
+		-moz-transition:background-color .1s;
+		-webkit-transition:background-color .1s;
+}
+.getStarted:hover{
+	background-color: #b2b2b2;
+}
+.coverPhoto{
+	width:100%;
+	position:relative;
+	z-index:1;
+	top:-8px;
+	overflow: auto;
+}
+.coverContainer{
+	width:100%;
+	height:250px;
+}
+.coverBar{
+	height:140px;
+	width:100%;
+	position:absolute;
+	top:15%;
+	z-index:2;
+	text-align: right;
+	background-image: -webkit-linear-gradient(left, rgba(195,195,195,0.01) 0%, rgba(0,0,0,0.5) 32.45%, rgba(0,0,0,0.44) 76.16%, rgba(176,176,176,0.06) 100%);
+}
+.coverBorder{
+	height:80px;
+	width:100%;
+	position: relative;
+	z-index:2;
+	background-color: blue;
+}
+.coverLead{
+	font-family: Futura;
+	color: #FFF;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+    padding-top: 2.5%;
+    padding-right: 24%;
+	text-align: center;
+}
+.coverLogo{
+	float: left;
+	padding-top: 2%;
+	padding-left: 25%;
+}
+.bottomedImg{
+	float:right;
+}
+
+.eventImg {
+	box-shadow: 4px 3px 10px 4px #999 ; /*make sure to pu this in the CSS file*/
+	margin-top: 8px;
+	margin-bottom: 25px;
+}
+
+.dropdownInput {
+    width: 13px;
+    height: 13px;
+    padding-left: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -3px;
+}
+.dropdownPad{
+	padding-left: 10px;
+}
+.buttonPad{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.dropdown-menu{
+
+}
+.dropSelect:focus{
+	border-top:solid black 1px;
+	border-bottom:solid black 1px;
+	margin: -1px;
+	outline: none;
+}
+
+.footer{
+	margin-top: 25px;
+	position:relative;
+}
+
+@media screen and (min-width:1360px) {
+	  .coverLead {
+	  		font-size:5em;
+		  			}
+}
+@media screen and (max-width:1359px) {
+	  .coverLead {
+	  		font-size:4em;
+					}
+}
+@media screen and (max-width:979px) {
+	  .coverLead {
+	  		font-size:3em;
+	  			}
+	  .box {
+			top:50px;
+				}
+}
+@media screen and (max-width:767px) {
+	  .coverLead {
+	  		font-size:2em;
+	  			}
+	  .box {
+			top:100px;
+				}
+}
