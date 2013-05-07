@@ -250,6 +250,42 @@ a:hover {
 	position:relative;
 }
 
+/*Photo Gallery*/
+
+.mainDisplay{
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+	display: block;
+	margin: 0 auto;
+	width: 90%; 
+}
+
+.galleryBar{	
+	width: 83%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.selectDisplay{
+	margin: 20px 10px 0 10px;
+	float: left;
+	opacity: 0.6;
+}
+
+input[name='slideSwitch']:checked+label {
+	opacity: 1;
+}
+	
+.selectDisplay img {
+	width: 140px;
+	border: solid #CCC 1px;
+	box-sizing: border-box;
+	display: inline;
+}
+
+input[name='slideSwitch']{
+	display: none;
+}
+
 @media screen and (min-width:1360px) {
 	  .coverLead {
 	  		font-size:5em;
