@@ -281,17 +281,29 @@ a:hover {
 	vertical-align: middle;
 }
 
-#rightArrow{
+.rightArrow, .leftArrow{
 	position:absolute;
-	top:42%;
-	right:12%;
 	cursor: pointer;
 }
-#leftArrow{
-	position:absolute;
+
+.overlayContainer .leftArrow{
 	top: 42%;
 	left:12%;
-	cursor: pointer;
+}
+
+.overlayContainer .rightArrow{
+	top:42%;
+	right:12%;
+}
+
+.mainContainer .leftArrow{
+	top: 38%;
+	left:8%;
+}
+
+.mainContainer .rightArrow{
+	top:38%;
+	right:8%;
 }
 
 .mainContainer{

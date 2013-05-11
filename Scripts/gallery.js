@@ -72,15 +72,29 @@ $(document).ready(function() {
 		$(".overlay").toggle();
 		overlayMode = false;
 	});
-	$("#rightArrow").on("click", function(click) {
-		if (currentImg < imgCount) currentImg += 1;
-		$(".overlayImg").attr("src","Gallery/"+currentImg+".jpg");
+	$(".rightArrow").click(function(click) {
+		if (currentImg < imgCount-1) {
+			currentImg += 1;
+			if (overlayMode) $(".overlayImg").attr("src","Gallery/"+currentImg+".jpg");
+			else {
+				$(".mainDisplay").attr("src","Gallery/"+currentImg+".jpg");
+				setChange()
+				$("#img"+currentImg%5).prop("checked", true);
+			}
+		}
 		//imgOrient(".overlayImg", "100%");
 		click.stopPropagation();
 	});
-	$("#leftArrow").on("click", function(click) {
-		if (currentImg > 0) currentImg -= 1;
-		$(".overlayImg").attr("src","Gallery/"+currentImg+".jpg");
+	$(".leftArrow").click(function(click) {
+		if (currentImg > 0) {
+			currentImg -= 1;
+			if (overlayMode) $(".overlayImg").attr("src","Gallery/"+currentImg+".jpg");
+			else {
+				$(".mainDisplay").attr("src","Gallery/"+currentImg+".jpg"); 
+				setChange()
+				$("#img"+currentImg%5).prop("checked", true);
+			}
+		}
 		//imgOrient(".overlayImg", "100%");
 		click.stopPropagation();
 	});
