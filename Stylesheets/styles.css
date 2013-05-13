@@ -42,12 +42,12 @@ body{
 	position: absolute;
 	z-index:4;
 	left:70px;
-	border: 1px #dadada;
+	border: 1px #f4f4f4;
 	border-radius: 0px 0px 42px 42px;
 	background-color: white;
-	-webkit-box-shadow: 0px 0px 12px rgba(49, 100, 50, 0.57);
-	-moz-box-shadow: 0px 0px 12px rgba(49, 100, 50, 0.57);
-	box-shadow: 0px 0px 12px rgba(49, 50, 100, 0.57);
+	box-shadow: 0px 0px 4px rgba(53,53,53,0.4);
+		-webkit-box-shadow: 0px 0px 4px rgba(53,53,53,0.4);
+		-moz-box-shadow: 0px 0px 4px rgba(53,53,53,0.4);
 }
 .masonLogo{
 	padding-left:28px;
@@ -103,9 +103,9 @@ a:hover {
 	padding-bottom: 40px;
 	background-color: #FFF;
 	border: 1px solid #cccccc;
-	box-shadow: 0px 0px 12px rgba(49, 50, 100, 0.57);
-		-webkit-box-shadow: 0px 0px 12px rgba(49, 100, 50, 0.57);
-		-moz-box-shadow: 0px 0px 12px rgba(49, 100, 50, 0.57);
+	box-shadow: 0px 0px 6px rgba(49, 50, 100, 0.4);
+		-webkit-box-shadow: 0px 0px 6px rgba(49, 100, 50, 0.4);
+		-moz-box-shadow: 0px 0px 6px rgba(49, 100, 50, 0.4);
 }
 .slideUp{
 	position: relative;
@@ -118,15 +118,14 @@ a:hover {
 	position:absolute;
 	top:20px;
 	right:30px;
-	border: solid #841e1e 1px;
-	border-radius: 6px;
+	border: solid #a72020 1px;
 	background-color: #da2929;
-	background-image: linear-gradient(rgba(187,62,62,0) 0%, rgba(108,11,11,0.85) 93.05%);
-	background-image: -webkit-linear-gradient(rgba(187,62,62,0) 0%, rgba(108,11,11,0.85) 93.05%);
-	background-image: -moz-linear-gradient(rgba(187,62,62,0) 0%, rgba(108,11,11,0.85) 93.05%);
-	box-shadow: 0px 0px 8px #799;	
-		-webkit-box-shadow: 0px 0px 8px #799;
-		-moz-box-shadow: 0px 0px 8px #799;	
+	background-image: linear-gradient(rgba(187,62,62,0) 0%, rgba(108,11,11,0.50) 93.05%);
+		background-image: -webkit-linear-gradient(rgba(187,62,62,0) 0%, rgba(108,11,11,0.50) 93.05%);
+		background-image: -moz-linear-gradient(rgba(187,62,62,0) 0%, rgba(108,11,11,0.50) 93.05%);
+	box-shadow: 0px 0px 6px #CCC;	
+		-webkit-box-shadow: 0px 0px 6px #CCC;
+		-moz-box-shadow: 0px 0px 6px #CCC;	
 	transition:background-color .1s;
 		-o-transition:background-color .1s;
 		-ms-transition:background-color .1s;
@@ -144,17 +143,19 @@ a:hover {
 	margin: 2px;
 }
 .getStarted{
-	margin-top: 30px;
+	margin: 0 auto;
+	height:42px;
+	width:150px;
 	padding: 10px 60px 10px 60px;
-	font-size: 16pt;
-	font-weight: 500;
-	color: #383838;
-	border: solid #bbbbbb 1px;
+	border: solid #d4d4d4 1px;
+	color: #333;
 	background-color: #fafafa;
-	background-image: -webkit-linear-gradient(rgba(184,184,184,0) 0%, rgba(199,199,199,0.85) 93.05%);
-	box-shadow: 0px 0px 8px #999;
-		-webkit-box-shadow: 0px 0px 8px #999;
-		-moz-box-shadow: 0px 0px 8px #999;
+	background-image: linear-gradient(rgba(184,184,184,0) 0%, rgba(199,199,199,0.40) 93.05%);
+		background-image: -webkit-linear-gradient(rgba(184,184,184,0) 0%, rgba(199,199,199,0.40) 93.05%);
+		background-image: -webkit-linear-gradient(rgba(184,184,184,0) 0%, rgba(199,199,199,0.40) 93.05%);
+	box-shadow: 0px 0px 6px #CCC;
+		-webkit-box-shadow: 0px 0px 6px #CCC;
+		-moz-box-shadow: 0px 0px 6px #CCC;
 	transition:background-color .1s;
 		-o-transition:background-color .1s;
 		-ms-transition:background-color .1s;
@@ -163,6 +164,14 @@ a:hover {
 }
 .getStarted:hover{
 	background-color: #b2b2b2;
+	color: #ffffff;
+}
+.getStartedText{
+	font-size: 16pt;
+	
+	font-family: Arial;
+	text-align: center;
+	margin: 2px;
 }
 .coverPhoto{
 	width:100%;
@@ -245,8 +254,9 @@ a:hover {
 }
 
 .footer{
+	width: 100%;
 	margin-top: 25px;
-	position:relative;
+	text-align: center;
 }
 
 /*Photo Gallery*/
