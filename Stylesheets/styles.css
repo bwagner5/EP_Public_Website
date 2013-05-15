@@ -76,6 +76,7 @@ body{
 	padding-left: 18px;
 	padding-right: 18px;
 	font-size: 12pt;
+	font-family: Helvetica Neue;
 	color: #7f7f7f;
 	transition:background-color .1s;
 		-o-transition:background-color .1s;
@@ -86,7 +87,7 @@ body{
 .navSelected, .navList li:hover {
 	color: #373737;
 	background-color: #f6f6f6;
-	border-bottom: 8px solid rgba(54,54,54,0.43);
+	border-bottom: 8px solid rgba(36,36,36,0.43);
 	background-clip: padding-box; /*Allows for a transparent border*/
 }
 .navSpacer{
@@ -257,6 +258,10 @@ a:hover {
 	width: 100%;
 	margin-top: 25px;
 	text-align: center;
+}
+
+.employmentList li{
+	line-height:24pt;
 }
 
 /*Photo Gallery*/
