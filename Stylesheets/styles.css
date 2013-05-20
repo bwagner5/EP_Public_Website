@@ -186,7 +186,10 @@ a:hover {
 	top:15%;
 	z-index:2;
 	text-align: right;
-	background-image: -webkit-linear-gradient(left, rgba(195,195,195,0.01) 0%, rgba(0,0,0,0.5) 32.45%, rgba(0,0,0,0.44) 76.16%, rgba(176,176,176,0.06) 100%);
+	background-image: linear-gradient(left, rgba(195,195,195,0.01) 0%, rgba(0,0,0,0.5) 32.45%, rgba(0,0,0,0.44) 76.16%, rgba(176,176,176,0.06) 100%);
+		background-image: -webkit-linear-gradient(left, rgba(195,195,195,0.01) 0%, rgba(0,0,0,0.5) 32.45%, rgba(0,0,0,0.44) 76.16%, rgba(176,176,176,0.06) 100%);
+		background-image: -moz-linear-gradient(left, rgba(195,195,195,0.01) 0%, rgba(0,0,0,0.5) 32.45%, rgba(0,0,0,0.44) 76.16%, rgba(176,176,176,0.06) 100%);
+	
 }
 .coverBorder{
 	height:80px;
