@@ -361,7 +361,10 @@ input[name='slideSwitch']:checked+label {
 input[name='slideSwitch']{
 	display: none;
 }
-
+/*FAQ Page*/
+.FAQList{
+	 margin-top:25px;
+}
 @media screen and (min-width:1360px) {
 	  .coverLead {
 	  		font-size:5em;
