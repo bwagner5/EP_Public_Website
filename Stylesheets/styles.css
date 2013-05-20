@@ -70,7 +70,7 @@ body{
 	padding-left: 18px;
 	padding-right: 18px;
 	font-size: 12pt;
-	font-family: Helvetica Neue;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #7f7f7f;
 	transition:background-color .1s;
 		-o-transition:background-color .1s;
@@ -133,7 +133,7 @@ a:hover {
 .bookText{
 	font-size: 16pt;
 	color:white;
-	font-family: Arial;
+	font-family: "Hevetica Neue", Helvetica, Arial, sans-serif;
 	text-align: center;
 	margin: 2px;
 }
@@ -163,8 +163,7 @@ a:hover {
 }
 .getStartedText{
 	font-size: 16pt;
-	
-	font-family: Arial;
+	font-family: "Hevetica Neue", Helvetica, Arial, sans-serif;
 	text-align: center;
 	margin: 2px;
 }
@@ -199,7 +198,7 @@ a:hover {
 	background-color: blue;
 }
 .coverLead{
-	font-family: Futura;
+	font-family: "Futura", "Hevetica Neue", Helvetica, Arial, sans-serif;
 	color: #FFF;
     text-shadow:
     -1px -1px 0 #000,
