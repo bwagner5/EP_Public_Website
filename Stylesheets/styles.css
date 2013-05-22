@@ -108,6 +108,7 @@ a:hover {
 	top: -120px; /* Lifts the box to hover over the cover image*/
 	margin-bottom: -100px; /*Negative margin makes up for gap left behind*/
 }
+/*Buttons*/
 .bookButton{
 	height:42px;
 	width:170px;
@@ -138,11 +139,8 @@ a:hover {
 	text-align: center;
 	margin: 2px;
 }
-.getStarted{
+.greyButton{
 	margin: 0 auto;
-	height:42px;
-	width:150px;
-	padding: 10px 60px 10px 60px;
 	border: solid #d4d4d4 1px;
 	color: #333;
 	background-color: #fafafa;
@@ -158,7 +156,12 @@ a:hover {
 		-moz-transition:background-color .1s;
 		-webkit-transition:background-color .1s;
 }
-.getStarted:hover{
+.getStarted{
+	height:42px;
+	width:150px;
+	padding: 10px 60px 10px 60px;
+}
+.greyButton:hover{
 	background-color: #b2b2b2;
 	color: #ffffff;
 }
@@ -168,6 +171,12 @@ a:hover {
 	text-align: center;
 	margin: 2px;
 }
+.submitButton{
+	height:36px;
+	width:120px;
+	padding: 10px 60px 15px 60px;
+}
+/*Hero Unit elements*/
 .coverPhoto{
 	width:100%;
 	position:relative;
@@ -220,7 +229,9 @@ a:hover {
 }
 
 .eventImg {
-	box-shadow: 4px 3px 10px 4px #999 ; /*make sure to pu this in the CSS file*/
+	box-shadow: 0px 0px 8px rgba(100, 100, 100, 0.6);
+		-webkit-box-shadow: 0px 0px 8px rgba(100, 100, 100, 0.6);
+		-moz-box-shadow: 0px 0px 8px rgba(100, 100, 100, 0.6);
 	margin-top: 8px;
 	margin-bottom: 25px;
 }
