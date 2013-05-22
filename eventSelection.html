@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Event Selection</title>
@@ -67,14 +66,14 @@
           </div>
           <div class="row">
             <div class="span2">
-              <div class="btn-group padded"> <button class="btn
-                  btn-large buttonPad">Location</button> <button
-                  class="btn btn-large dropdown-toggle"
-                  data-toggle="dropdown"> <span class="caret"></span> </button>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-submenu"> <a tabindex="-1"
+              <div class="btn-group padded">
+				<a class="btn btn-large dropdown-toggle" id="location-btn" data-toggle="dropdown">Location
+					<span class="caret"></span>
+				</a>
+                <ul class="dropdown-menu location-menu">
+                  <li class="dropdown-submenu location-menu"> <a tabindex="-1"
                       href="#select">Johnson Center</a>
-                    <ul class="dropdown-menu" id="location">
+                    <ul class="dropdown-menu" id="location-menu">
                       <li><a class="dropSelect" tabindex="-1"
                           href="#select">Dewberry Hall</a></li>
                       <li><a class="dropSelect" tabindex="-1"
@@ -91,7 +90,7 @@
                           href="#select">George's</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown-submenu"> <a tabindex="-1"
+                  <li class="dropdown-submenu location-menu"> <a tabindex="-1"
                       href="#select">The HUB (SUB II)</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropSelect" tabindex="-1"
@@ -102,7 +101,7 @@
                           href="#select">Side Pocket</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown-submenu"> <a tabindex="-1"
+                  <li class="dropdown-submenu location-menu"> <a tabindex="-1"
                       href="#select">Outdoor</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropSelect" tabindex="-1"
@@ -127,11 +126,11 @@
               </div>
             </div>
             <div class="span2 offset1">
-              <div class="btn-group padded"> <button class="btn
-                  btn-large">Attendance</button> <button class="btn
-                  btn-large dropdown-toggle" data-toggle="dropdown"> <span
-                    class="caret"></span> </button>
-                <ul class="dropdown-menu">
+              <div class="btn-group padded">
+				<a class="btn btn-large dropdown-toggle" id="attendance-btn" data-toggle="dropdown">Attendance
+					<span class="caret"></span>
+				</a>
+                <ul class="dropdown-menu" id="attendance-menu">
                   <li class="dropdown-submenu"> </li>
                   <li><a class="dropSelect" tabindex="-1" href="#select">0-25</a></li>
                   <li><a class="dropSelect" tabindex="-1" href="#select">25-50</a></li>
@@ -147,19 +146,17 @@
           </div>
           <div class="row">
             <div class="span2">
-              <div class="btn-group padded"> <button class="btn
-                  btn-large">Event Type</button> <button class="btn
-                  btn-large dropdown-toggle" data-toggle="dropdown"> <span
-                    class="caret"></span> </button>
-                <ul class="dropdown-menu">
+              <div class="btn-group padded"> 
+				<a class="btn btn-large dropdown-toggle" id="eventType-btn" data-toggle="dropdown">Event Type
+					<span class="caret"></span>
+				</a>
+                <ul class="dropdown-menu" id="eventType-menu">
                   <li><a class="dropSelect" tabindex="-1" href="#select">Conference</a></li>
                   <li><a class="dropSelect" tabindex="-1" href="#select">Concert</a></li>
-                  <li><a class="dropSelect" tabindex="-1" href="#select">Fashion
-                      Show</a></li>
+                  <li><a class="dropSelect" tabindex="-1" href="#select">Fashion Show</a></li>
                   <li><a class="dropSelect" tabindex="-1" href="#select">Lecture</a></li>
                   <li><a class="dropSelect" tabindex="-1" href="#select">Meeting</a></li>
-                  <li><a class="dropSelect" tabindex="-1" href="#select">Outdoor
-                      Festival</a></li>
+                  <li><a class="dropSelect" tabindex="-1" href="#select">Outdoor Festival</a></li>
                   <li><a class="dropSelect" tabindex="-1" href="#select">Presentation</a></li>
                   <li class="divider"></li>
                   <li><a class="dropSelect" tabindex="-1" href="#select">Other</a></li>
@@ -167,11 +164,11 @@
               </div>
             </div>
             <div class="span2 offset1">
-              <div class="btn-group padded"> <button class="btn
-                  btn-large">Necessities</button> <button class="btn
-                  btn-large dropdown-toggle" data-toggle="dropdown"> <span
-                    class="caret"></span> </button>
-                <ul class="dropdown-menu dropdownPad">
+              <div class="btn-group padded">
+				<a class="btn btn-large dropdown-toggle" id="necessities-btn" data-toggle="dropdown">Necessities 
+					<span class="caret"></span>
+				</a>
+                <ul class="dropdown-menu dropdownPad" id="necessities-menu">
                   <li><label><input class="dropdownInput" name="extras"
                         value="dj" type="checkbox"> DJ</label></li>
                   <li><label><input class="dropdownInput" name="extras"
