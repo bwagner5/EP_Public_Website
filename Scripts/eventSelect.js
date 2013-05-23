@@ -44,10 +44,23 @@ $(document).ready(function() {
 		optionEnable('#attendance-menu','#necessities-btn', firstTime, event);
 		firstTime = false;
 	});
-	$('#necessities-menu .dropSelect').click(function(event){
-		addOns.push($(this).text());
-		event.stopPropagation();
+	$('#necessities-menu input[name="extras"]').click(function(event){
+		if ($(this).prop('checked')) addOns.push($(this).val());
+		else {
+			var index = addOns.indexOf($(this).val());
+			addOns.splice(index, 1);
+		}
+		//event.stopPropagation();
 	});
+	$('.submitButton').click(function(){
+		submitObject = {
+			location:location,
+			attendance:attendance,
+			type:type,
+			addOns:addOns
+		}
+		console.log(submitObject);
+	})
 });
 
 //Notes
