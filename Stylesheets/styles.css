@@ -381,6 +381,17 @@ input[name='slideSwitch']{
 .FAQList{
 	 margin-top:25px;
 }
+/*Booking form*/
+.formTitle{
+	text-align: right;
+	padding-top: 5px; 
+}
+.error{
+	color: red;
+}
+input.error{
+	color:gray;
+}
 @media screen and (min-width:1360px) {
 	  .coverLead {
 	  		font-size:5em;
