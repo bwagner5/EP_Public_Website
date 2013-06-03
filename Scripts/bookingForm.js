@@ -1,6 +1,12 @@
+var nowTemp = new Date();
+var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
 $(document).ready(function(){
 	$('.datepicker').datepicker({
-		format: 'mm-dd-yyyy'
+		format: 'mm-dd-yyyy',
+		onRender: function(date) {
+			return date.valueOf() < now.valueOf() ? 'disabled' : '';
+		}
 	});
 	//This validation script uses the jQuery validation plugin
 	var validator = $("#bookingForm").validate({
