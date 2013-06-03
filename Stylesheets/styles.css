@@ -72,6 +72,7 @@ body{
 	padding-right: 18px;
 	font-size: 12pt;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
 	color: #7f7f7f;
 	transition:background-color .1s;
 		-o-transition:background-color .1s;
@@ -265,6 +266,8 @@ a:hover {
 }
 
 .footer{
+	position: relative;
+	bottom: 0;
 	clear: left;
 	width: 100%;
 	margin-top: 25px;
