@@ -2,11 +2,19 @@ var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 
 $(document).ready(function(){
+	console.log(sessionStorage.eventInfo);
+	//Checking if user inputted preset information on another page via HTML5 storage
+	if(typeof(sessionStorage.eventInfo)!=="undefined"){
+		$('#location').val(sessionStorage.eventInfo);
+	}
+	else {
+		console.log("Sorry! No web storage support..");
+	}	
 	$('.datepicker').datepicker({
-		format: 'mm-dd-yyyy',
-		onRender: function(date) {
-			return date.valueOf() < now.valueOf() ? 'disabled' : '';
-		}
+	format: 'mm-dd-yyyy',
+	onRender: function(date) {
+		return date.valueOf() < now.valueOf() ? 'disabled' : '';
+	}
 	});
 	$('.timepicker').timepicker();
 	//This validation script uses the jQuery validation plugin
