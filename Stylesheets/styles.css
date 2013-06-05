@@ -23,6 +23,10 @@ body{
 .caption{
 	font-size: 11pt;
 }
+/*Bootstrap edits*/
+.thumbnail{
+	border-radius: 0px;
+}
 /*Design*/
 .front{
 	line-height: 40px;
@@ -72,7 +76,8 @@ body{
 	padding-right: 18px;
 	font-size: 12pt;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #7f7f7f;
+	font-weight: 500;
+	color: #444;
 	transition:background-color .1s;
 		-o-transition:background-color .1s;
 		-ms-transition:background-color .1s;
@@ -99,9 +104,9 @@ a:hover {
 	padding-bottom: 40px;
 	background-color: #FFF;
 	border: 1px solid #cccccc;
-	box-shadow: 0px 0px 6px rgba(49, 50, 100, 0.4);
-		-webkit-box-shadow: 0px 0px 6px rgba(49, 100, 50, 0.4);
-		-moz-box-shadow: 0px 0px 6px rgba(49, 100, 50, 0.4);
+	box-shadow: 0px 0px 6px rgba(99,99,99,0.4);
+		-webkit-box-shadow: 0px 0px 6px rgba(99,99,99,0.4);
+		-moz-box-shadow: 0px 0px 6px rgba(99,99,99,0.4);
 }
 .slideUp{
 	position: relative;
@@ -156,14 +161,14 @@ a:hover {
 		-moz-transition:background-color .1s;
 		-webkit-transition:background-color .1s;
 }
+.greyButton:not(.disabled):hover{
+	background-color: #b2b2b2;
+	color: #FFF;
+}
 .getStarted{
 	height:42px;
 	width:150px;
 	padding: 10px 60px 10px 60px;
-}
-.greyButton:hover{
-	background-color: #b2b2b2;
-	color: #ffffff;
 }
 .getStartedText{
 	font-size: 16pt;
@@ -175,6 +180,15 @@ a:hover {
 	height:36px;
 	width:120px;
 	padding: 10px 60px 15px 60px;
+}
+.disabled.submitButton, 
+.disabled.submitButton:hover{
+	cursor: default;
+	opacity: 0.65;
+	background-color: #e6e6e6 ;
+	box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
 }
 /*Hero Unit elements*/
 .coverPhoto{
@@ -265,6 +279,8 @@ a:hover {
 }
 
 .footer{
+	position: relative;
+	bottom: 0;
 	clear: left;
 	width: 100%;
 	margin-top: 25px;
@@ -377,6 +393,32 @@ input[name='slideSwitch']{
 /*FAQ Page*/
 .FAQList{
 	 margin-top:25px;
+}
+/*Booking Process*/
+#quickLinks{
+	background-color: #d5f6d4;
+	border: solid #266824 1px;
+	border-radius: 2px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-bottom: 6px;
+	box-shadow: 0px 0px 4px rgba(48,99,49,0.4);
+		-webkit-box-shadow: 0px 0px 4px rgba(48,99,49,0.4);
+		-moz-box-shadow: 0px 0px 4px rgba(48,99,49,0.4);
+}
+#quickLinks > ul > li{
+	padding-bottom: 5px;
+}
+/*Booking form*/
+.formTitle{
+	text-align: right;
+	padding-top: 5px; 
+}
+.error{
+	color: red;
+}
+input.error{
+	color:gray;
 }
 @media screen and (min-width:1360px) {
 	  .coverLead {

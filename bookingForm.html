@@ -1,0 +1,244 @@
+<?php ob_start("ob_gzhandler"); ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Booking Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Styles -->
+    <link href="Stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="Stylesheets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel=stylesheet>
+    <link href="Stylesheets/styles.css" rel="stylesheet">
+    <link href="Stylesheets/datepicker.css" rel="stylesheet">
+    <link href="Stylesheets/jquery.timepicker.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="Scripts/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+      href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed"
+      href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+  <body>
+    <div>
+      <div class="masonFlag"> <img src="Images/MasonLogo2.gif" class="masonLogo"> </div>
+      <div class=" row navBar">
+      	<div class="span5 offset7">
+        <h2 class="formTitle">Event Booking Form</h3>
+      </div>
+    </div>
+    <!-- Cover Section -->
+    <!-- End Cover Section -->
+    <div class="container">
+      <div class="spacer"></div>
+      <div class="row">
+        <div class="span10 offset1 box">
+	        <form class="form-horizontal span10 offset1" id="bookingForm">
+				<fieldset>
+					<div class="control-group">
+					  <label class="control-label" for="name">Orgnization/Department Name *</label>
+					  <div class="controls">
+					    <input id="name" name="name" type="text" placeholder="" class="input-xlarge">    
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="type">Affiliation Type *</label>
+					  <div class="controls">
+					    <select id="type" name="type" class="input-large">
+					      <option></option>
+					      <option>Mason Department</option>
+					      <option>Student Organization</option>
+					      <option>Off-campus</option>
+					    </select>
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="mailNum">Mail Stop Number</label>
+					  <div class="controls">
+					    <input id="mailNum" name="mailNum" type="text" placeholder="" class="input-small">
+					    
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="orgCode">Organization Code *</label>
+					  <div class="controls">
+					    <input id="orgCode" name="orgCode" type="text" placeholder=" " class="input-medium">
+					    <p class="help-block">Help</p>
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="requestorFirstName">Requestor's Name *</label>
+					  <div class="controls">
+					    <input id="requestorFirstName" name="requestorFirstName" type="text" placeholder="First Name" class="input-large">
+					    
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="requestorLastName"></label>
+					  <div class="controls">
+					    <input id="requestorLastName" name="requestorLastName" type="text" placeholder="Last Name" class="input-large">
+					    
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="email">E-mail *</label>
+					  <div class="controls">
+					    <input id="email" name="email" type="text" placeholder="" class="input-xlarge">
+					    
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="phoneNum">Phone Number *</label>
+					  <div class="controls">
+					    <input id="phoneNum" name="phoneNum" type="text" placeholder="" class="input-large">
+					    
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="phoneNum2">Secondary Phone Number</label>
+					  <div class="controls">
+					    <input id="phoneNum2" name="phoneNum2" type="text" placeholder="" class="input-large">
+					    
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="location">Event Location *</label>
+					  <div class="controls">
+					    <input id="location" name="location" type="text" placeholder="" class="input-xlarge">   
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="eventName">Event Name</label>
+					  <div class="controls">
+					    <input id="eventName" name="eventName" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="date">Event Date *</label>
+					  <div class="controls">
+					    <input id="date" name="date" type="text" placeholder="" class="input-medium datepicker">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="hostFirstName">Contact on Event Day</label>
+					  <div class="controls">
+					    <input id="hostFirstName" name="hostFirstName" type="password" placeholder="First Name" class="input-large">   
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="hostLastName"></label>
+					  <div class="controls">
+					    <input id="hostLastName" name="hostLastName" type="text" placeholder="Last Name" class="input-large">
+					    
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="performers">Who is Performing/Presenting (Check all that Apply)</label>
+					  <div class="controls">
+					    <label class="checkbox" for="performers-0">
+					      <input type="checkbox" name="performers" id="performers-0" value="Athletic Event">
+					      Athletic Event
+					    </label>
+					    <label class="checkbox" for="performers-1">
+					      <input type="checkbox" name="performers" id="performers-1" value="Band/Musicians">
+					      Band/Musicians
+					    </label>
+					    <label class="checkbox" for="performers-2">
+					      <input type="checkbox" name="performers" id="performers-2" value="Choir/Soloist">
+					      Choir/Soloist
+					    </label>
+					    <label class="checkbox" for="performers-3">
+					      <input type="checkbox" name="performers" id="performers-3" value="Comedian/Magician">
+					      Comedian/Magician
+					    </label>
+					    <label class="checkbox" for="performers-4">
+					      <input type="checkbox" name="performers" id="performers-4" value="Conference">
+					      Conference
+					    </label>
+					    <label class="checkbox" for="performers-5">
+					      <input type="checkbox" name="performers" id="performers-5" value="Dancers">
+					      Dancers
+					    </label>
+					    <label class="checkbox" for="performers-6">
+					      <input type="checkbox" name="performers" id="performers-6" value="Expos">
+					      Expos
+					    </label>
+					    <label class="checkbox" for="performers-7">
+					      <input type="checkbox" name="performers" id="performers-7" value="Fashion Show/Models">
+					      Fashion Show/Models
+					    </label>
+					    <label class="checkbox" for="performers-8">
+					      <input type="checkbox" name="performers" id="performers-8" value="Job Fair">
+					      Job Fair
+					    </label>
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="eventDescription">Basic Event Description</label>
+					  <div class="controls">                     
+					    <textarea id="eventDescription" class="input-xlarge" style="height:70px;" name="eventDescription"></textarea>
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="soundCheck">Equipment Setup By/Sound Check Time *</label>
+					  <div class="controls">
+					    <input id="soundCheck" name="soundCheck" type="text" class="input-small timepicker">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="startTime">Event Start Time *</label>
+					  <div class="controls">
+					      <input id="startTime" name="startTime" type="text" class="input-small timepicker">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="endTime">Event End Time *</label>
+					  <div class="controls">
+					      <input id="endTime" name="endTime" type="text" class="input-small timepicker">
+					  </div>
+					</div>
+					<!-- Submit -->
+					<div class="control-group">
+					  <label class="control-label" for="submit"></label>
+					  <div class="controls">
+					    <input type="submit" value="Submit" name="nubmit" class="btn btn-primary"/>
+					  </div>
+					</div>	
+				</fieldset>
+			</form>
+        </div>
+      </div>
+	<div class="footer">
+	    <p style="text-align: center">Copyright © 2013 George Mason
+	      University
+	      <br>
+	      <br>
+	  <em>Official website of Events Production, an office of <a
+	      href="http://studentcenters.gmu.edu/">Student Centers</a>
+	    at <a href="http://www.gmu.edu/">George Mason University</a>
+	        <br>
+	  </em><br>
+	</p>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+	<script src="Scripts/bookingForm.js">
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap-datepicker.js"></script>
+    <script src="Scripts/jquery.timepicker.min.js"></script>
+  </body>
+</html>
