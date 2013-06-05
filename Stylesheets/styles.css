@@ -394,6 +394,20 @@ input[name='slideSwitch']{
 .FAQList{
 	 margin-top:25px;
 }
+/*Booking Process*/
+#quickLinks{
+	background-color: #d5f6d4;
+	border: solid #266824 1px;
+	border-radius: 2px;
+	padding: 10px;
+	margin-left: 10px;
+	box-shadow: 0px 0px 4px rgba(48,99,49,0.4);
+		-webkit-box-shadow: 0px 0px 4px rgba(48,99,49,0.4);
+		-moz-box-shadow: 0px 0px 4px rgba(48,99,49,0.4);
+}
+#quickLinks > ul > li{
+	padding-bottom: 5px;
+}
 /*Booking form*/
 .formTitle{
 	text-align: right;
