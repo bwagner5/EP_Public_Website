@@ -8,6 +8,7 @@ $(document).ready(function(){
 			return date.valueOf() < now.valueOf() ? 'disabled' : '';
 		}
 	});
+	$('.timepicker').timepicker();
 	//This validation script uses the jQuery validation plugin
 	var validator = $("#bookingForm").validate({
 		  invalidHandler: function(event, validator) {

@@ -16,6 +16,7 @@
     <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel=stylesheet>
     <link href="Stylesheets/styles.css" rel="stylesheet">
     <link href="Stylesheets/datepicker.css" rel="stylesheet">
+    <link href="Stylesheets/jquery.timepicker.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="Scripts/html5shiv.js"></script>
@@ -195,25 +196,19 @@
 					<div class="control-group">
 					  <label class="control-label" for="soundCheck">Equipment Setup By/Sound Check Time *</label>
 					  <div class="controls">
-					    <select id="soundCheck" name="soundCheck" class="input-small">
-					      <option>12:00am</option>
-					    </select>
+					    <input id="soundCheck" name="soundCheck" type="text" class="input-small timepicker">
 					  </div>
 					</div>
 					<div class="control-group">
 					  <label class="control-label" for="startTime">Event Start Time *</label>
 					  <div class="controls">
-					    <select id="startTime" name="startTime" class="input-small">
-					      <option>12:00am</option>
-					    </select>
+					      <input id="startTime" name="startTime" type="text" class="input-small timepicker">
 					  </div>
 					</div>
 					<div class="control-group">
 					  <label class="control-label" for="endTime">Event End Time *</label>
 					  <div class="controls">
-					    <select id="endTime" name="endTime" class="input-small">
-					      <option>12:00am</option>
-					    </select>
+					      <input id="endTime" name="endTime" type="text" class="input-small timepicker">
 					  </div>
 					</div>
 					<!-- Submit -->
@@ -246,5 +241,6 @@
 	<script src="Scripts/bookingForm.js">
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/bootstrap-datepicker.js"></script>
+    <script src="Scripts/jquery.timepicker.min.js"></script>
   </body>
 </html>
