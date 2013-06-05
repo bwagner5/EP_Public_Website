@@ -401,6 +401,7 @@ input[name='slideSwitch']{
 	border-radius: 2px;
 	padding: 10px;
 	margin-left: 10px;
+	margin-bottom: 6px;
 	box-shadow: 0px 0px 4px rgba(48,99,49,0.4);
 		-webkit-box-shadow: 0px 0px 4px rgba(48,99,49,0.4);
 		-moz-box-shadow: 0px 0px 4px rgba(48,99,49,0.4);

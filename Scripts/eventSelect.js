@@ -15,7 +15,7 @@ optionEnable = function(previous, next, fireNext, event){
 }
 
 $(document).ready(function() {
-	sessionStorage.eventInfo = "none"
+	sessionStorage.eventInfo = "";
 	var location = 'none';
 	var attendance = 'none';
 	var type = 'none';

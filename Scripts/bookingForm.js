@@ -6,6 +6,7 @@ $(document).ready(function(){
 	//Checking if user inputted preset information on another page via HTML5 storage
 	if(typeof(sessionStorage.eventInfo)!=="undefined"){
 		$('#location').val(sessionStorage.eventInfo);
+		sessionStorage.eventInfo = ""
 	}
 	else {
 		console.log("Sorry! No web storage support..");
