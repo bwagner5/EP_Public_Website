@@ -100,7 +100,7 @@ a:hover {
 .box{
 	position: relative;
 	z-index: 1;
-	padding-top: 50px;
+	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: white;
 	border: 1px solid #cccccc;
@@ -112,6 +112,11 @@ a:hover {
 	position: relative;
 	top: -120px; /* Lifts the box to hover over the cover image*/
 	margin-bottom: -100px; /*Negative margin makes up for gap left behind*/
+}
+.pageTitle{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align:center;
 }
 /*Buttons*/
 .bookButton{
@@ -351,7 +356,8 @@ a:hover {
 }
 
 .mainContainer{
-	height: 580px;
+	height: 540px;
+	margin-top: 10px;
 
 }
 .mainDisplay{
