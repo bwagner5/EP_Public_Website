@@ -308,11 +308,15 @@ a:hover {
 	background-color: rgba(0,0,0,0.9);
 	text-align: center;
 	display: none;
+	cursor: pointer;
+		cursor:-moz-zoom-out;
+		cursor:-webkit-zoom-out;
 }
 .overlayImg{
 	max-width: 100%;
 	max-height: none;
 	box-shadow: 0px 0px 8px rgba(0,0,0,0.75);
+	cursor: auto;
 }
 .overlayContainer{
 	width: 65%;
