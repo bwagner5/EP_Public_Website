@@ -14,9 +14,12 @@ optionEnable = function(previous, next, fireNext, event){
 	}
 }
 
+includedItems = {"Dewberry Hall": "Projector, Microphone"};
+
 $(document).ready(function() {
 	sessionStorage.eventInfo = "";
 	var location = 'none';
+	var parentLocation = "none"
 	var attendance = 'none';
 	var type = 'none';
 	var addOns = [];
@@ -25,33 +28,64 @@ $(document).ready(function() {
 	$('#eventType-btn, #attendance-btn, #necessities-btn, .submitButton').addClass('disabled');
 	
 	$('.location-menu .dropSelect').click(function(event) {
-		location = $(this).text();
+		location = $(this).text()
+		if (location != "Other"){
+			parentLocation = $(this).parent().parent().siblings('.parentLocation').text();
+			if (parentLocation == "The HUB (SUB II)"){
+				parentDisplayLocation = "The HUB";
+			}
+			else if (parentLocation == "Johnson Center") {
+				parentDisplayLocation = "JC";
+			}
+			$('#selectedLocation').html(parentDisplayLocation + ", " + location + ' - <a id="diagramLink"><b>(View Diagram)</b></a>');
+		}
+		else {
+			$('#selectedLocation').html("Other");
+		}
+		$('#diagramLink').attr("src","");
+		
+		if (typeof(includedItems[location]) != "undefined"){
+			$('#includedItems').html(includedItems[location]);
+		} else {
+			$('#includedItems').html("");
+		}
+		
 		//If you change the location, the other options must be reset
 		$('#attendance-btn, #necessities-btn, .submitButton').addClass('disabled');
-		attendance = 'none';
-		type = 'none';
+		$('#selectedType, #selectedAttendance').empty();
+		attendance = type = 'none';
 		//Enable event type option after a location is selected
 		optionEnable('.location-menu', '#eventType-btn', true, event);
 	});
 	$('#eventType-menu .dropSelect').click(function(event){
 		type = $(this).text();
+		$('#selectedType').html(type)
 		//Enable event type option after a location is selected
 		optionEnable('#eventType-menu', '#attendance-btn', true, event);
 	});
 	$('#attendance-menu .dropSelect').click(function(event){
-		num = $(this).text();
-		$('.eventImg').attr('src',"Images/"+num+".jpg"); //for testing
+		attendance = $(this).text();
+		$('.eventImg').attr('src',"Images/"+attendance+".jpg"); //for testing
+		$('#selectedAttendance').html(attendance)
 		//Enable the necessities and submit button after attendace is selected
 		optionEnable('#attendance-menu','#necessities-btn', firstTime, event);
 		$('.submitButton').removeClass('disabled');
 		firstTime = false;
 	});
 	$('#necessities-menu input[name="extras"]').click(function(event){
-		if ($(this).prop('checked')) addOns.push($(this).val());
+		if ($(this).prop('checked')) addOns.push($(this).parent().text());
 		else {
-			var index = addOns.indexOf($(this).val());
+			var index = addOns.indexOf($(this).parent().text());
 			addOns.splice(index, 1);
 		}
+		var displayAddOns = "";
+		for (i = 0; i < addOns.length; i++){
+			displayAddOns += addOns[i];
+			if (i != addOns.length - 1){
+				displayAddOns += ", ";
+			}  
+		}
+		$('#selectedExtras').html(displayAddOns);
 		event.stopPropagation();
 	});
 	$('.submitButton').click(function(event){

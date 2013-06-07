@@ -70,53 +70,70 @@
 								<span class="caret"></span>
 							</a>
 						    <ul class="dropdown-menu location-menu">
-						      <li class="dropdown-submenu location-menu"> <a tabindex="-1"
-						          href="#select">Johnson Center</a>
+						      <li class="dropdown-submenu location-menu">
+						      <a tabindex="-1" class="parentLocation" href="#select">Johnson Center</a>
 						        <ul class="dropdown-menu" id="location-menu">
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Dewberry Hall</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Cinema</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Bistro</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Atrium</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Gold Room</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Meeting Room</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">George's</a></li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Dewberry Hall</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Cinema</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Bistro</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Atrium</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Gold Room</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Meeting Room</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">George's</a>
+						          </li>
 						        </ul>
 						      </li>
-						      <li class="dropdown-submenu location-menu"> <a tabindex="-1"
-						          href="#select">The HUB (SUB II)</a>
+						      <li class="dropdown-submenu location-menu"> 
+						      	<a tabindex="-1" class="parentLocation" href="#select">The HUB (SUB II)</a>
 						        <ul class="dropdown-menu">
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Ball Room</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Meeting Room</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Side Pocket</a></li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Ball Room</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Meeting Room</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Side Pocket</a>
+						          </li>
 						        </ul>
 						      </li>
-						      <li class="dropdown-submenu location-menu"> <a tabindex="-1"
-						          href="#select">Outdoor</a>
+						      <li class="dropdown-submenu location-menu"> 
+						      <a tabindex="-1" class="parentLocation" href="#select">Outdoor</a>
 						        <ul class="dropdown-menu">
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">The Quad</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">North Plaza</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">South Plaza</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">President's Park</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Rogers</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Starbucks</a></li>
-						          <li><a class="dropSelect" tabindex="-1"
-						              href="#select">Other</a></li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">The Quad</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">North Plaza</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">South Plaza</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">President's Park</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Rogers</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Starbucks</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1" href="#select">Other</a>
+						          </li>
 						        </ul>
 						      </li>
 						      <li class="divider"></li>
@@ -177,8 +194,7 @@
 						      <li><label><input class="dropdownInput" name="extras"
 						            value="video" type="checkbox"> Video Projection</label></li>
 						      <li><label><input class="dropdownInput" name="extras"
-						            value="fx-lights" type="checkbox"> Effects
-						          Lighting</label></li>
+						            value="fx-lights" type="checkbox"> Effects Lighting</label></li>
 						    </ul>
 						  </div>
 						</div>
@@ -190,16 +206,16 @@
 						  	<div class="row-fluid">
 						  		<div class="span10 offset1">
 						  			<p>
-						  				<b>Location: </b><span id="selectedLocation">Dewberry Hall</span> - <a><b>(View Diagram)</b></a>
+						  				<b>Location: </b><span id="selectedLocation"></span>
 						  			</p>
 						  			<p>
-						      			<b>Included Items: </b><span id="includedItems">Projector, Microphone</span>
+						      			<b>Included Items: </b><span id="includedItems"></span>
 						  			</p>
 						  			<p>
-						      			<b>Event Type: </b><span id="selectedType">Concert</span>
+						      			<b>Event Type: </b><span id="selectedType"></span>
 						  			</p>
 						  			<p>
-						      			<b>Attendance: </b><span id="selectedAttendance">100-200</span>
+						      			<b>Attendance: </b><span id="selectedAttendance"></span>
 						  			</p>
 						  			<p>
 						      			<b>Necessities: </b><span id="selectedExtras"></span>
