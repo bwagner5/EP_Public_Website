@@ -158,8 +158,25 @@
           </em>
         </p>
 	</div>
+	<div id="scroller" class="greyButton"><h4>Back to Top</h4></div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$('#scroller').click(function(){
+	   			$('html, body').animate({ scrollTop: 0 }, 200);
+	   		});
+			$(window).scroll(function(){
+				var h = $('body').height();
+				var y = $(window).scrollTop();
+				if( y > (h*.25)){
+					$("#scroller").slideDown(250);
+				} else {
+					$('#scroller').slideUp(250);
+				}
+			});	
+	    });
+    </script>
   </body>
 </html>
