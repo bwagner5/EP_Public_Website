@@ -37,7 +37,7 @@ setChange = function() {
 	}
 }
 
-var imgCount = 11; //number of images 
+var imgCount = 15; //number of images 
 var currentImg = 0;
 var currentSet = 0;
 var overlayMode = false;
@@ -73,27 +73,28 @@ $(document).ready(function() {
 		overlayMode = false;
 	});
 	$(".rightArrow").click(function(click) {
-		if (currentImg < imgCount-1) {
-			currentImg += 1;
-			if (overlayMode) $(".overlayImg").attr("src","Gallery/"+currentImg+".jpg");
-			else {
-				$(".mainDisplay").attr("src","Gallery/"+currentImg+".jpg");
-				setChange()
-				$("#img"+currentImg%5).prop("checked", true);
-			}
+		if (currentImg < imgCount-1) currentImg += 1;
+		else currentImg = 0;
+		
+		if (overlayMode) $(".overlayImg").attr("src","Gallery/"+currentImg+".jpg");
+		else {
+			$(".mainDisplay").attr("src","Gallery/"+currentImg+".jpg");
+			setChange()
+			$("#img"+currentImg%5).prop("checked", true);
 		}
+		
 		//imgOrient(".overlayImg", "100%");
 		click.stopPropagation();
 	});
 	$(".leftArrow").click(function(click) {
-		if (currentImg > 0) {
-			currentImg -= 1;
-			if (overlayMode) $(".overlayImg").attr("src","Gallery/"+currentImg+".jpg");
-			else {
-				$(".mainDisplay").attr("src","Gallery/"+currentImg+".jpg"); 
-				setChange()
-				$("#img"+currentImg%5).prop("checked", true);
-			}
+		if (currentImg > 0) currentImg -= 1;
+		else currentImg = imgCount-1;
+		
+		if (overlayMode) $(".overlayImg").attr("src","Gallery/"+currentImg+".jpg");
+		else {
+			$(".mainDisplay").attr("src","Gallery/"+currentImg+".jpg"); 
+			setChange()
+			$("#img"+currentImg%5).prop("checked", true);
 		}
 		//imgOrient(".overlayImg", "100%");
 		click.stopPropagation();
@@ -104,9 +105,11 @@ $(document).ready(function() {
 		switch(parseInt(key,10)) {
 			case 39: //right
 				if (currentImg < imgCount-1) currentImg += 1;
+				else currentImg = 0;
 				break;
 			case 37: //left
 				if (currentImg > 0) currentImg -= 1;
+				else currentImg = imgCount-1;
 				break;
 			case 27: //esc
 				if (overlayMode){
