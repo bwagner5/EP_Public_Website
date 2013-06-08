@@ -42,7 +42,7 @@ $(document).ready(function() {
 		else {
 			$('#selectedLocation').html("Other");
 		}
-		$('#diagramLink').attr("src","");
+		$('.overlayImg').attr("src","Images/diagram.jpg");
 		
 		if (typeof(includedItems[location]) != "undefined"){
 			$('#includedItems').html(includedItems[location]);
@@ -108,8 +108,18 @@ $(document).ready(function() {
 			}
 		}
 	})
+	//Click the large picture to enter overlay mode
+	$(document).on("click", "#diagramLink", function() {
+		console.log("clacked");
+		$(".overlay").toggle();
+		overlayMode = true;
+	});
+	//Exit overlay mode
+	$(".overlay").on("click", function() {
+		$(".overlay").toggle();
+		overlayMode = false;
+	});
 });
-
 //Notes
 //prevents the dropdown from closing after click
 //event.stopPropagation();

@@ -118,6 +118,9 @@ a:hover {
 	margin-bottom: 0px;
 	text-align:center;
 }
+#diagramLink{
+	cursor: pointer;
+}
 /*Buttons*/
 .bookButton{
 	height:42px;
