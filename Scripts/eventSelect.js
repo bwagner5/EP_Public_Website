@@ -24,6 +24,7 @@ $(document).ready(function() {
 	var type = 'none';
 	var addOns = [];
 	var firstTime = true;
+	var overlayMode = false
 	//Other options cannot be selected unless a location is specified
 	$('#eventType-btn, #attendance-btn, #necessities-btn, .submitButton').addClass('disabled');
 	
@@ -110,7 +111,6 @@ $(document).ready(function() {
 	})
 	//Click the large picture to enter overlay mode
 	$(document).on("click", "#diagramLink", function() {
-		console.log("clacked");
 		$(".overlay").toggle();
 		overlayMode = true;
 	});
@@ -118,6 +118,14 @@ $(document).ready(function() {
 	$(".overlay").on("click", function() {
 		$(".overlay").toggle();
 		overlayMode = false;
+	});
+	$(document).keydown(function(input) {
+		//Keypress functionality
+		var key = parseInt(input.which,10);
+		if (parseInt(key,10) == 27 && overlayMode){ //esc
+			$(".overlay").toggle();
+			overlayMode = false;
+		}
 	});
 });
 //Notes
