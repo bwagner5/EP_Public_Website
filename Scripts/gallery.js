@@ -82,7 +82,6 @@ $(document).ready(function() {
 			setChange()
 			$("#img"+currentImg%5).prop("checked", true);
 		}
-		
 		//imgOrient(".overlayImg", "100%");
 		click.stopPropagation();
 	});
