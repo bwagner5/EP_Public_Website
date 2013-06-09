@@ -1,0 +1,42 @@
+/*Colors:
+#141414 Dark Gray
+#31802e Dark Green
+rgba(227,189,0,1) Gold
+
+*/
+
+/*body background*/
+body{
+	background-color: ;
+}
+/*Navbar Background*/
+.navBar{
+	background-color: ;
+	border-color: ;
+}
+.navList li{
+	color: ;
+}
+.navSelected, .navList li:hover {
+	color: ;
+	background-color: ;
+	border-color: ;
+}
+/*Text*/
+p,h1,h2,h3,h4,h5,h6 {
+	color: ;
+}
+a{
+	color:;
+}
+/*footer text*/
+.footer p{
+	color: ;
+}
+.footer a{
+	color: ;
+}
+/*footer  background*/
+.footer {
+	background: ;
+}
