@@ -1,5 +1,15 @@
+/*Changes to bootstrap.css:
+Base border radius = 0px
+BOrder radius small 0px
+Link color = #31802e
+Grid width = 70px
+Gutter Width = 30px
+No responsiveness 
+No carosuel 
+*/
 body{
 	/*background-color: #141414;*/
+	min-width: 1201px;
 }
 /*Link Green: #31802e*/
 /*Utilities*/
@@ -22,10 +32,6 @@ body{
 }
 .caption{
 	font-size: 11pt;
-}
-/*Bootstrap edits*/
-.thumbnail{
-	border-radius: 0px;
 }
 /*Design*/
 .front{
@@ -158,9 +164,11 @@ a:hover {
 	color: #333;
 	background-color: #fafafa;
 	text-shadow: 0px 1px 0px rgba(255,255,255,0.9);
-	background-image: linear-gradient(rgba(184,184,184,0) 0%, rgba(199,199,199,0.40) 93.05%);
-		background-image: -webkit-linear-gradient(rgba(184,184,184,0) 0%, rgba(199,199,199,0.40) 93.05%);
-		background-image: -webkit-linear-gradient(rgba(184,184,184,0) 0%, rgba(199,199,199,0.40) 93.05%);
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+		background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+		background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+		background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
 	box-shadow: 0px 0px 6px #CCC;
 		-webkit-box-shadow: 0px 0px 6px #CCC;
 		-moz-box-shadow: 0px 0px 6px #CCC;
@@ -185,6 +193,7 @@ a:hover {
 .getStartedText{
 	font-size: 16pt;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
 	text-align: center;
 	margin: 2px;
 }
@@ -244,6 +253,7 @@ a:hover {
     padding-top: 2.5%;
     padding-right: 24%;
 	text-align: center;
+	font-size:5em;
 }
 .coverLogo{
 	float: left;
@@ -459,6 +469,7 @@ input[name='slideSwitch']{
 input.error{
 	color:gray;
 }
+
 @media screen and (min-width:1360px) {
 	  .coverLead {
 	  		font-size:5em;
@@ -469,6 +480,7 @@ input.error{
 	  		font-size:4em;
 					}
 }
+/*
 @media screen and (max-width:979px) {
 	  .coverLead {
 	  		font-size:3em;
@@ -485,3 +497,4 @@ input.error{
 			top:100px;
 				}
 }
+*/
