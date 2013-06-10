@@ -33,6 +33,9 @@ body{
 .caption{
 	font-size: 11pt;
 }
+.containerReduce{
+	height: ;	
+}
 /*Design*/
 .front{
 	line-height: 40px;
@@ -116,7 +119,7 @@ a:hover {
 }
 .slideUp{
 	position: relative;
-	top: -120px; /* Lifts the box to hover over the cover image*/
+	top: -125px; /* Lifts the box to hover over the cover image*/
 	margin-bottom: -100px; /*Negative margin makes up for gap left behind*/
 }
 .pageTitle{
