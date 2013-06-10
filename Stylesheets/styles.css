@@ -343,9 +343,9 @@ a:hover {
 		-webkit-box-shadow: 0 2px 0 rgba(82,62,8,0.75); 	 
  }
 .socialBar > a:nth-child(3) > img:hover{
-	box-shadow: 0 2px 0 rgba(35,65,100,0.75); 
-		-moz-box-shadow: 0 2px 0 rgba(42,90,145,0.75); 
-		-webkit-box-shadow: 0 2px 0 rgba(35,65,100,0.75);	 
+	box-shadow: 0 2px 0 rgba(21,62,109,0.75); 
+		-moz-box-shadow: 0 2px 0 rgba(21,62,109,0.75);
+		-webkit-box-shadow: 0 2px 0 rgba(21,62,109,0.75);
  }
 .employmentList li{
 	line-height:20pt;
