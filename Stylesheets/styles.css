@@ -299,7 +299,6 @@ a:hover {
 	border-bottom: solid #245f22 1px; 
 	z-index: 7;
 }
-
 .footer{
 	position: relative;
 	bottom: 15px;;
@@ -310,7 +309,44 @@ a:hover {
 	margin-top: 25px;
 	text-align: center;
 }
-
+.socialBar{
+	margin-bottom: 10px;
+	width:100%;
+}
+.socialBar > a > img{
+	margin-left: 3px;
+	margin-right: 3px;
+	display: inline-block;
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); 
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	margin-bottom: 5px; 
+}
+.socialBar > a > img:hover{
+	position: relative;
+	top: -1px;
+	 -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.60); 
+	 -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.60); 
+	 box-shadow: 0 2px 0 rgba(0, 0, 0, 0.60); 	 
+ }
+.socialBar > a:nth-child(1) > img:hover{
+	box-shadow: 0 2px 0 rgba(0,123,168,0.75); 
+		-moz-box-shadow: 0 2px 0 rgba(0,123,168,0.75);
+		-webkit-box-shadow: rgba(0,123,168,0.75);   
+ }
+.socialBar > a:nth-child(2) > img:hover{
+	box-shadow: 0 2px 0 rgba(82,62,8,0.75); 
+		-moz-box-shadow: 0 2px 0 rgba(82,62,8,0.75); 
+		-webkit-box-shadow: 0 2px 0 rgba(82,62,8,0.75); 	 
+ }
+.socialBar > a:nth-child(3) > img:hover{
+	box-shadow: 0 2px 0 rgba(35,65,100,0.75); 
+		-moz-box-shadow: 0 2px 0 rgba(42,90,145,0.75); 
+		-webkit-box-shadow: 0 2px 0 rgba(35,65,100,0.75);	 
+ }
 .employmentList li{
 	line-height:20pt;
 }
