@@ -39,7 +39,7 @@ body{
 /*Design*/
 .front{
 	line-height: 40px;
-	text-indent: 3em;
+	/*text-indent: 3em;*/
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 0px;
