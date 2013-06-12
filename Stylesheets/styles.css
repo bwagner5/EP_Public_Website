@@ -477,6 +477,7 @@ input[name='slideSwitch']{
 	right: 50px;
 	margin: none;
 	display: none;
+	z-index: 4;
 	/*
 	background-color: #d5f6d4;
 	border: solid #266824 1px;
