@@ -17,6 +17,7 @@
     <link href="Stylesheets/datepicker.css" rel="stylesheet">
     <link href="Stylesheets/jquery.timepicker.css" rel="stylesheet">
     <link href="Stylesheets/color.css" rel="stylesheet">
+    <link href="Stylesheets/select2.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="Scripts/html5shiv.js"></script>
@@ -66,7 +67,7 @@
       <div class="row">
         <div class="span10 offset1 box">
         	<h2 class="pageTitle" style="margin-bottom:20px;">Booking Form</h2>
-	        <form class="form-horizontal span10 offset1" id="bookingForm">
+	        <form action="send.php" method="post" class="form-horizontal span10 offset1" id="bookingForm">
 				<fieldset>
 					<div class="control-group">
 					  <label class="control-label" for="name">Orgnization/Department Name *</label>
@@ -88,14 +89,13 @@
 					<div class="control-group">
 					  <label class="control-label" for="mailNum">Mail Stop Number</label>
 					  <div class="controls">
-					    <input id="mailNum" name="mailNum" type="text" placeholder="" class="input-small">
-					    
+					    <input id="mailNum" name="mailNum" type="text" placeholder="" class="input-small"> 
 					  </div>
 					</div>
 					<div class="control-group">
 					  <label class="control-label" for="orgCode">Organization Code *</label>
 					  <div class="controls">
-					    <input id="orgCode" name="orgCode" type="text" placeholder=" " class="input-medium">
+					    <input id="orgCode" name="orgCode" type="text" placeholder="" class="input-medium">
 					    <p class="help-block">Help</p>
 					  </div>
 					</div>
@@ -155,7 +155,7 @@
 					<div class="control-group">
 					  <label class="control-label" for="hostFirstName">Contact on Event Day</label>
 					  <div class="controls">
-					    <input id="hostFirstName" name="hostFirstName" type="password" placeholder="First Name" class="input-large">   
+					    <input id="hostFirstName" name="hostFirstName" type="text" placeholder="First Name" class="input-large">   
 					  </div>
 					</div>
 					<div class="control-group">
@@ -234,7 +234,7 @@
 					<div class="control-group">
 					  <label class="control-label" for="submit"></label>
 					  <div class="controls">
-					    <input type="submit" value="Submit" name="nubmit" class="btn btn-primary"/>
+					    <input type="submit" value="Submit" name="submit" class="btn btn-primary"/>
 					  </div>
 					</div>	
 				</fieldset>
@@ -259,5 +259,6 @@
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/bootstrap-datepicker.js"></script>
     <script src="Scripts/jquery.timepicker.min.js"></script>
+    <script src="Scripts/select2.js"></script>
   </body>
 </html>
