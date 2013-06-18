@@ -2,8 +2,8 @@ var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 
 $(document).ready(function(){
-	console.log(sessionStorage.eventInfo);
-	//Checking if user inputted preset information on another page via HTML5 storage
+	//console.log(sessionStorage.eventInfo);
+	// Checking if user inputted preset information on another page via HTML5 storage
 	if(typeof(sessionStorage.eventInfo)!=="undefined"){
 		$('#location').val(sessionStorage.eventInfo);
 		sessionStorage.eventInfo = ""
@@ -18,7 +18,7 @@ $(document).ready(function(){
 	}
 	});
 	$('.timepicker').timepicker();
-	//This validation script uses the jQuery validation plugin
+	// This validation script uses the jQuery validation plugin
 	var validator = $("#bookingForm").validate({
 		  invalidHandler: function(event, validator) {
 		    // 'this' refers to the form
@@ -34,17 +34,18 @@ $(document).ready(function(){
 		    }
 		  },
 		rules: {
+			eventName: {
+				required: true
+			},
 			name: {
 				required: true
 			},
-			mailNum: {
-				required: false
-			},
-			type: {
+			affiliationType: {
 				required: true
 			},
 			orgCode: {
-				required: true
+				//This may change based on prior inputs
+				required: false
 			},
 			requestorFirstName: {
 				required: true
@@ -58,9 +59,6 @@ $(document).ready(function(){
 			},
 			phoneNum: {
 				required: true
-			},
-			phoneNum2: {
-				required: false
 			},
 			location: {
 				required: true
@@ -77,6 +75,9 @@ $(document).ready(function(){
 			hostLastName: {
 				required: false
 			},
+			hostPhoneNum: {
+				required: false
+			},
 			soundCheck: {
 				required: true
 			},
@@ -89,12 +90,45 @@ $(document).ready(function(){
 		},
 		messages: {
 			email: {
-				required: "Please enter a valid email address",
-				minlength: "Please enter a valid email address",
+				required: "Please enter a valid email address"
+			},
+			eventName: {
+				required: "Please enter a name for your event"
 			}
 		},
 		submitHandler: function(form) {
 		    $(form).ajaxSubmit();
 		}
 	});
+	$('#affiliationType').on('change',function(){
+		// organization code field is only required for student orgs
+        if( $(this).val()==="Student Organization"){
+        	$("#orgCodeGroup").show();
+        	$("#bookingForm").validate().settings.rules.orgCode.required = true;
+        }
+        else{
+        	$("#orgCodeGroup").hide();
+        	$("#bookingForm").validate().settings.rules.orgCode.required = false;
+        }
+    });
+    $('#sameInfo').on('change',function(){
+    	//Autofill previous contact info
+    	console.log("changed");
+	    if ($(this).is(':checked')) {
+		    if ($('#hostFirstName').val() != "") $('#requestorFirstName').val($('#hostFirstName').val());
+		    if ($('#hostLastName').val() != "") $('#requestorLastName').val($('#hostLastName').val());
+		    if ($('#phoneNum').val() != "") $('#requestorPhoneNum').val($('#phoneNum').val());
+	    }
+    });
+    // Popover Initialization
+    $('#soundcheckQuestion').popover({
+    	title:'', 
+    	content:"\"Sound check\" is the time at which you would like your event to be setup and ready to view. Depending on the size of the event, this time is usually reccomended to be an hour or more before the event begins.", 
+    	trigger:"hover"
+    });
+    $('#orgCodeQuestion').popover({
+    	title:'', 
+    	content:"Offical GMU student organizations have a unique identification code. This code is required for student organizations to book EP for events.", 
+    	trigger:"hover"
+    });
 });
