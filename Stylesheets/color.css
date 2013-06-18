@@ -19,6 +19,15 @@ body{
 }
 .navSelected, .navList li:hover {
 	color: ;
+}
+/*Navbar Background*/
+.navBar{
+	border-color: ;
+}
+.navList li{
+}
+.navSelected, .navList li:hover {
+	color:  ;
 	background-color: ;
 	border-color: ;
 }
@@ -38,5 +47,4 @@ a{
 }
 /*footer  background*/
 .footer {
-	background: ;
 }

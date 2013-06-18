@@ -7,6 +7,12 @@ Gutter Width = 30px
 No responsiveness 
 No carosuel 
 */
+.popover{
+	border-radius: 0px;
+	box-shadow: 0px 0px 4px rgba(99,99,99,0.4);
+		-webkit-box-shadow: 0px 0px 4px rgba(99,99,99,0.4);
+		-moz-box-shadow: 0px 0px 4px rgba(99,99,99,0.4);
+}
 body{
 	/*background-color: #141414;*/
 	min-width: 1201px;
@@ -213,6 +219,9 @@ a:hover {
 	box-shadow: none;
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
+}
+.smallText{
+	font-size: 10pt;
 }
 /*Hero Unit*/
 .coverPhoto{
@@ -511,6 +520,20 @@ input[name='slideSwitch']{
 }
 input.error{
 	color:gray;
+}
+.sectionTitle{
+	width: 700px;
+	font-size: 18pt;
+	font-weight: lighter;
+	color: #959595;
+	border-bottom: solid #bdbdbd 1px; 
+	margin-bottom: 25px;
+	padding-bottom: 5px;
+}
+.question{
+	height: 32px;
+	margin-left: 0px;
+	cursor: pointer;
 }
 
 @media screen and (min-width:1360px) {

@@ -39,7 +39,7 @@
 	  <div class="navBar">
 		<ul class="navList">
 		  <a href="#">
-			<li class="navSelected">Home</li>
+			<li>Home</li>
 		  </a> 
 		  <a href="eventSelection.html">
 			<li>Event Setups</li>
@@ -68,91 +68,54 @@
         	<h2 class="pageTitle" style="margin-bottom:20px;">Booking Form</h2>
 	        <form action="send.php" method="post" class="form-horizontal span10 offset1" id="bookingForm">
 				<fieldset>
+					<!--EVENT INFO-->
+					<div class="sectionTitle">Event Info</div>
+					<!--Event Name-->
 					<div class="control-group">
-					  <label class="control-label" for="name">Orgnization/Department Name *</label>
-					  <div class="controls">
-					    <input id="name" name="name" type="text" placeholder="" class="input-xlarge">    
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="type">Affiliation Type *</label>
-					  <div class="controls">
-					    <select id="type" name="type" class="input-large">
-					      <option></option>
-					      <option>Mason Department</option>
-					      <option>Student Organization</option>
-					      <option>Off-campus</option>
-					    </select>
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="mailNum">Mail Stop Number</label>
-					  <div class="controls">
-					    <input id="mailNum" name="mailNum" type="text" placeholder="" class="input-small"> 
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="orgCode">Organization Code *</label>
-					  <div class="controls">
-					    <input id="orgCode" name="orgCode" type="text" placeholder="" class="input-medium">
-					    <p class="help-block">Help</p>
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="requestorFirstName">Requestor's Name *</label>
-					  <div class="controls">
-					    <input id="requestorFirstName" name="requestorFirstName" type="text" placeholder="First Name" class="input-large">
-					    
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="requestorLastName"></label>
-					  <div class="controls">
-					    <input id="requestorLastName" name="requestorLastName" type="text" placeholder="Last Name" class="input-large">
-					    
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="email">E-mail *</label>
-					  <div class="controls">
-					    <input id="email" name="email" type="text" placeholder="" class="input-xlarge">
-					    
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="phoneNum">Phone Number *</label>
-					  <div class="controls">
-					    <input id="phoneNum" name="phoneNum" type="text" placeholder="" class="input-large">
-					    
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="phoneNum2">Secondary Phone Number</label>
-					  <div class="controls">
-					    <input id="phoneNum2" name="phoneNum2" type="text" placeholder="" class="input-large">
-					    
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="location">Event Location *</label>
-					  <div class="controls">
-					    <input id="location" name="location" type="text" placeholder="" class="input-xlarge">   
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="eventName">Event Name</label>
+					  <label class="control-label" for="eventName">Event Name *</label>
 					  <div class="controls">
 					    <input id="eventName" name="eventName" type="text" placeholder="" class="input-xlarge">
 					  </div>
 					</div>
+					<!--Event Date-->
 					<div class="control-group">
 					  <label class="control-label" for="date">Event Date *</label>
 					  <div class="controls">
 					    <input id="date" name="date" type="text" placeholder="" class="input-medium datepicker">
 					  </div>
 					</div>
+					<!--Sound Check Time-->
 					<div class="control-group">
-					  <label class="control-label" for="hostFirstName">Contact on Event Day</label>
+					  <label class="control-label" for="soundCheck">Equipment Setup By/Sound Check Time *</label>
+					  <div class="controls">
+					    <input id="soundCheck" name="soundCheck" type="text" class="input-small timepicker"> 
+					    <img id="soundcheckQuestion" src="Images/questionmark.png"/>
+					  </div>
+					</div>
+					<!--Event Start Time-->
+					<div class="control-group">
+					  <label class="control-label" for="startTime">Event Start Time *</label>
+					  <div class="controls">
+					      <input id="startTime" name="startTime" type="text" class="input-small timepicker">
+					  </div>
+					</div>
+					<!--Event End Time-->
+					<div class="control-group">
+					  <label class="control-label" for="endTime">Event End Time *</label>
+					  <div class="controls">
+					      <input id="endTime" name="endTime" type="text" class="input-small timepicker">
+					  </div>
+					</div>
+					<!--Event Location-->
+					<div class="control-group">
+					  <label class="control-label" for="location">Event Location *</label>
+					  <div class="controls">
+					    <input id="location" name="location" type="text" placeholder="" class="input-xlarge">   
+					  </div>
+					</div>
+					<!--Contact on Event Day-->
+					<div class="control-group">
+					  <label class="control-label" for="hostFirstName">Contact on Day of Event</label>
 					  <div class="controls">
 					    <input id="hostFirstName" name="hostFirstName" type="text" placeholder="First Name" class="input-large">   
 					  </div>
@@ -161,72 +124,87 @@
 					  <label class="control-label" for="hostLastName"></label>
 					  <div class="controls">
 					    <input id="hostLastName" name="hostLastName" type="text" placeholder="Last Name" class="input-large">
-					    
 					  </div>
 					</div>
 					<div class="control-group">
-					  <label class="control-label" for="performers">Who is Performing/Presenting (Check all that Apply)</label>
+					  <label class="control-label" for="phoneNum">Contact on Day of Event Phone Number</label>
 					  <div class="controls">
-					    <label class="checkbox" for="performers-0">
-					      <input type="checkbox" name="performers" id="performers-0" value="Athletic Event">
-					      Athletic Event
-					    </label>
-					    <label class="checkbox" for="performers-1">
-					      <input type="checkbox" name="performers" id="performers-1" value="Band/Musicians">
-					      Band/Musicians
-					    </label>
-					    <label class="checkbox" for="performers-2">
-					      <input type="checkbox" name="performers" id="performers-2" value="Choir/Soloist">
-					      Choir/Soloist
-					    </label>
-					    <label class="checkbox" for="performers-3">
-					      <input type="checkbox" name="performers" id="performers-3" value="Comedian/Magician">
-					      Comedian/Magician
-					    </label>
-					    <label class="checkbox" for="performers-4">
-					      <input type="checkbox" name="performers" id="performers-4" value="Conference">
-					      Conference
-					    </label>
-					    <label class="checkbox" for="performers-5">
-					      <input type="checkbox" name="performers" id="performers-5" value="Dancers">
-					      Dancers
-					    </label>
-					    <label class="checkbox" for="performers-6">
-					      <input type="checkbox" name="performers" id="performers-6" value="Expos">
-					      Expos
-					    </label>
-					    <label class="checkbox" for="performers-7">
-					      <input type="checkbox" name="performers" id="performers-7" value="Fashion Show/Models">
-					      Fashion Show/Models
-					    </label>
-					    <label class="checkbox" for="performers-8">
-					      <input type="checkbox" name="performers" id="performers-8" value="Job Fair">
-					      Job Fair
-					    </label>
+					    <input id="phoneNum" name="phoneNum" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
+					<!--Event Extras-->
+					<div class="control-group">
+
+					</div>
+					<!--Event Description-->
 					<div class="control-group">
 					  <label class="control-label" for="eventDescription">Basic Event Description</label>
 					  <div class="controls">                     
-					    <textarea id="eventDescription" class="input-xlarge" style="height:70px;" name="eventDescription"></textarea>
+					    <textarea id="eventDescription" class="input-xlarge" style="height:70px;max-width:501px;" name="eventDescription"></textarea>
+					  </div>
+					</div>
+					<!--CLIENT INFO-->
+					<div class="sectionTitle">Client Info</div>
+					<!--Organizaion Name-->
+					<div class="control-group">
+					  <label class="control-label" for="name">Organization/Department Name *</label>
+					  <div class="controls">
+					    <input id="name" name="name" type="text" placeholder="" class="input-xlarge">    
+					  </div>
+					</div>
+					<!--Affliation Type-->
+					<div class="control-group">
+					  <label class="control-label" for="affiliationType">Affiliation Type *</label>
+					  <div class="controls">
+					    <select id="affiliationType" name="affiliationType" class="input-large">
+					      <option></option>
+					      <option>Mason Department</option>
+					      <option>Student Organization</option>
+					      <option>Off-campus</option>
+					    </select>
+					  </div>
+					</div>
+					<!-- Org Code -->
+					<div class="control-group" id="orgCodeGroup" style="display:none;">
+					  <label class="control-label" for="orgCode">Organization Code *</label>
+					  <div class="controls">
+					    <input id="orgCode" name="orgCode" type="text" placeholder=" " class="input-medium">
+					    <img id="orgCodeQuestion" src="Images/questionmark.png"/>
+					  </div>
+					</div>
+					<!-- Repeated Info?-->
+					<div class="control-group">
+					  <div class="controls">
+					    <label class="checkbox inline" for="sameInfo">
+					      <input type="checkbox" name="sameInfo" id="sameInfo">Requestor Info Same as Event Contact Info
+					    </label>
+					  </div>
+					</div>
+					<!-- Requestor's  Name -->
+					<div class="control-group">
+					  <label class="control-label" for="requestorFirstName">Requestor Name *</label>
+					  <div class="controls">
+					    <input id="requestorFirstName" name="requestorFirstName" type="text" placeholder="First Name" class="input-large">
 					  </div>
 					</div>
 					<div class="control-group">
-					  <label class="control-label" for="soundCheck">Equipment Setup By/Sound Check Time *</label>
+					  <label class="control-label" for="requestorLastName"></label>
 					  <div class="controls">
-					    <input id="soundCheck" name="soundCheck" type="text" class="input-small timepicker">
+					    <input id="requestorLastName" name="requestorLastName" type="text" placeholder="Last Name" class="input-large">  
 					  </div>
 					</div>
+					<!-- Phone Number -->
 					<div class="control-group">
-					  <label class="control-label" for="startTime">Event Start Time *</label>
+					  <label class="control-label" for="requestorPhoneNum">Phone Number *</label>
 					  <div class="controls">
-					      <input id="startTime" name="startTime" type="text" class="input-small timepicker">
+					    <input id="requestorPhoneNum" name="requestorPhoneNum" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
+					<!-- Email -->
 					<div class="control-group">
-					  <label class="control-label" for="endTime">Event End Time *</label>
+					  <label class="control-label" for="email">E-mail *</label>
 					  <div class="controls">
-					      <input id="endTime" name="endTime" type="text" class="input-small timepicker">
+					    <input id="email" name="email" type="text" placeholder="" class="input-xlarge">
 					  </div>
 					</div>
 					<!-- Submit -->
@@ -254,8 +232,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-	<script src="Scripts/bookingForm.js">
-    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bookingForm.js">
     <script src="Scripts/bootstrap-datepicker.js"></script>
     <script src="Scripts/jquery.timepicker.min.js"></script>
   </body>

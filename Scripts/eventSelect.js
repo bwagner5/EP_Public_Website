@@ -56,20 +56,20 @@ $(document).ready(function() {
 		$('#selectedType, #selectedAttendance').empty();
 		attendance = type = 'none';
 		//Enable event type option after a location is selected
-		optionEnable('.location-menu', '#eventType-btn', true, event);
+		optionEnable('.location-menu', '#eventType-btn', false, event);
 	});
 	$('#eventType-menu .dropSelect').click(function(event){
 		type = $(this).text();
 		$('#selectedType').html(type)
 		//Enable event type option after a location is selected
-		optionEnable('#eventType-menu', '#attendance-btn', true, event);
+		optionEnable('#eventType-menu', '#attendance-btn', false, event);
 	});
 	$('#attendance-menu .dropSelect').click(function(event){
 		attendance = $(this).text();
 		$('.eventImg').attr('src',"Images/"+attendance+".jpg"); //for testing
 		$('#selectedAttendance').html(attendance)
 		//Enable the necessities and submit button after attendace is selected
-		optionEnable('#attendance-menu','#necessities-btn', firstTime, event);
+		optionEnable('#attendance-menu','#necessities-btn', false, event);
 		$('.submitButton').removeClass('disabled');
 		firstTime = false;
 	});
