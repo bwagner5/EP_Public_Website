@@ -79,50 +79,50 @@ if(isset($_POST['submit'])) {
   <div class=\"control-group\">
 					  <label class=\"control-label\" for=\"name\">Orgnization/Department Name </label>
 					  <div class=\"controls\">
-					    <b>"; $email_message .= $name; $email_message .= "</b>  
+					    <b>"; $email_message .= $name; $email_message .= "</b> <br /> 
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"type\">Affiliation Type </label>
 					  <div class=\"controls\">
-					    <b>"; $email_message .= $type; $email_message .= "</b>
+					    <b>"; $email_message .= $type; $email_message .= "</b><br />
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"mailNum\">Email </label>
 					  <div class=\"controls\">
-							<b>"; $email_message .= $email; $email_message .= "</b>					  
+							<b>"; $email_message .= $email; $email_message .= "</b>	<br />				  
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"requestorFirstName\">Your Name </label>
 					  <div class=\"controls\">
-							<b>"; $email_message .= $yourName; $email_message .= "</b>					 
+							<b>"; $email_message .= $yourName; $email_message .= "</b>	<br />				 
 					 </div>
 					</div>
  					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"date\">Event Date </label>
 					  <div class=\"controls\">
-					    <b>"; $email_message .= $date; $email_message .= "</b>
+					    <b>"; $email_message .= $date; $email_message .= "</b><br />
 					  </div>
 					</div>
   
   					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"performers\">What type of event? (Check all that Apply)</label>
 					  <div class=\"controls\">
-					    <b>"; $email_message .= $performers; $email_message .= "</b>
+					    <b>"; $email_message .= $performers; $email_message .= "</b><br />
 					  </div>
 					</div>
   					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"location\">Event Location </label>
 					  <div class=\"controls\">
-					    <b>"; $email_message .= $location; $email_message .= "</b>  
+					    <b>"; $email_message .= $location; $email_message .= "</b>  <br />
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"eventDescription\">Comments on Equipment </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $equipmentComments; $email_message .= "</b>
+					    <b>"; $email_message .= $equipmentComments; $email_message .= "</b><br />
 					  </div>
 					</div>
 				</fieldset>
@@ -132,56 +132,56 @@ if(isset($_POST['submit'])) {
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"StaffRating\">Professionalism </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $professionalism; $email_message .= "</b>
+					    <b>"; $email_message .= $professionalism; $email_message .= "</b><br />
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"StaffRating\">Knowledge </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $knowledge; $email_message .= "</b>
+					    <b>"; $email_message .= $knowledge; $email_message .= "</b><br />
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"StaffRating\">Courteousness </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $courteousness; $email_message .= "</b>
+					    <b>"; $email_message .= $courteousness; $email_message .= "</b><br />
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"StaffRating\">Pro-activeness </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $proactiveness; $email_message .= "</b>
+					    <b>"; $email_message .= $proactiveness; $email_message .= "</b><br />
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"StaffRating\">Helpfulness </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $helpfulness; $email_message .= "</b>
+					    <b>"; $email_message .= $helpfulness; $email_message .= "</b><br />
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"StaffRating\">Value of Service </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $valueOfService; $email_message .= "</b>
+					    <b>"; $email_message .= $valueOfService; $email_message .= "</b><br />
 					  </div>
 					</div>
 					<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"StaffRating\">Overall </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $overall; $email_message .= "</b>
+					    <b>"; $email_message .= $overall; $email_message .= "</b><br />
 					  </div>
 					</div>
 				
 				<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"eventDescription\">Comments on Staff </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $staffComments; $email_message .= "</b>
+					    <b>"; $email_message .= $staffComments; $email_message .= "</b><br />
 					  </div>
 					</div>
 				<div class=\"control-group\">
 					  <label class=\"control-label\" for=\"eventDescription\">How can we better serve you? </label>
 					  <div class=\"controls\">                     
-					    <b>"; $email_message .= $betterServe; $email_message .= "</b>
+					    <b>"; $email_message .= $betterServe; $email_message .= "</b><br />
 					  </div>
 					</div>
 				
@@ -192,11 +192,6 @@ if(isset($_POST['submit'])) {
     </div>
 	<div class=\"footer\">
         <p style=\"text-align: center\">Copyright &copy;";$email_message .= date("Y"); $email_message .= " George Mason University</p>
-        <div class=\"socialBar\">
-	        <a href=\"https://twitter.com/epgmu\"><img src=\"http://www.epmain.evolutioneventsva.com/speed/Images/fc-webicon-twitter.png\"></a>
-	        <a href=\"\"><img src=\"http://www.epmain.evolutioneventsva.com/speed/Images/fc-webicon-instagram.png\"></a>
-	        <a href=\"https://www.facebook.com/EventsProductionGmu\"><img src=\"http://www.epmain.evolutioneventsva.com/speed/Images/fc-webicon-facebook.png\"></a>
-        </div>
         <p><em>Official website of Events Production, an office of <a href=\"http://studentcenters.gmu.edu/\">Student Centers</a> at <a href=\"http://www.gmu.edu/\">George Mason University</em></a>
         </p>
 	</div>
@@ -287,7 +282,7 @@ $headers = 'From: '.$email_from."\r\n".
       </div>
     </div>
 	<div class="footer">
-        <p style="text-align: center">Copyright © <?php echo date("Y") ?> George Mason University</p>
+        <p style="text-align: center">Copyright © <?php echo date("Y"); ?> George Mason University</p>
         <div class="socialBar">
 	        <a href="https://twitter.com/epgmu"><img src="Images/fc-webicon-twitter.png"></a>
 	        <a href=""><img src="Images/fc-webicon-instagram.png"></a>
