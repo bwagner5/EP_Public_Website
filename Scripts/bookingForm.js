@@ -63,9 +63,6 @@ $(document).ready(function(){
 			location: {
 				required: true
 			},
-			eventName: {
-				required: false
-			},
 			date: {
 				required: true
 			},
@@ -97,6 +94,7 @@ $(document).ready(function(){
 			}
 		},
 		submitHandler: function(form) {
+			// Code for when the form is sumbited
 		    $(form).ajaxSubmit();
 		}
 	});
