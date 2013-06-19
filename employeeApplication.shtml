@@ -457,7 +457,24 @@
 					    <input id="minHours" name="minHours" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
-					
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Resume/Cover Letter</div>
+
+					<div class="control-group">
+					  <label class="control-label" for="resume">Resume </label>
+					  <div class="controls">
+					    <input id="resume" name="resume" type="file">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="cover">Cover Letter </label>
+					  <div class="controls">
+					    <input id="cover" name="cover" type="file">
+					  </div>
+					</div>
+				</fieldset>
+					<div class="sectionTitle"> </div>
 					<div class="control-group">
 					  <label class="control-label" for="submit"></label>
 					  <div class="controls">
