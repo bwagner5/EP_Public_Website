@@ -1,0 +1,485 @@
+<?php ob_start("ob_gzhandler"); ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Employment Application</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Styles -->
+    <link href="Stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="Stylesheets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel=stylesheet>
+    <link href="Stylesheets/styles.css" rel="stylesheet">
+    <link href="Stylesheets/datepicker.css" rel="stylesheet">
+    <link href="Stylesheets/jquery.timepicker.css" rel="stylesheet">
+    <link href="Stylesheets/color.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="Scripts/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+      href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed"
+      href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+  <body>
+	<!--#include file ="navbar.html" -->
+    <!-- Cover Section -->
+    <!-- End Cover Section -->
+    <div class="container">
+      <div class="spacer"></div>
+      <div class="row">
+        <div class="span10 offset1 box">
+        	<h2 class="pageTitle" style="margin-bottom:20px;">Employment Application</h2>
+	        <form action="sendEmploymentApp.php" method="post" class="form-horizontal span10 offset1" id="employmentForm">
+				<fieldset>
+					<div class="sectionTitle">Personal Information</div>
+
+					<div class="control-group">
+					  <label class="control-label" for="firstName">First Name *</label>
+					  <div class="controls">
+					    <input id="firstName" name="firstName" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					  </div>
+					  <div class="control-group">
+					  <label class="control-label" for="middleInitial">Middle Initial </label>
+					  <div class="controls">
+					    <input id="middleInitial" name="middleInitial" type="text" placeholder="" class="input-small" size="2">
+					  </div>
+					  </div>
+					  <div class="control-group">
+					  <label class="control-label" for="lastName">Last Name *</label>
+					  <div class="controls">
+					    <input id="lastName" name="lastName" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					<div class="control-group">
+					<label class="control-label" for="preferredName">Preferred First Name </label>
+					  <div class="controls">
+					    <input id="lastName" name="lastName" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					
+					<div class="control-group">
+					<label class="control-label" for="phone">Phone Number *</label>
+					  <div class="controls">
+					    <input id="phone" name="phone" type="text" placeholder="" class="input-large">
+					  </div>
+					  </div>
+					  <div class="control-group">
+					  <label class="control-label" for="dob">Date of Birth </label>
+					  <div class="controls">
+					    <input id="dob" name="dob" type="text" placeholder="MM-DD-YYYY" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					<label class="control-label" for="email">Mason Email Address </label>
+					  <div class="controls">
+					    <input id="email" name="email" type="text" placeholder="...@masonlive.gmu.edu" class="input-large">
+					  </div>
+					  </div>
+					<div class="control-group">
+						<label class="control-label" for="citizen">U.S. Citizen? </label>
+						<div class="controls">
+            				Yes <input type="radio" name="citizen" value="Yes"/>
+            				 No <input type="radio" name="citizen" value="No" />
+                        </div>
+                    </div>
+					<div class="control-group">
+						<label class="control-label" for="felony">Have you ever been convicted of a felony? </label>
+						<div class="controls">
+            				Yes <input type="radio" name="felony" value="Yes"/>
+            				 No <input type="radio" name="felony" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+					<label class="control-label" for="payRate">What is your expected pay rate per hour? </label>
+					  <div class="controls">
+					    <input id="payRate" name="payRate" type="text" placeholder="" class="input-small">
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Addresses</div>
+					
+					<div class="control-group">
+					  <label class="control-label" for="currentAddress">Current Address </label>
+					  <div class="controls">                     
+					    <textarea id="currentAddress" class="input-xlarge" style="height:70px;max-width:501px;" name="currentAddress"></textarea>
+					  </div>
+					</div>
+					  <div class="control-group">
+					  <label class="control-label" for="permanentAddress">Permanent Address </label>
+					  <div class="controls">                     
+					    <textarea id="permanentAddress" class="input-xlarge" style="height:70px;max-width:501px;" name="permanentAddress"></textarea>
+					  </div>
+					</div>
+					  <div class="control-group">
+					  <label class="control-label" for="summerAddress">Summer Address</label>
+					  <div class="controls">                     
+					    <textarea id="summerAddress" class="input-xlarge" style="height:70px;max-width:501px;" name="summerAddress"></textarea>
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">School Information</div>
+					<div class="control-group">
+					<label class="control-label" for="gNum">G-Number *</label>
+					  <div class="controls">
+					    <input id="gNum" name="gNum" type="text" placeholder="" class="input-large">
+					  </div>
+					  </div>
+					  <div class="control-group">
+					  <label class="control-label" for="major">Major *</label>
+					  <div class="controls">
+					    <input id="major" name="major" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="classification">Current Classification *</label>
+					  <div class="controls">
+					    <select id="classification" name="classification" class="input-large">
+					      <option></option>
+					      <option>Freshman</option>
+					      <option>Sophomore</option>
+					      <option>Junior</option>
+					      <option>Senior</option>
+					      <option>Graduate</option>
+					    </select>
+					  </div>
+					</div>
+					<div class="control-group">
+					<label class="control-label" for="creditHours">Total Credit Hours Enrolled for this Semester </label>
+					  <div class="controls">
+					    <input id="creditHours" name="creditHours" type="text" placeholder="" class="input-small">
+					  </div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="gpaBool">Cumulative GPA above 2.0? *</label>
+						<div class="controls">
+            				Yes <input type="radio" name="gpaBool" value="Yes"/>
+            				 No <input type="radio" name="gpaBool" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+					  <label class="control-label" for="gradDate">Expected Grad Date </label>
+					  <div class="controls">
+					    <input id="gradDate" name="gradDate" type="text" placeholder="Fall / Spring (YYYY)" class="input-large">
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Skills</div>
+					<div class="control-group">
+					  <label class="control-label" for="computerSkills">List/Explain computer or other technology related skills </label>
+					  <div class="controls">                     
+					    <textarea id="computerSkills" class="input-xlarge" style="height:70px;max-width:501px;" name="computerSkills"></textarea>
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="experience">List or explain experiences or skills with audio, video, and/or lighting equipment </label>
+					  <div class="controls">                     
+					    <textarea id="experience" class="input-xlarge" style="height:70px;max-width:501px;" name="experience"></textarea>
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="languages">List languages spoken fluently </label>
+					  <div class="controls">                     
+					    <textarea id="languages" class="input-xlarge" style="height:70px;max-width:501px;" name="languages"></textarea>
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="orgs">List organization in which you are or have been affiliated with </label>
+					  <div class="controls">                     
+					    <textarea id="orgs" class="input-xlarge" style="height:70px;max-width:501px;" name="orgs"></textarea>
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Previous Experience</div>
+					<div class="control-group">
+						<label class="control-label" for="currentlyWork">Do you currently work for another Mason department? *</label>
+						<div class="controls">
+            				Yes <input type="radio" name="currentlyWork" value="Yes"/>
+            				 No <input type="radio" name="currentlyWork" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+					<label class="control-label" for="dept">If so, what department? </label>
+					  <div class="controls">
+					    <input id="dept" name="dept" type="text" placeholder="" class="input-small">
+					  </div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="haveWorked">Have you worked for a Mason department in the past? *</label>
+						<div class="controls">
+            				Yes <input type="radio" name="haveWorked" value="Yes"/>
+            				 No <input type="radio" name="haveWorked" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+					<label class="control-label" for="haveDept">If so, what department? </label>
+					  <div class="controls">
+					    <input id="haveDept" name="haveDept" type="text" placeholder="" class="input-small">
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Emergency Contact Information</div>
+					<div class="control-group">
+					  <label class="control-label" for="emergencyName">Name *</label>
+					  <div class="controls">
+					    <input id="emergencyName" name="emergencyName" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					
+					<div class="control-group">
+					<label class="control-label" for="emergencyPhone">Phone Number *</label>
+					  <div class="controls">
+					    <input id="emergencyPhone" name="emergencyPhone" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Reference 1</div>
+					<div class="control-group">
+					  <label class="control-label" for="refName1">Name *</label>
+					  <div class="controls">
+					    <input id="refName1" name="refName1" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="company1">Company/Position *</label>
+					  <div class="controls">
+					    <input id="company1" name="company1" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="refRelation1">Relationship *</label>
+					  <div class="controls">
+					    <input id="refRelation1" name="refRelation1" type="text" placeholder="" class="input-small">
+					  </div>
+					</div>
+					<div class="control-group">
+					<label class="control-label" for="refPhone1">Phone Number *</label>
+					  <div class="controls">
+					    <input id="refPhone1" name="refPhone1" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Reference 2</div>
+					<div class="control-group">
+					  <label class="control-label" for="refName2">Name *</label>
+					  <div class="controls">
+					    <input id="refName2" name="refName2" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="company2">Company/Position *</label>
+					  <div class="controls">
+					    <input id="company2" name="company2" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="refRelation2">Relationship *</label>
+					  <div class="controls">
+					    <input id="refRelation2" name="refRelation2" type="text" placeholder="" class="input-small">
+					  </div>
+					</div>
+					<div class="control-group">
+					<label class="control-label" for="refPhone2">Phone Number *</label>
+					  <div class="controls">
+					    <input id="refPhone2" name="refPhone2" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Reference 3</div>
+					
+					<div class="control-group">
+					  <label class="control-label" for="refName3">Name *</label>
+					  <div class="controls">
+					    <input id="refName3" name="refName3" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="company3">Company/Position *</label>
+					  <div class="controls">
+					    <input id="company3" name="company3" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="refRelation3">Relationship *</label>
+					  <div class="controls">
+					    <input id="refRelation3" name="refRelation3" type="text" placeholder="" class="input-small">
+					  </div>
+					</div>
+					<div class="control-group">
+					<label class="control-label" for="refPhone3">Phone Number *</label>
+					  <div class="controls">
+					    <input id="refPhone3" name="refPhone3" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Previous Work Experience 1</div>
+					<div class="control-group">
+					  <label class="control-label" for="workExp1">Company </label>
+					  <div class="controls">
+					    <input id="workExp1" name="workExp1" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="position1">Position </label>
+					  <div class="controls">
+					    <input id="position1" name="position1" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="duties1">Duties </label>
+					  <div class="controls">                     
+					    <textarea id="duties1" class="input-xlarge" style="height:70px;max-width:501px;" name="duties1"></textarea>
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Previous Work Experience 2</div>
+					<div class="control-group">
+					  <label class="control-label" for="workExp2">Company </label>
+					  <div class="controls">
+					    <input id="workExp2" name="workExp2" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="position2">Position </label>
+					  <div class="controls">
+					    <input id="position2" name="position2" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="duties2">Duties </label>
+					  <div class="controls">                     
+					    <textarea id="duties2" class="input-xlarge" style="height:70px;max-width:501px;" name="duties2"></textarea>
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Previous Work Experience 3</div>
+					<div class="control-group">
+					  <label class="control-label" for="workExp3">Company </label>
+					  <div class="controls">
+					    <input id="workExp3" name="workExp3" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="position3">Position </label>
+					  <div class="controls">
+					    <input id="position3" name="position3" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="duties3">Duties </label>
+					  <div class="controls">                     
+					    <textarea id="duties3" class="input-xlarge" style="height:70px;max-width:501px;" name="duties3"></textarea>
+					  </div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="sectionTitle">Availability</div>
+					<div class="control-group">
+						<label class="control-label" for="wdm">Are you available to work most weekday mornings? *</label>
+						<div class="controls">
+            				Yes <input type="radio" name="wdm" value="Yes"/>
+            				 No <input type="radio" name="wdm" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+						<label class="control-label" for="wda">Are you available to work most weekday afternoons? *</label>
+						<div class="controls">
+            				Yes <input type="radio" name="wda" value="Yes"/>
+            				 No <input type="radio" name="wda" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+						<label class="control-label" for="wdn">Are you available to work most weekday nights? *</label>
+						<div class="controls">
+            				Yes <input type="radio" name="wdn" value="Yes"/>
+            				 No <input type="radio" name="wdn" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+						<label class="control-label" for="wem">Are you available to work most weekend mornings? *</label>
+						<div class="controls">
+            				Yes <input type="radio" name="wem" value="Yes"/>
+            				 No <input type="radio" name="wem" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+						<label class="control-label" for="wea">Are you available to work most weekend afternoons? *</label>
+						<div class="controls">
+            				Yes <input type="radio" name="wea" value="Yes"/>
+            				 No <input type="radio" name="wea" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+						<label class="control-label" for="wen">Are you available to work most weekend nights? *</label>
+						<div class="controls">
+            				Yes <input type="radio" name="wen" value="Yes"/>
+            				 No <input type="radio" name="wen" value="No" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+					  <label class="control-label" for="prefHours">Preferred Amount of Hours </label>
+					  <div class="controls">
+					    <input id="prefHours" name="prefHours" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="maxHours">Max Hours Per Week </label>
+					  <div class="controls">
+					    <input id="maxHours" name="maxHours" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="minHours">Min Hours Per Week </label>
+					  <div class="controls">
+					    <input id="minHours" name="minHours" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					
+					<div class="control-group">
+					  <label class="control-label" for="submit"></label>
+					  <div class="controls">
+					    <input type="submit" value="Submit" name="submit" class="btn btn-primary"/>
+					  </div>
+					</div>	
+        </div>
+					
+					
+					
+					
+			</form>
+        </div>
+      </div>
+    </div>
+	<!--#include file ="footer.php" -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bookingForm.js">
+    <script src="Scripts/bootstrap-datepicker.js"></script>
+    <script src="Scripts/jquery.timepicker.min.js"></script>
+  </body>
+</html>
