@@ -29,36 +29,36 @@
 	<link rel="shortcut icon" href="ico/favicon.png">
   </head>
   <body>
-	<div>
-	  <div class="masonFlag"> <img src="Images/MasonLogo2.gif"
-		  class="masonLogo"> </div>
-	  <div class="navBar">
-		<ul class="navList">
-		  <a href="#">
-			<li class="navSelected">Home</li>
-		  </a> 
-		  <a href="eventSelection.html">
-			<li>Event Setups</li>
-		  </a> 
-		  <a href="gallery.html">
-			<li>Photo Gallery</li>
-		  </a> 
-		  <a href="employment.html">
-			<li>Employment</li>
-		  </a> 
-		  <a href="faq.html">
-			<li>FAQ</li>
-		  </a> 
-		  <a href="contact.html">
-			<li>Contact</li>
-		  </a>
-		</ul>
-		<a href="bookingForm.html">
-		  <div class="bookButton">
-			<h3 class="bookText">Booking Form</h3>
-		  </div>
-		</a> </div>
-	</div>
+    <div>
+      <div class="masonFlag"> <img src="Images/MasonLogo2.gif"
+          class="masonLogo"> </div>
+      <div class="navBar">
+        <ul class="navList">
+          <a href="#">
+            <li class="navSelected">Home</li>
+          </a> 
+          <a href="eventSelection.html">
+            <li>Event Setups</li>
+          </a> 
+          <a href="gallery.html">
+            <li>Photo Gallery</li>
+          </a> 
+          <a href="employment.html">
+            <li>Employment</li>
+          </a> 
+          <a href="faq.html">
+            <li>FAQ</li>
+          </a> 
+          <a href="contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+        <a href="bookingForm.html">
+          <div class="bookButton">
+            <h3 class="bookText">Booking Form</h3>
+          </div>
+        </a> </div>
+    </div>
 	<!-- Cover Section -->
 	<div class="coverPhoto"> <img src="Images/cover1.jpg"
 		class="bottomedImg">
@@ -73,8 +73,12 @@
 		<div class="span10 offset1 box">
 		  <div class="row-fluid">
 			<div class="span4 offset1">
-			  <div class="thumbnail"> <img src="Gallery/0.jpg" alt=""></div>
-			</div>
+			    <a>
+              		<img class="rotating-item" src="Gallery/0.jpg" width="320px" alt="">
+              		<img class="rotating-item" src="Gallery/1.jpg" width="320px" alt="">
+              		<img class="rotating-item" src="Gallery/3.jpg" width="320px" alt="">
+              		<img class="rotating-item" src="Gallery/4.jpg" width="320px" alt="">
+              	</a>			</div>
 			<div class="span6">
 			  <p class="front" style="text-align:center"><span class="bolded"> Booking EP for your event is
 				  easy.</span><br><span style="text-align:left;"> Feel free to browse our setups to find
@@ -102,8 +106,53 @@
 		<p><em>Official website of Events Production, an office of <a href="http://studentcenters.gmu.edu/">Student Centers</a> at <a href="http://www.gmu.edu/">George Mason University</em></a>
 		</p>
 	</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-	<script src="Scripts/bootstrap.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script>
+	    $(window).load(function() { //start after HTML, images have loaded
+		 
+		    var InfiniteRotator =
+		    {
+		        init: function()
+		        {
+		            //initial fade-in time (in milliseconds)
+		            var initialFadeIn = 500;
+		 
+		            //interval between items (in milliseconds)
+		            var itemInterval = 5000;
+		 
+		            //cross-fade time (in milliseconds)
+		            var fadeTime = 1800;
+		 
+		            //count number of items
+		            var numberOfItems = $('.rotating-item').length;
+		 
+		            //set current item
+		            var currentItem = 0;
+		 
+		            //show first item
+		            $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
+		 
+		            //loop through the items
+		            var infiniteLoop = setInterval(function(){
+		                $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
+		 
+		                if(currentItem == numberOfItems -1){
+		                    currentItem = 0;
+		                }else{
+		                    currentItem++;
+		                }
+		                $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
+		 
+		            }, itemInterval);
+		        }
+		    };
+		 
+		    InfiniteRotator.init();
+		 
+		});
+    </script>
+>>>>>>> Stashed changes
   </body>
 </html>

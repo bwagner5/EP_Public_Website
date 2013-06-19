@@ -38,6 +38,12 @@ body{
 }
 .caption{
 	font-size: 11pt;
+}    
+.rotating-item {
+    display: none;
+    position: absolute;
+    border: solid #ddd 1px;
+    padding: 4px;
 }
 .containerReduce{
 	height: ;	
