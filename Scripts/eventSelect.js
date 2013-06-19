@@ -89,6 +89,24 @@ $(document).ready(function() {
 		$('#selectedExtras').html(displayAddOns);
 		event.stopPropagation();
 	});
+	//Click the large picture to enter overlay mode
+	$(document).on("click", "#diagramLink", function() {
+		$(".overlay").toggle();
+		overlayMode = true;
+	});
+	//Exit overlay mode
+	$(".overlay").on("click", function() {
+		$(".overlay").toggle();
+		overlayMode = false;
+	});
+	$(document).keydown(function(input) {
+		//Keypress functionality
+		var key = parseInt(input.which,10);
+		if (parseInt(key,10) == 27 && overlayMode){ //esc
+			$(".overlay").toggle();
+			overlayMode = false;
+		}
+	});
 	$('.submitButton').click(function(event){
 		if ($(this).hasClass('disabled')){
 			$(this).parent().removeAttr("href");
@@ -109,24 +127,6 @@ $(document).ready(function() {
 			}
 		}
 	})
-	//Click the large picture to enter overlay mode
-	$(document).on("click", "#diagramLink", function() {
-		$(".overlay").toggle();
-		overlayMode = true;
-	});
-	//Exit overlay mode
-	$(".overlay").on("click", function() {
-		$(".overlay").toggle();
-		overlayMode = false;
-	});
-	$(document).keydown(function(input) {
-		//Keypress functionality
-		var key = parseInt(input.which,10);
-		if (parseInt(key,10) == 27 && overlayMode){ //esc
-			$(".overlay").toggle();
-			overlayMode = false;
-		}
-	});
 });
 //Notes
 //prevents the dropdown from closing after click

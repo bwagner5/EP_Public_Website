@@ -535,6 +535,22 @@ input.error{
 	margin-left: 0px;
 	cursor: pointer;
 }
+.psudo-btn{
+	height: 20px;
+	width: 210px;
+	padding: 4px 6px;
+	background: #fff;
+	border: 1px solid #cccccc;
+	text-align: left;
+}
+.psudo-btn > .caret{
+	position: relative;
+	left: 0px;
+	box-sizing: border-box;
+}
+.psudo-btn #location{
+	
+}
 
 @media screen and (min-width:1360px) {
 	  .coverLead {

@@ -109,8 +109,66 @@
 					<!--Event Location-->
 					<div class="control-group">
 					  <label class="control-label" for="location">Event Location *</label>
-					  <div class="controls">
-					    <input id="location" name="location" type="text" placeholder="" class="input-xlarge">   
+					  <div class="controls">			    
+					  	<select id="affiliationType" name="affiliationType" class="input-large">
+					      <option></option>
+					      <optgroup label="Johnson Center">
+						      <option>Dewberry Hall</option>
+						      <option>Cinema</option>
+						      <option>Atrium</option>
+						      <option>Gold Room</option>
+						      <option>Meeting Room</option>
+						      <option>George's</option>
+					      </optgroup>
+					      <optgroup label="The HUB (SUB II)">
+						      <option>Ball Room</option>
+						      <option>Meeting Room</option>
+						      <option>Corner Pocket</option>
+					      </optgroup>
+					      <optgroup label="Outdoor">
+						      <option>The Quad</option>
+						      <option>North Plaza</option>
+						      <option>South Plaza</option>
+						      <option>President's Park</option>
+						      <option>Rogers</option>
+						      <option>Starbucks</option>
+						      <option>Other</option>
+					      </optgroup>
+					      <option>Other</option>
+					    </select>
+					  </div>
+					</div>
+					<!--Event Type-->
+					<div class="control-group">
+					  <label class="control-label" for="eventType">Event Type *</label>
+					  <div class="controls disabled">
+					    <select id="eventType" name="eventType" placeholder="" class="input-large">
+							<option></option>
+							<option>Conference</option>
+							<option>Concert</option>
+							<option>Fashion Show</option>
+							<option>Lecture</option>
+							<option>Meeting</option>
+							<option>Outdoor Festival</option>
+							<option>Other</option>
+					    </select>   
+					  </div>
+					</div>
+					<!--Attendance -->
+					<div class="control-group">
+					  <label class="control-label" for="attendance"> Expected Attendance *</label>
+					  <div class="controls disabled">
+					    <select id="attendance" name="attendance" placeholder="" class="input-large">
+							<option></option>
+							<option>0-25</option>
+							<option>25-50</option>
+							<option>50-100</option>
+							<option>200-300</option>
+							<option>300-400</option>
+							<option>400-500</option>
+							<option>500-750</option>
+							<option>750+</option>
+					    </select>   
 					  </div>
 					</div>
 					<!--Contact on Event Day-->
@@ -161,7 +219,7 @@
 					      <option>Mason Department</option>
 					      <option>Student Organization</option>
 					      <option>Off-campus</option>
-					    </select>
+					    </select>					  
 					  </div>
 					</div>
 					<!-- Org Code -->
@@ -233,7 +291,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/bookingForm.js">
+    <script src="Scripts/bookingForm.js"></script>
     <script src="Scripts/bootstrap-datepicker.js"></script>
     <script src="Scripts/jquery.timepicker.min.js"></script>
   </body>

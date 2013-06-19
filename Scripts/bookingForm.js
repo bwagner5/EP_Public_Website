@@ -63,6 +63,9 @@ $(document).ready(function(){
 			location: {
 				required: true
 			},
+			eventType: {
+				required: true
+			},
 			date: {
 				required: true
 			},
