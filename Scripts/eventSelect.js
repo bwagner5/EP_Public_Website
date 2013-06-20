@@ -112,7 +112,7 @@ $(document).ready(function() {
 			$(this).parent().removeAttr("href");
 		}
 		else {
-			$(this).parent().attr("href","bookingForm.html");
+			$(this).parent().attr("href","bookingForm.shtml");
 			submitObject = {
 				location:location,
 				attendance:attendance,
