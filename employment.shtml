@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Employment</title>
@@ -31,36 +30,7 @@
     <link rel="shortcut icon" href="ico/favicon.png">
   </head>
   <body>
-    <div>
-      <div class="masonFlag"> <img src="Images/MasonLogo2.gif"
-          class="masonLogo"> </div>
-      <div class="navBar">
-        <ul class="navList">
-          <a href="index.html">
-            <li>Home</li>
-          </a> 
-          <a href="eventSelection.html">
-            <li>Event Setups</li>
-          </a> 
-          <a href="gallery.html">
-            <li>Photo Gallery</li>
-          </a> 
-          <a href="employment.html">
-            <li class="navSelected">Employment</li>
-          </a> 
-          <a href="faq.html">
-            <li>FAQ</li>
-          </a> 
-          <a href="contact.html">
-            <li>Contact</li>
-          </a>
-        </ul>
-        <a href="bookingForm.html">
-          <div class="bookButton">
-            <h3 class="bookText">Booking Form</h3>
-          </div>
-        </a> </div>
-    </div>
+  	<!--#include file ="navbar.php" -->
     <!-- Cover Section -->
     <!-- End Cover Section -->
     <div class="container">
