@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="ico/favicon.png">
   </head>
   <body>
-	<!--#include file ="navbar.html" -->
+	<!--#include file ="navbar.php" -->
     <!-- Cover Section -->
     <!-- End Cover Section -->
     <div class="container">
