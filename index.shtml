@@ -29,36 +29,7 @@
 	<link rel="shortcut icon" href="ico/favicon.png">
   </head>
   <body>
-	<div>
-	  <div class="masonFlag"> <img src="Images/MasonLogo2.gif"
-		  class="masonLogo"> </div>
-	  <div class="navBar">
-		<ul class="navList">
-		  <a href="#">
-			<li class="navSelected">Home</li>
-		  </a> 
-		  <a href="eventSelection.html">
-			<li>Event Setups</li>
-		  </a> 
-		  <a href="gallery.html">
-			<li>Photo Gallery</li>
-		  </a> 
-		  <a href="employment.html">
-			<li>Employment</li>
-		  </a> 
-		  <a href="faq.html">
-			<li>FAQ</li>
-		  </a> 
-		  <a href="contact.html">
-			<li>Contact</li>
-		  </a>
-		</ul>
-		<a href="bookingForm.html">
-		  <div class="bookButton">
-			<h3 class="bookText">Booking Form</h3>
-		  </div>
-		</a> </div>
-	</div>
+	<!--#include file ="navbar.php" -->
 	<!-- Cover Section -->
 	<div class="coverPhoto"> <img src="Images/cover1.jpg"
 		class="bottomedImg">
@@ -92,16 +63,7 @@
 	  </div>
 	  <div></div> <!-- Chrome footer fix-->
 	</div>
- 	<div class="footer" style="margin-top:0;">
-		<p style="text-align: center">Copyright © 2013 George Mason University</p>
-		<div class="socialBar">
-			 <a href="https://twitter.com/epgmu"><img src="Images/fc-webicon-twitter.png"></a>
-			 <a href=""><img src="Images/fc-webicon-instagram.png"></a>
-			 <a href="https://www.facebook.com/EventsProductionGmu"><img src="Images/fc-webicon-facebook.png"></a>
-		</div>
-		<p><em>Official website of Events Production, an office of <a href="http://studentcenters.gmu.edu/">Student Centers</a> at <a href="http://www.gmu.edu/">George Mason University</em></a>
-		</p>
-	</div>
+ 	<!--#include file ="footer.php" -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 	<script src="Scripts/bootstrap.js"></script>
