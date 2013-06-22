@@ -17,6 +17,15 @@
 	<![endif]-->
   </head>
   <body>
+   	<div class="overlay">
+		<div class="overlayContainer alignCell">
+			<img class="leftArrow" src="../images/arrowLeft.png">
+			<img class="rightArrow" src="../images/arrowRight.png">
+			<div class="alignWrapper">
+				<img class="overlayImg" src=""/>
+			</div>
+		</div>
+   	</div>
    	<!--#include virtual ="../includes/navbar.php" -->
 	<!-- Cover Section -->
 	<!-- End Cover Section -->

@@ -19,6 +19,13 @@
     <![endif]-->
   </head>
   <body>
+	<div class="overlay">
+   		<div class="overlayContainer alignCell">
+   			<div class="alignWrapper">
+	   			<img class="overlayImg" width="90%" src="images/diagramx.jpg"/>
+   			</div>
+   		</div>
+   	</div>
   	<!--#include virtual ="../includes/navbar.php" -->
     <div class="container">
 	<div class="spacer"></div>
@@ -36,73 +43,73 @@
 							</a>
 						    <ul class="dropdown-menu location-menu">
 						      <li class="dropdown-submenu location-menu">
-						      <a tabindex="-1" class="parentLocation" href="#select">Johnson Center</a>
+						      <a tabindex="-1"class="parentLocation" >Johnson Center</a>
 						        <ul class="dropdown-menu" id="location-menu">
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Dewberry Hall</a>
+						          	<a class="dropSelect" tabindex="-1">Dewberry Hall</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Cinema</a>
+						          	<a class="dropSelect" tabindex="-1">Cinema</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Bistro</a>
+						          	<a class="dropSelect" tabindex="-1">Bistro</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Atrium</a>
+						          	<a class="dropSelect" tabindex="-1">Atrium</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Gold Room</a>
+						          	<a class="dropSelect" tabindex="-1">Gold Room</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Meeting Room</a>
+						          	<a class="dropSelect" tabindex="-1">Meeting Room</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">George's</a>
-						          </li>
-						        </ul>
-						      </li>
-						      <li class="dropdown-submenu location-menu"> 
-						      	<a tabindex="-1" class="parentLocation" href="#select">The HUB (SUB II)</a>
-						        <ul class="dropdown-menu">
-						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Ball Room</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Meeting Room</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Side Pocket</a>
+						          	<a class="dropSelect" tabindex="-1">George's</a>
 						          </li>
 						        </ul>
 						      </li>
 						      <li class="dropdown-submenu location-menu"> 
-						      <a tabindex="-1" class="parentLocation" href="#select">Outdoor</a>
+						      	<a tabindex="-1"class="parentLocation" >The HUB (SUB II)</a>
 						        <ul class="dropdown-menu">
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">The Quad</a>
+						          	<a class="dropSelect" tabindex="-1">Ball Room</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">North Plaza</a>
+						          	<a class="dropSelect" tabindex="-1">Meeting Room</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">South Plaza</a>
+						          	<a class="dropSelect" tabindex="-1">Side Pocket</a>
+						          </li>
+						        </ul>
+						      </li>
+						      <li class="dropdown-submenu location-menu"> 
+						      <a tabindex="-1"class="parentLocation" >Outdoor</a>
+						        <ul class="dropdown-menu">
+						          <li>
+						          	<a class="dropSelect" tabindex="-1">The Quad</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">President's Park</a>
+						          	<a class="dropSelect" tabindex="-1">North Plaza</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Rogers</a>
+						          	<a class="dropSelect" tabindex="-1">South Plaza</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Starbucks</a>
+						          	<a class="dropSelect" tabindex="-1">President's Park</a>
 						          </li>
 						          <li>
-						          	<a class="dropSelect" tabindex="-1" href="#select">Other</a>
+						          	<a class="dropSelect" tabindex="-1">Rogers</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1">Starbucks</a>
+						          </li>
+						          <li>
+						          	<a class="dropSelect" tabindex="-1">Other</a>
 						          </li>
 						        </ul>
 						      </li>
 						      <li class="divider"></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">Other</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Other</a></li>
 						    </ul>
 						  </div>
 						</div>
@@ -113,14 +120,14 @@
 							</a>
 						    <ul class="dropdown-menu" id="attendance-menu">
 						      <li class="dropdown-submenu"> </li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">0-25</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">25-50</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">50-100</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">200-300</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">300-400</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">400-500</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">500-750</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">750+</a></li>
+						      <li><a class="dropSelect" tabindex="-1">0-25</a></li>
+						      <li><a class="dropSelect" tabindex="-1">25-50</a></li>
+						      <li><a class="dropSelect" tabindex="-1">50-100</a></li>
+						      <li><a class="dropSelect" tabindex="-1">200-300</a></li>
+						      <li><a class="dropSelect" tabindex="-1">300-400</a></li>
+						      <li><a class="dropSelect" tabindex="-1">400-500</a></li>
+						      <li><a class="dropSelect" tabindex="-1">500-750</a></li>
+						      <li><a class="dropSelect" tabindex="-1">750+</a></li>
 						    </ul>
 						  </div>
 						</div>
@@ -132,15 +139,15 @@
 								<span class="caret"></span>
 							</a>
 						    <ul class="dropdown-menu" id="eventType-menu">
-						      <li><a class="dropSelect" tabindex="-1" href="#select">Conference</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">Concert</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">Fashion Show</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">Lecture</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">Meeting</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">Outdoor Festival</a></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">Presentation</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Conference</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Concert</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Fashion Show</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Lecture</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Meeting</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Outdoor Festival</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Presentation</a></li>
 						      <li class="divider"></li>
-						      <li><a class="dropSelect" tabindex="-1" href="#select">Other</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Other</a></li>
 						    </ul>
 						  </div>
 						</div>

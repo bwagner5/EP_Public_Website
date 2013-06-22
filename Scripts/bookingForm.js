@@ -101,9 +101,10 @@ $(document).ready(function(){
 		    $(form).ajaxSubmit();
 		}
 	});
-	$('#affiliationType').on('change',function(){
+	$('#affiliationType').change(function(){
 		// organization code field is only required for student orgs
-        if( $(this).val()==="Student Organization"){
+		console.log("Changed");
+        if( $(this).val()=="Student Organization"){
         	$("#orgCodeGroup").show();
         	$("#bookingForm").validate().settings.rules.orgCode.required = true;
         }
@@ -114,7 +115,6 @@ $(document).ready(function(){
     });
     $('#sameInfo').on('change',function(){
     	//Autofill previous contact info
-    	console.log("changed");
 	    if ($(this).is(':checked')) {
 		    if ($('#hostFirstName').val() != "") $('#requestorFirstName').val($('#hostFirstName').val());
 		    if ($('#hostLastName').val() != "") $('#requestorLastName').val($('#hostLastName').val());

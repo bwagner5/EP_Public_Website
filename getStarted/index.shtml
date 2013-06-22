@@ -11,27 +11,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Styles -->
-    <link href="Stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="Stylesheets/bootstrap-responsive.css" rel="stylesheet">
-    <link href="Stylesheets/styles.css" rel="stylesheet">
-    <link href="Stylesheets/color.css" rel="stylesheet">
+    <link href="../styles/bootstrap.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/color.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="Scripts/html5shiv.js"></script>
     <![endif]-->
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-      href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-      href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"
-      href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed"
-      href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
   </head>
   <body>
-   <!--#include file ="navbar.php" -->
+   <!--#include virtual ="../includes/navbar.php" -->
     <!-- Cover Section -->
     <!-- End Cover Section -->
     <div class="container">
@@ -61,9 +50,9 @@
         </div>
       </div>
     </div>
- 	<!--#include file ="footer.php" -->
+ 	<!--#include virtual ="../includes/footer.php" -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
+    <script src="../scripts/bootstrap.js"></script>
   </body>
 </html>

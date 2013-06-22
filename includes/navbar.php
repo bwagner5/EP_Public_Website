@@ -7,23 +7,23 @@
           	print('>Home</li>'); ?>
           </a> 
           <a href="../eventSelection">
-            <?php print('<li'); if( $_SERVER['REQUEST_URI'] === '/newSite/eventSelection.shtml'){ print(' class="navSelected"');}
+            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/eventSelection/') !== false){ print(' class="navSelected"');}
           	print('>Event Setups</li>'); ?>
           </a> 
           <a href="../gallery">
-            <?php print('<li'); if( $_SERVER['REQUEST_URI'] === '/newSite/gallery.shtml'){ print(' class="navSelected"');}
+            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/gallery/') !== false){ print(' class="navSelected"');}
           	print('>Photo Gallery</li>'); ?>
           </a> 
           <a href="../employment">
-            <?php print('<li'); if( $_SERVER['REQUEST_URI'] === '/newSite/employment.shtml'){ print(' class="navSelected"');}
+            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/employment/') !== false){ print(' class="navSelected"');}
           	print('>Employment</li>'); ?>
           </a> 
           <a href="../faq">
-            <?php print('<li'); if( $_SERVER['REQUEST_URI'] === '/newSite/faq.shtml'){ print(' class="navSelected"');}
+            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/faq/') !== false){ print(' class="navSelected"');}
           	print('>FAQ</li>'); ?>
           </a> 
           <a href="../contact">
-            <?php print('<li'); if( $_SERVER['REQUEST_URI'] === '/newSite/contact.shtml'){ print(' class="navSelected"');}
+            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/contact/') !== false){ print(' class="navSelected"');}
           	print('>Contact</li>'); ?>
           </a>
         </ul>

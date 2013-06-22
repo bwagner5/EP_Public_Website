@@ -27,7 +27,7 @@
 			<ul class="navList">
 				<!--Temp for subfolder-->
 				<a href="">
-					<li>Home</li>
+					<li class="navSelected">Home</li>
 				</a> 
 				<a href="eventSelection">
 					<li>Event Setups</li>
@@ -36,7 +36,7 @@
 					<li>Photo Gallery</li>
 				</a> 
 				<a href="employment">
-					<li>Contact</li>
+					<li>Employment</li>
 				</a> 
 				<a href="faq">
 					<li>FAQ</li>	         
@@ -81,7 +81,7 @@
 				minutes:</span></p>
 			  <div class="row-fluid">
 				<div class="span12 center padded">
-					   <a href="getStarted.shtml"><div class="greyButton getStarted"><h3 class="getStartedText">Get Started</h3></div></a>
+					   <a href="getStarted/"><div class="greyButton getStarted"><h3 class="getStartedText">Get Started</h3></div></a>
 				</div>
 			  </div>
 			</div>
