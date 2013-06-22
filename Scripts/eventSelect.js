@@ -112,7 +112,7 @@ $(document).ready(function() {
 			$(this).parent().removeAttr("href");
 		}
 		else {
-			$(this).parent().attr("href","bookingForm.shtml");
+			$(this).parent().attr("href","../bookingForm");
 			submitObject = {
 				location:location,
 				attendance:attendance,
@@ -120,7 +120,9 @@ $(document).ready(function() {
 				addOns:addOns
 			}
 			if(typeof(Storage)!=="undefined"){
-			  sessionStorage.eventInfo = submitObject["location"];
+			  sessionStorage.eventInfo = submitObject["location"]+","+
+			  							 submitObject["type"]+","+	
+										 submitObject["attendance"]+",";
 			}
 			else {
 			  console.log("Sorry! No web storage support..");

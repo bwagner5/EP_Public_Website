@@ -204,7 +204,7 @@
 						<li>Caption containing details about the event setup goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
 					</ul>
 					<div class="center padded">
-					    <a href="#"><div class="greyButton submitButton"><h3 class="getStartedText">Submit</h3></div></a>
+					    <a href=""><div class="greyButton submitButton"><h3 class="getStartedText">Submit</h3></div></a>
 					</div>
 				</div>
 			</div>
