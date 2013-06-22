@@ -12,10 +12,10 @@ $(document).ready(function(){
 		console.log("Sorry! No web storage support..");
 	}	
 	$('.datepicker').datepicker({
-	format: 'mm-dd-yyyy',
-	onRender: function(date) {
-		return date.valueOf() < now.valueOf() ? 'disabled' : '';
-	}
+		format: 'mm-dd-yyyy',
+		onRender: function(date) {
+			return date.valueOf() < now.valueOf() ? 'disabled' : '';
+		}
 	});
 	$('.timepicker').timepicker();
 	// This validation script uses the jQuery validation plugin

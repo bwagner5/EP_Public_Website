@@ -10,30 +10,52 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- Styles -->
-	<link href="Stylesheets/bootstrap.css" rel="stylesheet">
-	<link href="Stylesheets/styles.css" rel="stylesheet">
-	<link href="Stylesheets/color.css" rel="stylesheet">
+	<link href="styles/bootstrap.css" rel="stylesheet">
+	<link href="styles/styles.css" rel="stylesheet">
+	<link href="styles/color.css" rel="stylesheet">
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-	  <script src="Scripts/html5shiv.js"></script>
+	  <script src="scripts/html5shiv.js"></script>
 	<![endif]-->
-	<!-- Fav and touch icons -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144"
-	  href="ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114"
-	  href="ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72"
-	  href="ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed"
-	  href="ico/apple-touch-icon-57-precomposed.png">
-	<link rel="shortcut icon" href="ico/favicon.png">
   </head>
   <body>
-	<!--#include file ="navbar.php" -->
+	<div>
+		<div class="masonFlag">
+			<img src="images/MasonLogo2.gif" class="masonLogo"> 
+		</div>
+		  <div class="navBar">
+			<ul class="navList">
+				<!--Temp for subfolder-->
+				<a href="">
+					<li>Home</li>
+				</a> 
+				<a href="eventSelection">
+					<li>Event Setups</li>
+				</a> 
+				<a href="gallery">
+					<li>Photo Gallery</li>
+				</a> 
+				<a href="employment">
+					<li>Contact</li>
+				</a> 
+				<a href="faq">
+					<li>FAQ</li>	         
+				</a> 
+				<a href="contact">
+					<li>Contact</li>
+				</a>
+			</ul>
+		    <a href="bookingForm/">
+		      <div class="bookButton">
+		        <h3 class="bookText">Booking Form</h3>
+		      </div>
+		   </a> 
+		</div>
+	</div>
 	<!-- Cover Section -->
-	<div class="coverPhoto"> <img src="Images/Cover1.JPG"
+	<div class="coverPhoto"> <img src="images/Cover1.JPG"
 		class="bottomedImg">
-	  <div class="coverBar"> <img src="Images/EPLogo.png"
+	  <div class="coverBar"> <img src="images/EPLogo.png"
 		  class="coverLogo">
 		<h1 class="coverLead">Events Production</h1>
 	  </div>
@@ -45,11 +67,12 @@
 		  <div class="row-fluid">
 			<div class="span4 offset1">
 			    <a>
-              		<img class="rotating-item" src="Gallery/0.jpg" width="320px" alt="">
-              		<img class="rotating-item" src="Gallery/1.jpg" width="320px" alt="">
-              		<img class="rotating-item" src="Gallery/3.jpg" width="320px" alt="">
-              		<img class="rotating-item" src="Gallery/4.jpg" width="320px" alt="">
-              	</a>			</div>
+              		<img class="rotating-item" src="gallery/images/0.jpg" width="320px" alt="">
+              		<img class="rotating-item" src="gallery/images/1.jpg" width="320px" alt="">
+              		<img class="rotating-item" src="gallery/images/3.jpg" width="320px" alt="">
+              		<img class="rotating-item" src="gallery/images/4.jpg" width="320px" alt="">
+              	</a>			
+            </div>
 			<div class="span6">
 			  <p class="front" style="text-align:center"><span class="bolded"> Booking EP for your event is
 				  easy.</span><br><span style="text-align:left;"> Feel free to browse our setups to find
@@ -67,14 +90,23 @@
 	  </div>
 	  <div></div> <!-- Chrome footer fix-->
 	</div>
-	<!--#include file ="footer.php" -->
+	<div class="footer">
+	    <p style="text-align: center">Copyright © <?php echo date('Y'); ?> George Mason University</p>
+	    <div class="socialBar">
+	        <a href="http://twitter.com/epgmu"><img src="images/fc-webicon-twitter.png"></a>
+	        <a href="http://instagram.com/gmueventsproduction"><img src="images/fc-webicon-instagram.png"></a>
+	        <a href="http://www.facebook.com/EventsProductionGmu"><img src="images/fc-webicon-facebook.png"></a>
+	    </div>
+	    <p><em>Official website of Events Production, an office of <a href="http://studentcenters.gmu.edu/">Student Centers</a> at <a href="http://www.gmu.edu/">George Mason University</em></a>
+	    </p>
+	</div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
+    <script src="../scripts/bootstrap.js"></script>
     <script>
 	    $(window).load(function() { //start after HTML, images have loaded
-	    	// Photo carosuel function
 		 	$('.footer').css("margin-top","0");
+		 	// Photo carosuel function
 		    var InfiniteRotator =
 		    {
 		        init: function()

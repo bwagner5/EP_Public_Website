@@ -43,7 +43,7 @@ $(document).ready(function() {
 		else {
 			$('#selectedLocation').html("Other");
 		}
-		$('.overlayImg').attr("src","Images/diagram.jpg");
+		$('.overlayImg').attr("src","../images/diagram.jpg");
 		
 		if (typeof(includedItems[location]) != "undefined"){
 			$('#includedItems').html(includedItems[location]);
@@ -66,7 +66,7 @@ $(document).ready(function() {
 	});
 	$('#attendance-menu .dropSelect').click(function(event){
 		attendance = $(this).text();
-		$('.eventImg').attr('src',"Images/"+attendance+".jpg"); //for testing
+		$('.eventImg').attr('src',"../images/"+attendance+".jpg"); //for testing
 		$('#selectedAttendance').html(attendance)
 		//Enable the necessities and submit button after attendace is selected
 		optionEnable('#attendance-menu','#necessities-btn', false, event);
