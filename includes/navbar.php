@@ -1,36 +1,44 @@
+<?php 
+	$path = '';
+	if( $_SERVER['REQUEST_URI'] !== '/newSite/index.shtml' && $_SERVER['REQUEST_URI'] !== '/newSite/')
+	{
+		$path = '../';
+	} 
+	print('	
 <div>
-    <div class="masonFlag"> <img src="../images/MasonLogo2.gif" class="masonLogo"> </div>
+    <div class="masonFlag"> <img src="'); print($path); print('images/MasonLogo2.gif" class="masonLogo"> </div>
       <div class="navBar">
         <ul class="navList">
-          <a href="../">
-          	<?php print('<li'); if( $_SERVER['REQUEST_URI'] === '/newSite/index.shtml' || $_SERVER['REQUEST_URI'] === '/newSite/'){ print(' class="navSelected"');}
-          	print('>Home</li>'); ?>
+          <a href="');print($path);print('">
+          	'); print('<li'); if( $_SERVER['REQUEST_URI'] === '/newSite/index.shtml' || $_SERVER['REQUEST_URI'] === '/newSite/'){ print(' class="navSelected"');}
+          	print('>Home</li>'); print('
           </a> 
-          <a href="../eventSelection">
-            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/eventSelection/') !== false){ print(' class="navSelected"');}
-          	print('>Event Setups</li>'); ?>
+          <a href="');print($path);print('eventSelection">
+            '); print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/eventSelection/') !== false){ print(' class="navSelected"');}
+          	print('>Event Setups</li>'); print('
           </a> 
-          <a href="../gallery">
-            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/gallery/') !== false){ print(' class="navSelected"');}
-          	print('>Photo Gallery</li>'); ?>
+          <a href="');print($path);print('gallery">
+            '); print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/gallery/') !== false){ print(' class="navSelected"');}
+          	print('>Photo Gallery</li>'); print('
           </a> 
-          <a href="../employment">
-            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/employment/') !== false){ print(' class="navSelected"');}
-          	print('>Employment</li>'); ?>
+          <a href="');print($path);print('employment">
+            '); print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/employment/') !== false){ print(' class="navSelected"');}
+          	print('>Employment</li>'); print('
           </a> 
-          <a href="../faq">
-            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/faq/') !== false){ print(' class="navSelected"');}
-          	print('>FAQ</li>'); ?>
+          <a href="');print($path);print('faq">
+            '); print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/faq/') !== false){ print(' class="navSelected"');}
+          	print('>FAQ</li>'); print('
           </a> 
-          <a href="../contact">
-            <?php print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/contact/') !== false){ print(' class="navSelected"');}
-          	print('>Contact</li>'); ?>
+          <a href="');print($path);print('contact">
+            '); print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/contact/') !== false){ print(' class="navSelected"');}
+          	print('>Contact</li>'); print('
           </a>
         </ul>
-        <a href="../bookingForm/">
+        <a href="');print($path);print('bookingForm/">
           <div class="bookButton">
             <h3 class="bookText">Booking Form</h3>
           </div>
         </a> 
 	</div>
-</div>
+</div>');
+?>

@@ -19,39 +19,7 @@
 	<![endif]-->
   </head>
   <body>
-	<div>
-		<div class="masonFlag">
-			<img src="images/MasonLogo2.gif" class="masonLogo"> 
-		</div>
-		  <div class="navBar">
-			<ul class="navList">
-				<!--Temp for subfolder-->
-				<a href="">
-					<li class="navSelected">Home</li>
-				</a> 
-				<a href="eventSelection">
-					<li>Event Setups</li>
-				</a> 
-				<a href="gallery">
-					<li>Photo Gallery</li>
-				</a> 
-				<a href="employment">
-					<li>Employment</li>
-				</a> 
-				<a href="faq">
-					<li>FAQ</li>	         
-				</a> 
-				<a href="contact">
-					<li>Contact</li>
-				</a>
-			</ul>
-		    <a href="bookingForm/">
-		      <div class="bookButton">
-		        <h3 class="bookText">Booking Form</h3>
-		      </div>
-		   </a> 
-		</div>
-	</div>
+	<!--#include virtual ="includes/navbar.php" -->
 	<!-- Cover Section -->
 	<div class="coverPhoto"> <img src="images/Cover1.JPG"
 		class="bottomedImg">
@@ -90,16 +58,7 @@
 	  </div>
 	  <div></div> <!-- Chrome footer fix-->
 	</div>
-	<div class="footer">
-	    <p style="text-align: center">Copyright © <?php echo date('Y'); ?> George Mason University</p>
-	    <div class="socialBar">
-	        <a href="http://twitter.com/epgmu"><img src="images/fc-webicon-twitter.png"></a>
-	        <a href="http://instagram.com/gmueventsproduction"><img src="images/fc-webicon-instagram.png"></a>
-	        <a href="http://www.facebook.com/EventsProductionGmu"><img src="images/fc-webicon-facebook.png"></a>
-	    </div>
-	    <p><em>Official website of Events Production, an office of <a href="http://studentcenters.gmu.edu/">Student Centers</a> at <a href="http://www.gmu.edu/">George Mason University</em></a>
-	    </p>
-	</div>
+	<!--#include virtual ="includes/footer.php" -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="../scripts/bootstrap.js"></script>

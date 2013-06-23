@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
   <body>
-	<!--#include virtual ="../includes/navBar.php" -->
+	<!--#include virtual ="../includes/navbar.php" -->
     <!-- Cover Section -->
     <!-- End Cover Section -->
     <div class="container">
