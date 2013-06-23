@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Employment Application</title>
+    <title>Booking Form Submitted</title>
     <meta name="viewport" content="width=device-width,
       initial-scale=1.0">
     <meta name="description" content="">
@@ -38,7 +38,7 @@
       <div class="spacer"></div>
       <div class="row">
         <div class="span10 offset1 box">
-        	<h2 class="pageTitle" style="margin-bottom:20px;">Your Application has been submitted to Events Production! <br /> Thanks!</h2>
+        	<h2 class="pageTitle" style="margin-bottom:20px;">Your request to book Events Production has been submitted! <br /> You will receive a confirmation or denial of your request at the email you provided within the next few days. <br /> Thanks!</h2>
         </div>
       </div>
     </div>

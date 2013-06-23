@@ -197,7 +197,7 @@
 					<div class="control-group">
 					  <div class="controls">
 					    <label class="checkbox inline" for="sameInfo">
-					      <input type="checkbox" name="sameInfo" id="sameInfo">Requestor Info Same as Event Contact Info
+					      <input type="checkbox" name="sameInfo" id="sameInfo" value="true">Requestor Info Same as Event Contact Info
 					    </label>
 					  </div>
 					</div>
