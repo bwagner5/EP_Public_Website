@@ -20,9 +20,11 @@
   </head>
   <body>
 	<div>
-		<div class="masonFlag">
-			<img src="images/MasonLogo2.gif" class="masonLogo"> 
-		</div>
+		<a href="http://www.gmu.edu/">
+			<div class="masonFlag">
+				<img src="images/MasonLogo2.gif" class="masonLogo"> 
+			</div>
+		</a>
 		  <div class="navBar">
 			<ul class="navList">
 				<!--Temp for subfolder-->
