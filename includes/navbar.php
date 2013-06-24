@@ -1,6 +1,7 @@
 <?php 
 	$path = '';
-	if( $_SERVER['REQUEST_URI'] !== '/newSite/index.shtml' && $_SERVER['REQUEST_URI'] !== '/newSite/')
+	$root = '/newsite/';
+	if( $_SERVER['REQUEST_URI'] !== $root.'index.shtml' && $_SERVER['REQUEST_URI'] !== $root)
 	{
 		$path = '../';
 	} 
@@ -10,7 +11,7 @@
       <div class="navBar">
         <ul class="navList">
           <a href="');print($path);print('">
-          	'); print('<li'); if( $_SERVER['REQUEST_URI'] === '/newSite/index.shtml' || $_SERVER['REQUEST_URI'] === '/newSite/'){ print(' class="navSelected"');}
+          	'); print('<li'); if( $_SERVER['REQUEST_URI'] === $root.'index.shtml' || $_SERVER['REQUEST_URI'] === $root){ print(' class="navSelected"');}
           	print('>Home</li>'); print('
           </a> 
           <a href="');print($path);print('eventSelection">
