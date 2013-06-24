@@ -1,7 +1,7 @@
 <?php $root = '/newSite/';
 print('
 <div class="footer">
-    <p style="text-align: center">Copyright ©'); echo date('Y'); print('George Mason University</p>
+    <p style="text-align: center">Copyright © '); echo date('Y'); print(' George Mason University</p>
     <div class="socialBar">
         <a href="http://twitter.com/epgmu"><img src="'); if( $_SERVER['REQUEST_URI'] !== $root.'index.shtml' && $_SERVER['REQUEST_URI'] !== $root){ print('../');}print('images/fc-webicon-twitter.png"></a>
         <a href="http://instagram.com/gmueventsproduction"><img src="'); if( $_SERVER['REQUEST_URI'] !== '/newSite/index.shtml' && $_SERVER['REQUEST_URI'] !== $root){ print('../');} print('images/fc-webicon-instagram.png"></a>
