@@ -7,7 +7,9 @@
 	} 
 	print('	
 <div>
-    <div class="masonFlag"> <img src="'); print($path); print('images/MasonLogo2.gif" class="masonLogo"> </div>
+	<a href="http://gmu.edu">
+    	<div class="masonFlag"> <img src="'); print($path); print('images/MasonLogo2.gif" class="masonLogo"> </div>
+    </a>
       <div class="navBar">
         <ul class="navList">
           <a href="');print($path);print('">
