@@ -33,23 +33,26 @@
 				<fieldset>
 					<!--EVENT INFO-->
 					<div class="sectionTitle">Event Info</div>
+					<div class="span10 offset1">
+					  <p style="margin-left:50px;font-size:13px;">All fields required unless otherwise indicated*</p>
+					</div>
 					<!--Event Name-->
 					<div class="control-group">
-					  <label class="control-label" for="eventName">Event Name *</label>
+					  <label class="control-label" for="eventName">Event Name</label>
 					  <div class="controls">
 					    <input id="eventName" name="eventName" type="text" placeholder="" class="input-xlarge">
 					  </div>
 					</div>
 					<!--Event Date-->
 					<div class="control-group">
-					  <label class="control-label" for="date">Event Date *</label>
+					  <label class="control-label" for="date">Event Date</label>
 					  <div class="controls">
 					    <input id="date" name="date" type="text" placeholder="" class="input-medium datepicker">
 					  </div>
 					</div>
 					<!--Sound Check Time-->
 					<div class="control-group">
-					  <label class="control-label" for="soundCheck">Equipment Setup By/Sound Check Time *</label>
+					  <label class="control-label" for="soundCheck">Equipment Setup By/Sound Check Time</label>
 					  <div class="controls">
 					    <input id="soundCheck" name="soundCheck" type="text" class="input-small timepicker"> 
 					    <img id="soundcheckQuestion" src="../images/questionmark.png"/>
@@ -57,21 +60,21 @@
 					</div>
 					<!--Event Start Time-->
 					<div class="control-group">
-					  <label class="control-label" for="startTime">Event Start Time *</label>
+					  <label class="control-label" for="startTime">Event Start Time</label>
 					  <div class="controls">
 					      <input id="startTime" name="startTime" type="text" class="input-small timepicker">
 					  </div>
 					</div>
 					<!--Event End Time-->
 					<div class="control-group">
-					  <label class="control-label" for="endTime">Event End Time *</label>
+					  <label class="control-label" for="endTime">Event End Time</label>
 					  <div class="controls">
 					      <input id="endTime" name="endTime" type="text" class="input-small timepicker">
 					  </div>
 					</div>
 					<!--Event Location-->
 					<div class="control-group">
-					  <label class="control-label" for="location">Event Location *</label>
+					  <label class="control-label" for="location">Event Location</label>
 					  <div class="controls">			    
 					  	<select id="location" name="location" class="input-large">
 					      <option></option>
@@ -103,7 +106,7 @@
 					</div>
 					<!--Event Type-->
 					<div class="control-group">
-					  <label class="control-label" for="eventType">Event Type *</label>
+					  <label class="control-label" for="eventType">Event Type</label>
 					  <div class="controls disabled">
 					    <select id="eventType" name="eventType" placeholder="" class="input-large">
 							<option></option>
@@ -119,7 +122,7 @@
 					</div>
 					<!--Attendance -->
 					<div class="control-group">
-					  <label class="control-label" for="attendance"> Expected Attendance *</label>
+					  <label class="control-label" for="attendance"> Expected Attendance</label>
 					  <div class="controls disabled">
 					    <select id="attendance" name="attendance" placeholder="" class="input-large">
 							<option></option>
@@ -168,14 +171,14 @@
 					<div class="sectionTitle">Client Info</div>
 					<!--Organizaion Name-->
 					<div class="control-group">
-					  <label class="control-label" for="name">Organization/Department Name *</label>
+					  <label class="control-label" for="name">Organization/Department Name</label>
 					  <div class="controls">
 					    <input id="name" name="name" type="text" placeholder="" class="input-xlarge">    
 					  </div>
 					</div>
 					<!--Affliation Type-->
 					<div class="control-group">
-					  <label class="control-label" for="affiliationType">Affiliation Type *</label>
+					  <label class="control-label" for="affiliationType">Affiliation Type</label>
 					  <div class="controls">
 					    <select id="affiliationType" name="affiliationType" class="input-large">
 					      <option></option>
@@ -187,7 +190,7 @@
 					</div>
 					<!-- Org Code -->
 					<div class="control-group" id="orgCodeGroup" style="display:none;">
-					  <label class="control-label" for="orgCode">Organization Code *</label>
+					  <label class="control-label" for="orgCode">Organization Code</label>
 					  <div class="controls">
 					    <input id="orgCode" name="orgCode" type="text" placeholder=" " class="input-medium">
 					    <img id="orgCodeQuestion" src="../images/questionmark.png"/>
@@ -203,7 +206,7 @@
 					</div>
 					<!-- Requestor's  Name -->
 					<div class="control-group">
-					  <label class="control-label" for="requestorFirstName">Requestor Name *</label>
+					  <label class="control-label" for="requestorFirstName">Client Name</label>
 					  <div class="controls">
 					    <input id="requestorFirstName" name="requestorFirstName" type="text" placeholder="First Name" class="input-large">
 					  </div>
@@ -216,14 +219,14 @@
 					</div>
 					<!-- Phone Number -->
 					<div class="control-group">
-					  <label class="control-label" for="requestorPhoneNum">Phone Number *</label>
+					  <label class="control-label" for="requestorPhoneNum">Phone Number</label>
 					  <div class="controls">
 					    <input id="requestorPhoneNum" name="requestorPhoneNum" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
 					<!-- Email -->
 					<div class="control-group">
-					  <label class="control-label" for="email">E-mail *</label>
+					  <label class="control-label" for="email">E-mail</label>
 					  <div class="controls">
 					    <input id="email" name="email" type="text" placeholder="" class="input-xlarge">
 					  </div>

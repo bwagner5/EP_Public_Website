@@ -2,7 +2,7 @@
 if(isset($_POST['submit'])) {
   
      
-    $email_to = "bmwagner10@gmail.com";
+    $email_to = "ep@gmu.edu";
     $email_subject = "EP Employment Application";
     $email_from = "Events Production GMU";
     

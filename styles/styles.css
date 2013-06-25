@@ -516,7 +516,7 @@ input[name='slideSwitch']{
 #quickLinks > ul > li{
 	padding-bottom: 5px;
 }
-/*Booking form*/
+/*Form*/
 .formTitle{
 	text-align: right;
 	padding-top: 5px; 
@@ -556,6 +556,11 @@ input.error{
 }
 .psudo-btn #location{
 	
+}
+.surveyField{
+	min-width:100px;
+	height:30px;
+	text-align: center;
 }
 
 @media screen and (min-width:1360px) {
