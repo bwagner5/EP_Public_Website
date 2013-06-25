@@ -1,6 +1,6 @@
 <?php 
 	$path = '';
-	$root = '/newsite/';
+	$root = '/newSite/';
 	if( $_SERVER['REQUEST_URI'] !== $root.'index.shtml' && $_SERVER['REQUEST_URI'] !== $root)
 	{
 		$path = '../';
