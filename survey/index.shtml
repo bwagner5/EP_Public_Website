@@ -10,293 +10,173 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Styles -->
-    <link href="Stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="Stylesheets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../styles/bootstrap.css" rel="stylesheet">
     <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel=stylesheet>
-    <link href="Stylesheets/styles.css" rel="stylesheet">
-    <link href="Stylesheets/datepicker.css" rel="stylesheet">
-    <link href="Stylesheets/jquery.timepicker.css" rel="stylesheet">
-    <link href="Stylesheets/color.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/datepicker.css" rel="stylesheet">
+    <link href="../styles/jquery.timepicker.css" rel="stylesheet">
+    <link href="../styles/color.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="Scripts/html5shiv.js"></script>
     <![endif]-->
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-      href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-      href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"
-      href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed"
-      href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
   </head>
   <body>
-	<!--#include file ="navbar.php" -->
+	<!--#include virtual ="../includes/navbar.php" -->
     <!-- Cover Section -->
     <!-- End Cover Section -->
     <div class="container">
       <div class="spacer"></div>
       <div class="row">
         <div class="span10 offset1 box">
-        	<h2 class="pageTitle" style="margin-bottom:20px;">Event Survey</h2>
-	        <form action="sendSurvey.php" method="post" class="form-horizontal span10 offset1" id="bookingForm">
+        	<h2 class="pageTitle" style="margin-bottom:15px;">Event Survey</h2>
+        	<div class="row-fluid">
+	        	<div class="span12"><p style="text-align:center;margin-bottom:15px;">Thanks you for booking an event with us. We'd love for you to fill out this survey.</p></div>
+        	</div>
+	        <form action="sendSurvey.php" method="post" class="form-horizontal span9 offset1" id="bookingForm">
 				<fieldset>
+					<!-- EVENT INFO -->
+					<div class="sectionTitle">Event Info</div>
+					<!--Event Name-->
 					<div class="control-group">
-
-  <div class="control-group">
-					  <label class="control-label" for="name">Orgnization/Department Name </label>
+					  <label class="control-label" for="eventName">Event Name</label>
 					  <div class="controls">
-					    <input id="name" name="name" type="text" placeholder="" class="input-xlarge">    
+					    <input id="eventName" name="eventName" type="text" placeholder="" class="input-xlarge">
 					  </div>
 					</div>
+					<!--Event Date-->
 					<div class="control-group">
-					  <label class="control-label" for="type">Affiliation Type </label>
-					  <div class="controls">
-					    <select id="type" name="type" class="input-large">
-					      <option></option>
-					      <option>Mason Department</option>
-					      <option>Student Organization</option>
-					      <option>Off-campus</option>
-					    </select>
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="mailNum">Email </label>
-					  <div class="controls">
-					    <input id="email" name="email" type="text" placeholder="Email" class="input-small"> 
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="requestorFirstName">Your Name </label>
-					  <div class="controls">
-					    <input id="yourName" name="yourName" type="text" placeholder="Name" class="input-large">
-					  </div>
-					</div>
- 					<div class="control-group">
-					  <label class="control-label" for="date">Event Date </label>
+					  <label class="control-label" for="date">Event Date</label>
 					  <div class="controls">
 					    <input id="date" name="date" type="text" placeholder="" class="input-medium datepicker">
 					  </div>
 					</div>
-  
-  					<div class="control-group">
-					  <label class="control-label" for="performers">What type of event? (Check all that Apply)</label>
-					  <div class="controls">
-					    <label class="checkbox" for="performers-0">
-					      <input type="checkbox" name="performers" id="performers-0" value="Athletic Event">
-					      Athletic Event
-					    </label>
-					    <label class="checkbox" for="performers-1">
-					      <input type="checkbox" name="performers" id="performers-1" value="Band/Musicians">
-					      Band/Musicians
-					    </label>
-					    <label class="checkbox" for="performers-2">
-					      <input type="checkbox" name="performers" id="performers-2" value="Choir/Soloist">
-					      Choir/Soloist
-					    </label>
-					    <label class="checkbox" for="performers-3">
-					      <input type="checkbox" name="performers" id="performers-3" value="Comedian/Magician">
-					      Comedian/Magician
-					    </label>
-					    <label class="checkbox" for="performers-4">
-					      <input type="checkbox" name="performers" id="performers-4" value="Conference">
-					      Conference
-					    </label>
-					    <label class="checkbox" for="performers-5">
-					      <input type="checkbox" name="performers" id="performers-5" value="Dancers">
-					      Dancers
-					    </label>
-					    <label class="checkbox" for="performers-6">
-					      <input type="checkbox" name="performers" id="performers-6" value="Expos">
-					      Expos
-					    </label>
-					    <label class="checkbox" for="performers-7">
-					      <input type="checkbox" name="performers" id="performers-7" value="Fashion Show/Models">
-					      Fashion Show/Models
-					    </label>
-					    <label class="checkbox" for="performers-8">
-					      <input type="checkbox" name="performers" id="performers-8" value="Job Fair">
-					      Job Fair
-					    </label>
-					  </div>
-					</div>
-  					<div class="control-group">
-					  <label class="control-label" for="location">Event Location </label>
-					  <div class="controls">
-					    <input id="location" name="location" type="text" placeholder="" class="input-xlarge">   
-					  </div>
-					</div>
+					<div class="sectionTitle" style="margin-top:30px">Event Experience Rating</div>
+					<table style="border:none;">
+						<tr>
+						  <td class="surveyField">Category</td>
+						  <td class="surveyField"><div>Excellent</div></td>
+						  <td class="surveyField"><div>Good</div></td>
+						  <td class="surveyField"><div>Average</div></td>
+						  <td class="surveyField"><div>Below Average</div></td>
+						  <td class="surveyField"><div>Poor</div></td>
+						</tr>
+						<tr>
+						  <th class="surveyField" scope="row">Professionalism</th>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Professionalism" value="Excellent">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Professionalism" value="Good">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Professionalism" value="Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Professionalism" value="Below Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Professionalism" value="Poor">
+						  </div></td>
+						</tr>
+						<tr>
+						  <th class="surveyField" scope="row">Courteousness</th>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Courteousness" value="Excellent">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Courteousness" value="Good">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Courteousness" value="Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Courteousness" value="Below Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Courteousness" value="Poor">
+						  </div></td>
+						</tr>
+						<tr>
+						  <th class="surveyField" scope="row">Helpfulness</th>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Helpfulness" value="Excellent">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Helpfulness" value="Good">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Helpfulness" value="Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Helpfulness" value="Below Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Helpfulness" value="Poor">
+						  </div></td>
+						</tr>
+						<tr>
+						  <th class="surveyField" scope="row">Value of Services </th>
+						  <td class="surveyField"><div align="center">
+						      <input type="radio" name="Value of Services" value="Excellent">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						      <input type="radio" name="Value of Services" value="Good">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						      <input type="radio" name="Value of Services" value="Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						      <input type="radio" name="Value of Services" value="Below Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						      <input type="radio" name="Value of Services" value="Poor">
+						  </div></td>
+						</tr>
+						<tr>
+						  <th class="surveyField" scope="row">Overall</th>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Overall" value="Excellent">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Overall" value="Good">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Overall" value="Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Overall" value="Below Average">
+						  </div></td>
+						  <td class="surveyField"><div align="center">
+						    <input type="radio" name="Overall" value="Poor">
+						  </div></td>
+						</tr>
+					</table>
+					<div class="spacer"></div>
 					<div class="control-group">
-					  <label class="control-label" for="eventDescription">Comments on Equipment </label>
+					  <label class="control-label" for="eventDescription">Comments on Staff</label>
 					  <div class="controls">                     
-					    <textarea id="equipmentComments" class="input-xlarge" style="height:70px;" name="equipmentComments"></textarea>
+					    <textarea id="staffComments" class="input-xlarge" style="min-height:120px;width:400px" name="staffComments"></textarea>
 					  </div>
 					</div>
-  
-  <p class="style5"><b>STAFF RATING SCALE</b></p>
-  <table border="0" cellspacing="0" cellpadding="5">
-    <tr>
-      <th class="style5" scope="row">Category</th>
-      <td class="style5"><div align="center">Excellent</div></td>
-      <td class="style5"><div align="center">Good</div></td>
-      <td class="style5"><div align="center">Average</div></td>
-      <td class="style5">Below Average</td>
-      <td class="style5"><div align="center">Poor</div></td>
-    </tr>
-    <tr>
-      <th class="style5" scope="row">Professionalism</th>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Professionalism" value="Excellent">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Professionalism" value="Good">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Professionalism" value="Average"  checked>
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Professionalism" value="Below Average">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Professionalism" value="Poor">
-      </div></td>
-    </tr>
-    <tr>
-      <th class="style5" scope="row">Knowledge</th>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Knowledge" value="Excellent">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Knowledge" value="Good">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Knowledge" value="Average"  checked>
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Knowledge" value="Below Average">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Knowledge" value="Poor">
-      </div></td>
-    </tr>
-    <tr>
-      <th class="style5" scope="row">Courteousness</th>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Courteousness" value="Excellent">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Courteousness" value="Good">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Courteousness" value="Average"  checked>
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Courteousness" value="Below Average">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Courteousness" value="Poor">
-      </div></td>
-    </tr>
-    <tr>
-      <th class="style5" scope="row">Pro-activeness</th>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Pro-activeness" value="Excellent">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Pro-activeness" value="Good">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Pro-activeness" value="Average"  checked>
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Pro-activeness" value="Below Average">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Pro-activeness" value="Poor">
-      </div></td>
-    </tr>
-    <tr>
-      <th class="style5" scope="row">Helpfulness</th>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Helpfulness" value="Excellent">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Helpfulness" value="Good">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Helpfulness" value="Average"  checked>
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Helpfulness" value="Below Average">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Helpfulness" value="Poor">
-      </div></td>
-    </tr>
-    <tr>
-      <th class="style5" scope="row">Value of Services </th>
-      <td class="style5"><div align="center">
-          <input type="RADIO" name="Value of Services" value="Excellent">
-      </div></td>
-      <td class="style5"><div align="center">
-          <input type="RADIO" name="Value of Services" value="Good">
-      </div></td>
-      <td class="style5"><div align="center">
-          <input type="RADIO" name="Value of Services" value="Average"  checked>
-      </div></td>
-      <td class="style5"><div align="center">
-          <input type="RADIO" name="Value of Services" value="Below Average">
-      </div></td>
-      <td class="style5"><div align="center">
-          <input type="RADIO" name="Value of Services" value="Poor">
-      </div></td>
-    </tr>
-    <tr>
-      <th class="style5" scope="row">Overall</th>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Overall" value="Excellent">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Overall" value="Good">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Overall" value="Average"  checked>
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Overall" value="Below Average">
-      </div></td>
-      <td class="style5"><div align="center">
-        <input type="RADIO" name="Overall" value="Horrible">
-      </div></td>
-    </tr>
-  </table><br /><br />
-  					<div class="control-group">
-					  <label class="control-label" for="eventDescription">Comments on Staff </label>
+						<div class="control-group">
+					  <label class="control-label" for="eventDescription">Comments on Equipment</label>
 					  <div class="controls">                     
-					    <textarea id="staffComments" class="input-xlarge" style="height:70px;" name="staffComments"></textarea>
+					    <textarea id="betterServe" class="input-xlarge" style="min-height:120px;width:400px" name="equipmentComments"></textarea>
 					  </div>
 					</div>
-  					<div class="control-group">
-					  <label class="control-label" for="eventDescription">How can we better serve you? </label>
-					  <div class="controls">                     
-					    <textarea id="betterServe" class="input-xlarge" style="height:70px;" name="betterServe"></textarea>
-					  </div>
-					</div>
-  					<div class="control-group">
+						<div class="control-group">
 					  <label class="control-label" for="submit"></label>
 					  <div class="controls">
 					    <input type="submit" value="Submit" name="submit" class="btn btn-primary"/>
 					  </div>
 					</div>	
 				</fieldset>
-  
-	</form>
-</div>
-</div>
+			</form>
+		</div>
+	</div>
     </div>
-	<!--#include file ="footer.php" -->
+	<!--#include virtual ="../includes/footer.php" -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
