@@ -93,6 +93,7 @@ $(document).ready(function(){
 	$('#attendance-menu .dropSelect').click(function(event){
 		attendance = $(this).text();
 		$('.eventImg').attr('src',"images/"+attendance+".jpg"); //for testing
+		$('.captionText').show();
 		$('.captionText').html($('#'+attendance).html()); 
 		$('#selectedAttendance').html(attendance);
 		//Enable the necessities and submit button after attendace is selected
