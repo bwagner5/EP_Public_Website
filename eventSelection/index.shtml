@@ -120,14 +120,16 @@
 							</a>
 						    <ul class="dropdown-menu" id="attendance-menu">
 						      <li class="dropdown-submenu"> </li>
-						      <li><a class="dropSelect" tabindex="-1">0-25</a></li>
+						      <li><a class="dropSelect" tabindex="-1">1-25</a></li>
 						      <li><a class="dropSelect" tabindex="-1">25-50</a></li>
 						      <li><a class="dropSelect" tabindex="-1">50-100</a></li>
+						      <li><a class="dropSelect" tabindex="-1">100-200</a></li>
 						      <li><a class="dropSelect" tabindex="-1">200-300</a></li>
 						      <li><a class="dropSelect" tabindex="-1">300-400</a></li>
 						      <li><a class="dropSelect" tabindex="-1">400-500</a></li>
-						      <li><a class="dropSelect" tabindex="-1">500-750</a></li>
-						      <li><a class="dropSelect" tabindex="-1">750+</a></li>
+						      <li><a class="dropSelect" tabindex="-1">500-600</a></li>
+						      <li><a class="dropSelect" tabindex="-1">600-700</a></li>
+						      <li><a class="dropSelect" tabindex="-1">700+</a></li>
 						    </ul>
 						  </div>
 						</div>
@@ -201,7 +203,7 @@
 					<h3 class="pageTitle" style="padding-left: -60px;">Event Package</h3>
 					<img class="eventImg" src="../images/dewberry.jpg">
 					<ul>
-						<li>Caption containing details about the event setup goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<li class="captionText">Caption containing details about the event setup goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
 					</ul>
 					<div class="center padded">
 					    <a href=""><div class="greyButton submitButton"><h3 class="getStartedText">Submit</h3></div></a>
@@ -217,5 +219,35 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="../scripts/bootstrap.js"></script>
     <script src="../scripts/eventSelect.js"></script>
+    <script id='1-25' type='text'>
+		Two JBL Eons, typically used for a basic lecture, small presentation, or low-level music.
+	</script>
+	<script id='25-50' type='text'>
+		Two Meyer UPJ low profile speakers, typically used for lectures, presentations, music, and acoustic bands.
+	</script>
+	<script id='50-100' type='text'>
+		Two Meyer UPJ low profile speakers, typically used for lectures, presentations, music, and acoustic bands.
+	</script>
+	<script id='100-200' type='text'>
+		Two Meyer UPA loudspeakers with 15" subwoofer, supports large lectures, presentation, loud music playback, small DJ dances and perfect for mid-sized bands.
+	</script>
+	<script id='200-300' type='text'>
+		Two Meyer UPA loudspeakers with 15" subwoofer, supports large lectures, presentation, loud music playback, small DJ dances and perfect for mid-sized bands.
+	</script>
+	<script id='300-400' type='text'>
+		Two Meyer CQ1 loudspeaker paired with two 18" subwoofers, supports outdoor events, mid-sized DJ dances, rock bands, and large conferences.
+	</script>
+	<script id='400-500' type='text'>
+		Two Meyer CQ1 loudspeaker paired with two 18" subwoofers, supports outdoor events, mid-sized DJ dances, rock bands, and large conferences.
+	</script>
+	<script id='500-600' type='text'>
+		Four Meyer CQ1 loudspeakers paired with four 18" subwoofers, supports mid-to-large outdoor events, large DJ dances, and rock bands. This speaker system delivers powerful bass for your event.
+	</script>
+	<script id='600-700' type='text'>
+		Four Meyer CQ1 loudspeakers paired with four 18" subwoofers, supports mid-to-large outdoor events, large DJ dances, and rock bands. This speaker system delivers powerful bass for your event.
+	</script>
+	<script id='700+' type='text'>
+		Two sets of Meyer's premiere loudspeakers paired with four 18" subwoofers, supports large outdoor festivals and Patriot Center events. This is our top-of-the-line speaker system.
+	</script>
   </body>
 </html>
