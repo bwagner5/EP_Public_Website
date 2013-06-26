@@ -119,7 +119,7 @@
 								<span class="caret"></span>
 							</a>
 						    <ul class="dropdown-menu" id="attendance-menu">
-						      <li class="dropdown-submenu"> </li>
+						      <li class="dropdown-submenu"></li>
 						      <li><a class="dropSelect" tabindex="-1">0-25</a></li>
 						      <li><a class="dropSelect" tabindex="-1">25-50</a></li>
 						      <li><a class="dropSelect" tabindex="-1">50-100</a></li>
@@ -178,7 +178,7 @@
 						  	<div class="row-fluid">
 						  		<div class="span10 offset1">
 						  			<p>
-						  				<b>Location: </b><span id="selectedLocation"></span>
+						  				<b>Location:</b> <span id="selectedLocation"></span><a id="diagramLink"><b>(View Diagram)</b></a>
 						  			</p>
 						  			<p>
 						      			<b>Included Items: </b><span id="includedItems"></span>

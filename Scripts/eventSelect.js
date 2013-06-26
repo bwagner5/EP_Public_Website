@@ -14,9 +14,27 @@ optionEnable = function(previous, next, fireNext, event){
 	}
 }
 
-includedItems = {"Dewberry Hall": "Projector, Microphone"};
+optionsInit = function(parentLocation, location){
+// Takes in the current selected location and initializes the other dropdowns with the
+// available options for that location based on the imported eventOptions data
+	attendances = eventOptions[parentLocation][location]["attendances"];
+	eventTypes = eventOptions[parentLocation][location]["eventTypes"]
+	$('#attendance-menu').empty();
+	$('#attendance-menu').append('<li class="dropdown-submenu"></li>');
+	for (i = 0; i<attendances.length; i++){
+		$('#attendance-menu').append('<li><a class="dropSelect" tabindex="-1">'+attendances[i]+'</a></li>');
+	}	 
+}
+// This global stores the specific options for each event space
+var eventOptions;
 
-$(document).ready(function() {
+$.getJSON('../data/eventOptions.json', function(data){
+	eventOptions = data;
+	console.log(data);
+});
+
+
+$(document).ready(function(){
 	sessionStorage.eventInfo = "";
 	var location = 'none';
 	var parentLocation = "none"
@@ -25,23 +43,26 @@ $(document).ready(function() {
 	var addOns = [];
 	var firstTime = true;
 	var overlayMode = false
+	
 	//Other options cannot be selected unless a location is specified
 	$('#eventType-btn, #attendance-btn, #necessities-btn, .submitButton').addClass('disabled');
 	
 	$('.location-menu .dropSelect').click(function(event) {
-		location = $(this).text()
+		location = $(this).text();
+		$('#diagramLink').hide();
+		
 		if (location != "Other"){
 			parentLocation = $(this).parent().parent().siblings('.parentLocation').text();
-			if (parentLocation == "The HUB (SUB II)"){
-				parentDisplayLocation = "The HUB";
-			}
-			else if (parentLocation == "Johnson Center") {
-				parentDisplayLocation = "JC";
-			}
-			$('#selectedLocation').html(parentDisplayLocation + ", " + location + ' - <a id="diagramLink"><b>(View Diagram)</b></a>');
+			if (parentLocation == "The HUB (SUB II)") parentDisplayLocation = "The HUB";
+			else if (parentLocation == "Johnson Center") parentDisplayLocation = "JC";
+			else parentDisplayLocation = parentLocation;
+			$('#selectedLocation').text(parentDisplayLocation + ", " + location + " - ");
+			$('#diagramLink').show();
+			optionsInit(parentLocation,location);
 		}
 		else {
-			$('#selectedLocation').html("Other");
+			parentLocation = "Other";
+			$('#selectedLocation').text("Other");
 		}
 		$('.overlayImg').attr("src","images/diagram.jpg");
 		
