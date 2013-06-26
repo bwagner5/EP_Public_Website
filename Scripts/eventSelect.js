@@ -75,12 +75,8 @@ $(document).ready(function(){
 		}
 		$('.overlayImg').attr("src","images/diagram.jpg");
 		
-		if (typeof(includedItems[location]) != "undefined"){
-			$('#includedItems').html(includedItems[location]);
-		} else {
-			$('#includedItems').html("");
-		}
-		
+		$('#includedItems').text(eventOptions[parentLocation][location]["includedItems"].join(", "));
+					
 		//If you change the location, the other options must be reset
 		$('#attendance-btn, #necessities-btn, .submitButton').addClass('disabled');
 		$('#selectedType, #selectedAttendance').empty();
