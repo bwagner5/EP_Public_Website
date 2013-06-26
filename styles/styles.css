@@ -541,6 +541,10 @@ input.error{
 	margin-left: 0px;
 	cursor: pointer;
 }
+.formInstruction{
+	margin-left:50px;
+	font-size:13px;	
+}
 .psudo-btn{
 	height: 20px;
 	width: 210px;

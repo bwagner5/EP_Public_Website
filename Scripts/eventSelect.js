@@ -128,7 +128,7 @@ $(document).ready(function() {
 			  console.log("Sorry! No web storage support..");
 			}
 		}
-	})
+	});
 });
 //Notes
 //prevents the dropdown from closing after click
