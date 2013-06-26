@@ -18,19 +18,28 @@ optionsInit = function(parentLocation, location){
 // Takes in the current selected location and initializes the other dropdowns with the
 // available options for that location based on the imported eventOptions data
 	attendances = eventOptions[parentLocation][location]["attendances"];
-	eventTypes = eventOptions[parentLocation][location]["eventTypes"]
-	$('#attendance-menu').empty();
-	$('#attendance-menu').append('<li class="dropdown-submenu"></li>');
-	for (i = 0; i<attendances.length; i++){
-		$('#attendance-menu').append('<li><a class="dropSelect" tabindex="-1">'+attendances[i]+'</a></li>');
-	}	 
+	eventTypes = eventOptions[parentLocation][location]["eventTypes"];
+	// Iterating through the dropdown menus showing the options that are available
+	// for the selected location, and hiding the others
+	$('#eventType-menu .dropSelect').each(function(){
+		// $.inArray returns -1 if the given value parameter isn't in the given array
+		if($.inArray($(this).text(),eventTypes) > -1){
+			$(this).show();
+		} 
+		else $(this).hide();
+	}); 
+	$('#attendance-menu .dropSelect').each(function(){
+		if($.inArray($(this).text(),attendances) > -1){
+			$(this).show();
+		} 
+		else $(this).hide();
+	}); 
 }
 // This global stores the specific options for each event space
 var eventOptions;
 
 $.getJSON('../data/eventOptions.json', function(data){
 	eventOptions = data;
-	console.log(data);
 });
 
 
@@ -88,7 +97,8 @@ $(document).ready(function(){
 	$('#attendance-menu .dropSelect').click(function(event){
 		attendance = $(this).text();
 		$('.eventImg').attr('src',"images/"+attendance+".jpg"); //for testing
-		$('#selectedAttendance').html(attendance)
+		$('.captionText').html($('#'+attendance).html()); 
+		$('#selectedAttendance').html(attendance);
 		//Enable the necessities and submit button after attendace is selected
 		optionEnable('#attendance-menu','#necessities-btn', false, event);
 		$('.submitButton').removeClass('disabled');
@@ -108,6 +118,7 @@ $(document).ready(function(){
 			}  
 		}
 		$('#selectedExtras').html(displayAddOns);
+		// Stop dropdown from closing
 		event.stopPropagation();
 	});
 	//Click the large picture to enter overlay mode
@@ -151,9 +162,3 @@ $(document).ready(function(){
 		}
 	});
 });
-//Notes
-//prevents the dropdown from closing after click
-//event.stopPropagation();
-//Check Mark	
-//var content = $(this).text();
-//$(this).text(content+' \u2714')
