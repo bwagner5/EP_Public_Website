@@ -425,7 +425,8 @@
 					<!-- AVAILIBILLITY -->
 					<div class="sectionTitle">Availability</div>
 					<div class="span10 offset1">
-					  <p class="formInstruction">Please describe your availability for each day below:</p>
+					  <p class="formInstruction">Please describe your availability for each day below.<br>(Note that student centers employee hours vary based on event needs)
+					  </p>
 					</div>
 					<!-- Monday -->
 					<div class="control-group">
@@ -494,7 +495,15 @@
 					  </div>
 					</div>
 				</fieldset>
-					<div class="sectionTitle"> </div>
+					<!-- Honor -->
+					<div class="control-group">
+					  <div class="controls">
+					    <label class="checkbox inline" for="honor">
+					      <input type="checkbox" name="honor" id="honor" value="true">I hereby certify that the information that will be submitted in <br>this application is true and accurate.
+					    </label>
+					  </div>
+					</div>
+					
 					<div class="control-group">
 					  <label class="control-label" for="submit"></label>
 					  <div class="controls">
