@@ -203,7 +203,7 @@
 					<h3 class="pageTitle" style="padding-left: -60px;">Event Package</h3>
 					<img class="eventImg" src="../images/dewberry.jpg">
 					<ul>
-						<li class="captionText">Caption containing details about the event setup goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<li class="captionText"></li>
 					</ul>
 					<div class="center padded">
 					    <a href=""><div class="greyButton submitButton"><h3 class="getStartedText">Submit</h3></div></a>
