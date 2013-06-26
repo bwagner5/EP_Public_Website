@@ -33,9 +33,9 @@
               <div id="quickLinks" style="width:290px;float:right;">
 	              <h3>Quick Links</h3>
 	              <ul>
-	              	<li><a href="#">Office of Events Management</a></li>
-	              	<li><a href="#">Event policies/Guidelines</a></li>
-	              	<li><a href="#">Event Setups</a></li>
+	              	<li><a href="http://events.gmu.edu">Office of Events Management</a></li>
+	              	<li><a href="studentcenters.gmu.edu/services.html">Event policies/Guidelines</a></li>
+	              	<li><a href="../eventSelection">Event Setups</a></li>
 	              </ul>
               </div>
               <p style="line-height:22pt;">There are three easy steps to ensuring lorem your ipsum event is dolor booked sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>

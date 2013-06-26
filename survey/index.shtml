@@ -31,7 +31,7 @@
         <div class="span10 offset1 box">
         	<h2 class="pageTitle" style="margin-bottom:15px;">Event Survey</h2>
         	<div class="row-fluid">
-	        	<div class="span12"><p style="text-align:center;margin-bottom:15px;">Thanks you for booking an event with us. We'd love for you to fill out this survey.</p></div>
+	        	<div class="span12"><p style="text-align:center;margin-bottom:15px;">Thank you for booking an event with us. We'd love for you to fill out this survey.</p></div>
         	</div>
 	        <form action="sendSurvey.php" method="post" class="form-horizontal span9 offset1" id="bookingForm">
 				<fieldset>
