@@ -527,13 +527,13 @@ a:hover {
     float: left;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
     filter: alpha(opacity=60);
-    opacity: 0.6
+    opacity: 0.6;
     }
 
-input[name="slideSwitch"]:checked label {
+input[name="slideSwitch"]:checked+label {
+	opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
-    opacity: 1
     }
 
 .selectDisplay img {
