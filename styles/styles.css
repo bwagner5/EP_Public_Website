@@ -18,7 +18,8 @@ No carosuel
 
 body {
     /*background-color: #141414;*/
-    min-width: 1201px
+    min-width: 1201px;
+    overflow-x: hidden;
     }
 
 a {
@@ -372,18 +373,21 @@ a:hover {
     padding-top: 10px;
     padding-bottom: 8px;
     margin-top: 25px;
-    text-align: center
+    text-align: center;
+    clear: both;
     }
 
 .socialBar {
     margin-bottom: 10px;
-    width: 100%
+    width: 100%;
+    text-align: center;
     }
 
 .socialBar > a > img {
     margin-left: 3px;
     margin-right: 3px;
-    display: inline-block;
+    display: inline;
+    text-align: center;
     -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
@@ -395,7 +399,7 @@ a:hover {
 
 .socialBar > a > img:hover {
     position: relative;
-    top: -1px;
+    text-align: center;
     -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6)
