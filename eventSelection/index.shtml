@@ -38,8 +38,8 @@
 					<div class="row-fluid">
 						<div class="span6">
 						  <div class="btn-group padded">
-							<a class="btn btn-large dropdown-toggle" id="location-btn" data-toggle="dropdown">Location&nbsp;&nbsp;&nbsp;&nbsp;<!--Whitespace to match other buttons sizes-->
-								<span class="caret"></span>
+							<a class="btn btn-large dropdown-toggle" id="location-btn" data-toggle="dropdown">Location
+								<span id="location-caret" class="caret"></span>
 							</a>
 						    <ul class="dropdown-menu location-menu">
 						      <li class="dropdown-submenu location-menu">
