@@ -301,6 +301,7 @@ a:hover {
     background-image: -webkit-linear-gradient(left, rgba(195, 195, 195, 0.01) 0%, rgba(0, 0, 0, 0.5) 32.45%, rgba(0, 0, 0, 0.44) 76.16%, rgba(176, 176, 176, 0.06) 100%);
     background-image: -moz-linear-gradient(left, rgba(195, 195, 195, 0.01) 0%, rgba(0, 0, 0, 0.5) 32.45%, rgba(0, 0, 0, 0.44) 76.16%, rgba(176, 176, 176, 0.06) 100%);
     background-image: -ms-linear-gradient(left, rgba(195, 195, 195, 0.01) 0%, rgba(0, 0, 0, 0.5) 32.45%, rgba(0, 0, 0, 0.44) 76.16%, rgba(176, 176, 176, 0.06) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#55000000', endColorstr='#44000000');
 }
 
 .coverBorder {
@@ -327,7 +328,12 @@ a:hover {
 }
 
 .bottomedImg {
-    float: right
+    float: right;    
+}
+
+.heroImg{
+	width: 100%;
+	float: right; 
 }
 
 .eventImg {

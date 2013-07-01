@@ -1,14 +1,9 @@
-<?php ob_start("ob_gzhandler"); ?>
 <!DOCTYPE html>
+<?php ob_start("ob_gzhandler"); ?>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
+	<!--#include virtual ="../includes/meta.php" --> 
     <title>FAQ</title>
-    <meta name="viewport" content="width=device-width,
-      initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <!-- Styles -->
 	<link href="../styles/bootstrap.css" rel="stylesheet">
 	<link href="../styles/styles.css" rel="stylesheet">
