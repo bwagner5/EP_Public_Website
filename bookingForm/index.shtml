@@ -28,6 +28,62 @@
         	<h2 class="pageTitle" style="margin-bottom:20px;">Booking Form</h2>
 	        <form action="send.php" method="post" class="form-horizontal span10 offset1" id="bookingForm">
 				<fieldset>
+					<!--CLIENT INFO-->
+					<div class="sectionTitle">Client Info</div>
+					<!--Organizaion Name-->
+					<div class="control-group">
+					  <label class="control-label" for="name">Organization/Department Name</label>
+					  <div class="controls">
+					    <input id="name" name="name" type="text" placeholder="" class="input-xlarge">    
+					  </div>
+					</div>
+					<!--Affliation Type-->
+					<div class="control-group">
+					  <label class="control-label" for="affiliationType">Affiliation Type</label>
+					  <div class="controls">
+					    <select id="affiliationType" name="affiliationType" class="input-large">
+					      <option></option>
+					      <option>Mason Department</option>
+					      <option>Student Organization</option>
+					      <option>Off-campus</option>
+					    </select>					  
+					  </div>
+					</div>
+					<!-- Org Code -->
+					<div class="control-group" id="orgCodeGroup" style="display:none;">
+					  <label class="control-label" for="orgCode">Organization Code</label>
+					  <div class="controls">
+					    <input id="orgCode" name="orgCode" type="text" placeholder=" " class="input-medium">
+					    <img id="orgCodeQuestion" src="../images/questionmark.png"/>
+					  </div>
+					</div>
+					<!-- Requestor's  Name -->
+					<div class="control-group">
+					  <label class="control-label" for="requestorFirstName">Client Name</label>
+					  <div class="controls">
+					    <input id="requestorFirstName" name="requestorFirstName" type="text" placeholder="First Name" class="input-large">
+					  </div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="requestorLastName"></label>
+					  <div class="controls">
+					    <input id="requestorLastName" name="requestorLastName" type="text" placeholder="Last Name" class="input-large">  
+					  </div>
+					</div>
+					<!-- Phone Number -->
+					<div class="control-group">
+					  <label class="control-label" for="requestorPhoneNum">Phone Number</label>
+					  <div class="controls">
+					    <input id="requestorPhoneNum" name="requestorPhoneNum" type="text" placeholder="" class="input-large">
+					  </div>
+					</div>
+					<!-- Email -->
+					<div class="control-group">
+					  <label class="control-label" for="email">E-mail</label>
+					  <div class="controls">
+					    <input id="email" name="email" type="text" placeholder="" class="input-xlarge">
+					  </div>
+					</div>
 					<!--EVENT INFO-->
 					<div class="sectionTitle">Event Info</div>
 					<div class="span10 offset1">
@@ -49,7 +105,7 @@
 					</div>
 					<!--Sound Check Time-->
 					<div class="control-group">
-					  <label class="control-label" for="soundCheck">Equipment Setup By/Sound Check Time</label>
+					  <label class="control-label" for="soundCheck">Equipment Setup By</label>
 					  <div class="controls">
 					    <input id="soundCheck" name="soundCheck" type="text" class="input-small timepicker"> 
 					    <img id="soundcheckQuestion" src="../images/questionmark.png"/>
@@ -162,70 +218,6 @@
 					  <label class="control-label" for="eventDescription">Basic Event Description</label>
 					  <div class="controls">                     
 					    <textarea id="eventDescription" class="input-xlarge" style="height:70px;max-width:501px;" name="eventDescription"></textarea>
-					  </div>
-					</div>
-					<!--CLIENT INFO-->
-					<div class="sectionTitle">Client Info</div>
-					<!--Organizaion Name-->
-					<div class="control-group">
-					  <label class="control-label" for="name">Organization/Department Name</label>
-					  <div class="controls">
-					    <input id="name" name="name" type="text" placeholder="" class="input-xlarge">    
-					  </div>
-					</div>
-					<!--Affliation Type-->
-					<div class="control-group">
-					  <label class="control-label" for="affiliationType">Affiliation Type</label>
-					  <div class="controls">
-					    <select id="affiliationType" name="affiliationType" class="input-large">
-					      <option></option>
-					      <option>Mason Department</option>
-					      <option>Student Organization</option>
-					      <option>Off-campus</option>
-					    </select>					  
-					  </div>
-					</div>
-					<!-- Org Code -->
-					<div class="control-group" id="orgCodeGroup" style="display:none;">
-					  <label class="control-label" for="orgCode">Organization Code</label>
-					  <div class="controls">
-					    <input id="orgCode" name="orgCode" type="text" placeholder=" " class="input-medium">
-					    <img id="orgCodeQuestion" src="../images/questionmark.png"/>
-					  </div>
-					</div>
-					<!-- Repeated Info?-->
-					<div class="control-group">
-					  <div class="controls">
-					    <label class="checkbox inline" for="sameInfo">
-					      <input type="checkbox" name="sameInfo" id="sameInfo" value="true">Requestor Info Same as Event Contact Info
-					    </label>
-					  </div>
-					</div>
-					<!-- Requestor's  Name -->
-					<div class="control-group">
-					  <label class="control-label" for="requestorFirstName">Client Name</label>
-					  <div class="controls">
-					    <input id="requestorFirstName" name="requestorFirstName" type="text" placeholder="First Name" class="input-large">
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="requestorLastName"></label>
-					  <div class="controls">
-					    <input id="requestorLastName" name="requestorLastName" type="text" placeholder="Last Name" class="input-large">  
-					  </div>
-					</div>
-					<!-- Phone Number -->
-					<div class="control-group">
-					  <label class="control-label" for="requestorPhoneNum">Phone Number</label>
-					  <div class="controls">
-					    <input id="requestorPhoneNum" name="requestorPhoneNum" type="text" placeholder="" class="input-large">
-					  </div>
-					</div>
-					<!-- Email -->
-					<div class="control-group">
-					  <label class="control-label" for="email">E-mail</label>
-					  <div class="controls">
-					    <input id="email" name="email" type="text" placeholder="" class="input-xlarge">
 					  </div>
 					</div>
 					<!-- Submit -->

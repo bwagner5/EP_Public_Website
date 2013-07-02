@@ -33,37 +33,23 @@
 					<div class="span10 offset1">
 					  <p class="formInstruction">All fields required unless otherwise indicated*</p>
 					</div>
-					<!-- First Name -->
+					<!-- Applicant Name -->
 					<div class="control-group">
-					<label class="control-label" for="firstName">First Name *</label>
+					<label class="control-label" for="applicantName">Applicant Name</label>
 						<div class="controls">
-							<input id="firstName" name="firstName" type="text" placeholder="" class="input-xlarge">
-						</div>
-					</div>
-					<!-- Middle Initial -->
-					<div class="control-group">
-						<label class="control-label" for="middleInitial">Middle Initial </label>
-						<div class="controls">
-							<input id="middleInitial" name="middleInitial" type="text" placeholder="" class="input-small" size="2">
-						</div>
-					</div>
-					<!-- Last Name -->
-					<div class="control-group">
-						<label class="control-label" for="lastName">Last Name *</label>
-						<div class="controls">
-							<input id="lastName" name="lastName" type="text" placeholder="" class="input-xlarge">
+							<input id="applicantName" name="applicantName" type="text" placeholder="" class="input-xlarge">
 						</div>
 					</div>
 					<!-- Preffered Name -->
 					<div class="control-group">
-					<label class="control-label" for="preferredName">Preferred First Name </label>
+					<label class="control-label" for="preferredName">Preferred Name</label>
 					  <div class="controls">
-						 <input id="lastName" name="lastName" type="text" placeholder="" class="input-xlarge">
+						 <input id="preferredName" name="preferredName" type="text" placeholder="" class="input-xlarge">
 					  </div>
 					</div>
 					<!-- Phone Number -->
 					<div class="control-group">
-					<label class="control-label" for="phone">Phone Number *</label>
+					<label class="control-label" for="phone">Phone Number</label>
 					  <div class="controls">
 						 <input id="phone" name="phone" type="text" placeholder="" class="input-large">
 					  </div>
@@ -85,15 +71,9 @@
 					<div class="control-group">
 					<!--Emergency Contact-->
 					<div class="control-group">
-					  <label class="control-label" for="emergencyName">Emergency Contact</label>
+					  <label class="control-label" for="emergencyName">Emergency Contact Name</label>
 					  <div class="controls">
-						 <input id="emergencyFirstName" name="emergencyFirstName" type="text" placeholder="First Name" class="input-large">	  
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="emergencyLastName"></label>
-					  <div class="controls">
-						 <input id="emergencyLastName" name="emergencyLastName" type="text" placeholder="Last Name" class="input-large">
+						 <input id="emergencyName" name="emergencyName" type="text" placeholder="First Name" class="input-large">	  
 					  </div>
 					</div>
 					<!-- Emergency Number -->
@@ -112,13 +92,6 @@
 							   <input type="radio" name="citizen" id="citizen" value="No">No
 							</label>
 						</div>
-					</div>
-					<!-- Pay Rate -->
-					<div class="control-group">
-					<label class="control-label" for="payRate">What is your expected pay rate per hour? </label>
-					  <div class="controls">
-						 <input id="payRate" name="payRate" type="text" placeholder="" class="input-small">
-					  </div>
 					</div>
 				</fieldset>
 				<fieldset>
@@ -144,21 +117,21 @@
 					<div class="sectionTitle">School Information</div>
 					<!-- G Number -->
 					<div class="control-group">
-					<label class="control-label" for="gNum">G-Number *</label>
+					<label class="control-label" for="gNum">G-Number</label>
 						<div class="controls">
 							<input id="gNum" name="gNum" type="text" placeholder="" class="input-large">
 						</div>
 					</div>
 					<!-- Major -->
 					<div class="control-group">
-					  <label class="control-label" for="major">Major *</label>
+					  <label class="control-label" for="major">Major</label>
 					  <div class="controls">
 						 <input id="major" name="major" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
 					<!-- Classification -->
 					<div class="control-group">
-					  <label class="control-label" for="classification">Current Classification *</label>
+					  <label class="control-label" for="classification">Current Classification</label>
 					  <div class="controls">
 						 <select id="classification" name="classification" class="input-large">
 						   <option></option>
@@ -179,7 +152,7 @@
 					</div>
 					<!-- GPA -->
 					<div class="control-group">
-						<label class="control-label" for="gpa">Cumulative GPA above 2.0? *</label>
+						<label class="control-label" for="gpa">Cumulative GPA above 2.0?</label>
 						<div class="controls">
 							<label class="radio inline" for="gpa">
 								<input type="radio" name="gpa" id="gpa" value="Yes">Yes
@@ -200,18 +173,18 @@
 				<fieldset>
 					<!-- SKILLS -->
 					<div class="sectionTitle">Skills</div>
-					<!-- Computer Skills -->
-					<div class="control-group">
-					  <label class="control-label" for="computerSkills">List/Explain computer or other technology related skills </label>
-					  <div class="controls">					  
-						 <textarea id="computerSkills" class="input-xlarge" style="height:70px;max-width:501px;" name="computerSkills"></textarea>
-					  </div>
-					</div>
 					<!--  Tech Skills -->
 					<div class="control-group">
-					  <label class="control-label" for="experience">List or explain experiences or skills with audio, video, and/or lighting equipment </label>
+					  <label class="control-label" for="experience">List experiences or skills with audio, video, and/or lighting equipment </label>
 					  <div class="controls">					  
 						 <textarea id="experience" class="input-xlarge" style="height:70px;max-width:501px;" name="experience"></textarea>
+					  </div>
+					</div>
+					<!-- Computer Skills -->
+					<div class="control-group">
+					  <label class="control-label" for="computerSkills">List computer or other technology related skills </label>
+					  <div class="controls">					  
+						 <textarea id="computerSkills" class="input-xlarge" style="height:70px;max-width:501px;" name="computerSkills"></textarea>
 					  </div>
 					</div>
 				</fieldset>
@@ -219,7 +192,7 @@
 					<div class="sectionTitle">Previous Work Experience</div>
 					<!-- Current Work for Mason -->
 					<div class="control-group">
-					  <label class="control-label" for="masonWork">Do you currently work or have worked for another Mason department? *</label>
+					  <label class="control-label" for="masonWork">Do you currently work or have worked for another Mason department?</label>
 					  <div class="controls">
 						 <label class="radio inline" for="masonWork">
 						   <input type="radio" name="masonWork" id="masonWork" value="Yes">Yes
@@ -341,25 +314,25 @@
 					-->
 					<!-- Reference 1 -->
 					<div class="control-group">
-					  <label class="control-label" for="refName1">Name *</label>
+					  <label class="control-label" for="refName1">Name</label>
 					  <div class="controls">
 						 <input id="refName1" name="refName1" type="text" placeholder="" class="input-xlarge">
 					  </div>
 					</div>
 					<div class="control-group">
-					  <label class="control-label" for="company1">Company/Position *</label>
+					  <label class="control-label" for="company1">Company/Position</label>
 					  <div class="controls">
 						 <input id="company1" name="company1" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
 					<div class="control-group">
-					  <label class="control-label" for="refRelation1">Relationship *</label>
+					  <label class="control-label" for="refRelation1">Relationship</label>
 					  <div class="controls">
 						 <input id="refRelation1" name="refRelation1" type="text" placeholder="" class="input-small">
 					  </div>
 					</div>
 					<div class="control-group">
-					<label class="control-label" for="refPhone1">Phone Number *</label>
+					<label class="control-label" for="refPhone1">Phone Number</label>
 					  <div class="controls">
 						 <input id="refPhone1" name="refPhone1" type="text" placeholder="" class="input-large">
 					  </div>
@@ -367,25 +340,25 @@
 					<!-- Reference 2 -->
 					<div class="sectionTitle"></div>
 					<div class="control-group">
-					  <label class="control-label" for="refName2">Name *</label>
+					  <label class="control-label" for="refName2">Name</label>
 					  <div class="controls">
 						 <input id="refName2" name="refName2" type="text" placeholder="" class="input-xlarge">
 					  </div>
 					</div>
 					<div class="control-group">
-					  <label class="control-label" for="company2">Company/Position *</label>
+					  <label class="control-label" for="company2">Company/Position</label>
 					  <div class="controls">
 						 <input id="company2" name="company2" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
 					<div class="control-group">
-					  <label class="control-label" for="refRelation2">Relationship *</label>
+					  <label class="control-label" for="refRelation2">Relationship</label>
 					  <div class="controls">
 						 <input id="refRelation2" name="refRelation2" type="text" placeholder="" class="input-small">
 					  </div>
 					</div>
 					<div class="control-group">
-					<label class="control-label" for="refPhone2">Phone Number *</label>
+					<label class="control-label" for="refPhone2">Phone Number</label>
 					  <div class="controls">
 						 <input id="refPhone2" name="refPhone2" type="text" placeholder="" class="input-large">
 					  </div>
@@ -393,25 +366,25 @@
 					<!-- Reference 3 -->
 					<div class="sectionTitle"></div>
 					<div class="control-group">
-					  <label class="control-label" for="refName3">Name *</label>
+					  <label class="control-label" for="refName3">Name</label>
 					  <div class="controls">
 						 <input id="refName3" name="refName3" type="text" placeholder="" class="input-xlarge">
 					  </div>
 					</div>
 					<div class="control-group">
-					  <label class="control-label" for="company3">Company/Position *</label>
+					  <label class="control-label" for="company3">Company/Position</label>
 					  <div class="controls">
 						 <input id="company3" name="company3" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
 					<div class="control-group">
-					  <label class="control-label" for="refRelation3">Relationship *</label>
+					  <label class="control-label" for="refRelation3">Relationship</label>
 					  <div class="controls">
 						 <input id="refRelation3" name="refRelation3" type="text" placeholder="" class="input-small">
 					  </div>
 					</div>
 					<div class="control-group">
-					<label class="control-label" for="refPhone3">Phone Number *</label>
+					<label class="control-label" for="refPhone3">Phone Number</label>
 					  <div class="controls">
 						 <input id="refPhone3" name="refPhone3" type="text" placeholder="" class="input-large">
 					  </div>
@@ -421,7 +394,7 @@
 					<!-- AVAILIBILLITY -->
 					<div class="sectionTitle">Availability</div>
 					<div class="span10 offset1">
-					  <p class="formInstruction">Please describe your availability for each day below.<br>(Note that student centers employee hours vary based on event needs)
+					  <p class="formInstruction">Please describe your availability for each day below.<br>(Note that event technician hours vary based on event needs)
 					  </p>
 					</div>
 					<!-- Monday -->
@@ -454,24 +427,27 @@
 					</div>
 					<!-- Friday -->
 					<div class="control-group">
-					  <label class="control-label" for="friday">Friday</label>
+					  <label class="control-label" for="friday">Friday *</label>
 					  <div class="controls">					  
 						 <textarea id="friday" class="input-xlarge" name="friday"></textarea>
 					  </div>
 					</div>
 					<!-- Saturday -->
 					<div class="control-group">
-					  <label class="control-label" for="saturday">Saturday</label>
+					  <label class="control-label" for="saturday">Saturday *</label>
 					  <div class="controls">					  
 						 <textarea id="saturday" class="input-xlarge" name="saturday"></textarea>
 					  </div>
 					</div>
 					<!-- Sunday -->
 					<div class="control-group">
-					  <label class="control-label" for="sunday">Sunday</label>
+					  <label class="control-label" for="sunday">Sunday *</label>
 					  <div class="controls">					  
 						 <textarea id="sunday" class="input-xlarge" name="sunday"></textarea>
 					  </div>
+					</div>
+					<div class="span10 offset1">
+					  <p class="formInstruction">*Event hours are scheduled per event and may<br> &#160;fall on nights and weekends</p>
 					</div>
 					
 				</fieldset>

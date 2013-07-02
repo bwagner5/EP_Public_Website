@@ -53,7 +53,11 @@
 				minutes:</span></p>
 			  <div class="row-fluid">
 				<div class="span12 center padded">
-					   <a href="getStarted/"><div class="greyButton getStarted"><h3 class="getStartedText">Get Started</h3></div></a>
+					<a href="getStarted/">
+						<div class="greyButton" id="getStarted-btn">
+							<h3 class="greyButtonText">Get Started</h3>
+						</div>
+					</a>
 				</div>
 			  </div>
 			</div>
