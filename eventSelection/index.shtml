@@ -18,7 +18,7 @@
 	<div class="overlay">
    		<div class="overlayContainer alignCell">
    			<div class="alignWrapper">
-	   			<img class="overlayImg" width="90%" src="images/diagramx.jpg"/>
+	   			<img class="overlayImg" width="90%" src="images/diagram.png"/>
    			</div>
    		</div>
    	</div>
@@ -29,111 +29,12 @@
 		<div class="span12 box">
 			<!--<h3 class="pageTitle">Event Setups</h3>-->
 			<div class="row-fluid">
-				<div class="span5 offset1">
+				<div class="span4 offset1">
 					<h3 class="pageTitle">Event Options</h3>
 					<div class="row-fluid">
-						<div class="span6">
-						  <div class="btn-group padded">
-							<a class="btn btn-large dropdown-toggle" id="location-btn" data-toggle="dropdown">Location
-								<span id="location-caret" class="caret"></span>
-							</a>
-						    <ul class="dropdown-menu location-menu">
-						      <li class="dropdown-submenu location-menu">
-						      <a tabindex="-1"class="parentLocation" >Johnson Center</a>
-						        <ul class="dropdown-menu" id="location-menu">
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Dewberry Hall</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Cinema</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Bistro</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Atrium</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Gold Room</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Meeting Room</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">George's</a>
-						          </li>
-						        </ul>
-						      </li>
-						      <li class="dropdown-submenu location-menu"> 
-						      	<a tabindex="-1"class="parentLocation" >The HUB (SUB II)</a>
-						        <ul class="dropdown-menu">
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Ball Room</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Meeting Room</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Side Pocket</a>
-						          </li>
-						        </ul>
-						      </li>
-						      <li class="dropdown-submenu location-menu"> 
-						      <a tabindex="-1"class="parentLocation" >Outdoor</a>
-						        <ul class="dropdown-menu">
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">The Quad</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">North Plaza</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">South Plaza</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">President's Park</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Rogers</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Starbucks</a>
-						          </li>
-						          <li>
-						          	<a class="dropSelect" tabindex="-1">Other</a>
-						          </li>
-						        </ul>
-						      </li>
-						      <li class="divider"></li>
-						      <li><a class="dropSelect" tabindex="-1">Other</a></li>
-						    </ul>
-						  </div>
-						</div>
-						<div class="span2 offset1">
-						  <div class="btn-group padded">
-							<a class="btn btn-large dropdown-toggle" id="attendance-btn" data-toggle="dropdown">Attendance
-								<span class="caret"></span>
-							</a>
-						    <ul class="dropdown-menu" id="attendance-menu">
-						      <li class="dropdown-submenu"> </li>
-						      <li><a class="dropSelect" tabindex="-1">1-25</a></li>
-						      <li><a class="dropSelect" tabindex="-1">25-50</a></li>
-						      <li><a class="dropSelect" tabindex="-1">50-100</a></li>
-						      <li><a class="dropSelect" tabindex="-1">100-200</a></li>
-						      <li><a class="dropSelect" tabindex="-1">200-300</a></li>
-						      <li><a class="dropSelect" tabindex="-1">300-400</a></li>
-						      <li><a class="dropSelect" tabindex="-1">400-500</a></li>
-						      <li><a class="dropSelect" tabindex="-1">500-600</a></li>
-						      <li><a class="dropSelect" tabindex="-1">600-700</a></li>
-						      <li><a class="dropSelect" tabindex="-1">700+</a></li>
-						    </ul>
-						  </div>
-						</div>
-					</div>
-					<div class="row-fluid">
-						<div class="span6">
-						  <div class="btn-group padded"> 
-							<a class="btn btn-large dropdown-toggle" id="eventType-btn" data-toggle="dropdown">Event Type
+						<div class="span10">
+						  <div class="btn-group padded" style="width:100%;"> 
+							<a class="btn btn-large dropdown-toggle" id="eventType-btn" data-toggle="dropdown">Select Event Type
 								<span class="caret"></span>
 							</a>
 						    <ul class="dropdown-menu" id="eventType-menu">
@@ -149,53 +50,31 @@
 						    </ul>
 						  </div>
 						</div>
-						<div class="span2 offset1">
-						  <div class="btn-group padded">
-							<a class="btn btn-large dropdown-toggle" id="necessities-btn" data-toggle="dropdown">Necessities 
-								<span class="caret"></span>
-							</a>
-						    <ul class="dropdown-menu dropdownPad" id="necessities-menu">
-						      <li><label><input class="dropdownInput" name="extras"
-						            value="dj" type="checkbox"> DJ</label></li>
-						      <li><label><input class="dropdownInput" name="extras"
-						            value="band" type="checkbox"> Band</label></li>
-						      <li><label><input class="dropdownInput" name="extras"
-						            value="choir" type="checkbox"> Choir</label></li>
-						      <li><label><input class="dropdownInput" name="extras"
-						            value="video" type="checkbox"> Video Projection</label></li>
-						      <li><label><input class="dropdownInput" name="extras"
-						            value="fx-lights" type="checkbox"> Effects Lighting</label></li>
-						    </ul>
-						  </div>
-						</div>
 					</div>
 					<br>
 					<div class="row-fluid">
 						<h4>Details:</h4>
-						<div class="span11 box" style="padding-top:40px;padding-bottom:30px;margin-left:0;">
+						<div class="span11 box" id="detailsBox">
 						  	<div class="row-fluid">
 						  		<div class="span10 offset1">
 						  			<p>
-						  				<b>Location:</b> <span id="selectedLocation"></span><a id="diagramLink"><b>(View Diagram)</b></a>
+						      			<b>Event Type: </b><span id="selectedType"></span>
 						  			</p>
 						  			<p>
 						      			<b>Included Items: </b><span id="includedItems"></span>
 						  			</p>
 						  			<p>
-						      			<b>Event Type: </b><span id="selectedType"></span>
+						      			<b>Description: </b><span id="description"></span>
 						  			</p>
 						  			<p>
-						      			<b>Attendance: </b><span id="selectedAttendance"></span>
-						  			</p>
-						  			<p>
-						      			<b>Necessities: </b><span id="selectedExtras"></span>
+						      			<b><a id="diagramLink">Click here to view event diagram</a></b></span>
 						  			</p>
 						  		</div>
 						  	</div>
 						</div>	
 					</div>
 				</div>
-				<div class="span5">
+				<div class="span6">
 					<h3 class="pageTitle" style="padding-left: -60px;">Event Package</h3>
 					<img class="eventImg" src="../images/dewberry.jpg">
 					<ul>
@@ -216,34 +95,4 @@
     <script src="../scripts/bootstrap.js"></script>
     <script src="../scripts/eventSelect.js"></script>
   </body>
-  <captions style="display:none;" id='1-25' type='text'>
-		Two JBL Eons, typically used for a basic lecture, small presentation, or low-level music.
-	</captions>
-	<captions style="display:none;" id='25-50' type='text'>
-		Two Meyer UPJ low profile speakers, typically used for lectures, presentations, music, and acoustic bands.
-	</captions>
-	<captions style="display:none;" id='50-100' type='text'>
-		Two Meyer UPJ low profile speakers, typically used for lectures, presentations, music, and acoustic bands.
-	</captions>
-	<captions style="display:none;" id='100-200' type='text'>
-		Two Meyer UPA loudspeakers with 15" subwoofer, supports large lectures, presentation, loud music playback, small DJ dances and perfect for mid-sized bands.
-	</captions>
-	<captions style="display:none;"id='200-300' type='text'>
-		Two Meyer UPA loudspeakers with 15" subwoofer, supports large lectures, presentation, loud music playback, small DJ dances and perfect for mid-sized bands.
-	</captions>
-	<captions style="display:none;" id='300-400' type='text'>
-		Two Meyer CQ1 loudspeakers paired with two 18" subwoofers, supports outdoor events, mid-sized DJ dances, rock bands, and large conferences.
-	</captions>
-	<captions style="display:none;" id='400-500' type='text'>
-		Two Meyer CQ1 loudspeakers paired with two 18" subwoofers, supports outdoor events, mid-sized DJ dances, rock bands, and large conferences.
-	</captions>
-	<captions style="display:none;" id='500-600' type='text'>
-		Four Meyer CQ1 loudspeakers paired with four 18" subwoofers, supports mid-to-large outdoor events, large DJ dances, and rock bands. This speaker system delivers powerful bass for your event.
-	</captions>
-	<captions style="display:none;" id='600-700' type='text'>
-		Four Meyer CQ1 loudspeakers paired with four 18" subwoofers, supports mid-to-large outdoor events, large DJ dances, and rock bands. This speaker system delivers powerful bass for your event.
-	</captions>
-	<captions style="display:none;" id='700+' type='text'>
-		Two stacks of Meyer's premiere M'elodie loudspeakers paired with four 18" subwoofers, supports large outdoor festivals and Patriot Center events. This is our top-of-the-line speaker system.
-	</captions>
 </html>

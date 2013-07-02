@@ -570,6 +570,17 @@ input[name="slideSwitch"] {
 	margin-left: 21px;
 }
 
+#eventType-btn{
+	width: 98%;
+}
+
+#detailsBox {
+	min-height: 323px;
+	padding-top:40px;
+	padding-bottom:30px;
+	margin-left:0;
+}
+
 /*FAQ Page*/
 .FAQList {
     margin-top: 25px
