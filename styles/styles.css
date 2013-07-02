@@ -642,6 +642,10 @@ input.error {
     padding-bottom: 5px
 }
 
+.eventCheckbox {
+	width: 125px;
+}
+
 .question {
     height: 32px;
     margin-left: 0;
@@ -651,6 +655,13 @@ input.error {
 .formInstruction {
     margin-left: 50px;
     font-size: 13px
+}
+
+.formCaption {
+	margin-left:0;
+	margin-bottom:20px;
+	margin-top: -15px;
+	font-size: 13px
 }
 
 .psudo-btn {

@@ -22,6 +22,56 @@ $(document).ready(function(){
 		}
 	});
 	$('.timepicker').timepicker();
+	$('#location').typeahead({
+		items: 18,
+		source: [
+			"Aquatic Center",
+			"CFA Grand Tier",
+			"CFA Lobby",
+			"Field House",
+			"North Plaza - Clock",
+			"North Plaza - Statue",
+			"South Plaza",
+			"President's Park",
+			"The Quad",
+			"Southside Plaza",
+			"Rogers",
+			"The RAC",
+			"The RAC Field",
+			"Starbucks",
+			"Other",
+			"JC Dewberry Hall",
+			"JC Dewberry North",
+			"JC Dewberry South",
+			"JC Cinema",
+			"JC Atrium",
+			"JC Gold Room",
+			"JC Meeting Room",
+			"JC George's",
+			"JC Dance Studio",
+			"The HUB Ball Room Full",
+			"The HUB Ball Room Front",
+			"The HUB Ball Room Mid",
+			"The HUB Ball Room Back",
+			"The HUB Meeting Room",
+			"The HUB VIP",
+			"The HUB Corner Pocket",
+			"Mason Hall Atrium",
+			"Mason Hall D1",
+			"Mason Hall D3 A & B",
+			"Mason Hall D5",
+			"Mason Hall D7",
+			"Mason Hall Edwin Meese",
+			"Mason Inn Grand Ballroom",
+			"Mason Inn Junior Ballrom",
+			"Mason Inn Meeting Room",
+			"Patriot Center",
+			"Patriot Center South Enterance",
+			"Patriot Center East Enterance",
+			"Research Room 163",
+			"Southside",
+		]
+	});
 	// This validation script uses the jQuery validation plugin
 	var validator = $("#bookingForm").validate({
 		  invalidHandler: function(event, validator) {
@@ -38,6 +88,24 @@ $(document).ready(function(){
 		    }
 		  },
 		rules: {
+			hostFirstName: {
+				required: false
+			},
+			hostLastName: {
+				required: false
+			},
+			hostPhoneNum: {
+				required: false
+			},
+			soundCheck: {
+				required: true
+			},
+			startTime: {
+				required: true
+			},
+			endTime: {
+				required: true
+			},
 			eventName: {
 				required: true
 			},
@@ -67,30 +135,12 @@ $(document).ready(function(){
 			location: {
 				required: true
 			},
-			eventType: {
-				required: true
-			},
 			date: {
 				required: true
 			},
-			hostFirstName: {
-				required: false
-			},
-			hostLastName: {
-				required: false
-			},
-			hostPhoneNum: {
-				required: false
-			},
-			soundCheck: {
+			honor: {
 				required: true
 			},
-			startTime: {
-				required: true
-			},
-			endTime: {
-				required: true
-			}
 		},
 		messages: {
 			email: {
@@ -98,6 +148,9 @@ $(document).ready(function(){
 			},
 			eventName: {
 				required: "Please enter a name for your event"
+			},
+			honor: {
+				required: "Please agree to the terms and conditions."
 			}
 		},
 		submitHandler: function(form) {
@@ -108,12 +161,10 @@ $(document).ready(function(){
 	$('#affiliationType').change(function(){
 		// organization code field is only required for student orgs
 		console.log("Changed");
-        if( $(this).val()=="Student Organization"){
-        	$("#orgCodeGroup").show();
+        if( $(this).val()=="Student Organization"||$(this).val()=="Mason Department"){
         	$("#bookingForm").validate().settings.rules.orgCode.required = true;
         }
         else{
-        	$("#orgCodeGroup").hide();
         	$("#bookingForm").validate().settings.rules.orgCode.required = false;
         }
     });
