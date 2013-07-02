@@ -125,7 +125,7 @@ a {
     -moz-transition: background-color 0.1s;
     -o-transition: background-color 0.1s;
     -webkit-transition: background-color 0.1s;
-    transition: background-color 0.1s
+    transition: background-color 0.1s;
 }
 
 .navSelected, .navList li:hover {
@@ -531,10 +531,11 @@ a:hover {
 
 .selectDisplay {
     margin: 20px 10px 0 10px;
+    width: 140px;
     float: left;
+    opacity: 0.6;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
     filter: alpha(opacity=60);
-    opacity: 0.6;
 }
 
 input[name="slideSwitch"]:checked+label {

@@ -1,0 +1,26 @@
+/*No RGBA in IE 8*/ 
+.navBar {
+	border-bottom: 8px solid;
+	border-color: transparent;
+}
+.navSelected, .navList li:hover {
+	border-bottom: 8px solid #888;
+}
+/*Make the flag look better without a drop shadow*/
+.masonFlag{
+	border-left: solid #CCC 1px;
+	border-right: solid #CCC 1px;
+	border-bottom: solid #CCC 1px;
+}
+.selectDisplay{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    opacity:0.8;
+}
+.overlay{
+	background-color: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DD000000', endColorstr='#DD000000');
+}
+.overlayImg{
+
+}

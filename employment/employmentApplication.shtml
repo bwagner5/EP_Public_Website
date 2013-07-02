@@ -6,14 +6,15 @@
 	<title>Employment Application</title>
 	<!-- Styles -->
 	<link href="../styles/bootstrap.css" rel="stylesheet">
-	<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel=stylesheet>
 	<link href="../styles/styles.css" rel="stylesheet">
+	<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel=stylesheet>
 	<link href="../styles/datepicker.css" rel="stylesheet">
 	<link href="../styles/jquery.timepicker.css" rel="stylesheet">
 	<link href="./styles/color.css" rel="stylesheet">
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	  <script src="Scripts/html5shiv.js"></script>
+	<!-- IE <= 8 Support -->
+    <!--[if lt IE 9]>
+	  <script src="../scripts/html5shiv.js"></script>
+	  <link rel="stylesheet" type="text/css" href="../styles/ie.css" />
 	<![endif]-->
   </head>
   <body>
