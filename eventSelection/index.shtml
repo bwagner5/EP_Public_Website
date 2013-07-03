@@ -40,13 +40,12 @@
 						    <ul class="dropdown-menu" id="eventType-menu">
 						      <li><a class="dropSelect" tabindex="-1">Conference</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Concert</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Culture Show</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Fashion Show</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Lecture</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Meeting</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Outdoor Festival</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Presentation</a></li>
-						      <li class="divider"></li>
-						      <li><a class="dropSelect" tabindex="-1">Other</a></li>
 						    </ul>
 						  </div>
 						</div>
@@ -75,7 +74,7 @@
 					</div>
 				</div>
 				<div class="span6">
-					<h3 class="pageTitle" style="padding-left: -60px;">Event Package</h3>
+					<h3 class="pageTitle" style="padding-left: -60px;">Sample Setup</h3>
 					<img class="eventImg" src="../images/dewberry.jpg">
 					<ul>
 						<li style="display: none;" class="captionText"></li>

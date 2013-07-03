@@ -1,7 +1,7 @@
 // This global stores the specific options for each event space
 var eventData;
 
-$.getJSON('../data/eventOptions.json', function(data){
+$.getJSON('../data/eventData.json', function(data){
 	eventData = data;
 });
 
@@ -12,9 +12,20 @@ $(document).ready(function(){
 		
 	$('#eventType-menu .dropSelect').click(function(event){
 		type = $(this).text();
-		$('#selectedType').html(type);
+		$('#selectedType').text(type);
+		// Formating the addons
+		var displayAddOns = "";
+		var items = eventData[type]["Included Items"];
+		for (i = 0; i < items.length; i++){
+			displayAddOns += items[i];
+			if (i != items.length - 1){
+				displayAddOns += ", ";
+			}  
+		}
+		$('#includedItems').text(displayAddOns);
+		$('#description').text(eventData[type]["Description"]);
 		$('#diagramLink').show();
-		//Enable event type option after a location is selected
+		$('.eventImg').attr("src", eventData[type]["Image Path"]);
 	});
 	
 	//Click the large picture to enter overlay mode

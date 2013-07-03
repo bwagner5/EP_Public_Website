@@ -574,6 +574,11 @@ input[name="slideSwitch"] {
 	width: 98%;
 }
 
+#eventType-menu{
+	float:right;
+	left:58%;
+}
+
 #detailsBox {
 	min-height: 323px;
 	padding-top:40px;

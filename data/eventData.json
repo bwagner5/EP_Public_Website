@@ -1,0 +1,51 @@
+{
+	"Conference": {
+		"Image Path":"images/1-25.jpg",
+		"Diagram Path": "images/diagram.png",
+		"Included Items": ["Microphone", "Projector"],
+		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 300 people."
+	},
+	"Concert": {
+		"Image Path":"images/700+.jpg",
+		"Diagram Path": "images/diagram.png",
+		"Included Items": ["Microphone", "DI Boxes", "32 Channel Mixer", "Stage Wash", "LED Lighting"],
+		"Description": "This is a common event setup for a performing band. It includes microphones and a mixer necessary for supporting vocal and instrumental sound sources, as well as basic lighting. Supports attendances of up to 500 people."
+	},
+	"Culture Show": {
+		"Image Path":"images/1-25.jpg",
+		"Diagram Path": "images/diagram.png",
+		"Included Items": ["Microphone", "Projector"],
+		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
+	},
+	"Fashion Show": {
+		"Image Path":"images/1-25.jpg",
+		"Diagram Path": "images/diagram.png",
+		"Included Items": ["Microphone", "Projector"],
+		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
+	},
+	"Lecture": {
+		"Image Path":"images/1-25.jpg",
+		"Diagram Path": "images/diagram.png",
+		"Included Items": ["Microphone", "Projector"],
+		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
+	},
+	"Meeting": {
+		"Image Path":"images/1-25.jpg",
+		"Diagram Path": "images/diagram.png",
+		"Included Items": ["Microphone", "Projector"],
+		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
+	},
+	"Outdoor Festival": {
+		"Image Path":"images/1-25.jpg",
+		"Diagram Path": "images/diagram.png",
+		"Included Items": ["Microphone", "Projector"],
+		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
+	},
+	"Presentation": {
+		"Image Path":"images/1-25.jpg",
+		"Diagram Path": "images/diagram.png",
+		"Included Items": ["Microphone", "Projector"],
+		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
+	}
+
+}
