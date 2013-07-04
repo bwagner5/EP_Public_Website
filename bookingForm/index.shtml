@@ -139,9 +139,9 @@
 					  </div>
 					</div>
 					<div class="control-group">
-					  <label class="control-label" for="phoneNum">Contact on Day of Event Phone Number</label>
+					  <label class="control-label" for="hostPhoneNum">Contact on Day of Event Phone Number</label>
 					  <div class="controls">
-					    <input id="phoneNum" name="phoneNum" type="text" placeholder="" class="input-large">
+					    <input id="hostPhoneNum" name="hostPhoneNum" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
 					<!-- Event Location -->
@@ -159,46 +159,46 @@
 					  <label class="control-label" for="eventType">Event Type</label>
 					  <div class="controls">
 					    <label class="checkbox inline eventCheckbox" for="eventType-0">
-					      <input type="checkbox" name="eventType" id="eventType-0" value="Conference">
+					      <input type="checkbox" name="eventType[]" id="eventType-0" value="Conference">
 					      Conference
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="eventType-1">
-					      <input type="checkbox" name="eventType" id="eventType-1" value="Concert">
+					      <input type="checkbox" name="eventType[]" id="eventType-1" value="Concert">
 					      Concert
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="eventType-2">
-					      <input type="checkbox" name="eventType" id="eventType-2" value="Fashion Show">
+					      <input type="checkbox" name="eventType[]" id="eventType-2" value="Fashion Show">
 					      Fashion Show
 					    </label>
 					    <br>
 					    <label class="checkbox inline eventCheckbox" for="eventType-3">
-					      <input type="checkbox" name="eventType" id="eventType-3" value="Lecture">
+					      <input type="checkbox" name="eventType[]" id="eventType-3" value="Lecture">
 					      Lecture
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="eventType-4">
-					      <input type="checkbox" name="eventType" id="eventType-4" value="Meeting">
+					      <input type="checkbox" name="eventType[]" id="eventType-4" value="Meeting">
 					      Meeting
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="eventType-5">
-					      <input type="checkbox" name="eventType" id="eventType-5" value="Film Screening">
+					      <input type="checkbox" name="eventType[]" id="eventType-5" value="Film Screening">
 					      Film Screening
 					    </label>
 					    <br>
 					    <label class="checkbox inline eventCheckbox" for="eventType-6">
-					      <input type="checkbox" name="eventType" id="eventType-6" value="Outdoor Event">
+					      <input type="checkbox" name="eventType[]" id="eventType-6" value="Outdoor Event">
 					      Outdoor Event
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="eventType-7">
-					      <input type="checkbox" name="eventType" id="eventType-7" value="Press Conference">
+					      <input type="checkbox" name="eventType[]" id="eventType-7" value="Press Conference">
 					      Press Conference
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="eventType-8">
-					      <input type="checkbox" name="eventType" id="eventType-8" value="Reception">
+					      <input type="checkbox" name="eventType[]" id="eventType-8" value="Reception">
 					      Reception
 					    </label>
 					    <br>
 					    <label class="checkbox inline eventCheckbox" for="eventType-9">
-					      <input type="checkbox" name="eventType" id="eventType-9" value="Other">
+					      <input type="checkbox" name="eventType[]" id="eventType-9" value="Other">
 					      Other
 					    </label>
 					  </div>
@@ -208,33 +208,33 @@
 					  <label class="control-label" for="eventType">What's Happening at Your Event</label>
 					  <div class="controls">
 					    <label class="checkbox inline eventCheckbox" for="performers-0">
-					      <input type="checkbox" name="performers" id="performers-0" value="Choir">
+					      <input type="checkbox" name="performers[]" id="performers-0" value="Choir">
 					      Choir
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="performers-1">
-					      <input type="checkbox" name="performers" id="performers-1" value="Comedian">
+					      <input type="checkbox" name="performers[]" id="performers-1" value="Comedian">
 					      Comedian
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="performers-2">
-					      <input type="checkbox" name="performers" id="performers-2" value="Dancer">
+					      <input type="checkbox" name="performers[]" id="performers-2" value="Dancer">
 					      Dancers
 					    </label>
 					    <br>
 					    <label class="checkbox inline eventCheckbox" for="performers-3">
-					      <input type="checkbox" name="performers" id="performers-3" value="Panel">
+					      <input type="checkbox" name="performers[]" id="performers-3" value="Panel">
 					      Panel
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="performers-4">
-					      <input type="checkbox" name="performers" id="performers-1" value="Presenter">
+					      <input type="checkbox" name="performers[]" id="performers-1" value="Presenter">
 					      Presenter
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="performers-5">
-					      <input type="checkbox" name="performers" id="performers-2" value="Karaoke">
+					      <input type="checkbox" name="performers[]" id="performers-2" value="Karaoke">
 					      Karaoke
 					    </label>
 					    <br>
 					    <label class="checkbox inline eventCheckbox" for="performers-6">
-					      <input type="checkbox" name="performers" id="performers-6" value="Other">
+					      <input type="checkbox" name="performers[]" id="performers-6" value="Other">
 					      Other
 					    </label>
 					    <br>
@@ -392,23 +392,23 @@
 					  <label class="control-label" for="lighting">Lighting</label>
 					  <div class="controls">
 					    <label class="checkbox" for="lighting-0">
-					      <input type="checkbox" name="lighting" id="lighting-0" value="Stage Wash">
+					      <input type="checkbox" name="lighting[]" id="lighting-0" value="Stage Wash">
 					      Stage Wash
 					    </label>
 					    <label class="checkbox" for="lighting-1">
-					      <input type="checkbox" name="lighting" id="lighting-1" value="Colored Uplights">
+					      <input type="checkbox" name="lighting[]" id="lighting-1" value="Colored Uplights">
 					      Colored Uplights
 					    </label>
 					    <label class="checkbox" for="lighting-2">
-					      <input type="checkbox" name="lighting" id="lighting-2" value="Effects Lasers">
+					      <input type="checkbox" name="lighting[]" id="lighting-2" value="Effects Lasers">
 					      Effects Lasers
 					    </label>
 					    <label class="checkbox" for="lighting-3">
-					      <input type="checkbox" name="lighting" id="lighting-3" value="Black Lights">
+					      <input type="checkbox" name="lighting[]" id="lighting-3" value="Black Lights">
 					      Black Lights
 					    </label>
 					    <label class="checkbox" for="lighting-4">
-					      <input type="checkbox" name="lighting" id="lighting-4" value="Hazer">
+					      <input type="checkbox" name="lighting[]" id="lighting-4" value="Hazer">
 					      Hazer
 					    </label>
 					  </div>
@@ -432,11 +432,11 @@
 					  <label class="control-label" for="recording">Archive Recording</label>
 					  <div class="controls">
 					    <label class="checkbox" for="recording-0">
-					      <input type="checkbox" name="recording" id="recording-0" value="Audio">
+					      <input type="checkbox" name="recording[]" id="recording-0" value="Audio">
 					      Audio
 					    </label>
 					    <label class="checkbox" for="recording-1">
-					      <input type="checkbox" name="recording" id="recording-1" value="Video">
+					      <input type="checkbox" name="recording[]" id="recording-1" value="Video">
 					      Video
 					    </label>
 					  </div>
