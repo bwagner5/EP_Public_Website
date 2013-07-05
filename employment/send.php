@@ -1,4 +1,9 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+
 if(isset($_POST['submit'])) {
    
     $email_to = "ep@gmu.edu";
@@ -64,8 +69,42 @@ if(isset($_POST['submit'])) {
 	$friday = $_POST['friday'];
 	$saturday = $_POST['saturday'];
 	$sunday = $_POST['sunday'];
+	
+     /*
+	$headers = 'From: '.$email_from."\r\n".
+	'Reply-To: '.$email_from."\r\n" .
+	'X-Mailer: PHP/' . phpversion() . "MIME-Version: 1.0\r\n" . "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	@mail($email_to, $email_subject, $email_message, $headers);
+	@mail($email, $email_subject, $email_message2, $headers);
+	header( 'Location: applicationSubmitted.shtml' ) ;
+	*/
 
-  
-  header( 'Location: applicationSubmitted.shtml' ) ;
+	print("
+ 	<!DOCTYPE HTML>
+ 		<html>
+ 			<head>
+ 				<style>
+ 					td{
+ 						padding:5px 5px 5px 2px;
+ 						font-size:14pt;
+ 						font-family: sans-serif;
+ 						background-color: #E6FFEC;
+ 					}
+ 					td:first-child{
+ 						font-weight:bold;
+ 					}
+ 				</style>
+ 			</head>
+ 			<body>
+ 				<h1>".$applicantName."</h1>
+ 				<table border=\"1\">
+ 					<tr>
+ 						<td>G Number </td>
+ 						<td>".$gNum."</td>
+ 					</tr>
+ 				</table>
+ 			</body>
+ 		</html>"
+ 		);
 }
 ?>

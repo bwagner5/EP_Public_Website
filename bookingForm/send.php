@@ -1,4 +1,9 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+
 if(isset($_POST['submit'])) 
 {
      
@@ -81,11 +86,42 @@ if(isset($_POST['submit']))
 	$headers = 'From: '.$email_from."\r\n".
 	'Reply-To: '.$email_from."\r\n" .
 	'X-Mailer: PHP/' . phpversion() . "MIME-Version: 1.0\r\n" . "Content-Type: text/html; charset=ISO-8859-1\r\n";
-	@mail($email_to, $email_subject, $email_message, $headers);
-	@mail($email, $email_subject, $email_message, $headers);
+	//@mail($email_to, $email_subject, $email_message, $headers);
+	//@mail($email, $email_subject, $email_message, $headers);
 
-  
- 	header( 'Location: bookingFormSubmitted.shtml' ) ;
- 
+ 	//header( 'Location: bookingFormSubmitted.shtml' );
+ 	*/
+ 	print("
+ 	<!DOCTYPE HTML>
+ 		<html>
+ 			<head>
+ 				<style>
+ 					td{
+ 						padding:5px 5px 5px 2px;
+ 						font-size:14pt;
+ 						font-family: sans-serif;
+ 						background-color: #E6FFEC;
+ 					}
+ 					td:first-child{
+ 						font-weight:bold;
+ 					}
+ 				</style>
+ 			</head>
+ 			<body>
+ 				<h1>".$orgName."</h1>
+ 				<table border=\"1\">
+ 					<tr>
+ 						<td>Event Type </td>
+ 						<td>".$eventTypes."</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Performers </td>
+ 						<td>".$performers."</td>
+ 					</tr>
+ 				<tr>".$lighting."</tr>
+ 				</table>
+ 			</body>
+ 		</html>"
+ 		);
 }
 ?>

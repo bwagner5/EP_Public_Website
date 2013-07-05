@@ -1,5 +1,5 @@
-<?php ob_start("ob_gzhandler"); ?>
 <!DOCTYPE html>
+<!--#include virtual ="../includes/header.php" --> 
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
