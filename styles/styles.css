@@ -701,32 +701,19 @@ input.error {
     height: 30px;
     text-align: center
 }
+/*Staff*/
+#techContact-btn {
+    height: 42px;
+    width: 220px;
+    margin-left: 0;
+    padding: 10px 60px 10px 60px;
+    text-align: left;
+}
 
-@media screen and (min-width: 1360px) {
-    .coverLead {
-        font-size: 5em
-    }
+#eventSchedule-btn {
+	height: 42px;
+    width: 220px;
+    margin-right: 0;
+    padding: 10px 60px 10px 60px;
+    text-align: right;
 }
-@media screen and (max-width: 1359px) {
-    .coverLead {
-        font-size: 4em
-    }
-}
-/*
-@media screen and (max-width:979px) {
-	  .coverLead {
-	  		font-size:3em;
-	  			}
-	  .box {
-			top:50px;
-				}
-}
-@media screen and (max-width:767px) {
-	  .coverLead {
-	  		font-size:2em;
-	  			}
-	  .box {
-			top:100px;
-				}
-}
-*/
