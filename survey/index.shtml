@@ -29,7 +29,7 @@
         	<div class="row-fluid">
 	        	<div class="span12"><p style="text-align:center;margin-bottom:15px;">Thank you for booking an event with us. We'd love for you to fill out this survey.</p></div>
         	</div>
-	        <form action="sendSurvey.php" method="post" class="form-horizontal span9 offset1" id="bookingForm">
+	        <form action="send.php" method="post" class="form-horizontal span9 offset1" id="bookingForm">
 				<fieldset>
 					<!-- EVENT INFO -->
 					<div class="sectionTitle">Event Info</div>
@@ -60,105 +60,105 @@
 						<tr>
 						  <th class="surveyField" scope="row">Professionalism</th>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Professionalism" value="Excellent">
+						    <input type="radio" name="professionalism" value="Excellent">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Professionalism" value="Good">
+						    <input type="radio" name="professionalism" value="Good">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Professionalism" value="Average">
+						    <input type="radio" name="professionalism" value="Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Professionalism" value="Below Average">
+						    <input type="radio" name="professionalism" value="Below Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Professionalism" value="Poor">
+						    <input type="radio" name="professionalism" value="Poor">
 						  </div></td>
 						</tr>
 						<tr>
 						  <th class="surveyField" scope="row">Courteousness</th>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Courteousness" value="Excellent">
+						    <input type="radio" name="courteousness" value="Excellent">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Courteousness" value="Good">
+						    <input type="radio" name="courteousness" value="Good">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Courteousness" value="Average">
+						    <input type="radio" name="courteousness" value="Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Courteousness" value="Below Average">
+						    <input type="radio" name="courteousness" value="Below Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Courteousness" value="Poor">
+						    <input type="radio" name="courteousness" value="Poor">
 						  </div></td>
 						</tr>
 						<tr>
 						  <th class="surveyField" scope="row">Helpfulness</th>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Helpfulness" value="Excellent">
+						    <input type="radio" name="helpfulness" value="Excellent">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Helpfulness" value="Good">
+						    <input type="radio" name="helpfulness" value="Good">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Helpfulness" value="Average">
+						    <input type="radio" name="helpfulness" value="Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Helpfulness" value="Below Average">
+						    <input type="radio" name="helpfulness" value="Below Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Helpfulness" value="Poor">
+						    <input type="radio" name="helpfulness" value="Poor">
 						  </div></td>
 						</tr>
 						<tr>
 						  <th class="surveyField" scope="row">Value of Services </th>
 						  <td class="surveyField"><div align="center">
-						      <input type="radio" name="Value of Services" value="Excellent">
+						      <input type="radio" name="value" value="Excellent">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						      <input type="radio" name="Value of Services" value="Good">
+						      <input type="radio" name="value" value="Good">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						      <input type="radio" name="Value of Services" value="Average">
+						      <input type="radio" name="value" value="Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						      <input type="radio" name="Value of Services" value="Below Average">
+						      <input type="radio" name="value" value="Below Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						      <input type="radio" name="Value of Services" value="Poor">
+						      <input type="radio" name="value" value="Poor">
 						  </div></td>
 						</tr>
 						<tr>
 						  <th class="surveyField" scope="row">Overall</th>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Overall" value="Excellent">
+						    <input type="radio" name="overall" value="Excellent">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Overall" value="Good">
+						    <input type="radio" name="overall" value="Good">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Overall" value="Average">
+						    <input type="radio" name="overall" value="Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Overall" value="Below Average">
+						    <input type="radio" name="overall" value="Below Average">
 						  </div></td>
 						  <td class="surveyField"><div align="center">
-						    <input type="radio" name="Overall" value="Poor">
+						    <input type="radio" name="overall" value="Poor">
 						  </div></td>
 						</tr>
 					</table>
 					<div class="spacer"></div>
 					<div class="control-group">
-					  <label class="control-label" for="eventDescription">Comments on Staff</label>
+					  <label class="control-label" for="staffComments">Comments on Staff</label>
 					  <div class="controls">                     
 					    <textarea id="staffComments" class="input-xlarge" style="min-height:120px;width:400px" name="staffComments"></textarea>
 					  </div>
 					</div>
 						<div class="control-group">
-					  <label class="control-label" for="eventDescription">Comments on Equipment</label>
+					  <label class="control-label" for="equipmentComments">Comments on Equipment</label>
 					  <div class="controls">                     
-					    <textarea id="betterServe" class="input-xlarge" style="min-height:120px;width:400px" name="equipmentComments"></textarea>
+					    <textarea id="equipmentComments" class="input-xlarge" style="min-height:120px;width:400px" name="equipmentComments"></textarea>
 					  </div>
 					</div>
 						<div class="control-group">
