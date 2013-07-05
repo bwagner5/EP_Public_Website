@@ -28,14 +28,16 @@ if(isset($_POST['submit']))
     if (isset($_POST["eventType"])){
     	$aEventType = $_POST["eventType"];
 		for ($i=0; $i < count($aEventType); $i++){
-	    	$eventTypes .= $aEventType[$i] . ", ";
+	    	$eventTypes .= $aEventType[$i];
+	    	if ($i < count($aEventType) - 1) $eventTypes .= ", ";
 		}
 	}
 	$performers = "";
 	if (isset($_POST["performers"])){
 		$aPerformers = $_POST["performers"];
 		for ($i=0; $i < count($aPerformers); $i++){
-	    	$performers .= $aPerformers[$i] . ", ";
+	    	$performers .= $aPerformers[$i];
+	    	if ($i < count($aPerformers) - 1) $performers .= ", ";
 		}
 	}
     $attendance = $_POST["attendance"];
@@ -53,7 +55,8 @@ if(isset($_POST['submit']))
     if (isset($_POST["lighting"])){
 	    $aLighting = $_POST["lighting"];
 		for ($i=0; $i < count($aLighting); $i++){
-	    	$lighting .= $lighting[$i] . ", ";
+	    	$lighting .= $lighting[$i];
+	    	if ($i < count($aLighting) - 1) $lighting .= ", ";
 		}
 	}
     $laptop = $_POST["laptop"];
