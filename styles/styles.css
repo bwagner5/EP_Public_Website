@@ -709,11 +709,19 @@ input.error {
     padding: 10px 60px 10px 60px;
     text-align: left;
 }
-
 #eventSchedule-btn {
 	height: 42px;
     width: 220px;
     margin-right: 0;
     padding: 10px 60px 10px 60px;
     text-align: right;
+}
+#logout-btn {
+	position: absolute;
+	top:20px;
+	right: 20px;
+	height: 20px;
+    width: 50px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
 }

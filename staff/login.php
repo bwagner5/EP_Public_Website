@@ -1,8 +1,30 @@
+<?php
+// Login Authenticator   
+//sha1 encrypted password
+$password = '33ef0db188d1f0cbf8201ae6f1dade1b6466d33e';
+
+session_start();
+if (!isset($_SESSION['loggedIn'])) {
+    $_SESSION['loggedIn'] = false;
+}
+
+$message = "Login required to access this page";
+
+if (isset($_POST['password'])) {
+    if (sha1($_POST['password']) == $password) {
+        $_SESSION['loggedIn'] = true;
+    } else {
+    	$message = 'Incorrect password';
+    }
+} 
+
+if (!$_SESSION['loggedIn']): ?>
+
 <!DOCTYPE html>
 <!--#include virtual ="../includes/header.php" --> 
 <html lang="en">
   <head>
-	<!--#include virtual ="../includes/meta.php" --> 
+	<?php include "../includes/meta.php"; ?>
 	<title>EP Staff</title>
 	<!-- Styles -->
 	<link href="../styles/bootstrap.css" rel="stylesheet">
@@ -15,6 +37,9 @@
 		.footer p {
 			color: white;
 		}
+		#login{
+
+		}
 	</style>
 	<!-- IE <= 8 Support -->
     <!--[if lt IE 9]>
@@ -23,43 +48,35 @@
 	<![endif]-->
   </head>
   <body>
-	<!--#include virtual ="../includes/navbar.php" -->
+	<?php include "../includes/navbar.php"; ?>
 	<!-- Cover Section -->
 	<!-- End Cover Section -->
 	<div class="container">
 	  <div class="spacer"></div>
 	  <div class="row">
 		<div class="span10 offset1 box">
-			 <div class="row-fluid">
-			 	<div class="span12">
-			 		<h2 class="pageTitle">EP Staff</h2>
-			 	</div>
-			</div>
-			<div class="spacer"></div>
 			<div class="row-fluid">
-			 	<div class="span5 offset1">
-			 		<a>
-						<div class="greyButton" id="techContact-btn">
-							<h3 class="greyButtonText">Employee Contacts</h3>
-						</div>
-			 		</a>
-			 	</div>
-			 	<div class="span5">
-			 		<a>
-						<div class="greyButton" id="eventSchedule-btn">
-							<h3 class="greyButtonText">Event Schedule</h3>
-						</div>
-			 		</a>
-			 	</div>
+				<div class="span3 offset4">
+			    	<p><?php print $message ?></p>
+				    <form method="post">
+				      Password: <input type="password" name="password"> <br/>
+				      <span style="text-align:right;">
+				      	<input type="submit" name="submit" value="Login" id="login">
+				      </span>
+				    </form>
+				</div>
 			</div>
-			<div class="spacer"></div>
-		  </div>
 		</div>
 	  </div>
-	  <!--#include virtual ="../includes/footer.php" -->
+	  <?php include "../includes/footer.php"; ?>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 	<script src="../scripts/bootstrap.js"></script>
   </body>
 </html>
+
+<?php
+exit();
+endif;
+?>
