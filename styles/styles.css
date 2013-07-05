@@ -169,7 +169,8 @@ a:hover {
 .pageTitle {
     margin-top: 0;
     margin-bottom: 0;
-    text-align: center
+    text-align: center;
+    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #diagramLink {
@@ -325,9 +326,8 @@ a:hover {
     font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #FFF;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    padding-top: 2.5%;
-    padding-right: 24%;
-    font-size: 5em
+    text-align: center;
+    font-size: 1em
 }
 
 .coverLogo {
