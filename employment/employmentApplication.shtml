@@ -28,7 +28,7 @@
 			<h2 class="pageTitle" style="margin-bottom:20px;">Employment Application</h2>
 			 <form action="send.php" method="post" class="form-horizontal span10 offset1" id="employmentForm">
 				<fieldset>
-					<!-- PERSONAL -->
+					<!-- PERSONAL INFO -->
 					<div class="sectionTitle">Personal Information</div>
 					<div class="span10 offset1">
 					  <p class="formInstruction">All fields required unless otherwise indicated*</p>
@@ -206,7 +206,7 @@
 					<div class="control-group">
 					<label class="control-label" for="dept">If so, what department? </label>
 					  <div class="controls">
-						 <input id="dept" name="dept" type="text" placeholder="" class="input-small">
+						 <input id="dept" name="masonDept" type="text" placeholder="" class="input-small">
 					  </div>
 					</div>
 				</fieldset>
