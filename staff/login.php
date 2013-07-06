@@ -1,7 +1,9 @@
 <?php
 // Login Authenticator   
-//sha1 encrypted password
+//sha1 encrypted user password
 $password = '33ef0db188d1f0cbf8201ae6f1dade1b6466d33e';
+//sha1 encrypted admin password
+$adminPassword = 'd033e22ae348aeb5660fc2140aec35850c4da997';
 
 session_start();
 if (!isset($_SESSION['loggedIn'])) {
@@ -13,7 +15,17 @@ $message = "Login required to access this page";
 if (isset($_POST['password'])) {
     if (sha1($_POST['password']) == $password) {
         $_SESSION['loggedIn'] = true;
-    } else {
+        $_SESSION['admin'] = false;
+	    header("Location: ../staff");
+	    die();
+    } 
+    elseif (sha1($_POST['password']) == $adminPassword) {
+	    $_SESSION['loggedIn'] = true;
+	    $_SESSION['admin'] = true;
+	    header("Location: ../staff");
+	    die();
+    }
+    else {
     	$message = 'Incorrect password';
     }
 } 

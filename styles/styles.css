@@ -702,6 +702,12 @@ input.error {
     text-align: center
 }
 /*Staff*/
+.staffStyles {
+	background-color: #141414;
+}
+.staffStyles .footer p {
+	color: white;
+}
 #techContact-btn {
     height: 42px;
     width: 220px;

@@ -1,16 +1,42 @@
 <?php
-	require("login.php");
-?>	
+	// Assigning file attributes 
+	$name  = $_FILES['upload']['name'];
+	$type  = $_FILES['upload']['type'];
+	$size  = $_FILES['upload']['size'];
+	$tmp   = $_FILES['upload']['tmp_name'];
+	$error = $_FILES['upload']['error'];
+	$savepath = 'schedule';
+	$filelocation = $savepath."/".$name;
+	
+	if ($error == 0) {
+		// If the upload is successfull, all previous files will be cleared from the directory
+		// to prevent collision 
+		$handle = opendir($savepath); 
+		while (false !== ($fileName = readdir($handle))) {
+			// Hidden files being with a "."; they are skipped
+			if (substr($fileName, 0, 1) != "."){
+				unlink("$savepath/$fileName"); // Delete
+			} 
+	    } 
+		closedir($handle);
+		// Moving the new file into the cleared directory
+		move_uploaded_file($tmp, $filelocation);
+		$message = "File upload successful.";  
+	}
+	else {
+		$message = "File upload failed. Error code: $error";
+	}
+?>
+
 <!DOCTYPE html>
 <!--#include virtual ="../includes/header.php" --> 
 <html lang="en">
   <head>
 	<?php include "../includes/meta.php"; ?>
-	<title>EP Staff</title>
+	<title>Upload Confirmation</title>
 	<!-- Styles -->
 	<link href="../styles/bootstrap.css" rel="stylesheet">
 	<link href="../styles/styles.css" rel="stylesheet">
-	<link href="../styles/color.css" rel="stylesheet">
 	<!-- IE <= 8 Support -->
     <!--[if lt IE 9]>
 	  <script src="../scripts/html5shiv.js"></script>
@@ -31,35 +57,12 @@
 				</div>
 	 		</a>
 			<div class="row-fluid">
-				<div class="span12">
-					<h2 class="pageTitle">EP Staff</h2>
+				<div class="span5 offset2">
+					<p><?php print $message ?></p>
+					<a href="../staff">Back to staff homepage >></a>
 				</div>
 			</div>
-			<div class="spacer"></div>
-			<div class="row-fluid">
-			 	<div class="span5 offset1">
-			 		<a>
-						<div class="greyButton" id="techContact-btn">
-							<h3 class="greyButtonText">Employee Contacts</h3>
-						</div>
-			 		</a>
-			 	</div>
-			 	<div class="span5">
-			 		<a href="<?php include "get_schedule_href.php"; ?>">
-						<div class="greyButton" id="eventSchedule-btn">
-							<h3 class="greyButtonText">Event Schedule</h3>
-						</div>
-			 		</a>
-			 	</div>
-			</div>
-			<div class="spacer"></div>
-			<?php 
-				if ($_SESSION['admin']){
-					include "admin.php"; 
-				}
-			?>
-		  </div>
-		</div>
+	 	</div>
 	  </div>
 	  <?php include "../includes/footer.php"; ?>
 	</div>
