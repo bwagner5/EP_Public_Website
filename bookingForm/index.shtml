@@ -277,7 +277,6 @@
 					    <select id="wiredMics" name="wiredMics" class="input-mini">
 						  <option></option>
 					      <option>1</option>
-					      <option>1</option>
 					      <option>2</option>
 					      <option>3</option>
 					      <option>4</option>
@@ -312,7 +311,6 @@
 					    <select id="lavaliers" name="lavaliers" class="input-mini">
 					      <option></option>
 					      <option>1</option>
-					      <option>1</option>
 					      <option>2</option>
 					      <option>3</option>
 					      <option>4</option>
@@ -331,8 +329,8 @@
 					    <select id="smallProjector" name="smallProjector" class="input-mini">
 					      <option></option>
 					      <option>1</option>
-					      <option>1</option>
 					      <option>2</option>
+					      <option>3</option>
 					    </select>
 					  </div>
 					</div>
@@ -343,8 +341,8 @@
 					    <select id="mediumProjector" name="mediumProjector" class="input-mini">
 					      <option></option>
 					      <option>1</option>
-					      <option>1</option>
 					      <option>2</option>
+					      <option>3</option>
 					    </select>
 					  </div>
 					</div>
@@ -354,7 +352,6 @@
 					  <div class="controls">
 					    <select id="largeProjector" name="largeProjector" class="input-mini">
 					      <option></option>
-					      <option>1</option>
 					      <option>1</option>
 					      <option>2</option>
 					    </select>
@@ -366,7 +363,6 @@
 					  <div class="controls">
 					    <select id="smallScreen" name="smallScreen" class="input-mini">
 					      <option></option>
-					      <option>1</option>
 					      <option>1</option>
 					      <option>2</option>
 					      <option>3</option>
@@ -380,7 +376,6 @@
 					  <div class="controls">
 					    <select id="largeScreen" name="largeScreen" class="input-mini">
 					      <option></option>
-					      <option>1</option>
 					      <option>1</option>
 					      <option>2</option>
 					    </select>
@@ -420,7 +415,6 @@
 					  <div class="controls">
 					    <select id="laptop" name="laptop" class="input-mini">
 					      <option></option>
-					      <option>1</option>
 					      <option>1</option>
 					      <option>2</option>
 					      <option>3</option>

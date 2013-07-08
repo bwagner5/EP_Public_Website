@@ -391,7 +391,20 @@ a:hover {
     margin-top: 25px;
     text-align: center;
 }
-
+.footer p, .footer a{
+	font-size: 13px;
+	line-height: 10px;
+}
+#staffLink {
+	color: #4f4f4f;
+	border: solid #d1d1d1 1px;
+	background: #ebebeb;
+	padding: 2px 10px 2px 10px;
+}
+#staffLink:hover {
+	color: #141414;
+	background: #b7b7b7;
+}
 .socialBar {
     margin-bottom: 10px;
     width: 100%;

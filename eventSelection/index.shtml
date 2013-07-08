@@ -78,9 +78,6 @@
 					<ul>
 						<li style="display: none;" class="captionText"></li>
 					</ul>
-					<div class="center padded">
-					    <a href=""><div class="greyButton submitButton"><h3 class="greyButtonText">Submit</h3></div></a>
-					</div>
 				</div>
 			</div>
 		</div>

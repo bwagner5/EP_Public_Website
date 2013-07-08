@@ -10,7 +10,7 @@
 	
 	if ($error == 0) {
 		// If the upload is successfull, all previous files will be cleared from the directory
-		// to prevent collision 
+		// to prevent collision. (Note: appropraite file permissions are necessary)
 		$handle = opendir($savepath); 
 		while (false !== ($fileName = readdir($handle))) {
 			// Hidden files being with a "."; they are skipped
