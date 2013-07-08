@@ -15,7 +15,7 @@
 		.footer{
 			/*footer overflow fix*/
 			margin-bottom: -140px;
-			margin-top: 16px;
+			margin-top: 18px;
 		}
 	</style>
 	<!-- IE <= 8 Support -->
