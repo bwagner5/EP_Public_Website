@@ -13,7 +13,7 @@ $(document).ready(function(){
 		sessionStorage.eventInfo = "";
 	}
 	else {
-		console.log("Sorry! No web storage support..");
+		console.log("No web storage support");
 	}	
 	$('.datepicker').datepicker({
 		format: 'mm-dd-yyyy',
@@ -88,27 +88,6 @@ $(document).ready(function(){
 		    }
 		  },
 		rules: {
-			hostFirstName: {
-				required: false
-			},
-			hostLastName: {
-				required: false
-			},
-			hostPhoneNum: {
-				required: false
-			},
-			soundCheck: {
-				required: true
-			},
-			startTime: {
-				required: true
-			},
-			endTime: {
-				required: true
-			},
-			eventName: {
-				required: true
-			},
 			name: {
 				required: true
 			},
@@ -125,18 +104,48 @@ $(document).ready(function(){
 			requestorLastName: {
 				required: true
 			},
+			requestorPhoneNum: {
+				required: true
+			},
 			email: {
 				required: true,
 				email: true
 			},
-			phoneNum: {
-				required: true
-			},
-			location: {
+			eventName: {
 				required: true
 			},
 			date: {
 				required: true
+			},
+			soundCheck: {
+				required: true
+			},
+			startTime: {
+				required: true
+			},
+			endTime: {
+				required: true
+			},
+			hostFirstName: {
+				required: false
+			},
+			hostLastName: {
+				required: false
+			},
+			location: {
+				required: true
+			},
+			eventType: {
+				required: true
+			},
+			performers: {
+				required: false
+			},
+			attendance: {
+				required: true
+			},
+			eventDescription: {
+				required: false
 			},
 			honor: {
 				required: true
@@ -148,6 +157,9 @@ $(document).ready(function(){
 			},
 			eventName: {
 				required: "Please enter a name for your event"
+			},
+			eventType: {
+				required: "Please select at least one event type"
 			},
 			honor: {
 				required: "Please agree to the terms and conditions."

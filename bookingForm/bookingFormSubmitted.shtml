@@ -24,7 +24,12 @@
       <div class="spacer"></div>
       <div class="row">
         <div class="span10 offset1 box">
-        	<h2 class="pageTitle" style="margin-bottom:20px;">Your request to book Events Production has been submitted! <br /> You will receive a confirmation or denial of your request at the email you provided within the next few days. <br /> Thanks!</h2>
+        	<h2 class="pageTitle">Booking Request Submitted</h2>
+        	<div class="row-fluid" style="margin-top:25px;">
+        		<div class="span10 offset1">			
+	        		<p>Your request to book Events Production has been submitted. You will receive a confirmation or denial of your request at the email you provided within the next few days. Thanks!</p>
+        		</div>
+        	</div>
         </div>
       </div>
     </div>

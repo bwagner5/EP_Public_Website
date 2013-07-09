@@ -216,7 +216,7 @@
 					      Comedian
 					    </label>
 					    <label class="checkbox inline eventCheckbox" for="performers-2">
-					      <input type="checkbox" name="performers[]" id="performers-2" value="Dancer">
+					      <input type="checkbox" name="performers[]" id="performers-2" value="Dancers">
 					      Dancers
 					    </label>
 					    <br>
@@ -259,7 +259,7 @@
 					</div>
 					<!--Event Description-->
 					<div class="control-group">
-					  <label class="control-label" for="eventDescription">Basic Event Description</label>
+					  <label class="control-label" for="eventDescription">Event Description</label>
 					  <div class="controls">                     
 					    <textarea id="eventDescription" class="input-xlarge" style="height:70px;max-width:501px;" name="eventDescription"></textarea>
 					  </div>
@@ -408,6 +408,14 @@
 					    </label>
 					  </div>
 					</div>
+					<!-- Lighting Colors
+					<div class="control-group">
+					  <label class="control-label" for="lightingColor">Preferred Lighting Colors</label>
+					  <div class="controls">
+					    <input id="lightingColor" name="lightingColor" type="text" placeholder="" class="input-medium">
+					  </div>
+					</div>
+					-->
 					<div class="sectionTitle"></div>
 					<!-- PC Laptop -->
 					<div class="control-group">
@@ -523,7 +531,7 @@
 					</div>
 					<!-- Round Cocktail Tables (High) -->
 					<div class="control-group">
-					  <label class="control-label" for="lowCocktails">Round Cocktail Tables (High)</label>
+					  <label class="control-label" for="lowCocktails">Round Cocktail Tables (Low)</label>
 					  <div class="controls">
 					    <input id="lowCocktails" name="lowCocktails" type="text" placeholder="Maximum of 40" class="input-medium">  
 					  </div>

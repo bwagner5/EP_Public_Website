@@ -1,10 +1,9 @@
 <?php
 if(isset($_POST['submit'])) 
-{
-     
-    $email_to = "ep@gmu.edu";
-    $email_subject = "EP Booking Form Submission";
-    $email_from = "Events Production GMU";
+{   
+    $email_to = "renfred93@gmail.com";
+    $email_subject = "Booking Form Submission";
+    $email_from = "ep";
     
     // Client Info
     $orgName = $_POST["name"];
@@ -21,7 +20,7 @@ if(isset($_POST['submit']))
     $startTime = $_POST["startTime"];
 	$endTime = $_POST["endTime"];
 	$hostFirstName = $_POST["hostFirstName"];
-    $type = $_POST["hostLastName"];
+    $hostLastName = $_POST["hostLastName"];
     $hostPhoneNum = $_POST["hostPhoneNum"];
     $location = $_POST["location"];
     $eventTypes = "";
@@ -55,7 +54,7 @@ if(isset($_POST['submit']))
     if (isset($_POST["lighting"])){
 	    $aLighting = $_POST["lighting"];
 		for ($i=0; $i < count($aLighting); $i++){
-	    	$lighting .= $lighting[$i];
+	    	$lighting .= $aLighting[$i];
 	    	if ($i < count($aLighting) - 1) $lighting .= ", ";
 		}
 	}
@@ -77,46 +76,216 @@ if(isset($_POST['submit']))
     $paddedChairs = $_POST["paddedChairs"];
     $highCocktails = $_POST["highCocktails"];
     $lowCocktails = $_POST["lowCocktails"];
-    /*
-	$headers = 'From: '.$email_from."\r\n".
-	'Reply-To: '.$email_from."\r\n" .
-	'X-Mailer: PHP/' . phpversion() . "MIME-Version: 1.0\r\n" . "Content-Type: text/html; charset=ISO-8859-1\r\n";
-	//@mail($email_to, $email_subject, $email_message, $headers);
-	//@mail($email, $email_subject, $email_message, $headers);
-
- 	//header( 'Location: bookingFormSubmitted.shtml' );
- 	*/
- 	print("
+    
+ 	$message =
+ 	"
  	<!DOCTYPE HTML>
  		<html>
  			<head>
  				<style>
+ 					h2, p {
+ 						font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+ 					}
  					td{
  						padding:5px 5px 5px 2px;
  						font-size:14pt;
  						font-family: sans-serif;
+ 						border: solid green 1px;
  						background-color: #E6FFEC;
  					}
  					td:first-child{
  						font-weight:bold;
  					}
+ 					.tdTitle {
+ 						 background-color: #ffffe6;
+ 						 border: solid #dcca00 1px;
+ 					}
  				</style>
  			</head>
  			<body>
- 				<h1>".$orgName."</h1>
- 				<table border=\"1\">
+ 				<h2>Events Production Booking Request</h2>
+ 				<table>
+ 					<tr>
+ 						<td class='tdTitle' colspan='2'>Client Info </td>
+ 					</tr>
+ 					<tr>
+ 						<td>Organization  Name </td>
+ 						<td>$orgName</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Affiliation Type </td>
+ 						<td>$affiliationType</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Org Code </td>
+ 						<td>$orgCode</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Requestor Name </td>
+ 						<td>$reqFirstName $reqLastName</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Phone Number </td>
+ 						<td>$phoneNum</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Email </td>
+ 						<td>$email</td>
+ 					</tr>
+ 					<tr>
+ 						<td class='tdTitle' colspan='2'>Event Info </td>
+ 					</tr>
+ 					<tr>
+ 						<td>Event Name </td>
+ 						<td>$eventName</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Event Date </td>
+ 						<td>$date</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Equipment Setup By </td>
+ 						<td>$soundCheck</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Start Time </td>
+ 						<td>$startTime</td>
+ 					</tr>
+ 					<tr>
+ 						<td>End Time </td>
+ 						<td>$endTime</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Host Name </td>
+ 						<td>$hostFirstName $hostLastName</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Host Phone Number </td>
+ 						<td>$hostPhoneNum</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Event Location </td>
+ 						<td>$location</td>
+ 					</tr>
  					<tr>
  						<td>Event Type </td>
- 						<td>".$eventTypes."</td>
+ 						<td>$eventTypes</td>
  					</tr>
  					<tr>
  						<td>Performers </td>
- 						<td>".$performers."</td>
+ 						<td>$performers</td>
  					</tr>
- 				<tr>".$lighting."</tr>
+ 					<tr>
+ 						<td>Expected Attendance </td>
+ 						<td>$attendance</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Event Description </td>
+ 						<td>$eventDescription</td>
+ 					</tr>
+ 					<tr>
+ 						<td class='tdTitle'>Event Enchancements </td>
+ 						<td class='tdTitle'>(Quantity) </td>
+ 					</tr>
+ 					<tr>
+ 						<td>Wired Mics </td>
+ 						<td>$wiredMics</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Wireless Mics </td>
+ 						<td>$wirelessMics</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Lavaliers </td>
+ 						<td>$lavaliers</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Small Projectors </td>
+ 						<td>$smallProjector</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Medium Projectors </td>
+ 						<td>$mediumProjector</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Large Projectors </td>
+ 						<td>$largeProjector</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Small Screen </td>
+ 						<td>$smallScreen</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Large Screen </td>
+ 						<td>$largeScreen</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Lighting Options </td>
+ 						<td>$lighting</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Laptop </td>
+ 						<td>$laptop</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Recording </td>
+ 						<td>$recording</td>
+ 					</tr>
+ 					<tr>
+ 						<td class='tdTitle'>Additional Items </td>
+ 						<td class='tdTitle'>(Quantity) </td>
+ 					</tr>
+ 					<tr>
+ 						<td>Staging </td>
+ 						<td>$staging</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Podium </td>
+ 						<td>$podium</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Stanchions </td>
+ 						<td>$stanchions</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Rectangular Tables </td>
+ 						<td>$rectTables</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Round Tables </td>
+ 						<td>$roundTables</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Stanchions </td>
+ 						<td>$stanchions</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Stacking Chairs </td>
+ 						<td>$stackingChairs</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Padded Chairs </td>
+ 						<td>$paddedChairs</td>
+ 					</tr>
+ 					<tr>
+ 						<td>High Cocktails </td>
+ 						<td>$highCocktails</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Low Cocktails </td>
+ 						<td>$lowCocktails</td>
+ 					</tr>
  				</table>
+ 				<p>If you would like to make changes to your request, please contact Events Production at ep@gmu.edu. Note that all requests for changes must be made at least ten days prior to the event.</p>
  			</body>
- 		</html>"
- 		);
+ 		</html>";
+ 			 	
+		$headers = 'From: '.$email_from."\r\n".
+		'Reply-To: '.$email_from."\r\n" .
+		'X-Mailer: PHP/' . phpversion() . "MIME-Version: 1.0\r\n" . "Content-Type: text/html; charset=ISO-8859-1\r\n";
+		@mail($email_to, $email_subject, $email_message, $headers);
+		@mail($email, $email_subject, $email_message, $headers);
+	
+	 	header( 'Location: bookingFormSubmitted.shtml' );
 }
 ?>
