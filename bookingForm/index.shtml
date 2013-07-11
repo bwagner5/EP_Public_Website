@@ -30,6 +30,9 @@
 				<fieldset>
 					<!--CLIENT INFO-->
 					<div class="sectionTitle">Client Info</div>
+					<div class="span10 offset1">
+					  <p class="formInstruction">All fields required unless otherwise indicated*</p>
+					</div>
 					<!--Organizaion Name-->
 					<div class="control-group">
 					  <label class="control-label" for="name">Organization/Department Name</label>
@@ -86,9 +89,6 @@
 					</div>
 					<!--EVENT INFO-->
 					<div class="sectionTitle">Event Info</div>
-					<div class="span10 offset1">
-					  <p class="formInstruction">All fields required unless otherwise indicated*</p>
-					</div>
 					<!--Event Name-->
 					<div class="control-group">
 					  <label class="control-label" for="eventName">Event Name</label>
