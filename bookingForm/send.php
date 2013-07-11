@@ -124,7 +124,7 @@ if(isset($_POST['submit']))
  					</tr>
  					<tr>
  						<td>Affiliation Type </td>
- 						<td>$affiliationType</td>
+ 						<td>$affType</td>
  					</tr>
  					<tr>
  						<td>Org Code </td>
