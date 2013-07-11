@@ -98,17 +98,18 @@ if(isset($_POST['submit']))
  					}
  					td{
  						padding:5px 5px 5px 2px;
- 						font-size:14pt;
- 						font-family: sans-serif;
- 						border: solid green 1px;
- 						background-color: #E6FFEC;
+ 						font-size:12pt;
  					}
  					td:first-child{
  						font-weight:bold;
+ 						font-size:13pt;
  					}
+ 					tr:nth-child(odd) {
+ 						background-color: #fafafa;
+					}
  					.tdTitle {
- 						 background-color: #ffffe6;
- 						 border: solid #dcca00 1px;
+ 						 background-color: #ecfff0;
+ 						 border-bottom: solid #fafafa 1px;
  					}
  				</style>
  			</head>
