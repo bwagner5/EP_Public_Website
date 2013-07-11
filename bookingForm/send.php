@@ -1,10 +1,18 @@
 <?php
 if(isset($_POST['submit'])) 
-{   
-    $email_to = "renfred93@gmail.com";
-    $email_subject = "Booking Form Submission";
-    $email_from = "ep";
-    
+{
+	// Email settings
+	$to =	 'ep@gmu.edu';
+	$from = 'ep@gmu.edu';
+	$subject =	 'Events Production Booking Form Submission: ';
+	// MIME Settings 
+	$bound_text =	"boundary";
+	$bound =	"--".$bound_text."\r\n";
+	$bound_last =	"--".$bound_text."--\r\n"; 
+	$headers =	"From: $from\r\n";
+	$headers .=	"MIME-Version: 1.0\r\n"
+	 	."Content-Type: multipart/mixed; boundary=\"$bound_text\"";
+	 	
     // Client Info
     $orgName = $_POST["name"];
     $affType = $_POST["affiliationType"];
@@ -77,7 +85,9 @@ if(isset($_POST['submit']))
     $highCocktails = $_POST["highCocktails"];
     $lowCocktails = $_POST["lowCocktails"];
     
- 	$message =
+    $subject .= $eventName;
+    
+ 	$messageBody =
  	"
  	<!DOCTYPE HTML>
  		<html>
@@ -276,16 +286,56 @@ if(isset($_POST['submit']))
  						<td>$lowCocktails</td>
  					</tr>
  				</table>
- 				<p>If you would like to make changes to your request, please contact Events Production at ep@gmu.edu. Note that all requests for changes must be made at least ten days prior to the event.</p>
+ 				<p>If you would like to make changes to your request, please contact Events Production at <a href=\"mailto:ep@gmu.edu\">ep@gmu.edu</a>. Note that all requests for changes must be made at least ten days prior to the event.</p>
  			</body>
  		</html>";
  			 	
-		$headers = 'From: '.$email_from."\r\n".
-		'Reply-To: '.$email_from."\r\n" .
-		'X-Mailer: PHP/' . phpversion() . "MIME-Version: 1.0\r\n" . "Content-Type: text/html; charset=ISO-8859-1\r\n";
-		@mail($email_to, $email_subject, $email_message, $headers);
-		@mail($email, $email_subject, $email_message, $headers);
+	$message =	"If you can see this then your client doesn't accept MIME types. Please use another email client to view this message.\r\n"
+	 	.$bound;
+	 	 
+	$message .=	"Content-Type: text/html; charset=\"iso-8859-1\"\r\n"
+	 	."Content-Transfer-Encoding: 7bit\r\n\r\n"
+	 	.$messageBody."\r\n";
+	 	
+	if (!empty($_FILES['attachment1']['name'])){
+		
+		$fileName  = $_FILES['attachment1']['name'];
+		$fileType  = $_FILES['attachment1']['type'];
+		$fileSize  = $_FILES['attachment1']['size'];
+		$fileTmp   = $_FILES['attachment1']['tmp_name'];
+		$fileError = $_FILES['attachment1']['error'];	 
+		$file =	file_get_contents("$fileTmp");
+		 	 
+		$message .=	$bound."Content-Type: $fileType; name=\"$fileName\"\r\n"
+		 	."Content-Transfer-Encoding: base64\r\n"
+		 	."Content-disposition: attachment; file=\"$fileName\"\r\n"
+		 	."\r\n"
+		 	.chunk_split(base64_encode($file));
+	}
+	if (!empty($_FILES['attachment2']['name'])){
+		$fileName  = $_FILES['attachment2']['name'];
+		$fileType  = $_FILES['attachment2']['type'];
+		$fileSize  = $_FILES['attachment2']['size'];
+		$fileTmp   = $_FILES['attachment2']['tmp_name'];
+		$fileError = $_FILES['attachment2']['error'];	 
+		$file =	file_get_contents("$fileTmp");
+		 	 
+		$message .=	$bound."Content-Type: $fileType; name=\"$fileName\"\r\n"
+		 	."Content-Transfer-Encoding: base64\r\n"
+		 	."Content-disposition: attachment; file=\"$fileName\"\r\n"
+		 	."\r\n"
+		 	.chunk_split(base64_encode($file));
+	}
 	
-	 	header( 'Location: bookingFormSubmitted.shtml' );
+	$message .= $bound_last;
+	
+	if(mail($to, $subject, $message, $headers)) 
+	{
+		mail($email, $subject, $message, $headers);
+		header( 'Location: bookingFormSubmitted.shtml' );
+		die(); 
+	} else { 
+		print 'Email message failed. Please try resubmitting the form or contacting us directly.';
+	}
 }
 ?>
