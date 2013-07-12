@@ -93,7 +93,7 @@ if(isset($_POST['submit']))
  		<html>
  			<head>
  				<style>
- 					h2, p {
+ 					h2 {
  						font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
  					}
  					td{
@@ -108,7 +108,7 @@ if(isset($_POST['submit']))
  						background-color: #fafafa;
 					}
  					.tdTitle {
- 						 background-color: #ecfff0;
+ 						 background-color: #ececec;
  						 border-bottom: solid #fafafa 1px;
  					}
  				</style>
