@@ -2,9 +2,9 @@
 if(isset($_POST['submit'])) 
 {
      
-    $email_to = "ep@gmu.edu";
-    $email_subject = "EP Survey Form Submission";
-    $email_from = "Events Production GMU";
+    $email_to = "Renfred93@gmail.com";
+    $email_subject = "EP Survey Submission";
+    $email_from = "ep@gmu.edu";
     
     $eventName = $_POST["eventName"];
     $date = $_POST["date"];
@@ -18,46 +18,86 @@ if(isset($_POST['submit']))
 	$staffComments = $_POST['staffComments'];
 	$equipmentComments = $_POST['equipmentComments'];
     
-    /*
-	$headers = 'From: '.$email_from."\r\n".
-	'Reply-To: '.$email_from."\r\n" .
-	'X-Mailer: PHP/' . phpversion() . "MIME-Version: 1.0\r\n" . "Content-Type: text/html; charset=ISO-8859-1\r\n";
-	@mail($email_to, $email_subject, $email_message, $headers);
-	@mail($email, $email_subject, $email_message, $headers);
-
-    header( 'Location: surveySubmitted.shtml' ) ;
-    */
-    
-    print("
+    $message = "
  	<!DOCTYPE HTML>
  		<html>
  			<head>
  				<style>
+ 					h2 {
+ 						font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+ 					}
  					td{
  						padding:5px 5px 5px 2px;
- 						font-size:14pt;
- 						font-family: sans-serif;
+ 						font-size:12pt;
  					}
  					td:first-child{
  						font-weight:bold;
+ 						font-size:13pt;
+ 					}
+ 					tr:nth-child(odd) {
+ 						background-color: #fafafa;
+					}
+ 					.tdTitle {
+ 						 background-color: #ececec;
+ 						 border-bottom: solid #fafafa 1px;
  					}
  				</style>
  			</head>
  			<body>
- 				<h1>".$eventName."</h1>
- 				<table border=\"1\">
+ 				<h2>Events Production Survey</h2>
+ 				<table>
  					<tr>
+ 						<td class='tdTitle' colspan='2'>Event Info </td>
+ 					</tr>
+ 					<tr>
+ 						<td>Event Name </td>
+ 						<td>$eventName</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Event Date </td>
+ 						<td>$date</td>
+ 					</tr>
+ 					<tr>
+ 						<td class='tdTitle' colspan='2'>Event Experience Rating </td>
+ 					</tr>
+ 					 <tr>
  						<td>Professionalism </td>
- 						<td>".$professionalism."</td>
+ 						<td>$professionalism</td>
+ 					</tr>
+ 					 <tr>
+ 						<td>Courteousness </td>
+ 						<td>$courteousness</td>
+ 					</tr>
+ 					  <tr>
+ 						<td>Helpfulness </td>
+ 						<td>$helpfulness</td>
  					</tr>
  					<tr>
- 						<td>Staff Comments </td>
- 						<td>".$staffComments."</td>
+ 						<td>Value of Services </td>
+ 						<td>$value</td>
  					</tr>
- 				<tr>".$lighting."</tr>
+ 					<tr>
+ 						<td>Overall </td>
+ 						<td>$overall</td>
+ 					</tr>
+ 					 <tr>
+ 						<td>Comments on Staff </td>
+ 						<td>$staffComments</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Comments on Equipment </td>
+ 						<td>$equipmentComments</td>
+ 					</tr>
  				</table>
  			</body>
- 		</html>"
- 		);
+ 		</html>";
+
+	$headers = 'From: '.$email_from."\r\n".
+	'Reply-To: '.$email_from."\r\n" .
+	'X-Mailer: PHP/' . phpversion() . "MIME-Version: 1.0\r\n" . "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	@mail($email_to, $email_subject, $message, $headers);
+	@mail($email, $email_subject, $email_message, $headers);
+
+    header('Location: surveySubmitted.shtml');
 }
 ?>
