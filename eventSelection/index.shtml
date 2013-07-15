@@ -74,7 +74,18 @@
 				</div>
 				<div class="span6">
 					<h3 class="pageTitle" style="padding-left: -60px;">Sample Setup</h3>
-					<img class="eventImg" src="../images/dewberry.jpg">
+					<div id="eventImages">
+						<img class="eventImg" src="images/placeholder.png" style="display:block">
+						<img class="eventImg" src="">
+						<img class="eventImg" src="">
+						<img class="eventImg" src="">
+						<img class="eventImg" src="">
+						<img class="eventImg" src="">
+						<img class="eventImg" src="">
+						<img class="eventImg" src="">
+						<img class="eventImg" src="">
+						<img class="eventImg" src="">
+					</div>
 					<ul>
 						<li style="display: none;" class="captionText"></li>
 					</ul>
