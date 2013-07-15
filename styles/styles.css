@@ -346,11 +346,14 @@ a:hover {
 }
 
 .eventImg {
+	width: 572px;
+    position: absolute;
+    margin-top: 8px;
+    margin-bottom: 25px;
     -moz-box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
     -webkit-box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
     box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
-    margin-top: 8px;
-    margin-bottom: 25px
+    display: none;
 }
 
 .dropdownInput {
