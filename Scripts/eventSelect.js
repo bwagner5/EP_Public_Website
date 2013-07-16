@@ -7,10 +7,10 @@ var infiniteRotator =
         var initialFadeIn = 500;
 
         //interval between items (in milliseconds)
-        var itemInterval = 5000;
+        var itemInterval = 3000;
 
         //cross-fade time (in milliseconds)
-        var fadeTime = 1800;
+        var fadeTime = 1200;
 
         //count number of items
         var numberOfItems = numberOfItems;
@@ -24,7 +24,7 @@ var infiniteRotator =
         //loop through the items
         var infiniteLoop = setInterval(function(){
             $('.eventImg').eq(currentItem).fadeOut(fadeTime);
-
+            
             if(currentItem == numberOfItems -1){
                 currentItem = 0;
             }else{
