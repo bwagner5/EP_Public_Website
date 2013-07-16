@@ -38,7 +38,7 @@
 		<div class="span10 offset1 box">
 		  <div class="row-fluid">
 			<div class="span4 offset1">
-			    <a>
+			    <a href="gallery">
               		<img class="rotating-item" src="gallery/images/0.jpg" alt="">
               		<img class="rotating-item" src="gallery/images/1.jpg" alt="">
               		<img class="rotating-item" src="gallery/images/3.jpg" alt="">
