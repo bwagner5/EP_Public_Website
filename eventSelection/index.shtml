@@ -40,8 +40,8 @@
 						      <li><a class="dropSelect" tabindex="-1">Conference</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Concert</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Culture Show</a></li>
+						      <li><a class="dropSelect" tabindex="-1">DJ Dance</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Fashion Show</a></li>
-						      <li><a class="dropSelect" tabindex="-1">Lecture</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Meeting</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Outdoor Festival</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Presentation</a></li>
