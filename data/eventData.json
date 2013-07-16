@@ -30,13 +30,19 @@
 		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
 	},
 	"Outdoor Festival": {
-		"Image Paths": ["images/Outdoor_1.jpg", "Outdoor_2.jpg", "Outdoor_3.jpg", "Outdoor_4.jpg"],
+		"Image Paths": ["images/Outdoor_1.jpg", "images/Outdoor_2.jpg", "images/Outdoor_3.jpg", "images/Outdoor_4.jpg"],
+		"Diagram Path": "images/diagram.png",
+		"Included Items": ["Microphone", "Projector"],
+		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
+	},
+	"Party": {
+		"Image Paths": ["images/Party_1.jpg", "images/Party_2.jpg", "images/Party_3.jpg", "images/Party_4.jpg", "images/Party_5.jpg"],
 		"Diagram Path": "images/diagram.png",
 		"Included Items": ["Microphone", "Projector"],
 		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
 	},
 	"Presentation": {
-		"Image Paths": ["Presentation_1.jpg", "Presentation_2.jpg", "Presentation_3.jpg"],
+		"Image Paths": ["images/Presentation_1.jpg", "images/Presentation_2.jpg", "images/Presentation_3.jpg"],
 		"Diagram Path": "images/diagram.png",
 		"Included Items": ["Microphone", "Projector"],
 		"Description": "This is a typical setup for a conference that includes basic sound lighting and video. Supports attendances of up to 500 people."
