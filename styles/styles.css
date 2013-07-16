@@ -348,12 +348,23 @@ a:hover {
 .eventImg {
 	width: 572px;
     position: absolute;
-    margin-top: 8px;
-    margin-bottom: 25px;
-    -moz-box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
-    -webkit-box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
-    box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
+    top: 0;
     display: none;
+}
+
+#eventImages{
+	width: 572px;
+	height: 428px;
+	margin-top: 8px;
+	margin-bottom: 25px;
+	position: relative;
+	overflow-y: hidden;
+	background-color: #141414;
+	border: 1px solid #c8c8c8;
+	box-sizing: border-box;
+	box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
+	-moz-box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
+    -webkit-box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
 }
 
 .dropdownInput {
@@ -545,7 +556,7 @@ a:hover {
     cursor: -webkit-zoom-in;
     -moz-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75)
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
 
 .galleryBar {
