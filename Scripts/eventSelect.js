@@ -62,7 +62,6 @@ $(document).ready(function(){
 		}
 		$('#includedItems').text(displayAddOns);
 		$('#description').text(eventData[type]["Description"]);
-		$('#diagramLink').show();
 		$('.eventImg').each(function(i){
 			if (i < eventData[type]["Image Paths"].length){
 				newImage = eventData[type]["Image Paths"][i];
