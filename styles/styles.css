@@ -354,17 +354,16 @@ a:hover {
 
 #eventImages{
 	width: 572px;
-	height: 428px;
+	min-height: 440px;
 	margin-top: 8px;
 	margin-bottom: 25px;
 	position: relative;
-	overflow-y: hidden;
-	background-color: #141414;
+	background-color: white;
 	border: 1px solid #c8c8c8;
 	box-sizing: border-box;
-	box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
-	-moz-box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
-    -webkit-box-shadow: 0 0 8px rgba(100, 100, 100, 0.6);
+	box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
+	-moz-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
+    -webkit-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
 }
 
 .dropdownInput {
@@ -607,7 +606,7 @@ input[name="slideSwitch"] {
 }
 
 #detailsBox {
-	min-height: 323px;
+	min-height: 336px;
 	padding-top:40px;
 	padding-bottom:30px;
 	margin-left:0;
