@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
 	<?php include "../includes/meta.php"; ?>
-	<title>EP Staff</title>
+	<title>Staff Contacts</title>
 	<!-- Styles -->
 	<link href="../styles/bootstrap.css" rel="stylesheet">
 	<link href="../styles/styles.css" rel="stylesheet">
@@ -31,33 +31,6 @@
 				</div>
 	 		</a>
 			<div class="row-fluid">
-				<div class="span12">
-					<h2 class="pageTitle">EP Staff</h2>
-				</div>
-			</div>
-			<div class="spacer"></div>
-			<div class="row-fluid">
-			 	<div class="span5 offset1">
-			 		<a href="staffContacts.php">
-						<div class="greyButton" id="techContact-btn">
-							<h3 class="greyButtonText">Employee Contacts</h3>
-						</div>
-			 		</a>
-			 	</div>
-			 	<div class="span5">
-			 		<a href="<?php include "get_schedule_href.php"; ?>">
-						<div class="greyButton" id="eventSchedule-btn">
-							<h3 class="greyButtonText">Event Schedule</h3>
-						</div>
-			 		</a>
-			 	</div>
-			</div>
-			<div class="spacer"></div>
-			<?php 
-				if ($_SESSION['admin']){
-					include "admin.php"; 
-				}
-			?>
 		  </div>
 		</div>
 	  </div>
