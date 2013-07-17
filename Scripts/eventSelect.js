@@ -50,17 +50,8 @@ $(document).ready(function(){
 		
 	$('#eventType-menu .dropSelect').click(function(event){
 		type = $(this).text();
-		$('#selectedType').text(type);
-		// Formating the addons
-		var displayAddOns = "";
-		var items = eventData[type]["Included Items"];
-		for (i = 0; i < items.length; i++){
-			displayAddOns += items[i];
-			if (i != items.length - 1){
-				displayAddOns += ", ";
-			}  
-		}
-		$('#includedItems').text(displayAddOns);
+		$('#title').text(eventData[type]["Title"]);
+		$('#includedItems').text(eventData[type]["Included Items"]);
 		$('#description').text(eventData[type]["Description"]);
 		$('.eventImg').each(function(i){
 			if (i < eventData[type]["Image Paths"].length){
@@ -114,44 +105,3 @@ $(document).ready(function(){
 		}
 	});
 });
-
-$(window).load(function() { //start after HTML, images have loaded
-	 	// Photo carosuel function
-	    var InfiniteRotator =
-	    {
-	        init: function()
-	        {
-	            //initial fade-in time (in milliseconds)
-	            var initialFadeIn = 500;
-	 
-	            //interval between items (in milliseconds)
-	            var itemInterval = 5000;
-	 
-	            //cross-fade time (in milliseconds)
-	            var fadeTime = 1800;
-	 
-	            //count number of items
-	            var numberOfItems = $('.rotating-item').length;
-	 
-	            //set current item
-	            var currentItem = 0;
-	 
-	            //show first item
-	            $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
-	 
-	            //loop through the items
-	            var infiniteLoop = setInterval(function(){
-	                $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
-	 
-	                if(currentItem == numberOfItems -1){
-	                    currentItem = 0;
-	                }else{
-	                    currentItem++;
-	                }
-	                $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
-	 
-	            }, itemInterval);
-	        }
-	    };
-	    InfiniteRotator.init();
-	});
