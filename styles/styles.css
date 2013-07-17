@@ -764,7 +764,7 @@ input.error {
 #staffContacts td{
 	padding: 5px;
 }
-#staffContacts tr:nth-child(2n) {
+#staffContacts tr:nth-child(2n-1) {
 	background-color: #ebebeb;
 }
 #staffContacts tr td:first-child {
