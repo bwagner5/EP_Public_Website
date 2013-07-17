@@ -29,7 +29,7 @@
 		<div class="span12 box">
 			<div class="row-fluid">
 				<div class="span4 offset1">
-					<h3 class="pageTitle">Event Options</h3>
+					<h3 class="pageTitle" style="margin-left: -30px;">Event Options</h3>
 					<div class="row-fluid">
 						<div class="span10">
 						  <div class="btn-group padded" style="width:100%;"> 
@@ -37,14 +37,13 @@
 								<span class="caret"></span>
 							</a>
 						    <ul class="dropdown-menu" id="eventType-menu">
-						      <li><a class="dropSelect" tabindex="-1">Conference</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Concert</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Conference</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Culture Show</a></li>
 						      <li><a class="dropSelect" tabindex="-1">DJ Dance</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Fashion Show</a></li>
-						      <li><a class="dropSelect" tabindex="-1">Meeting</a></li>
-						      <li><a class="dropSelect" tabindex="-1">Outdoor Festival</a></li>
-						      <li><a class="dropSelect" tabindex="-1">Party</a></li>
+  						      <li><a class="dropSelect" tabindex="-1">Holiday Party</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Outdoor</a></li>
 						      <li><a class="dropSelect" tabindex="-1">Presentation</a></li>
 						    </ul>
 						  </div>
@@ -57,23 +56,24 @@
 						  	<div class="row-fluid">
 						  		<div class="span10 offset1">
 						  			<p>
-						      			<b>Event Type: </b><span id="selectedType"></span>
-						  			</p>
-						  			<p>
-						      			<b>Included Items: </b><span id="includedItems"></span>
+						      			<b><span id="title"></span></b>
 						  			</p>
 						  			<p>
 						      			<b>Description: </b><span id="description"></span>
 						  			</p>
 						  			<p>
+						      			<b>Available Concert Enhancements: </b><span id="includedItems"></span>
 						  			</p>
+						  			<p>
+						      			<b><a href="../bookingForm">Click here to book EP for your event today!</a></b>
+						      		</p>
 						  		</div>
 						  	</div>
 						</div>	
 					</div>
 				</div>
 				<div class="span6">
-					<h3 class="pageTitle" style="padding-left: -60px;">Sample Setups</h3>
+					<h3 class="pageTitle" style="padding-left: -60px;">&nbsp;</h3>
 					<div id="eventImages">
 						<img class="eventImg" src="images/placeholder.png" style="display:block">
 						<img class="eventImg" src="">
