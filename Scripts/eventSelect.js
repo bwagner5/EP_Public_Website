@@ -37,6 +37,12 @@ var infiniteRotator =
     }
 };
 
+// Prevent $(document).ready() from executing before the json loads
+// which may result in an undefined error
+$.ajaxSetup({
+	async: false
+});
+
 // This global stores the specific options for each event space
 var eventData;
 
