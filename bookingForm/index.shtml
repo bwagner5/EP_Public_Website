@@ -105,10 +105,9 @@
 					</div>
 					<!--Sound Check Time-->
 					<div class="control-group">
-					  <label class="control-label" for="soundCheck">Equipment Setup By</label>
+					  <label class="control-label" for="soundCheck">Equipment Set Up By</label>
 					  <div class="controls">
 					    <input id="soundCheck" name="soundCheck" type="text" class="input-small timepicker"> 
-					    <img id="soundcheckQuestion" src="../images/questionmark.png"/>
 					  </div>
 					</div>
 					<!--Event Start Time-->
@@ -148,7 +147,7 @@
 					<div class="control-group">
 					  <label class="control-label" for="location">Event Location</label>
 					  <div class="controls">
-					    <input id="location" name="location" type="text" placeholder="" class="input-xlarge"> 
+					    <input id="location" name="location" type="text" placeholder="(List All That Apply)" class="input-xlarge"> 
 					  </div>
 					</div>
 					<!-- Event Type -->
@@ -258,6 +257,9 @@
 					  </div>
 					</div>
 					<!--Event Description-->
+					<div class="span10 offset1">
+					  <p class="formInstruction" style="margin-bottom:0px;">Please describe the basic technical needs for your event:</p>
+					</div>
 					<div class="control-group">
 					  <label class="control-label" for="eventDescription">Event Description</label>
 					  <div class="controls">                     
@@ -289,7 +291,7 @@
 					</div>
 					<!-- Wireless Microphones -->
 					<div class="control-group">
-					  <label class="control-label" for="wirelessMics">Wireless Microphones</label>
+					  <label class="control-label" for="wirelessMics">Wireless Handheld Microphones</label>
 					  <div class="controls">
 					    <select id="wirelessMics" name="wirelessMics" class="input-mini">
 					      <option></option>
@@ -306,7 +308,7 @@
 					</div>
 					<!-- Wireless Lavaliers -->
 					<div class="control-group">
-					  <label class="control-label" for="lavaliers">Wireless Lavaliers</label>
+					  <label class="control-label" for="lavaliers">Wireless Headset/Lavaliers</label>
 					  <div class="controls">
 					    <select id="lavaliers" name="lavaliers" class="input-mini">
 					      <option></option>
@@ -396,7 +398,7 @@
 					    </label>
 					    <label class="checkbox" for="lighting-2">
 					      <input type="checkbox" name="lighting[]" id="lighting-2" value="Effects Lasers">
-					      Effects Lasers
+					      Effects/Lasers
 					    </label>
 					    <label class="checkbox" for="lighting-3">
 					      <input type="checkbox" name="lighting[]" id="lighting-3" value="Black Lights">
@@ -431,7 +433,7 @@
 					</div>
 					<!-- Recording -->
 					<div class="control-group">
-					  <label class="control-label" for="recording">Archive Recording</label>
+					  <label class="control-label" for="recording">Archival Recording</label>
 					  <div class="controls">
 					    <label class="checkbox" for="recording-0">
 					      <input type="checkbox" name="recording[]" id="recording-0" value="Audio">
@@ -457,12 +459,12 @@
 					  <div class="controls">
 					    <select id="staging" name="staging" class="input-xlarge">
 						  <option></option>
-						  <option>6' width by 4' depth (single piece)</option>
-						  <option>12' width by 6' depth (Ideal for SUB II Side Pocket)</option>
-						  <option>12' width by 12' depth (ideal for Small 3 Piece Bands)</option>
-						  <option>18' width by 12' depth (ideal for Most Dance Groups/Bands)</option>
-						  <option>24' width by 20' depth (ideal for Large Dance Groups/ Large Bands)</option>
-					      <option>28' width by 18' depth (largest stage)</option>
+						  <option>6' width by 4' depth (Single Piece)</option>
+						  <option>12' width by 6' depth (Ideal for 3 Person Panel)</option>
+						  <option>12' width by 12' depth (Ideal for Small 3 Piece Bands)</option>
+						  <option>18' width by 12' depth (Ideal for Most Dance Groups/Bands)</option>
+						  <option>24' width by 20' depth (Ideal for Large Dance Groups/ Large Bands)</option>
+					      <option>28' width by 18' depth (Largest Stage)</option>
 					    </select>
 					  </div>
 					</div>
@@ -474,7 +476,6 @@
 					      <option></option>
 					      <option>1</option>
 					      <option>2</option>
-					      <option>3</option>
 					    </select>
 					  </div>
 					</div>
@@ -488,6 +489,10 @@
 					      <option>2</option>
 					      <option>3</option>
 					      <option>4</option>
+  					      <option>5</option>
+					      <option>6</option>
+					      <option>7</option>
+					      <option>8</option>
 					    </select>
 					  </div>
 					</div>
@@ -505,7 +510,7 @@
 					<div class="control-group">
 					  <label class="control-label" for="roundTables">5' Round Tables</label>
 					  <div class="controls">
-					    <input id="roundTables" name="roundTables" type="text" placeholder="Maximum of 20" class="input-medium">  
+					    <input id="roundTables" name="roundTables" type="text" placeholder="Maximum of 30" class="input-medium">  
 					  </div>
 					</div>
 					<!-- Stacking Chairs -->
@@ -524,20 +529,20 @@
 					</div>
 					<!-- Round Cocktail Tables (High) -->
 					<div class="control-group">
-					  <label class="control-label" for="highCocktails">Round Cocktail Tables (High)</label>
+					  <label class="control-label" for="highCocktails">Cocktail Tables (Maximum of 40)</label>
 					  <div class="controls">
-					    <input id="highCocktails" name="highCocktails" type="text" placeholder="Maximum of 40" class="input-medium">
+					    <input id="highCocktails" name="highCocktails" type="text" placeholder="High" class="input-medium">
 					  </div>
 					</div>
 					<!-- Round Cocktail Tables (High) -->
 					<div class="control-group">
-					  <label class="control-label" for="lowCocktails">Round Cocktail Tables (Low)</label>
+					  <label class="control-label" for="lowCocktails"></label>
 					  <div class="controls">
-					    <input id="lowCocktails" name="lowCocktails" type="text" placeholder="Maximum of 40" class="input-medium">  
+					    <input id="lowCocktails" name="lowCocktails" type="text" placeholder="Low" class="input-medium">  
 					  </div>
 					</div>
 					<div class="sectionTitle">Additional Files</div>
-					<p class="formCaption">You can use the following section to submit event programs or diagrams that could be helpful to us in planning you event.</p>
+					<p class="formCaption">You can use the following section to submit event programs or diagrams that could be helpful to us in planning your event.</p>
 					<!-- File Button --> 
 					<div class="control-group">
 					  <label class="control-label" for="attachment1">Attachment 1</label>

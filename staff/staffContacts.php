@@ -39,7 +39,7 @@
 			<div class="row-fluid">
 				<div class="span10 offset1">
 					<div class="sectionTitle">EP Staff Contacts</div>
-					<table id="staffContacts">
+					<table class="staffContacts">
 						<tr>
 							<td>Ken Locke</td>
 							<td>klocke</td>
@@ -62,12 +62,7 @@
 						</tr>
 					</table>
 					<div class="sectionTitle">EP Technician Contacts</div>
-					<table id="staffContacts">
-						<tr>
-							<td>Renfred Harper</td>
-							<td>rharper2</td>
-							<td>703 362 3554</td>
-						</tr>
+					<table class="staffContacts" id="techContacts">
 					</table>
 				</div>
 		  </div>
@@ -83,5 +78,20 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 	<script src="../scripts/bootstrap.js"></script>
+	<script>
+		$.ajaxSetup({
+			async: false
+		});
+		var contactData;
+		
+		$.getJSON('contactData.json', function(data){
+			contactData = data;
+		});
+		$(document).ready(function() {
+			$.each(contactData, function(name, info){
+				$('#techContacts').append("<tr><td>"+name+"</td><td>"+info['email']+"</td><td>"+info['phone']+"</td></tr>");
+			});
+		});
+	</script>
   </body>
 </html>

@@ -196,7 +196,7 @@ $(document).ready(function(){
     });
     $('#orgCodeQuestion').popover({
     	title:'', 
-    	content:"Offical GMU student organizations have a unique identification code. This code is required for student organizations to book EP for events.", 
+    	content:"Offical GMU student and departmental organizations have a unique identification code. This code is required to book EP for events.", 
     	trigger:"hover"
     });
 });

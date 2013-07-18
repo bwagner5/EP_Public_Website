@@ -2,7 +2,7 @@
 if(isset($_POST['submit'])) 
 {
 	// Email settings
-	$to =	 'ep@gmu.com';
+	$to =	 'renfred93@gmail.com';
 	$from = 'ep@gmu.edu';
 	$subject =	 'Events Production Booking Form Submission: ';
 	// MIME Settings 
@@ -105,9 +105,10 @@ if(isset($_POST['submit']))
  						font-size:13pt;
  					}
  					tr:nth-child(odd) {
- 						background-color: #eaeaea;
+ 						background-color: #efefef;
 					}
  					.tdTitle {
+ 						 margin-top: 25px;
  						 background-color: #dadada;
  						 border-bottom: solid #fafafa 1px;
  					}
@@ -287,7 +288,7 @@ if(isset($_POST['submit']))
  						<td>$lowCocktails</td>
  					</tr>
  				</table>
- 				<p>If you would like to make changes to your request, please contact Events Production at <a href=\"mailto:ep@gmu.edu\">ep@gmu.edu</a>. Note that all requests for changes must be made at least ten days prior to the event.</p>
+ 				<p>Your request to book Events Production has been submitted. A response regarding your request will be made within 3 business days. If you have updates or changes to your request, please email <a href=\"mailto:ep@gmu.edu\">ep@gmu.edu</a>. Thank you.</p>
  			</body>
  		</html>";
  			 	

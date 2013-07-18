@@ -607,8 +607,8 @@ input[name="slideSwitch"] {
 
 #detailsBox {
 	min-height: 336px;
-	padding-top:40px;
-	padding-bottom:30px;
+	padding-top:20px;
+	padding-bottom:20px;
 	margin-left:0;
 }
 
@@ -757,25 +757,25 @@ input.error {
     padding: 3px 10px 3px 10px;
     text-align: center;
 }
-#staffContacts {
+.staffContacts {
 	width: 100%;
 	margin-bottom: 25px;
 }
-#staffContacts td{
+.staffContacts td{
 	padding: 5px;
 }
-#staffContacts tr:nth-child(2n-1) {
+.staffContacts tr:nth-child(2n-1) {
 	background-color: #ebebeb;
 }
-#staffContacts tr td:first-child {
+.staffContacts tr td:first-child {
 	font-size: 14pt;
 	width:45%;
 }
-#staffContacts tr td:nth-child(2) {
+.staffContacts tr td:nth-child(2) {
 	font-size: 14pt;
 	text-align: left;
 }
-#staffContacts tr td:nth-child(3) {
+.staffContacts tr td:nth-child(3) {
 	font-size: 14pt;
 	text-align: right;
 }
