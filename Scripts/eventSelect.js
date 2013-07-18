@@ -55,6 +55,7 @@ $(document).ready(function(){
 		$('#title').text(eventData[type]["Title"]);
 		$('#includedItems').text(eventData[type]["Included Items"]);
 		$('#description').text(eventData[type]["Description"]);
+		$('#eventType').text(type);
 		$('.eventImg').each(function(i){
 			if (i < eventData[type]["Image Paths"].length){
 				newImage = eventData[type]["Image Paths"][i];
