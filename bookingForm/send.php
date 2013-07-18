@@ -2,7 +2,7 @@
 if(isset($_POST['submit'])) 
 {
 	// Email settings
-	$to =	 'ep@gmu.edu';
+	$to =	 'ep@gmu.com';
 	$from = 'ep@gmu.edu';
 	$subject =	 'Events Production Booking Form Submission: ';
 	// MIME Settings 
@@ -105,10 +105,10 @@ if(isset($_POST['submit']))
  						font-size:13pt;
  					}
  					tr:nth-child(odd) {
- 						background-color: #fafafa;
+ 						background-color: #eaeaea;
 					}
  					.tdTitle {
- 						 background-color: #ececec;
+ 						 background-color: #dadada;
  						 border-bottom: solid #fafafa 1px;
  					}
  				</style>
