@@ -4,21 +4,21 @@ function preload(imageArray) {
     });
 }
 
-imgOrient = function(img, size) { 
+imgOrient = function(img, maxImgHeight, maxImgWidth) { 
 	$(img).load(function(){
 	console.log("Width"+$(img).width());
 	console.log("Height"+$(img).height());
 		if ($(img).height() > $(img).width()){
 			console.log("shlide");
 			$(img).css({
-				"max-height":521,
+				"max-height":maxImgHeight,
 				"max-width":"none"
 			});	 
 		}
 		else {
 			console.log("up");
 			$(img).css({
-				"max-width":695,
+				"max-width":maxImgWidth,
 				"max-height":"none"
 			});	 
 		}
@@ -66,7 +66,7 @@ $(document).ready(function() {
 	//Click the large picture to enter overlay mode
 	$(".mainDisplay").on("click", function() {
 		$(".overlayImg").attr("src","images/"+currentImg+".jpg");
-		imgOrient(".overlayImg", "100%");
+		imgOrient(".overlayImg", 800, "100%");
 		$(".overlay").toggle();
 		overlayMode = true;
 	});
@@ -84,13 +84,13 @@ $(document).ready(function() {
 		
 		if (overlayMode) {
 			$(".overlayImg").attr("src","images/"+currentImg+".jpg");
-			imgOrient(".overlayImg", "100%");
+			imgOrient(".overlayImg", 800, "100%");
 		}
 		else {
 			$(".mainDisplay").attr("src","images/"+currentImg+".jpg"); 
 			setChange()
 			$("#img"+currentImg%5).prop("checked", true);
-			imgOrient(".mainDisplay", "100%");
+			imgOrient(".mainDisplay", 521, 695);
 		}
 		click.stopPropagation();
 	});
@@ -100,13 +100,13 @@ $(document).ready(function() {
 		
 		if (overlayMode) {
 			$(".overlayImg").attr("src","images/"+currentImg+".jpg");
-			imgOrient(".overlayImg", "100%");
+			imgOrient(".overlayImg", 800, "100%");
 		}
 		else {
 			$(".mainDisplay").attr("src","images/"+currentImg+".jpg"); 
 			setChange()
 			$("#img"+currentImg%5).prop("checked", true);
-			imgOrient(".mainDisplay", "100%");
+			imgOrient(".mainDisplay", 521, 695);
 		}
 		click.stopPropagation();
 	});
