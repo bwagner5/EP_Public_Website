@@ -506,13 +506,13 @@ a:hover {
 
 .alignCell {
     /*Required for vertical centering*/
-    display: table
+    display: table;
 }
 
 .alignWrapper {
     /*Allows the photos to be centered vertically no matter what height they are*/
     display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .rightArrow, .leftArrow {
