@@ -21,7 +21,18 @@ $(document).ready(function(){
 			return date.valueOf() < now.valueOf() ? 'disabled' : '';
 		}
 	});
-	$('.timepicker').timepicker();
+	$('#soundCheck').timepicker({
+		'minTime': '7:00am',
+		'maxTime': '11:30pm'
+	});
+	$('#startTime').timepicker({
+		'minTime': '7:00am',
+		'maxTime': '11:30pm'
+	});
+	$('#endTime').timepicker({
+		'minTime': '7:00am',
+		'maxTime': '2:00am'
+	});
 	$('#location').typeahead({
 		items: 18,
 		source: [
@@ -189,9 +200,19 @@ $(document).ready(function(){
 	    }
     });
     // Popover Initialization
-    $('#soundcheckQuestion').popover({
+    $('#audioRecordingQuestion').popover({
     	title:'', 
-    	content:"\"Sound check\" is the time at which you would like your event to be setup and ready to view. Depending on the size of the event, this time is usually reccomended to be an hour or more before the event begins.", 
+    	content:"Audio: Will provide with CD and/or Digital Copy of audio from your event or meeting. Please allow 24 hours for post-processing", 
+    	trigger:"hover"
+    });
+    $('#videoRecordingQuestion').popover({
+    	title:'', 
+    	content:"Video: Will provide a Digital Copy of event recording in quicktime format. Client must provide Flash drive or External Drive to transfer video. NO DVDS will be made. 72 hours post-processing", 
+    	trigger:"hover"
+    });
+    $('#pcLaptopsQuestion').popover({
+    	title:'', 
+    	content:"Our laptops do not have CD Drives", 
     	trigger:"hover"
     });
     $('#orgCodeQuestion').popover({

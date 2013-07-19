@@ -602,7 +602,7 @@ input[name="slideSwitch"] {
 
 #eventType-menu{
 	float:right;
-	left:58%;
+	left:37%;
 }
 
 #detailsBox {
@@ -685,13 +685,20 @@ input.error {
 }
 
 .eventCheckbox {
-	width: 125px;
+	width: 155px;
 }
 
 .question {
     height: 32px;
     margin-left: 0;
     cursor: pointer
+}
+#pcLaptopsQuestion, #audioRecordingQuestion, #videoRecordingQuestion {
+	height: 28px;
+	padding-right: 15px;
+}
+#audioRecordingQuestion, #videoRecordingQuestion {
+	padding-left: 5px; 
 }
 
 .formInstruction {
@@ -703,7 +710,7 @@ input.error {
 	margin-left:0;
 	margin-bottom:20px;
 	margin-top: -15px;
-	font-size: 13px
+	font-size: 13px;
 }
 
 .psudo-btn {

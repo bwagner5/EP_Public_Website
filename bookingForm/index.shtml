@@ -26,559 +26,597 @@
       <div class="row">
         <div class="span10 offset1 box">
         	<h2 class="pageTitle" style="margin-bottom:20px;">Booking Form</h2>
-	        <form action="send.php" enctype="multipart/form-data" method="post" class="form-horizontal span10 offset1" id="bookingForm" >
+	        <form action="send.php" enctype="multipart/form-data" method="post" class="form-horizontal" id="bookingForm" >
 				<fieldset>
-					<!--CLIENT INFO-->
-					<div class="sectionTitle">Client Info</div>
-					<div class="span10 offset1">
-					  <p class="formInstruction">All fields required unless otherwise indicated*</p>
+					<div class="row">
+			        	<div class="span8 offset1">
+							<!--CLIENT INFO-->
+							<div class="sectionTitle">Client Info</div>
+							<div class="span10 offset1">
+							  <p class="formInstruction">All fields required unless otherwise indicated*</p>
+							</div>
+							<!--Organizaion Name-->
+							<div class="control-group">
+							  <label class="control-label" for="name">Organization/Department Name</label>
+							  <div class="controls">
+							    <input id="name" name="name" type="text" placeholder="" class="input-xlarge">    
+							  </div>
+							</div>
+							<!--Affliation Type-->
+							<div class="control-group">
+							  <label class="control-label" for="affiliationType">Affiliation Type</label>
+							  <div class="controls">
+							    <select id="affiliationType" name="affiliationType" class="input-large">
+							      <option></option>
+							      <option>Mason Department</option>
+							      <option>Student Organization</option>
+							      <option>Off-campus</option>
+							    </select>					  
+							  </div>
+							</div>
+							<!-- Org Code -->
+							<div class="control-group" id="orgCodeGroup">
+							  <label class="control-label" for="orgCode">Organization Code</label>
+							  <div class="controls">
+							    <input id="orgCode" name="orgCode" type="text" placeholder=" " class="input-medium">
+							    <img id="orgCodeQuestion" src="../images/questionmark.png"/>
+							  </div>
+							</div>
+							<!-- Requestor's  Name -->
+							<div class="control-group">
+							  <label class="control-label" for="requestorFirstName">Client Name</label>
+							  <div class="controls">
+							    <input id="requestorFirstName" name="requestorFirstName" type="text" placeholder="First Name" class="input-large">
+							  </div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="requestorLastName"></label>
+							  <div class="controls">
+							    <input id="requestorLastName" name="requestorLastName" type="text" placeholder="Last Name" class="input-large">  
+							  </div>
+							</div>
+							<!-- Phone Number -->
+							<div class="control-group">
+							  <label class="control-label" for="requestorPhoneNum">Phone Number</label>
+							  <div class="controls">
+							    <input id="requestorPhoneNum" name="requestorPhoneNum" type="text" placeholder="" class="input-large">
+							  </div>
+							</div>
+							<!-- Email -->
+							<div class="control-group">
+							  <label class="control-label" for="email">E-mail</label>
+							  <div class="controls">
+							    <input id="email" name="email" type="text" placeholder="" class="input-xlarge">
+							  </div>
+							</div>
+							<!--EVENT INFO-->
+							<div class="sectionTitle">Event Info</div>
+							<!--Event Name-->
+							<div class="control-group">
+							  <label class="control-label" for="eventName">Event Name</label>
+							  <div class="controls">
+							    <input id="eventName" name="eventName" type="text" placeholder="" class="input-xlarge">
+							  </div>
+							</div>
+							<!--Event Date-->
+							<div class="control-group">
+							  <label class="control-label" for="date">Event Date</label>
+							  <div class="controls">
+							    <input id="date" name="date" type="text" placeholder="" class="input-medium datepicker">
+							  </div>
+							</div>
+							<!--25 Live-->
+							<div class="control-group">
+							  <label class="control-label" for="live25">25 Live Reference Number</label>
+							  <div class="controls">
+							    <input id="live25" name="live25" type="text" placeholder="(Optional)" class="input-medium">
+							  </div>
+							</div>
+							<!--Sound Check Time-->
+							<div class="control-group">
+							  <label class="control-label" for="soundCheck">Equipment Set Up By</label>
+							  <div class="controls">
+							    <input id="soundCheck" name="soundCheck" type="text" class="input-small"> 
+							  </div>
+							</div>
+							<!--Event Start Time-->
+							<div class="control-group">
+							  <label class="control-label" for="startTime">Event Start Time</label>
+							  <div class="controls">
+							      <input id="startTime" name="startTime" type="text" class="input-small timepicker">
+							  </div>
+							</div>
+							<!--Event End Time-->
+							<div class="control-group">
+							  <label class="control-label" for="endTime">Event End Time</label>
+							  <div class="controls">
+							      <input id="endTime" name="endTime" type="text" class="input-small timepicker">
+							  </div>
+							</div>
+							<!--Contact on Event Day-->
+							<div class="control-group">
+							  <label class="control-label" for="hostFirstName">Contact on Day of Event</label>
+							  <div class="controls">
+							    <input id="hostFirstName" name="hostFirstName" type="text" placeholder="First Name" class="input-large">   
+							  </div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="hostLastName"></label>
+							  <div class="controls">
+							    <input id="hostLastName" name="hostLastName" type="text" placeholder="Last Name" class="input-large">
+							  </div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="hostPhoneNum">Contact on Day of Event Phone Number</label>
+							  <div class="controls">
+							    <input id="hostPhoneNum" name="hostPhoneNum" type="text" placeholder="" class="input-large">
+							  </div>
+							</div>
+							<!-- Event Location -->
+							<div class="control-group">
+							  <label class="control-label" for="location">Event Location</label>
+							  <div class="controls">
+							    <input id="location" name="location" type="text" placeholder="(List All That Apply)" class="input-xlarge"> 
+							  </div>
+							</div>
+							<!-- Event Type -->
+							<div class="span10 offset1">
+							  <p class="formInstruction" style="margin-bottom:0px;">Check all that apply:</p>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="eventType">Event Type</label>
+							  <div class="controls">
+							    <label class="checkbox inline eventCheckbox" for="eventType-1">
+							      <input type="checkbox" name="eventType[]" id="eventType-1" value="Concert">
+							      Concert
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="eventType-0">
+							      <input type="checkbox" name="eventType[]" id="eventType-0" value="Conference">
+							      Conference
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="eventType-10">
+							      <input type="checkbox" name="eventType[]" id="eventType-10" value="Concert">
+							      Culture/Variety Show
+							    </label>
+							    <br>
+							    <label class="checkbox inline eventCheckbox" for="eventType-10">
+							      <input type="checkbox" name="eventType[]" id="eventType-10" value="DJ Dance/Party">
+							      DJ Dance/Party					    
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="eventType-2">
+							      <input type="checkbox" name="eventType[]" id="eventType-2" value="Fashion Show">
+							      Fashion Show
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="eventType-2">
+							      <input type="checkbox" name="eventType[]" id="eventType-2" value="Gala/Dinner">
+							      Gala/Dinner
+							    </label>
+							    <br>
+							    <label class="checkbox inline eventCheckbox" for="eventType-3">
+							      <input type="checkbox" name="eventType[]" id="eventType-3" value="Lecture">
+							      Lecture
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="eventType-4">
+							      <input type="checkbox" name="eventType[]" id="eventType-4" value="Meeting">
+							      Meeting
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="eventType-5">
+							      <input type="checkbox" name="eventType[]" id="eventType-5" value="Film Screening">
+							      Film Screening
+							    </label>
+							    <br>
+							    <label class="checkbox inline eventCheckbox" for="eventType-6">
+							      <input type="checkbox" name="eventType[]" id="eventType-6" value="Outdoor Event">
+							      Outdoor Event
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="eventType-11">
+							      <input type="checkbox" name="eventType[]" id="eventType-11" value="Presentation">
+							      Presentation
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="eventType-7">
+							      <input type="checkbox" name="eventType[]" id="eventType-7" value="Press Conference">
+							      Press Conference
+							    </label>
+							    <br>
+							    <label class="checkbox inline eventCheckbox" for="eventType-8">
+							      <input type="checkbox" name="eventType[]" id="eventType-8" value="Reception">
+							      Reception
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="eventType-9">
+							      <input type="checkbox" name="eventType[]" id="eventType-9" value="Other">
+							      Other
+							    </label>
+							    <br>
+							  </div>
+							</div>
+							<!--Event Performers -->
+							<div class="control-group">
+							  <label class="control-label" for="eventType">What's Happening at Your Event</label>
+							  <div class="controls">
+							    <label class="checkbox inline eventCheckbox" for="performers-0">
+							      <input type="checkbox" name="performers[]" id="performers-0" value="Singers">
+							      Singers
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="performers-1">
+							      <input type="checkbox" name="performers[]" id="performers-1" value="Dancers">
+							      Dancers
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="performers-2">
+							      <input type="checkbox" name="performers[]" id="performers-2" value="Musicians">
+							      Musicians
+							    </label>
+							    <br>
+							    <label class="checkbox inline eventCheckbox" for="performers-3">
+							      <input type="checkbox" name="performers[]" id="performers-3" value="Hired DJ">
+							      Hired DJ
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="performers-4">
+							      <input type="checkbox" name="performers[]" id="performers-4" value="Karaoke">
+							      Karaoke
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="performers-5">
+							      <input type="checkbox" name="performers[]" id="performers-5" value="Gaming ">
+							      Karaoke
+							    </label>
+							    <br>
+							    <label class="checkbox inline eventCheckbox" for="performers-6">
+							      <input type="checkbox" name="performers[]" id="performers-6" value="Other">
+							      Panel
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="performers-7">
+							      <input type="checkbox" name="performers[]" id="performers-7" value="Other">
+							      Presentation
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="performers-8">
+							      <input type="checkbox" name="performers[]" id="performers-8" value="Other">
+							      Q & A
+							    </label>
+							    <br>
+							    <label class="checkbox inline eventCheckbox" for="performers-9">
+							      <input type="checkbox" name="performers[]" id="performers-9" value="Other">
+							      Teleconference
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="performers-10">
+							      <input type="checkbox" name="performers[]" id="performers-10" value="Other">
+							      Video Conference (VTC)
+							    </label>
+							    <label class="checkbox inline eventCheckbox" for="performers-11">
+							      <input type="checkbox" name="performers[]" id="performers-11" value="Other">
+							      Live Stream/Broadcast
+							    </label>
+							    <br>
+							  </div>
+							</div>
+							<!--Attendance -->
+							<div class="control-group">
+							  <label class="control-label" for="attendance"> Expected Attendance</label>
+							  <div class="controls disabled">
+							    <select id="attendance" name="attendance" placeholder="" class="input-large">
+									<option></option>
+									<option>0-25</option>
+									<option>25-50</option>
+									<option>50-100</option>
+									<option>200-300</option>
+									<option>300-400</option>
+									<option>400-500</option>
+									<option>500-750</option>
+									<option>750+</option>
+							    </select>   
+							  </div>
+							</div>
+							<!--Event Description-->
+							<div class="control-group">
+							  <label class="control-label" for="eventDescription">Event Description</label>
+							  <div class="controls">                     
+							    <textarea id="eventDescription" class="input-xlarge" style="height:70px;max-width:501px;" placeholder="Please describe the basic technical needs for your event here." name="eventDescription"></textarea>
+							  </div>
+							</div>
+							<!-- EVENT ENCHANCEMENTS -->
+							<div class="sectionTitle">Event Enchancements</div>
+							  <p class="formCaption">Based on the previous information you provided about your event, our staff will choose
+							  equipment that best suits your event's needs. In this section you can specify any equipment that you are sure you would like to be included in your  event package and we will do our best to provide it for you based on what is available in our inventory. </p>
+							<!-- Wired Microphones -->
+							<div class="control-group">
+							  <label class="control-label" for="wiredMics">Wired Microphones</label>
+							  <div class="controls">
+							    <select id="wiredMics" name="wiredMics" class="input-mini">
+								  <option></option>
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+							      <option>4</option>
+							      <option>5</option>
+							      <option>6</option>
+							      <option>7</option>
+							      <option>8</option>
+							    </select>
+							  </div>
+							</div>
+							<!-- Wireless Microphones -->
+							<div class="control-group">
+							  <label class="control-label" for="wirelessMics">Wireless Handheld Microphones</label>
+							  <div class="controls">
+							    <select id="wirelessMics" name="wirelessMics" class="input-mini">
+							      <option></option>
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+							      <option>4</option>
+							      <option>5</option>
+							      <option>6</option>
+							      <option>7</option>
+							      <option>8</option>
+							    </select>
+							  </div>
+							</div>
+							<!-- Wireless Lavaliers -->
+							<div class="control-group">
+							  <label class="control-label" for="lavaliers">Wireless Headset/Lavaliers</label>
+							  <div class="controls">
+							    <select id="lavaliers" name="lavaliers" class="input-mini">
+							      <option></option>
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+							      <option>4</option>
+							      <option>5</option>
+							      <option>6</option>
+							      <option>7</option>
+							      <option>8</option>
+							    </select>
+							  </div>
+							</div>
+							<div class="sectionTitle"></div>
+							<!-- Small Projector -->
+							<div class="control-group">
+							  <label class="control-label" for="projector">Projectors</label>
+							  <div class="controls">
+							    <select id="projector" name="projector" class="input-mini">
+							      <option></option>
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+		  					      <option>4</option>
+							      <option>5</option>
+							      <option>6</option>
+							    </select>
+							  </div>
+							</div>
+							<!-- Small Screen -->
+							<div class="control-group">
+							  <label class="control-label" for="smallScreen">7' x 7' Screen</label>
+							  <div class="controls">
+							    <select id="smallScreen" name="smallScreen" class="input-mini">
+							      <option></option>
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+							      <option>4</option>
+							    </select>
+							  </div>
+							</div>
+							<!-- Large Screen -->
+							<div class="control-group">
+							  <label class="control-label" for="largeScreen">12' x 9' Screen</label>
+							  <div class="controls">
+							    <select id="largeScreen" name="largeScreen" class="input-mini">
+							      <option></option>
+							      <option>1</option>
+							      <option>2</option>
+							    </select>
+							  </div>
+							</div>
+							<div class="sectionTitle"></div>
+							<!-- Lighting -->
+							<div class="control-group">
+							  <label class="control-label" for="lighting">Lighting</label>
+							  <div class="controls">
+							    <label class="checkbox" for="lighting-0">
+							      <input type="checkbox" name="lighting[]" id="lighting-0" value="Stage Wash">
+							      Stage Wash
+							    </label>
+							    <label class="checkbox" for="lighting-2">
+							      <input type="checkbox" name="lighting[]" id="lighting-2" value="Effects Lasers">
+							      Effects/Lasers
+							    </label>
+							    <label class="checkbox" for="lighting-3">
+							      <input type="checkbox" name="lighting[]" id="lighting-3" value="Black Lights">
+							      Black Lights
+							    </label>
+							    <label class="checkbox" for="lighting-4">
+							      <input type="checkbox" name="lighting[]" id="lighting-4" value="Hazer">
+							      Hazer
+							    </label>
+							    <label class="checkbox" for="lighting-1">
+							      <input type="checkbox" name="lighting[]" id="lighting-1" value="Colored Uplights">
+							      Colored Uplights
+							    </label>
+							    <!-- Text input-->
+							  </div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="lightColor">Color Preference</label>
+							  <div class="controls">
+							    <input id="lightColor" name="lightColor" type="text" placeholder="Primary Color" class="input-medium inline">
+							    <input id="lightColor2" name="lightColor2" type="text" placeholder="Secondary Color" class="input-medium inline">
+							  </div>
+							</div>
+							<div class="sectionTitle"></div>
+							<!-- PC Laptop -->
+							<div class="control-group">
+							  <label class="control-label" for="laptop">PC Laptop</label>
+							  <div class="controls">
+							    <select id="laptop" name="laptop" class="input-mini">
+							      <option></option>
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+							    </select>
+							    <img id="pcLaptopsQuestion" src="../images/questionmark.png"/>
+							  </div>
+							</div>
+							<!-- Recording -->
+							<div class="control-group">
+							  <label class="control-label" for="recording">Archival Recording</label>
+							  <div class="controls">
+							    <label class="checkbox" for="recording-0">
+							      <input type="checkbox" name="recording[]" id="recording-0" value="Audio">
+							      Audio
+							      <img id="audioRecordingQuestion" src="../images/questionmark.png"/>
+							    </label>
+							    <label class="checkbox" for="recording-1">
+							      <input type="checkbox" name="recording[]" id="recording-1" value="Video">
+							      Video
+							      <img id="videoRecordingQuestion" src="../images/questionmark.png"/>
+							    </label>
+							  </div>
+							</div>
+							<!-- ADDITIONAL ITEMS -->
+							<div class="sectionTitle">Additional Items</div>
+							<p class="formCaption"><b>IMPORTANT Note:</b> The following equipment is for use OUTSIDE of Student Center Buildings (ie, Johnson Center, SUB I,
+							 SUB II). Request for tables and chairs inside Student Center Buildings needs to be indicated on your request with
+							 Events Management.</p>
+							<div class="span10 offset1">
+								<p class="formInstruction">Each piece of decking is 6' by 4'.</p>
+							</div>
+							 <!-- Staging -->
+							<div class="control-group">
+							  <label class="control-label" for="staging">Staging</label>
+							  <div class="controls">
+							    <select id="staging" name="staging" class="input-xlarge">
+								  <option></option>
+								  <option>6' width by 4' depth (Single Piece)</option>
+								  <option>12' width by 6' depth (Ideal for 3 Person Panel)</option>
+								  <option>12' width by 12' depth (Ideal for Small 3 Piece Bands)</option>
+								  <option>18' width by 12' depth (Ideal for Most Dance Groups/Bands)</option>
+								  <option>24' width by 20' depth (Ideal for Large Dance Groups/ Large Bands)</option>
+							      <option>28' width by 18' depth (Largest Stage)</option>
+							    </select>
+							  </div>
+							</div>
+							 <!-- Podium -->
+							<div class="control-group">
+							  <label class="control-label" for="podium">Podium</label>
+							  <div class="controls">
+							    <select id="podium" name="podium" class="input-mini">
+							      <option></option>
+							      <option>1</option>
+							      <option>2</option>
+							    </select>
+							  </div>
+							</div>
+							<!-- Stanchions -->
+							<div class="control-group">
+							  <label class="control-label" for="stanchions">Stanchions</label>
+							  <div class="controls">
+							    <select id="stanchions" name="stanchions" class="input-mini">
+							      <option></option>
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+							      <option>4</option>
+		  					      <option>5</option>
+							      <option>6</option>
+							      <option>7</option>
+							      <option>8</option>
+							    </select>
+							  </div>
+							</div>
+							<div class="span10 offset1">
+								<p class="formInstruction">Events Production does not supply linens, or skirts for tables</p>
+							</div>
+							<!-- 3' x '6 Rectangle Tables -->
+							<div class="control-group">
+							  <label class="control-label" for="rectTables">3' x '6 Rectangle Tables</label>
+							  <div class="controls">
+							    <input id="rectTables" name="rectTables" type="text" placeholder="Maximum of 40" class="input-medium">
+							  </div>
+							</div>
+							<!-- 5' Round Tables -->
+							<div class="control-group">
+							  <label class="control-label" for="roundTables5">5' Round Tables</label>
+							  <div class="controls">
+							    <input id="roundTables5" name="roundTables5" type="text" placeholder="Maximum of 30" class="input-medium">  
+							  </div>
+							</div>
+							<!-- 6' Round Tables -->
+							<div class="control-group">
+							  <label class="control-label" for="roundTables6">6' Round Tables</label>
+							  <div class="controls">
+							    <input id="roundTables6" name="roundTables6" type="text" placeholder="Maximum of 30" class="input-medium">  
+							  </div>
+							</div>
+							<!-- Stacking Chairs -->
+							<div class="control-group">
+							  <label class="control-label" for="stackingChairs">Stacking Chairs</label>
+							  <div class="controls">
+							    <input id="stackingChairs" name="stackingChairs" type="text" placeholder="Maximum of 100" class="input-medium">
+							  </div>
+							</div>
+							<!-- White Padded Folding Chairs -->
+							<div class="control-group">
+							  <label class="control-label" for="paddedChairs">White Padded Folding Chairs</label>
+							  <div class="controls">
+							    <input id="paddedChairs" name="paddedChairs" type="text" placeholder="Maximum of 200" class="input-medium">
+							  </div>
+							</div>
+							<!-- Round Cocktail Tables (High) -->
+							<div class="span10 offset1">
+								<p class="formInstruction">Maximum of 40 Cocktail Tables available</p>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="highCocktails">Cocktail Tables</label>
+							  <div class="controls">
+							    <input id="highCocktails" name="highCocktails" type="text" placeholder="High" class="input-medium">
+							  </div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="lowCocktails"></label>
+							  <div class="controls">
+							    <input id="lowCocktails" name="lowCocktails" type="text" placeholder="Low" class="input-medium">  
+							  </div>
+							</div>
+							<div class="sectionTitle">Additional Files</div>
+							<p class="formCaption">You can use the following section to submit event programs or diagrams that could be helpful to us in planning your event.</p>
+							<p class="formCaption">Feel free to fill out our <a href="Client_Cue_Sheet_Template.xlsx" target="_blank">Cue Sheet Template to</a> help plan out a breakdown of the order of events and your technical needs. This can be attached below or sent to us at <a href="mailto:ep@gmu.edu">ep@gmu.edu</a> prior to your event.</p>
+							<!-- File Button --> 
+							<div class="control-group">
+							  <label class="control-label" for="attachment1">Attachment 1</label>
+							  <div class="controls">
+							    <input id="attachment1" name="attachment1" class="input-file" type="file">
+							  </div>
+							</div>
+							<!-- File Button --> 
+							<div class="control-group">
+							  <label class="control-label" for="attachment2">Attachment 2</label>
+							  <div class="controls">
+							    <input id="attachment2" name="attachment2" class="input-file" type="file">
+							  </div>
+							</div>
+							<div class="sectionTitle">Terms and Conditions</div>
+							<p class="formCaption">
+							There are fees associated with the hire of Events Production services. These fees are comprised both of an equipment rental and a labor charge. By submitting this form you understand that your organization will be billed for the services rendered. Submission of this request for service is not a confirmation.  Confirmation of services will be sent in the form of an estimate via email within 3 business days of your request. Events Production requires ten business days notification prior to your event. Events Production will make every effort to accommodate your request, however, there is
+		no guarantee that we can fulfill every request.
+							</p>
+							<!-- Honor -->
+							<div class="control-group">
+							  <div class="controls">
+							    <label class="checkbox inline" style="font-size:13px;"  for="honor">
+							      <input type="checkbox" name="honor" id="honor" value="true">
+							      I agree to the terms and conditions
+							     </label>
+							  </div>
+							</div>
+							<!-- SUBMIT -->
+							<div class="sectionTitle"></div>
+							<div class="control-group">
+							  <label class="control-label" for="submit"></label>
+							  <div class="controls">
+							    <input type="submit" value="Submit" name="submit" class="btn btn-primary"/>
+							  </div>
+							</div>	
+						</div>
 					</div>
-					<!--Organizaion Name-->
-					<div class="control-group">
-					  <label class="control-label" for="name">Organization/Department Name</label>
-					  <div class="controls">
-					    <input id="name" name="name" type="text" placeholder="" class="input-xlarge">    
-					  </div>
-					</div>
-					<!--Affliation Type-->
-					<div class="control-group">
-					  <label class="control-label" for="affiliationType">Affiliation Type</label>
-					  <div class="controls">
-					    <select id="affiliationType" name="affiliationType" class="input-large">
-					      <option></option>
-					      <option>Mason Department</option>
-					      <option>Student Organization</option>
-					      <option>Off-campus</option>
-					    </select>					  
-					  </div>
-					</div>
-					<!-- Org Code -->
-					<div class="control-group" id="orgCodeGroup">
-					  <label class="control-label" for="orgCode">Organization Code</label>
-					  <div class="controls">
-					    <input id="orgCode" name="orgCode" type="text" placeholder=" " class="input-medium">
-					    <img id="orgCodeQuestion" src="../images/questionmark.png"/>
-					  </div>
-					</div>
-					<!-- Requestor's  Name -->
-					<div class="control-group">
-					  <label class="control-label" for="requestorFirstName">Client Name</label>
-					  <div class="controls">
-					    <input id="requestorFirstName" name="requestorFirstName" type="text" placeholder="First Name" class="input-large">
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="requestorLastName"></label>
-					  <div class="controls">
-					    <input id="requestorLastName" name="requestorLastName" type="text" placeholder="Last Name" class="input-large">  
-					  </div>
-					</div>
-					<!-- Phone Number -->
-					<div class="control-group">
-					  <label class="control-label" for="requestorPhoneNum">Phone Number</label>
-					  <div class="controls">
-					    <input id="requestorPhoneNum" name="requestorPhoneNum" type="text" placeholder="" class="input-large">
-					  </div>
-					</div>
-					<!-- Email -->
-					<div class="control-group">
-					  <label class="control-label" for="email">E-mail</label>
-					  <div class="controls">
-					    <input id="email" name="email" type="text" placeholder="" class="input-xlarge">
-					  </div>
-					</div>
-					<!--EVENT INFO-->
-					<div class="sectionTitle">Event Info</div>
-					<!--Event Name-->
-					<div class="control-group">
-					  <label class="control-label" for="eventName">Event Name</label>
-					  <div class="controls">
-					    <input id="eventName" name="eventName" type="text" placeholder="" class="input-xlarge">
-					  </div>
-					</div>
-					<!--Event Date-->
-					<div class="control-group">
-					  <label class="control-label" for="date">Event Date</label>
-					  <div class="controls">
-					    <input id="date" name="date" type="text" placeholder="" class="input-medium datepicker">
-					  </div>
-					</div>
-					<!--Sound Check Time-->
-					<div class="control-group">
-					  <label class="control-label" for="soundCheck">Equipment Set Up By</label>
-					  <div class="controls">
-					    <input id="soundCheck" name="soundCheck" type="text" class="input-small timepicker"> 
-					  </div>
-					</div>
-					<!--Event Start Time-->
-					<div class="control-group">
-					  <label class="control-label" for="startTime">Event Start Time</label>
-					  <div class="controls">
-					      <input id="startTime" name="startTime" type="text" class="input-small timepicker">
-					  </div>
-					</div>
-					<!--Event End Time-->
-					<div class="control-group">
-					  <label class="control-label" for="endTime">Event End Time</label>
-					  <div class="controls">
-					      <input id="endTime" name="endTime" type="text" class="input-small timepicker">
-					  </div>
-					</div>
-					<!--Contact on Event Day-->
-					<div class="control-group">
-					  <label class="control-label" for="hostFirstName">Contact on Day of Event</label>
-					  <div class="controls">
-					    <input id="hostFirstName" name="hostFirstName" type="text" placeholder="First Name" class="input-large">   
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="hostLastName"></label>
-					  <div class="controls">
-					    <input id="hostLastName" name="hostLastName" type="text" placeholder="Last Name" class="input-large">
-					  </div>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="hostPhoneNum">Contact on Day of Event Phone Number</label>
-					  <div class="controls">
-					    <input id="hostPhoneNum" name="hostPhoneNum" type="text" placeholder="" class="input-large">
-					  </div>
-					</div>
-					<!-- Event Location -->
-					<div class="control-group">
-					  <label class="control-label" for="location">Event Location</label>
-					  <div class="controls">
-					    <input id="location" name="location" type="text" placeholder="(List All That Apply)" class="input-xlarge"> 
-					  </div>
-					</div>
-					<!-- Event Type -->
-					<div class="span10 offset1">
-					  <p class="formInstruction" style="margin-bottom:0px;">Check all that apply:</p>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="eventType">Event Type</label>
-					  <div class="controls">
-					    <label class="checkbox inline eventCheckbox" for="eventType-0">
-					      <input type="checkbox" name="eventType[]" id="eventType-0" value="Conference">
-					      Conference
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="eventType-1">
-					      <input type="checkbox" name="eventType[]" id="eventType-1" value="Concert">
-					      Concert
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="eventType-2">
-					      <input type="checkbox" name="eventType[]" id="eventType-2" value="Fashion Show">
-					      Fashion Show
-					    </label>
-					    <br>
-					    <label class="checkbox inline eventCheckbox" for="eventType-3">
-					      <input type="checkbox" name="eventType[]" id="eventType-3" value="Lecture">
-					      Lecture
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="eventType-4">
-					      <input type="checkbox" name="eventType[]" id="eventType-4" value="Meeting">
-					      Meeting
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="eventType-5">
-					      <input type="checkbox" name="eventType[]" id="eventType-5" value="Film Screening">
-					      Film Screening
-					    </label>
-					    <br>
-					    <label class="checkbox inline eventCheckbox" for="eventType-6">
-					      <input type="checkbox" name="eventType[]" id="eventType-6" value="Outdoor Event">
-					      Outdoor Event
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="eventType-7">
-					      <input type="checkbox" name="eventType[]" id="eventType-7" value="Press Conference">
-					      Press Conference
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="eventType-8">
-					      <input type="checkbox" name="eventType[]" id="eventType-8" value="Reception">
-					      Reception
-					    </label>
-					    <br>
-					    <label class="checkbox inline eventCheckbox" for="eventType-9">
-					      <input type="checkbox" name="eventType[]" id="eventType-9" value="Other">
-					      Other
-					    </label>
-					  </div>
-					</div>
-					<!--Event Performers -->
-					<div class="control-group">
-					  <label class="control-label" for="eventType">What's Happening at Your Event</label>
-					  <div class="controls">
-					    <label class="checkbox inline eventCheckbox" for="performers-0">
-					      <input type="checkbox" name="performers[]" id="performers-0" value="Choir">
-					      Choir
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="performers-1">
-					      <input type="checkbox" name="performers[]" id="performers-1" value="Comedian">
-					      Comedian
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="performers-2">
-					      <input type="checkbox" name="performers[]" id="performers-2" value="Dancers">
-					      Dancers
-					    </label>
-					    <br>
-					    <label class="checkbox inline eventCheckbox" for="performers-3">
-					      <input type="checkbox" name="performers[]" id="performers-3" value="Panel">
-					      Panel
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="performers-4">
-					      <input type="checkbox" name="performers[]" id="performers-1" value="Presenter">
-					      Presenter
-					    </label>
-					    <label class="checkbox inline eventCheckbox" for="performers-5">
-					      <input type="checkbox" name="performers[]" id="performers-2" value="Karaoke">
-					      Karaoke
-					    </label>
-					    <br>
-					    <label class="checkbox inline eventCheckbox" for="performers-6">
-					      <input type="checkbox" name="performers[]" id="performers-6" value="Other">
-					      Other
-					    </label>
-					    <br>
-					  </div>
-					</div>
-					<!--Attendance -->
-					<div class="control-group">
-					  <label class="control-label" for="attendance"> Expected Attendance</label>
-					  <div class="controls disabled">
-					    <select id="attendance" name="attendance" placeholder="" class="input-large">
-							<option></option>
-							<option>0-25</option>
-							<option>25-50</option>
-							<option>50-100</option>
-							<option>200-300</option>
-							<option>300-400</option>
-							<option>400-500</option>
-							<option>500-750</option>
-							<option>750+</option>
-					    </select>   
-					  </div>
-					</div>
-					<!--Event Description-->
-					<div class="span10 offset1">
-					  <p class="formInstruction" style="margin-bottom:0px;">Please describe the basic technical needs for your event:</p>
-					</div>
-					<div class="control-group">
-					  <label class="control-label" for="eventDescription">Event Description</label>
-					  <div class="controls">                     
-					    <textarea id="eventDescription" class="input-xlarge" style="height:70px;max-width:501px;" name="eventDescription"></textarea>
-					  </div>
-					</div>
-					<!-- EVENT ENCHANCEMENTS -->
-					<div class="sectionTitle">Event Enchancements</div>
-					  <p class="formCaption">Based on the previous information you provided about your event, our staff will choose
-					  equipment that best suits your <br> 
-					  event's needs. In this section you can specify any equipment that you are sure you would like to be included in your<br>
-					  event package and we will do our best to provide it for you based on what is available in our inventory. </p>
-					<!-- Wired Microphones -->
-					<div class="control-group">
-					  <label class="control-label" for="wiredMics">Wired Microphones</label>
-					  <div class="controls">
-					    <select id="wiredMics" name="wiredMics" class="input-mini">
-						  <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					      <option>3</option>
-					      <option>4</option>
-					      <option>5</option>
-					      <option>6</option>
-					      <option>7</option>
-					      <option>8</option>
-					    </select>
-					  </div>
-					</div>
-					<!-- Wireless Microphones -->
-					<div class="control-group">
-					  <label class="control-label" for="wirelessMics">Wireless Handheld Microphones</label>
-					  <div class="controls">
-					    <select id="wirelessMics" name="wirelessMics" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					      <option>3</option>
-					      <option>4</option>
-					      <option>5</option>
-					      <option>6</option>
-					      <option>7</option>
-					      <option>8</option>
-					    </select>
-					  </div>
-					</div>
-					<!-- Wireless Lavaliers -->
-					<div class="control-group">
-					  <label class="control-label" for="lavaliers">Wireless Headset/Lavaliers</label>
-					  <div class="controls">
-					    <select id="lavaliers" name="lavaliers" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					      <option>3</option>
-					      <option>4</option>
-					      <option>5</option>
-					      <option>6</option>
-					      <option>7</option>
-					      <option>8</option>
-					    </select>
-					  </div>
-					</div>
-					<div class="sectionTitle"></div>
-					<!-- Small Projector -->
-					<div class="control-group">
-					  <label class="control-label" for="smallProjector">Small Projector</label>
-					  <div class="controls">
-					    <select id="smallProjector" name="smallProjector" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					      <option>3</option>
-					    </select>
-					  </div>
-					</div>
-					<!-- Medium Projector -->
-					<div class="control-group">
-					  <label class="control-label" for="mediumProjector">Medium Projector</label>
-					  <div class="controls">
-					    <select id="mediumProjector" name="mediumProjector" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					      <option>3</option>
-					    </select>
-					  </div>
-					</div>
-					<!-- Large Projector -->
-					<div class="control-group">
-					  <label class="control-label" for="largeProjector">Large Projector</label>
-					  <div class="controls">
-					    <select id="largeProjector" name="largeProjector" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					    </select>
-					  </div>
-					</div>
-					<!-- Small Screen -->
-					<div class="control-group">
-					  <label class="control-label" for="smallScreen">7' x 7' Screen</label>
-					  <div class="controls">
-					    <select id="smallScreen" name="smallScreen" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					      <option>3</option>
-					      <option>4</option>
-					    </select>
-					  </div>
-					</div>
-					<!-- Large Screen -->
-					<div class="control-group">
-					  <label class="control-label" for="largeScreen">12' x 9' Screen</label>
-					  <div class="controls">
-					    <select id="largeScreen" name="largeScreen" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					    </select>
-					  </div>
-					</div>
-					<div class="sectionTitle"></div>
-					<!-- Lighting -->
-					<div class="control-group">
-					  <label class="control-label" for="lighting">Lighting</label>
-					  <div class="controls">
-					    <label class="checkbox" for="lighting-0">
-					      <input type="checkbox" name="lighting[]" id="lighting-0" value="Stage Wash">
-					      Stage Wash
-					    </label>
-					    <label class="checkbox" for="lighting-1">
-					      <input type="checkbox" name="lighting[]" id="lighting-1" value="Colored Uplights">
-					      Colored Uplights
-					    </label>
-					    <label class="checkbox" for="lighting-2">
-					      <input type="checkbox" name="lighting[]" id="lighting-2" value="Effects Lasers">
-					      Effects/Lasers
-					    </label>
-					    <label class="checkbox" for="lighting-3">
-					      <input type="checkbox" name="lighting[]" id="lighting-3" value="Black Lights">
-					      Black Lights
-					    </label>
-					    <label class="checkbox" for="lighting-4">
-					      <input type="checkbox" name="lighting[]" id="lighting-4" value="Hazer">
-					      Hazer
-					    </label>
-					  </div>
-					</div>
-					<!-- Lighting Colors
-					<div class="control-group">
-					  <label class="control-label" for="lightingColor">Preferred Lighting Colors</label>
-					  <div class="controls">
-					    <input id="lightingColor" name="lightingColor" type="text" placeholder="" class="input-medium">
-					  </div>
-					</div>
-					-->
-					<div class="sectionTitle"></div>
-					<!-- PC Laptop -->
-					<div class="control-group">
-					  <label class="control-label" for="laptop">PC Laptop</label>
-					  <div class="controls">
-					    <select id="laptop" name="laptop" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					      <option>3</option>
-					    </select>
-					  </div>
-					</div>
-					<!-- Recording -->
-					<div class="control-group">
-					  <label class="control-label" for="recording">Archival Recording</label>
-					  <div class="controls">
-					    <label class="checkbox" for="recording-0">
-					      <input type="checkbox" name="recording[]" id="recording-0" value="Audio">
-					      Audio
-					    </label>
-					    <label class="checkbox" for="recording-1">
-					      <input type="checkbox" name="recording[]" id="recording-1" value="Video">
-					      Video
-					    </label>
-					  </div>
-					</div>
-					<!-- ADDITIONAL ITEMS -->
-					<div class="sectionTitle">Additional Items</div>
-					<p class="formCaption"><b>IMPORTANT Note:</b> The following equipment is for use OUTSIDE of Student Center Buildings (ie, Johnson Center, SUB I,<br>
-					 SUB II). Request for tables and chairs inside Student Center Buildings needs to be indicated on your request with <br>
-					 Events Management.</p>
-					<div class="span10 offset1">
-						<p class="formInstruction">Each piece of decking is 6' by 4'.</p>
-					</div>
-					 <!-- Staging -->
-					<div class="control-group">
-					  <label class="control-label" for="staging">Staging</label>
-					  <div class="controls">
-					    <select id="staging" name="staging" class="input-xlarge">
-						  <option></option>
-						  <option>6' width by 4' depth (Single Piece)</option>
-						  <option>12' width by 6' depth (Ideal for 3 Person Panel)</option>
-						  <option>12' width by 12' depth (Ideal for Small 3 Piece Bands)</option>
-						  <option>18' width by 12' depth (Ideal for Most Dance Groups/Bands)</option>
-						  <option>24' width by 20' depth (Ideal for Large Dance Groups/ Large Bands)</option>
-					      <option>28' width by 18' depth (Largest Stage)</option>
-					    </select>
-					  </div>
-					</div>
-					 <!-- Podium -->
-					<div class="control-group">
-					  <label class="control-label" for="podium">Podium</label>
-					  <div class="controls">
-					    <select id="podium" name="podium" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					    </select>
-					  </div>
-					</div>
-					<!-- Stanchions -->
-					<div class="control-group">
-					  <label class="control-label" for="stanchions">Stanchions</label>
-					  <div class="controls">
-					    <select id="stanchions" name="stanchions" class="input-mini">
-					      <option></option>
-					      <option>1</option>
-					      <option>2</option>
-					      <option>3</option>
-					      <option>4</option>
-  					      <option>5</option>
-					      <option>6</option>
-					      <option>7</option>
-					      <option>8</option>
-					    </select>
-					  </div>
-					</div>
-					<div class="span10 offset1">
-						<p class="formInstruction">Events Production does not supply linens, or skirts for tables</p>
-					</div>
-					<!-- 3' x '6 Rectangle Tables -->
-					<div class="control-group">
-					  <label class="control-label" for="rectTables">3' x '6 Rectangle Tables</label>
-					  <div class="controls">
-					    <input id="rectTables" name="rectTables" type="text" placeholder="Maximum of 40" class="input-medium">
-					  </div>
-					</div>
-					<!-- 5' Round Tables -->
-					<div class="control-group">
-					  <label class="control-label" for="roundTables">5' Round Tables</label>
-					  <div class="controls">
-					    <input id="roundTables" name="roundTables" type="text" placeholder="Maximum of 30" class="input-medium">  
-					  </div>
-					</div>
-					<!-- Stacking Chairs -->
-					<div class="control-group">
-					  <label class="control-label" for="stackingChairs">Stacking Chairs</label>
-					  <div class="controls">
-					    <input id="stackingChairs" name="stackingChairs" type="text" placeholder="Maximum of 100" class="input-medium">
-					  </div>
-					</div>
-					<!-- White Padded Folding Chairs -->
-					<div class="control-group">
-					  <label class="control-label" for="paddedChairs">White Padded Folding Chairs</label>
-					  <div class="controls">
-					    <input id="paddedChairs" name="paddedChairs" type="text" placeholder="Maximum of 200" class="input-medium">
-					  </div>
-					</div>
-					<!-- Round Cocktail Tables (High) -->
-					<div class="control-group">
-					  <label class="control-label" for="highCocktails">Cocktail Tables (Maximum of 40)</label>
-					  <div class="controls">
-					    <input id="highCocktails" name="highCocktails" type="text" placeholder="High" class="input-medium">
-					  </div>
-					</div>
-					<!-- Round Cocktail Tables (High) -->
-					<div class="control-group">
-					  <label class="control-label" for="lowCocktails"></label>
-					  <div class="controls">
-					    <input id="lowCocktails" name="lowCocktails" type="text" placeholder="Low" class="input-medium">  
-					  </div>
-					</div>
-					<div class="sectionTitle">Additional Files</div>
-					<p class="formCaption">You can use the following section to submit event programs or diagrams that could be helpful to us in planning your event.</p>
-					<!-- File Button --> 
-					<div class="control-group">
-					  <label class="control-label" for="attachment1">Attachment 1</label>
-					  <div class="controls">
-					    <input id="attachment1" name="attachment1" class="input-file" type="file">
-					  </div>
-					</div>
-					<!-- File Button --> 
-					<div class="control-group">
-					  <label class="control-label" for="attachment2">Attachment 2</label>
-					  <div class="controls">
-					    <input id="attachment2" name="attachment2" class="input-file" type="file">
-					  </div>
-					</div>
-					<div class="sectionTitle">Terms and Conditions</div>
-					<p class="formCaption">
-					There are fees associated with the hire of Events Production services. These fees are comprised both of an equipment<br> rental and a labor charge. By submitting this form you understand that your organization will be billed for the services<br> rendered. Submission of this request for service is not a confirmation.  Confirmation of services will be sent in the form<br> of an estimate via email within 3 business days of your request. Events Production requires ten business days <br>notification prior to your event. Events Production will make every effort to accommodate your request, however, there is<br>
-no guarantee that we can fulfill every request.
-					</p>
-					<!-- Honor -->
-					<div class="control-group">
-					  <div class="controls">
-					    <label class="checkbox inline" style="font-size:13px;"  for="honor">
-					      <input type="checkbox" name="honor" id="honor" value="true">
-					      I agree to the terms and conditions
-					     </label>
-					  </div>
-					</div>
-					<!-- SUBMIT -->
-					<div class="sectionTitle"></div>
-					<div class="control-group">
-					  <label class="control-label" for="submit"></label>
-					  <div class="controls">
-					    <input type="submit" value="Submit" name="submit" class="btn btn-primary"/>
-					  </div>
-					</div>	
 				</fieldset>
 			</form>
         </div>

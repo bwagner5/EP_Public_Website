@@ -24,6 +24,7 @@ if(isset($_POST['submit']))
     // Event Info
     $eventName = $_POST["eventName"];
     $date = $_POST["date"];
+    $live25 = $_POST["live25"];
     $soundCheck = $_POST["soundCheck"];
     $startTime = $_POST["startTime"];
 	$endTime = $_POST["endTime"];
@@ -53,9 +54,7 @@ if(isset($_POST['submit']))
     $wiredMics = $_POST["wiredMics"];
     $wirelessMics = $_POST["wirelessMics"];
     $lavaliers = $_POST["lavaliers"];
-    $smallProjector = $_POST["smallProjector"];
-    $mediumProjector = $_POST["mediumProjector"];
-    $largeProjector = $_POST["largeProjector"];
+    $projector = $_POST["projector"];
     $smallScreen = $_POST["smallScreen"];
     $largeScreen = $_POST["largeScreen"];
     $lighting = "";
@@ -74,12 +73,15 @@ if(isset($_POST['submit']))
 	    	$recording .= $recording[$i] . ", ";
 		}
 	}
+	$lightColor = $_POST['lightColor'];
+	$lightColor2 = $_POST['lightColor2'];
     // Additional Items
     $staging = $_POST["staging"];
     $podium = $_POST["podium"];
     $stanchions = $_POST["stanchions"];
     $rectTables = $_POST["rectTables"];
-    $roundTables = $_POST["roundTables"];
+    $roundTables5 = $_POST["roundTables5"];
+    $roundTables6 = $_POST["roundTables6"];
     $stackingChairs = $_POST["stackingChairs"];
     $paddedChairs = $_POST["paddedChairs"];
     $highCocktails = $_POST["highCocktails"];
@@ -111,6 +113,9 @@ if(isset($_POST['submit']))
  						 margin-top: 25px;
  						 background-color: #dadada;
  						 border-bottom: solid #fafafa 1px;
+ 					}
+ 					.blank {
+ 						background-color: white;
  					}
  				</style>
  			</head>
@@ -145,6 +150,9 @@ if(isset($_POST['submit']))
  						<td>$email</td>
  					</tr>
  					<tr>
+ 						<td class='blank'>&nbsp;</td>
+ 					</tr>
+ 					<tr>
  						<td class='tdTitle' colspan='2'>Event Info </td>
  					</tr>
  					<tr>
@@ -154,6 +162,10 @@ if(isset($_POST['submit']))
  					<tr>
  						<td>Event Date </td>
  						<td>$date</td>
+ 					</tr>
+ 					<tr>
+ 						<td>25 Live Reference Number: </td>
+ 						<td>$live25</td>
  					</tr>
  					<tr>
  						<td>Equipment Setup By </td>
@@ -196,6 +208,9 @@ if(isset($_POST['submit']))
  						<td>$eventDescription</td>
  					</tr>
  					<tr>
+ 						<td class='blank'>&nbsp;</td>
+ 					</tr>
+ 					<tr>
  						<td class='tdTitle'>Event Enchancements </td>
  						<td class='tdTitle'>(Quantity) </td>
  					</tr>
@@ -212,16 +227,8 @@ if(isset($_POST['submit']))
  						<td>$lavaliers</td>
  					</tr>
  					<tr>
- 						<td>Small Projectors </td>
- 						<td>$smallProjector</td>
- 					</tr>
- 					<tr>
- 						<td>Medium Projectors </td>
- 						<td>$mediumProjector</td>
- 					</tr>
- 					<tr>
- 						<td>Large Projectors </td>
- 						<td>$largeProjector</td>
+ 						<td>Projectors </td>
+ 						<td>$projector</td>
  					</tr>
  					<tr>
  						<td>Small Screen </td>
@@ -236,12 +243,19 @@ if(isset($_POST['submit']))
  						<td>$lighting</td>
  					</tr>
  					<tr>
+ 						<td>Lighting Color Preferences </td>
+ 						<td>$lightColor, $lightColor2</td>
+ 					</tr>
+ 					<tr>
  						<td>Laptop </td>
  						<td>$laptop</td>
  					</tr>
  					<tr>
  						<td>Recording </td>
  						<td>$recording</td>
+ 					</tr>
+ 					<tr>
+ 						<td class='blank'>&nbsp;</td>
  					</tr>
  					<tr>
  						<td class='tdTitle'>Additional Items </td>
@@ -264,8 +278,12 @@ if(isset($_POST['submit']))
  						<td>$rectTables</td>
  					</tr>
  					<tr>
- 						<td>Round Tables </td>
- 						<td>$roundTables</td>
+ 						<td>5' Round Tables </td>
+ 						<td>$roundTables5</td>
+ 					</tr>
+ 					<tr>
+ 						<td>6' Round Tables </td>
+ 						<td>$roundTables6</td>
  					</tr>
  					<tr>
  						<td>Stanchions </td>

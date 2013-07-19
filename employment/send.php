@@ -89,11 +89,15 @@ if(isset($_POST['submit'])) {
  						font-size:13pt;
  					}
  					tr:nth-child(odd) {
- 						background-color: #eaeaea;
+ 						background-color: #efefef;
 					}
  					.tdTitle {
+ 						 margin-top: 25px;
  						 background-color: #dadada;
  						 border-bottom: solid #fafafa 1px;
+ 					}
+ 					.blank {
+ 						background-color: white;
  					}
  				</style>
  			</head>
@@ -132,6 +136,9 @@ if(isset($_POST['submit'])) {
  						<td>$citizenBool</td>
  					</tr>
  					<tr>
+ 						<td class='blank'>&nbsp;</td>
+ 					</tr>
+ 					<tr>
  						<td class='tdTitle' colspan='2'>Addresses </td>
  					</tr>
  					<tr>
@@ -141,6 +148,9 @@ if(isset($_POST['submit'])) {
  					<tr>
  						<td>Permanent Address </td>
  						<td>$permanentAddress</td>
+ 					</tr>
+ 					<tr>
+ 						<td class='blank'>&nbsp;</td>
  					</tr>
  					<tr>
  						<td class='tdTitle' colspan='2'>School Info </td>
@@ -174,6 +184,9 @@ if(isset($_POST['submit'])) {
  						<td>$gradDate</td>
  					</tr>
  					<tr>
+ 						<td class='blank'>&nbsp;</td>
+ 					</tr>
+ 					<tr>
  						<td class='tdTitle' colspan='2'>Skills </td>
  					</tr>
  					<tr>
@@ -185,6 +198,9 @@ if(isset($_POST['submit'])) {
  						<td>$computerSkills</td>
  					</tr>
  					<tr>
+ 						<td class='blank'>&nbsp;</td>
+ 					</tr>
+ 					<tr>
  						<td class='tdTitle' colspan='2'>Experience </td>
  					</tr>
  					<tr>
@@ -194,6 +210,9 @@ if(isset($_POST['submit'])) {
  					<tr>
  						<td>Mason Department Worked For </td>
  						<td>$masonDept</td>
+ 					</tr>
+ 					<tr>
+ 						<td class='blank'>&nbsp;</td>
  					</tr>
  					<tr>
  						<td class='tdTitle' colspan='2'>Previous Employer #1 </td>
@@ -211,6 +230,9 @@ if(isset($_POST['submit'])) {
  						<td>$duties1</td>
  					</tr>
  					<tr>
+ 						<td class='blank'>&nbsp;</td>
+ 					</tr>
+ 					<tr>
  						<td class='tdTitle' colspan='2'>Previous Employer #2 </td>
  					</tr>
  					<tr>
@@ -226,6 +248,9 @@ if(isset($_POST['submit'])) {
  						<td>$duties2</td>
  					</tr>
  					<tr>
+ 						<td class='blank'>&nbsp;</td>
+ 					</tr>
+ 					<tr>
  						<td class='tdTitle' colspan='2'>Previous Employer #3 </td>
  					</tr>
  					<tr>
@@ -239,6 +264,9 @@ if(isset($_POST['submit'])) {
  					<tr>
  						<td>Duties </td>
  						<td>$duties3</td>
+ 					</tr>
+ 					<tr>
+ 						<td class='blank'>&nbsp;</td>
  					</tr>
  					<tr>
  						<td class='tdTitle' colspan='2'>Reference #1 </td>
@@ -260,6 +288,9 @@ if(isset($_POST['submit'])) {
  						<td>$refPhone1</td>
  					</tr>
  					<tr>
+ 						<td class='blank'>&nbsp;</td>
+ 					</tr>
+ 					<tr>
  						<td class='tdTitle' colspan='2'>Reference #2  </td>
  					</tr>
  					<tr>
@@ -279,6 +310,9 @@ if(isset($_POST['submit'])) {
  						<td>$refPhone2</td>
  					</tr>
  					<tr>
+ 						<td class='blank'>&nbsp;</td>
+ 					</tr>
+ 					<tr>
  						<td class='tdTitle' colspan='2'>Reference #3 </td>
  					</tr>
  					<tr>
@@ -296,6 +330,9 @@ if(isset($_POST['submit'])) {
  					<tr>
  						<td>Phone Number </td>
  						<td>$refPhone3</td>
+ 					</tr>
+ 					<tr>
+ 						<td class='blank'>&nbsp;</td>
  					</tr>
  					<tr>
  						<td class='tdTitle' colspan='2'>Availabillity </td>

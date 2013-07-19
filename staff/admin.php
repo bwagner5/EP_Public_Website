@@ -1,7 +1,7 @@
 <div class="row-fluid">		
 	<div class="span10 offset1">	
 		<div class="sectionTitle">Admin Settings</div>
-		<form action="uploadSchedule.php" method="POST" class="form-horizontal" enctype="multipart/form-data">
+		<form action="uploadSchedule.php" method="POST" class="form-inline" enctype="multipart/form-data">
 			<fieldset>
 				<!-- Schedule Upload --> 
 				<div class="control-group">

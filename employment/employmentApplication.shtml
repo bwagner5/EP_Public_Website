@@ -206,7 +206,7 @@
 					<div class="control-group">
 					<label class="control-label" for="dept">If so, what department? </label>
 					  <div class="controls">
-						 <input id="dept" name="masonDept" type="text" placeholder="" class="input-small">
+						 <input id="dept" name="masonDept" type="text" placeholder="" class="input-large">
 					  </div>
 					</div>
 				</fieldset>

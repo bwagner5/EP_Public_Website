@@ -22,8 +22,13 @@
     <div class="container">
       <div class="spacer"></div>
       <div class="row">
-        <div class="span10 offset1 box">
-        	<h2 class="pageTitle" style="margin-bottom:20px;">Your Application has been submitted to Events Production! <br /> Thanks!</h2>
+      	<div class="span10 offset1 box">
+        	<h2 class="pageTitle">Employment Application Submitted</h2>
+        	<div class="row-fluid" style="margin-top:25px;">
+        		<div class="span10 offset1" style="text-align: center">			
+	        		<p>Your employment application has been submitted to Events Production. Thank you.</p>
+        		</div>
+        	</div>
         </div>
       </div>
     </div>
