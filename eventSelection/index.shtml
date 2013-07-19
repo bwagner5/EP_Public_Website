@@ -37,14 +37,14 @@
 								<span class="caret"></span>
 							</a>
 						    <ul class="dropdown-menu" id="eventType-menu">
-						      <li><a class="dropSelect" tabindex="-1">Concert</a></li>
-						      <li><a class="dropSelect" tabindex="-1">Conference</a></li>
-						      <li><a class="dropSelect" tabindex="-1">Culture Show</a></li>
-						      <li><a class="dropSelect" tabindex="-1">DJ Dance</a></li>
-						      <li><a class="dropSelect" tabindex="-1">Fashion Show</a></li>
-  						      <li><a class="dropSelect" tabindex="-1">Holiday Party</a></li>
-						      <li><a class="dropSelect" tabindex="-1">Outdoor</a></li>
-						      <li><a class="dropSelect" tabindex="-1">Presentation</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Concerts</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Conferences & Presentations</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Culture & Variety Shows</a></li>
+						      <li><a class="dropSelect" tabindex="-1">DJ Dances & Parties</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Fashion Shows</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Galas & Banquets</a></li>
+						      <li><a class="dropSelect" tabindex="-1">Outdoor Events</a></li>
+  						      <li><a class="dropSelect" tabindex="-1">Holiday & Staff Parties</a></li>						      
 						    </ul>
 						  </div>
 						</div>

@@ -1,59 +1,58 @@
 {
-	"Concert": {
+	"Concerts": {
 		"Title": "Concerts with EP",
 		"Image Paths": ["images/Concert_1.jpg", "images/Concert_2.jpg", "images/Concert_3.jpg", "images/Concert_4.jpg", "images/Concert_5.jpg"],
 		"Diagram Path": "images/diagram.png",
 		"Included Items": "700HP Subs, Meyer Line Array, Advanced Audio Compression & Processing, Monitors, LEDs, Moving Lights, Lasers, Hazers... and more!",
 		"Description": "Whether hosting a small acoustic set or an all-out rock concert, EP has what you'll need to kick off your next concert event with a bang. Able to work with any band, choral, or orchestral group, EP can provide a concert experience that's sure to leave a powerful impact for all audiences. With advanced audio equipment and high-tech lighting options, EP makes it possible to have a completely customized concert package that will get your event rockin'!"
 	},
-	"Conference": {
-		"Title": "Conferences with EP",
-		"Image Paths": ["images/Conference_1.jpg", "images/Conference_2.jpg", "images/Conference_3.jpg", "images/Conference_4.jpg"],
+	"Conferences & Presentations": {
+		"Title": "Conferences & Presentations with EP",
+		"Image Paths": ["images/Presentation_&_Lecture_1.jpg", "images/Presentation_&_Lecture_2.jpg", "images/Presentation_&_Lecture_3.jpg", "images/Conference_4.jpg"],
 		"Diagram Path": "images/diagram.png",
-		"Included Items": "Wireless Microphones, Panel Microphones, Custom Gobo Options, Laptops, A/V Switchers, Blu-Ray Players, Projectors, Video Recording... and more!",
+		"Included Items": "Wireless Microphones, Panel Microphones, Custom Gobo Options, Laptops, A/V Switchers, Blu-Ray Players, Projectors, Video Recording, Video Conferencing... and more!",
 		"Description": "EP aims to make the execution of your conference needs an easy experience. Our staff will ensure that each session runs smoothly from start to finish. With media switchers, laptops, and even live streaming available, we are able to accommodate all of your event's media needs."
 	},
-	"Culture Show": {
+	"Culture & Variety Shows": {
 		"Title": "Culture & Variety Shows with EP",
 		"Image Paths": ["images/Culture_Show_1.jpg", "images/Culture_Show_2.jpg","images/Culture_Show_3.jpg","images/Culture_Show_4.jpg"],
 		"Diagram Path": "images/diagram.png",
 		"Included Items": "Wireless Mics Custom Audio Setups, Monitors, Custom Gobo Options, LEDs, Moving Lights, Hazers, Projectors, Blu-Ray Players, Laptops... and more!",
 		"Description": "EP is proud to support George Mason's cultural diversity. Whether hosting an international dance competition or a comedy open mic night, we are ready for a variety of diverse event needs. Let us know what you have in mind and our staff will be happy to create a custom package that will help support your next Culture or Variety Show."
 	},
-	"DJ Dance": {
+	"DJ Dances & Parties": {
 		"Title": "DJ Dances & Parties with EP",
 		"Image Paths": ["images/DJ_Dance_1.jpg", "images/DJ_Dance_2.jpg","images/DJ_Dance_3.jpg","images/DJ_Dance_4.jpg"],
 		"Diagram Path": "images/diagram.png",
 		"Included Items": "DJ Hookups, 700HP Subs, Advanced Audio Compression & Processing, Monitors, LEDs, Moving Lights, Lasers, Hazers... and more!",
 		"Description": "Ready to get your party rockin'? EP provides custom audio packages that are designed to blow the roof off your next event. Add on a variety of lighting and video options and we have everything you'll need to create a one of a kind sensory experience. While we don't provide DJ services, we have the ability to hook up any hired DJ's equipment into our own. If you bring the music, we'll rock it out for you."
 	},
-	"Fashion Show": {
+	"Fashion Shows": {
 		"Title": "Fashion Shows with EP",
 		"Image Paths": ["images/Fashion_Show_1.jpg", "images/Fashion_Show_2.jpg", "images/Fashion_Show_3.jpg", "images/Fashion_Show_4.jpg"],
 		"Diagram Path": "images/diagram.png",
 		"Included Items": "700HP Subs, Monitors, Custom Gobo Options, LEDs, Moving Lights, Hazers, Projectors, Large Video Screens, Live Streaming... and more!",
 		"Description": "EP has what you'll need to kick off your next fashion event in style. With custom lighting packages designed to show off your next collection, EP will make sure that your collection shines on the runway. Talk to our staff today about how to make your next runway event one to remember."
 	},
-	"Holiday Party": {
+	"Galas & Banquets": {
+		"Title": "Galas & Dinners with EP",
+		"Image Paths": ["images/Gala_1.jpg", "images/Gala_2.jpg", "images/Gala_3.jpg", "images/Gala_4.jpg"],
+		"Diagram Path": "images/diagram.png",
+		"Included Items": "Wireless Microphones, Panel Microphones, Custom Gobo Options, Laptops, A/V Switchers, Blu-Ray Players, Projectors, Video Recording... and more!",
+		"Description": "Looking for basic support for your next guest speaker or panel discussion? By booking EP we ensure that each session runs smoothly from start to finish. With media switchers, laptops, and even live streaming available, we are able to accommodate all of your event's media needs."
+	},
+	"Holiday & Staff Parties": {
 		"Title": "Holiday & Staff Parties with EP",
 		"Image Paths": ["images/Holiday_Party_1.jpg", "images/Holiday_Party_2.jpg", "images/Holiday_Party_3.jpg", "images/Holiday_Party_4.jpg"],
 		"Diagram Path": "images/diagram.png",
 		"Included Items": "Wireless Mics, Custom Audio Configurations, Custom Lighting Designs, Custom Gobo Options, LEDs... and more!",
 		"Description": "Whether it’s the holidays or a staff retirement party, EP has what you need to enhance your next celebration. With custom lighting and audio packages available, we'll be sure to incorporate your theme in a sensory experience that matches your decor."
 	},
-	"Outdoor": {
+	"Outdoor Events": {
 		"Title": "Outdoor Events with EP",
 		"Image Paths": ["images/Outdoor_1.jpg", "images/Outdoor_2.jpg", "images/Outdoor_3.jpg", "images/Outdoor_4.jpg"],
 		"Diagram Path": "images/diagram.png",
 		"Included Items": "Custom Audio Configurations, 700HP Subs, Meyer Line Array, Monitors, LEDs, Tiki Torches, Lasers, Large Projection Screens, Blu-Ray Players, Staging... and more!",
 		"Description": "With a range of durable gear and transportation options, EP is ready to accommodate any outdoor event need. Whether a BBQ, outdoor movie, or rock concert, we are happy to extend all of our services to the great outdoors."
-	},
-	"Presentation": {
-		"Title": "Lectures & Guest Speakers with EP",
-		"Image Paths": ["images/Presentation_&_Lecture_1.jpg", "images/Presentation_&_Lecture_2.jpg", "images/Presentation_&_Lecture_3.jpg"],
-		"Diagram Path": "images/diagram.png",
-		"Included Items": "Wireless Microphones, Panel Microphones, Custom Gobo Options, Laptops, A/V Switchers, Blu-Ray Players, Projectors, Video Recording... and more!",
-		"Description": "Looking for basic support for your next guest speaker or panel discussion? By booking EP we ensure that each session runs smoothly from start to finish. With media switchers, laptops, and even live streaming available, we are able to accommodate all of your event's media needs."
 	}
-
 }
