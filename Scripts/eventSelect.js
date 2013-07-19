@@ -25,7 +25,7 @@ var infiniteRotator =
         var infiniteLoopID = setInterval(function(){
             $('.eventImg').eq(currentItem).fadeOut(fadeTime);
             
-            if(currentItem == numberOfItems -1){
+            if(currentItem == numberOfItems - 1){
                 currentItem = 0;
             }else{
                 currentItem++;
@@ -48,8 +48,8 @@ var eventData;
 
 $.getJSON('../data/eventData.json', function(data){
 	eventData = data;
+	console.log(eventData);
 });
-
 
 $(document).ready(function(){
 	sessionStorage.eventInfo = "";
@@ -62,18 +62,21 @@ $(document).ready(function(){
 		$('#includedItems').text(eventData[type]["Included Items"]);
 		$('#description').text(eventData[type]["Description"]);
 		$('#eventType').text(type);
+		clearInterval(infiniteLoopID);
+		infiniteLoopID = infiniteRotator.init(eventData[type]["Image Paths"].length);
 		$('.eventImg').each(function(i){
 			if (i < eventData[type]["Image Paths"].length){
 				newImage = eventData[type]["Image Paths"][i];
-
 				$(this).attr("src", eventData[type]["Image Paths"][i]);
+				if (i > 0) {
+					$(this).hide();
+				}
 			}
 			else {
 				$(this).attr("src", "");
+				$(this).hide();
 			}
 		});
-		clearInterval(infiniteLoopID);
-		infiniteLoopID = infiniteRotator.init(eventData[type]["Image Paths"].length);
 	});
 	
 	//Click the large picture to enter overlay mode
