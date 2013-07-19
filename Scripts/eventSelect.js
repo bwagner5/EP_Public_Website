@@ -58,6 +58,8 @@ $(document).ready(function(){
 		
 	$('#eventType-menu .dropSelect').click(function(event){
 		type = $(this).text();
+		$('#details').show();
+		$('#detailsMessage').hide();
 		$('#title').text(eventData[type]["Title"]);
 		$('#includedItems').text(eventData[type]["Included Items"]);
 		$('#description').text(eventData[type]["Description"]);

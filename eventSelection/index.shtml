@@ -28,7 +28,7 @@
 	<div class="row">
 		<div class="span12 box">
 			<div class="row-fluid">
-				<div class="span4 offset1">
+				<div class="span5 offset1" id="eventOptionsColumn">
 					<h3 class="pageTitle" style="margin-left: -30px;">Event Options</h3>
 					<div class="row-fluid">
 						<div class="span10">
@@ -54,7 +54,12 @@
 						<h4>Details:</h4>
 						<div class="span11 box" id="detailsBox">
 						  	<div class="row-fluid">
-						  		<div class="span10 offset1">
+						  		<div class="span10 offset1" id="detailsMessage">
+						  			<p>
+						      			<b>Please Select an Event Type Above</b>
+						  			</p>
+						  		</div>
+						  		<div class="span10 offset1" id="details" style="display:none">
 						  			<p>
 						      			<b><span id="title"></span></b>
 						  			</p>
@@ -72,7 +77,7 @@
 						</div>	
 					</div>
 				</div>
-				<div class="span6">
+				<div class="span4" id="eventImageWrapper">
 					<h3 class="pageTitle" style="padding-left: -60px;">&nbsp;</h3>
 					<div id="eventImages">
 						<img class="eventImg" src="images/placeholder.png" style="display:block">

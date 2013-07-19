@@ -358,6 +358,10 @@ a:hover {
     display: none;
 }
 
+#eventImageWrapper {
+	margin-left:0;
+}
+
 #eventImages{
 	width: 572px;
 	min-height: 440px;
@@ -616,6 +620,15 @@ input[name="slideSwitch"] {
 	padding-top:20px;
 	padding-bottom:20px;
 	margin-left:0;
+}
+
+#eventOptionsColumn {
+	margin-left:65px;
+	width: 465px;
+}
+
+#details, #detailsMessage {
+	margin-left: 8.547008547008547%;
 }
 
 /*FAQ Page*/
