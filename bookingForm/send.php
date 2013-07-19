@@ -2,7 +2,7 @@
 if(isset($_POST['submit'])) 
 {
 	// Email settings
-	$to =	 'renfred93@gmail.com';
+	$to =	 'ep@gmu.edu';
 	$from = 'ep@gmu.edu';
 	$subject =	 'Events Production Booking Form Submission: ';
 	// MIME Settings 
