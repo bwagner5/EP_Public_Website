@@ -89,7 +89,7 @@ if(isset($_POST['submit'])) {
  						font-size:13pt;
  					}
  					tr:nth-child(odd) {
- 						background-color: #efefef;
+ 						background-color: #fafafa;
 					}
  					.tdTitle {
  						 margin-top: 25px;

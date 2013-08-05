@@ -86,6 +86,7 @@ if(isset($_POST['submit']))
     $paddedChairs = $_POST["paddedChairs"];
     $highCocktails = $_POST["highCocktails"];
     $lowCocktails = $_POST["lowCocktails"];
+    $stools = $_POST["stools"];
     
     $subject .= $eventName;
     
@@ -107,7 +108,7 @@ if(isset($_POST['submit']))
  						font-size:13pt;
  					}
  					tr:nth-child(odd) {
- 						background-color: #efefef;
+ 						background-color: #fafafa;
 					}
  					.tdTitle {
  						 margin-top: 25px;
@@ -304,6 +305,10 @@ if(isset($_POST['submit']))
  					<tr>
  						<td>Low Cocktails </td>
  						<td>$lowCocktails</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Cocktail Stools </td>
+ 						<td>$stools</td>
  					</tr>
  				</table>
  				<p>Your request to book Events Production has been submitted. A response regarding your request will be made within 3 business days. If you have updates or changes to your request, please email <a href=\"mailto:ep@gmu.edu\">ep@gmu.edu</a>. Thank you.</p>

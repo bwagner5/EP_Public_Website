@@ -1,7 +1,6 @@
 <?php
 if(isset($_POST['submit'])) 
 {
-     
     $email_to = "ep@gmu.edu";
     $email_subject = "EP Survey Submission";
     $email_from = "ep@gmu.edu";
@@ -35,7 +34,7 @@ if(isset($_POST['submit']))
  						font-size:13pt;
  					}
  					tr:nth-child(odd) {
- 						background-color: #eaeaea;
+ 						background-color: #fafafa;
 					}
  					.tdTitle {
  						 background-color: #dadada;
