@@ -202,17 +202,17 @@ $(document).ready(function(){
     // Popover Initialization
     $('#audioRecordingQuestion').popover({
     	title:'', 
-    	content:"Audio: Will provide with CD and/or Digital Copy of audio from your event or meeting. Please allow 24 hours for post-processing", 
+    	content:"Audio: Will provide with CD and/or Digital Copy of audio from your event or meeting. Please allow 24 hours for post-processing.", 
     	trigger:"hover"
     });
     $('#videoRecordingQuestion').popover({
     	title:'', 
-    	content:"Video: Will provide a Digital Copy of event recording in quicktime format. Client must provide Flash drive or External Drive to transfer video. NO DVDS will be made. 72 hours post-processing", 
+    	content:"Video: Will provide a Digital Copy of event recording in quicktime format. Client must provide Flash drive or External Drive to transfer video. No DVDS will be made. Please allow 72 hours for post-processing.", 
     	trigger:"hover"
     });
     $('#pcLaptopsQuestion').popover({
     	title:'', 
-    	content:"Our laptops do not have CD Drives", 
+    	content:"Our laptops do not have CD/DVD Drives", 
     	trigger:"hover"
     });
     $('#orgCodeQuestion').popover({

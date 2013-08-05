@@ -256,7 +256,7 @@
 							    </label>
 							    <label class="checkbox inline eventCheckbox" for="performers-5">
 							      <input type="checkbox" name="performers[]" id="performers-5" value="Gaming ">
-							      Karaoke
+							      Gaming
 							    </label>
 							    <br>
 							    <label class="checkbox inline eventCheckbox" for="performers-6">
@@ -351,7 +351,7 @@
 							</div>
 							<!-- Wireless Lavaliers -->
 							<div class="control-group">
-							  <label class="control-label" for="lavaliers">Wireless Headset/Lavaliers</label>
+							  <label class="control-label" for="lavaliers">Wireless Headset/<br>Lavaliers</label>
 							  <div class="controls">
 							    <select id="lavaliers" name="lavaliers" class="input-mini">
 							      <option></option>
@@ -574,6 +574,13 @@
 							  <label class="control-label" for="lowCocktails"></label>
 							  <div class="controls">
 							    <input id="lowCocktails" name="lowCocktails" type="text" placeholder="Low" class="input-medium">  
+							  </div>
+							</div>
+							<!-- Cocktail Stools -->
+							<div class="control-group">
+							  <label class="control-label" for="stools">Cocktail Stools</label>
+							  <div class="controls">
+							    <input id="stools" name="stools" type="text" placeholder="Maximum of 12" class="input-medium">
 							  </div>
 							</div>
 							<div class="sectionTitle">Additional Files</div>
