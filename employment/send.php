@@ -407,8 +407,9 @@ if(isset($_POST['submit'])) {
 	}
 	
 	$message .= $bound_last;
-	
-	if(mail($to, $subject, $message, $headers)) 
+	// Send email to ep from applicant's email
+	$ep_headers = str_replace($from, $email, $headers);
+	if(mail($to, $subject, $message, $ep_headers)) 
 	{
 		mail($email, $subject, $message, $headers);
 		header( 'Location: applicationSubmitted.shtml' );
