@@ -37,6 +37,7 @@
 	<!-- Styles -->
 	<link href="../styles/bootstrap.css" rel="stylesheet">
 	<link href="../styles/styles.css" rel="stylesheet">
+	<link href="../styles/color.css" rel="stylesheet">
 	<!-- IE <= 8 Support -->
     <!--[if lt IE 9]>
 	  <script src="../scripts/html5shiv.js"></script>

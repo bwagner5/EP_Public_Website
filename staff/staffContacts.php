@@ -11,6 +11,11 @@
 	<link href="../styles/bootstrap.css" rel="stylesheet">
 	<link href="../styles/styles.css" rel="stylesheet">
 	<link href="../styles/color.css" rel="stylesheet">
+	<style>
+		.navBar {
+		    border-color: rgba(227,189,0,8);
+		} 
+	</style>
 	<!-- IE <= 8 Support -->
     <!--[if lt IE 9]>
 	  <script src="../scripts/html5shiv.js"></script>

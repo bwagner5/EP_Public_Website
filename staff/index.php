@@ -17,6 +17,11 @@
 	  <link rel="stylesheet" type="text/css" href="../styles/ie.css" />
 	<![endif]-->
   </head>
+  <style>
+    .navBar {
+	    border-color: rgba(227,189,0,8);
+    } 
+  </style>
   <body class="staffStyles">
 	<?php include "../includes/navbar.php"; ?>
 	<!-- Cover Section -->
