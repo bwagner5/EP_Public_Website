@@ -8,6 +8,9 @@ $(document).ready(function(){
 			return date.valueOf() < now.valueOf() ? 'disabled' : '';
 		}
 	});
+	$('.datepicker').on('changeDate', function() {
+		$(this).datepicker('hide');
+	});
 	$('#soundCheck').timepicker({
 		'minTime': '7:00am',
 		'maxTime': '11:30pm'
