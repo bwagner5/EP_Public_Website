@@ -50,6 +50,8 @@ $(document).ready(function(){
 			"JC Meeting Room",
 			"JC George's",
 			"JC Dance Studio",
+			"JC Bistro",
+			"JC Dewberry Lobby",
 			"The HUB Ball Room Full",
 			"The HUB Ball Room Front",
 			"The HUB Ball Room Mid",
@@ -71,6 +73,8 @@ $(document).ready(function(){
 			"Patriot Center East Enterance",
 			"Research Room 163",
 			"Southside",
+			"SUB I Meeting Room",
+			"SUB I Patriot's Lounge",
 		]
 	});
 	// This validation script uses the jQuery validation plugin
