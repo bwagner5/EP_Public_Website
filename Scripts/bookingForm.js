@@ -2,19 +2,6 @@ var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 
 $(document).ready(function(){
-	//console.log(sessionStorage.eventInfo);
-	// Checking if user inputted preset information on another page via HTML5 storage
-	if(typeof(sessionStorage.eventInfo)!=="undefined"){
-		var importedInfo = sessionStorage.eventInfo.split(",");
-		console.log(importedInfo);
-		$('#location').val(importedInfo[0]);
-		$('#eventType').val(importedInfo[1]);
-		$('#attendance').val(importedInfo[2]);
-		sessionStorage.eventInfo = "";
-	}
-	else {
-		console.log("No web storage support");
-	}	
 	$('.datepicker').datepicker({
 		format: 'mm-dd-yyyy',
 		onRender: function(date) {
