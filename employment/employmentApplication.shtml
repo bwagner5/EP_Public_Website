@@ -73,7 +73,7 @@
 					<div class="control-group">
 					  <label class="control-label" for="emergencyName">Emergency Contact Name</label>
 					  <div class="controls">
-						 <input id="emergencyName" name="emergencyName" type="text" placeholder="First Name" class="input-large">	  
+						 <input id="emergencyName" name="emergencyName" type="text" placeholder="First Name, Last Name" class="input-large">	  
 					  </div>
 					</div>
 					<!-- Emergency Number -->
@@ -514,9 +514,45 @@
 			    }
 			  },
 			rules: {
-				firstName: {
+				applicantName: {
 					required: true,
 				},
+				preferredName: {
+					required: false,
+				},
+				phone: {
+					required: true,
+				},
+				dob: {
+					required: true,
+				},
+				email: {
+					required: true,
+				},
+				emergencyName: {
+					required: true,
+				},
+				emergencyPhone: {
+					required: true,
+				},
+				currentAddress: {
+					required: true,
+				},
+				gNum: {
+					required: true,
+				},
+				major: {
+					required: true,
+				},
+				classification: {
+					required: true,
+				},
+				creditHours: {
+					required: true,
+				},
+				gradDate: {
+					required: true,
+				}
 			},
 			messages: {
 				email: {

@@ -195,9 +195,9 @@ a:hover {
     background-image: linear-gradient(rgba(187, 62, 62, 0) 0%, rgba(108, 11, 11, 0.5) 93.05%);
     background-image: -webkit-linear-gradient(rgba(187, 62, 62, 0) 0%, rgba(108, 11, 11, 0.5) 93.05%);
     background-image: -moz-linear-gradient(rgba(187, 62, 62, 0) 0%, rgba(108, 11, 11, 0.5) 93.05%);
-    -moz-box-shadow: 0 0 6px #CCC;
-    -webkit-box-shadow: 0 0 6px #CCC;
-    box-shadow: 0 0 6px #CCC;
+    -moz-box-shadow: 0 0 6px #444;
+    -webkit-box-shadow: 0 0 6px #444;
+    box-shadow: 0 0 6px #444;
     -moz-transition: background-color 0.1s;
     -o-transition: background-color 0.1s;
     -webkit-transition: background-color 0.1s;

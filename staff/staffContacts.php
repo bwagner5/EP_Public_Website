@@ -61,7 +61,7 @@
 							<td>703 993 2881</td>
 						</tr>
 						<tr>
-							<td>VT's</td>
+							<td>SOPs</td>
 							<td></td>
 							<td>703 993 8919</td>
 						</tr>

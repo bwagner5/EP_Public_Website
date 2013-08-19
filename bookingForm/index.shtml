@@ -296,6 +296,7 @@
 									<option>0-25</option>
 									<option>25-50</option>
 									<option>50-100</option>
+									<option>100-200</option>
 									<option>200-300</option>
 									<option>300-400</option>
 									<option>400-500</option>
@@ -312,7 +313,7 @@
 							  </div>
 							</div>
 							<!-- EVENT ENCHANCEMENTS -->
-							<div class="sectionTitle">Event Enchancements</div>
+							<div class="sectionTitle">Event Enhancements</div>
 							  <p class="formCaption">Based on the previous information you provided about your event, our staff will choose
 							  equipment that best suits your event's needs. In this section you can specify any equipment that you are sure you would like to be included in your  event package and we will do our best to provide it for you based on what is available in our inventory. </p>
 							<!-- Wired Microphones -->
@@ -543,7 +544,7 @@
 							<div class="control-group">
 							  <label class="control-label" for="roundTables6">6' Round Tables</label>
 							  <div class="controls">
-							    <input id="roundTables6" name="roundTables6" type="text" placeholder="Maximum of 30" class="input-medium">  
+							    <input id="roundTables6" name="roundTables6" type="text" placeholder="Maximum of 8" class="input-medium">  
 							  </div>
 							</div>
 							<!-- Stacking Chairs -->
@@ -585,7 +586,7 @@
 							</div>
 							<div class="sectionTitle">Additional Files</div>
 							<p class="formCaption">You can use the following section to submit event programs or diagrams that could be helpful to us in planning your event.</p>
-							<p class="formCaption">Feel free to fill out our <a href="Client_Cue_Sheet_Template.xlsx" target="_blank">Cue Sheet Template to</a> help plan out a breakdown of the order of events and your technical needs. This can be attached below or sent to us at <a href="mailto:ep@gmu.edu">ep@gmu.edu</a> prior to your event.</p>
+							<p class="formCaption">Feel free to fill out our <a href="Client_Cue_Sheet_Template.xlsx" target="_blank">Cue Sheet Template </a>to help plan out a breakdown of the order of events and your technical needs. This can be attached below or sent to us at <a href="mailto:ep@gmu.edu">ep@gmu.edu</a> prior to your event.</p>
 							<!-- File Button --> 
 							<div class="control-group">
 							  <label class="control-label" for="attachment1">Attachment 1</label>

@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
 	<!--#include virtual ="../includes/meta.php" -->
-    <title>Event Selection</title>
+    <title>Event Setups</title>
     <!-- Styles -->
 	<link href="../styles/bootstrap.css" rel="stylesheet">
 	<link href="../styles/styles.css" rel="stylesheet">
@@ -60,9 +60,9 @@
 						  			</p>
 						  		</div>
 						  		<div class="span10 offset1" id="details" style="display:none">
-						  			<p>
+						  			<h4>
 						      			<b><span id="title"></span></b>
-						  			</p>
+						  			</h4>
 						  			<p>
 						      			<b>Description: </b><span id="description"></span>
 						  			</p>
