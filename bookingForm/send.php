@@ -4,7 +4,7 @@ if(isset($_POST['submit']))
 	// Email settings
 	$to =	 'ep@gmu.edu';
 	$from = 'ep@gmu.edu';
-	$subject =	 'Events Production Booking Form Submission: ';
+	$subject =	 'New Request: ';
 	// MIME Settings 
 	$bound_text =	"boundary";
 	$bound =	"--".$bound_text."\r\n";
@@ -88,7 +88,7 @@ if(isset($_POST['submit']))
     $lowCocktails = $_POST["lowCocktails"];
     $stools = $_POST["stools"];
     
-    $subject .= $eventName;
+    $subject .= "$date, $eventName, $reqFirstName $reqLastName";
     
  	$messageBody =
  	"
@@ -353,8 +353,9 @@ if(isset($_POST['submit']))
 	}
 	
 	$message .= $bound_last;
-	
-	if(mail($to, $subject, $message, $headers)) 
+	// Send email to ep from client's email
+	$ep_headers = str_replace($from, $email, $headers);
+	if(mail($to, $subject, $message, $ep_headers)) 
 	{
 		mail($email, $subject, $message, $headers);
 		header( 'Location: bookingFormSubmitted.shtml' );

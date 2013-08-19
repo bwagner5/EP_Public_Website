@@ -2,8 +2,8 @@
 if(isset($_POST['submit'])) 
 {
     $email_to = "ep@gmu.edu";
-    $email_subject = "EP Survey Submission";
-    $email_from = "ep@gmu.edu";
+    $email_subject = "Events Production Survey";
+    $email_from = "ep_surveys@gmu.edu";
     
     $eventName = $_POST["eventName"];
     $date = $_POST["date"];
@@ -94,8 +94,8 @@ if(isset($_POST['submit']))
 	$headers = 'From: '.$email_from."\r\n".
 	'Reply-To: '.$email_from."\r\n" .
 	'X-Mailer: PHP/' . phpversion() . "MIME-Version: 1.0\r\n" . "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
 	@mail($email_to, $email_subject, $message, $headers);
-	@mail($email, $email_subject, $email_message, $headers);
 
     header('Location: surveySubmitted.shtml');
 }
