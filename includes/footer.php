@@ -1,5 +1,5 @@
 <?php 
-	$root = '/newSite/'; 
+	$root = '/'; 
 	if( $_SERVER['REQUEST_URI'] == $root.'index.shtml' || $_SERVER['REQUEST_URI'] == $root) {
 		$home = true; 
 	}
