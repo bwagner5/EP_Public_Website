@@ -37,7 +37,7 @@
 		 				<img class="leftArrow" src="../images/arrowLeft.png">
 		 				<img class="rightArrow" src="../images/arrowRight.png">
 		 				<div class="alignWrapper">
-		 					<img class="mainDisplay" src="images/0.jpg">
+		 					<img class="mainDisplay" src="images/0.jpg" style="max-width:695px">
 		 				</div>
 		 			</div>
 		 		</div>
