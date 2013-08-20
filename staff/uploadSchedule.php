@@ -1,11 +1,16 @@
 <?php
+	// On upload, remove the old directory with the schedule file in it and create a new one. 
+	// Apache will retain permissions over the folder so it will not matter what permissions
+	// are set on the file it contains.
+	rmdir("files/schedule");
+	mkdir("files/schedule", $mode = 0775);
 	// Assigning file attributes 
 	$name  = $_FILES['upload']['name'];
 	$type  = $_FILES['upload']['type'];
 	$size  = $_FILES['upload']['size'];
 	$tmp   = $_FILES['upload']['tmp_name'];
 	$error = $_FILES['upload']['error'];
-	$savepath = 'schedule';
+	$savepath = 'files/schedule';
 	$filelocation = $savepath."/".$name;
 	
 	if ($error == 0) {

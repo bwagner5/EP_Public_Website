@@ -1,7 +1,7 @@
 <?php 
 	// Find the first non-hidden file in the schedule directory
 	// and returns its path
-	$directory = "schedule";
+	$directory = "files/schedule";
 	$handle = opendir($directory); 
 	while (false !== ($fileName = readdir($handle))) {
 		// Hidden files being with a "."; they are skipped
