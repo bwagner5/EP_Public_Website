@@ -63,6 +63,8 @@ $(document).ready(function() {
 	  $(".mainDisplay").attr("src","images/"+currentImg+".jpg");
 	});
 	
+	imgOrient(".mainDisplay", 521, 695);
+	
 	//Click the large picture to enter overlay mode
 	$(".mainDisplay").on("click", function() {
 		$(".overlayImg").attr("src","images/"+currentImg+".jpg");
