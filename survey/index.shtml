@@ -176,9 +176,21 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-	<script src="Scripts/bookingForm.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/bootstrap-datepicker.js"></script>
-    <script src="Scripts/jquery.timepicker.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+	<script src="../scripts/bootstrap-datepicker.js"></script>
+    <script src="../scripts/bookingForm.js"></script>
+    <script>
+	    $(document).ready(function() {
+	    	$('.datepicker').datepicker({
+				format: 'mm-dd-yyyy',
+				onRender: function(date) {
+					return date.valueOf() < now.valueOf() ? 'disabled' : '';
+				}
+			});
+			$('.datepicker').on('changeDate', function() {
+				$(this).datepicker('hide');
+			});
+		});
+	</script>
   </body>
 </html>
