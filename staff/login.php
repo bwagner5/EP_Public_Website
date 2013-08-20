@@ -52,6 +52,9 @@ if (!$_SESSION['loggedIn']): ?>
 		#login{
 
 		}
+		.navBar {
+		    border-color: rgba(227,189,0,8);
+		} 
 	</style>
 	<!-- IE <= 8 Support -->
     <!--[if lt IE 9]>
