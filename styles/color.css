@@ -11,25 +11,25 @@ body{
 }
 /*Navbar Background*/
 .navBar{
-	background-color: ;
-	border-color: ;
+	background-color: #222222;
+	border-color: rgba(48,48,48,1);
 }
 .navList li{
-	color: ;
+	color: white;
 }
 .navSelected, .navList li:hover {
 	color: ;
 }
 /*Navbar Background*/
 .navBar{
-	border-color: ;
+	border-color: rgba(52,52,52,.7);
 }
 .navList li{
 }
 .navSelected, .navList li:hover {
-	color:  ;
-	background-color: ;
-	border-color: ;
+	color:  white;
+	background-color: #141414;
+	border-color: rgba(227,189,0,1);
 }
 /*Text*/
 p,h1,h2,h3,h4,h5,h6 {
