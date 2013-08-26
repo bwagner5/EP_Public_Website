@@ -535,14 +535,14 @@
 							</div>
 							<!-- 5' Round Tables -->
 							<div class="control-group">
-							  <label class="control-label" for="roundTables5">5' Round Tables</label>
+							  <label class="control-label" for="roundTables5">5' Dining Round Tables</label>
 							  <div class="controls">
 							    <input id="roundTables5" name="roundTables5" type="text" placeholder="Maximum of 30" class="input-medium">  
 							  </div>
 							</div>
 							<!-- 6' Round Tables -->
 							<div class="control-group">
-							  <label class="control-label" for="roundTables6">6' Round Tables</label>
+							  <label class="control-label" for="roundTables6">Catering Round Tables</label>
 							  <div class="controls">
 							    <input id="roundTables6" name="roundTables6" type="text" placeholder="Maximum of 8" class="input-medium">  
 							  </div>
