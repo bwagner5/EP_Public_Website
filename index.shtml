@@ -30,7 +30,7 @@
 	</div>
 	<!-- End Cover Section -->
 	<div class="container slideUp lessMargin">
-	  <div class="row">
+	  <div class="row-fluid">
 		<div class="span10 offset1 box">
 		  <div class="row-fluid">
 			<div class="span4 offset1">
@@ -64,7 +64,7 @@
 	</div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-    <script src="../scripts/bootstrap.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
     <script>
 	    $(window).load(function() { //start after HTML, images have loaded
 		 	// Photo carosuel function

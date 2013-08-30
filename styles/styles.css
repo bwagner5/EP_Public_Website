@@ -17,9 +17,8 @@ No carosuel
 }
 
 body {
-    /*background-color: #141414;*/
-    min-width: 1201px;
-    overflow-x: hidden;
+    /*background-color: #141414;
+*/
 }
 
 a {
@@ -71,18 +70,17 @@ a {
 /*Design*/
 .front {
     line-height: 40px;
-    /*text-indent: 3em;*/
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 0
 }
 
 .masonFlag {
-    width: 191px;
-    height: 140px;
+    width: 172px;
+    height: 136px;
     position: absolute;
     z-index: 4;
-    left: 70px;
+    left: 1.4%;
     border: 1px #f4f4f4;
     -moz-border-radius: 0 0 42px 42px;
     -webkit-border-radius: 0 0 42px 42px;
@@ -95,9 +93,9 @@ a {
 
 .masonLogo {
     padding-left: 28px;
-    padding-top: 6px;
-    height: 101px;
-    width: 135px
+    padding-top: 11px;
+    height: 91px;
+    width: 121px;
 }
 
 .navBar {
@@ -115,16 +113,24 @@ a {
 
 .navList {
     text-align: center;
-    padding-top: 27px
+    padding-top: 27px;
+    margin-left: 25px;
+}
+
+.navContainer {
+	width: 100% !important;
+	margin-left: 0;
+	margin-right: 0;
+	background-color: #141414;
 }
 
 .navList li {
     display: inline;
     padding-top: 27px;
     padding-bottom: 34px;
-    padding-left: 18px;
-    padding-right: 18px;
-    font-size: 12pt;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 15px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     color: #444;
@@ -185,19 +191,19 @@ a:hover {
 
 /*Buttons*/
 .bookButton {
-    height: 42px;
-    width: 170px;
+    height: 38px;
+    width: 140px;
     position: absolute;
     top: 20px;
-    right: 30px;
+    right: 1%;
     border: solid #a72020 1px;
     background-color: #da2929;
     background-image: linear-gradient(rgba(187, 62, 62, 0) 0%, rgba(108, 11, 11, 0.5) 93.05%);
     background-image: -webkit-linear-gradient(rgba(187, 62, 62, 0) 0%, rgba(108, 11, 11, 0.5) 93.05%);
     background-image: -moz-linear-gradient(rgba(187, 62, 62, 0) 0%, rgba(108, 11, 11, 0.5) 93.05%);
-    -moz-box-shadow: 0 0 6px #444;
-    -webkit-box-shadow: 0 0 6px #444;
-    box-shadow: 0 0 6px #444;
+    -moz-box-shadow: 0 0 4px #222;
+    -webkit-box-shadow: 0 0 4px #222;
+    box-shadow: 0 0 4px #222;
     -moz-transition: background-color 0.1s;
     -o-transition: background-color 0.1s;
     -webkit-transition: background-color 0.1s;
@@ -209,11 +215,11 @@ a:hover {
 }
 
 .bookText {
-    font-size: 16pt;
+    font-size: 18px;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
-    margin: 2px
+    margin-top: -1px;
 }
 
 .greyButton {

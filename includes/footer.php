@@ -1,5 +1,5 @@
 <?php 
-	$root = '/'; 
+	$root = '/~renfred/EP_Public_Website/'; 
 	if( $_SERVER['REQUEST_URI'] == $root.'index.shtml' || $_SERVER['REQUEST_URI'] == $root) {
 		$home = true; 
 	}

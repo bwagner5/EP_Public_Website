@@ -44,27 +44,27 @@
 						<tr>
 							<td>Ken Locke</td>
 							<td>klocke</td>
-							<td>Office - 703 993 2863<br>Cell - 540 850 2230</td>
+							<td>Office - (703) 993 2863<br>Cell - (540) 850 2230</td>
 						</tr>
 						<tr>
 							<td>Sean Cox</td>
 							<td>scox8</td>
-							<td>Office - 703 993 1018<br>Cell - 334 728 2169</td>
+							<td>Office - (703) 993 1018<br>Cell - (334) 728 2169</td>
 						</tr>
 						<tr>
 							<td>Office Phone</td>
 							<td>ep</td>
-							<td>703 993 3773</td>
+							<td>(703) 993 3773</td>
 						</tr>
 						<tr>
 							<td>Bat Phone</td>
 							<td></td>
-							<td>703 993 2881</td>
+							<td>(703) 993 2881</td>
 						</tr>
 						<tr>
 							<td>SOPs</td>
 							<td></td>
-							<td>703 993 8919</td>
+							<td>(703) 993 8919</td>
 						</tr>
 					</table>
 					<div class="sectionTitle">EP Technician Contacts</div>

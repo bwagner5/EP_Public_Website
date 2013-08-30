@@ -1,17 +1,26 @@
 <?php 
 	$path = '';
-	$root = '/';
+	$root = '/~renfred/EP_Public_Website/';
 	if( $_SERVER['REQUEST_URI'] !== $root.'index.shtml' && $_SERVER['REQUEST_URI'] !== $root)
 	{
 		$path = '../';
 	} 
 	print('	
-<div>
+<div class="container navContainer">
 	<a href="http://gmu.edu">
     	<div class="masonFlag"> <img src="'); print($path); print('images/MasonLogo2.gif" class="masonLogo"> </div>
     </a>
       <div class="navBar">
+        <a href="http://es.gmu.edu/bookingForm/">
+          <div class="bookButton">
+            <h3 class="bookText">Booking Form</h3>
+          </div>
+        </a> 
         <ul class="navList">
+          <a  class="hidden-desktop" data-toggle="collapse" data-target="#nav-fold">
+          	<li>Menu</li>
+          </a>
+          <div id="nav-fold" class="nav-collapse collapse">
           <a href="');print($path);print('">
           	'); print('<li'); if( $_SERVER['REQUEST_URI'] === $root.'index.shtml' || $_SERVER['REQUEST_URI'] === $root){ print(' class="navSelected"');}
           	print('>Home</li>'); print('
@@ -36,12 +45,8 @@
             '); print('<li'); if(strpos($_SERVER['REQUEST_URI'], '/contact/') !== false){ print(' class="navSelected"');}
           	print('>Contact</li>'); print('
           </a>
-        </ul>
-        <a href="');print($path);print('bookingForm/">
-          <div class="bookButton">
-            <h3 class="bookText">Booking Form</h3>
           </div>
-        </a> 
+        </ul>
 	</div>
 </div>');
 ?>
