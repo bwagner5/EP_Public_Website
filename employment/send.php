@@ -116,6 +116,10 @@ if(isset($_POST['submit'])) {
  						<td>$preferredName</td>
  					</tr>
  					<tr>
+ 						<td>Email </td>
+ 						<td>$email</td>
+ 					</tr>
+ 					<tr>
  						<td>Phone Number </td>
  						<td>$phone</td>
  					</tr>
