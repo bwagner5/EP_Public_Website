@@ -7,10 +7,6 @@
   <head>
 	<?php include "../includes/meta.php"; ?>
 	<title>Staff Contacts</title>
-	<!-- Styles -->
-	<link href="../styles/bootstrap.css" rel="stylesheet">
-	<link href="../styles/styles.css" rel="stylesheet">
-	<link href="../styles/color.css" rel="stylesheet">
 	<style>
 		.navBar {
 		    border-color: rgba(227,189,0,8);

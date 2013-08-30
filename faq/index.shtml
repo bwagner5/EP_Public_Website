@@ -4,10 +4,6 @@
   <head>
 	<!--#include virtual ="../includes/meta.php" --> 
     <title>FAQ</title>
-    <!-- Styles -->
-	<link href="../styles/bootstrap.css" rel="stylesheet">
-	<link href="../styles/styles.css" rel="stylesheet">
-	<link href="../styles/color.css" rel="stylesheet">
 	<style>
 		p {
 			text-indent: 22pt;
