@@ -82,9 +82,9 @@ a {
     z-index: 4;
     left: 1.4%;
     border: 1px #f4f4f4;
-    -moz-border-radius: 0 0 42px 42px;
-    -webkit-border-radius: 0 0 42px 42px;
-    border-radius: 0 0 42px 42px;
+    -moz-border-radius: 0 0 38px 38px;
+    -webkit-border-radius: 0 0 38px 38px;
+    border-radius: 0 0 38px 38px;
     background-color: white;
     -moz-box-shadow: 0 0 4px rgba(53, 53, 53, 0.4);
     -webkit-box-shadow: 0 0 4px rgba(53, 53, 53, 0.4);
