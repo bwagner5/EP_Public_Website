@@ -17,8 +17,8 @@
           </div>
         </a> 
         <ul class="navList">
-          <a  class="hidden-desktop" data-toggle="collapse" data-target="#nav-fold">
-          	<li>Menu</li>
+          <a  class="nav-mobile-toggle hidden-desktop" data-toggle="collapse" data-target="#nav-fold">
+          	<li>&nbsp Menu <i class="icon-chevron-down icon-white"></i></li>
           </a>
           <div id="nav-fold" class="nav-collapse collapse">
           <a href="');print($path);print('">

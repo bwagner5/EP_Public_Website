@@ -140,6 +140,14 @@ a {
     transition: background-color 0.1s;
 }
 
+.nav-mobile-toggle {
+	padding-bottom: 0px;
+}
+
+.nav-mobile-toggle > li {
+	background-color: #222;
+}
+
 .navSelected, .navList li:hover {
     color: #373737;
     background-color: #f6f6f6;
@@ -165,9 +173,9 @@ a:hover {
     padding-bottom: 35px;
     background-color: white;
     border: 1px solid #ccc;
-    -moz-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
-    -webkit-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
-    box-shadow: 0 0 6px rgba(99, 99, 99, 0.4)
+    -moz-box-shadow: 0 0 4px rgba(99, 99, 99, 0.4);
+    -webkit-box-shadow: 0 0 4px rgba(99, 99, 99, 0.4);
+    box-shadow: 0 0 4px rgba(99, 99, 99, 0.4)
 }
 
 .slideUp {
