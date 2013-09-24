@@ -74,7 +74,7 @@ if (!$_SESSION['loggedIn']): ?>
 				<div class="span3 offset4">
 			    	<p><?php print $message ?></p>
 				    <form method="post">
-				      Password: <input type="password" name="password"> <br/>
+				      Password: <input type="password" name="password" autofocus="true"> <br/>
 				      <span style="text-align:right;">
 				      	<input type="submit" name="submit" value="Login" id="login">
 				      </span>
