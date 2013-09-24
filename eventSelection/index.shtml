@@ -21,7 +21,7 @@
   	<!--#include virtual ="../includes/navbar.php" -->
     <div class="container">
 	<div class="spacer"></div>
-	<div class="row">
+	<div class="row-fluid">
 		<div class="span12 box">
 			<div class="row-fluid">
 				<div class="span5 offset1" id="eventOptionsColumn">
@@ -73,7 +73,7 @@
 						</div>	
 					</div>
 				</div>
-				<div class="span4" id="eventImageWrapper">
+				<div class="span6" id="eventImageWrapper">
 					<h3 class="pageTitle" style="padding-left: -60px;">&nbsp;</h3>
 					<div id="eventImages">
 						<img class="eventImg" src="images/placeholder.png" style="display:block">

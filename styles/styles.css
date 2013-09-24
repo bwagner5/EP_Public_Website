@@ -59,7 +59,7 @@ a {
 }
 
 .rotating-item {
-	width: 320px;
+	width: 290px;
 	height: inherit;
     display: none;
     position: absolute;
@@ -82,9 +82,9 @@ a {
     z-index: 4;
     left: 1.4%;
     border: 1px #f4f4f4;
-    -moz-border-radius: 0 0 42px 42px;
-    -webkit-border-radius: 0 0 42px 42px;
-    border-radius: 0 0 42px 42px;
+    -moz-border-radius: 0 0 38px 38px;
+    -webkit-border-radius: 0 0 38px 38px;
+    border-radius: 0 0 38px 38px;
     background-color: white;
     -moz-box-shadow: 0 0 4px rgba(53, 53, 53, 0.4);
     -webkit-box-shadow: 0 0 4px rgba(53, 53, 53, 0.4);
@@ -140,6 +140,14 @@ a {
     transition: background-color 0.1s;
 }
 
+.nav-mobile-toggle {
+	padding-bottom: 0px;
+}
+
+.nav-mobile-toggle > li {
+	background-color: #222;
+}
+
 .navSelected, .navList li:hover {
     color: #373737;
     background-color: #f6f6f6;
@@ -165,14 +173,14 @@ a:hover {
     padding-bottom: 35px;
     background-color: white;
     border: 1px solid #ccc;
-    -moz-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
-    -webkit-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
-    box-shadow: 0 0 6px rgba(99, 99, 99, 0.4)
+    -moz-box-shadow: 0 0 4px rgba(99, 99, 99, 0.4);
+    -webkit-box-shadow: 0 0 4px rgba(99, 99, 99, 0.4);
+    box-shadow: 0 0 4px rgba(99, 99, 99, 0.4)
 }
 
 .slideUp {
     position: relative;
-    top: -125px;
+    top: -95px;
     /* Lifts the box to hover over the cover image*/
     margin-bottom: -100px;
     /*Negative margin makes up for gap left behind*/
@@ -313,7 +321,7 @@ a:hover {
 }
 
 .coverBar {
-    height: 140px;
+    height: 41%;
     width: 100%;
     position: absolute;
     top: 15%;
@@ -326,14 +334,6 @@ a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#55000000', endColorstr='#44000000');
 }
 
-.coverBorder {
-    height: 80px;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    background-color: blue;
-}
-
 .coverLead {
     font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #FFF;
@@ -344,8 +344,8 @@ a:hover {
 
 .coverLogo {
     position: relative;
-    top: 18px;
-    height: 105px;
+    top: 10%;
+    height: 79%;
 }
 
 .bottomedImg {
@@ -362,6 +362,10 @@ a:hover {
     position: absolute;
     top: 0;
     display: none;
+    border: 1px solid #c8c8c8;
+    box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
+	-moz-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
+    -webkit-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
 }
 
 #eventImageWrapper {
@@ -369,17 +373,10 @@ a:hover {
 }
 
 #eventImages{
-	width: 572px;
-	min-height: 440px;
-	margin-top: 8px;
-	margin-bottom: 25px;
+	width: 100%;
 	position: relative;
 	background-color: white;
-	border: 1px solid #c8c8c8;
 	box-sizing: border-box;
-	box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
-	-moz-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
-    -webkit-box-shadow: 0 0 6px rgba(99, 99, 99, 0.4);
 }
 
 .dropdownInput {
@@ -422,7 +419,7 @@ a:hover {
 }
 .footer p, .footer a{
 	font-size: 13px;
-	line-height: 10px;
+	line-height: 18px;
 }
 #staffLink {
 	color: #4f4f4f;
@@ -616,21 +613,11 @@ input[name="slideSwitch"] {
 	width: 98%;
 }
 
-#eventType-menu{
-	float:right;
-	left:37%;
-}
-
 #detailsBox {
 	min-height: 336px;
 	padding-top:20px;
 	padding-bottom:20px;
 	margin-left:0;
-}
-
-#eventOptionsColumn {
-	margin-left:65px;
-	width: 465px;
 }
 
 #details, #detailsMessage {

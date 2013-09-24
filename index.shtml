@@ -23,7 +23,8 @@
   <body>
 	<!--#include virtual ="includes/navbar.php" -->
 	<!-- Cover Section -->
-	<div class="coverPhoto"> <img src="images/Cover1.JPG" class="heroImg"/>
+	<div class="coverPhoto"> 
+	  <img src="images/Cover1.JPG" class="heroImg"/>
 	  <div class="coverBar"> 
 	  	<img src="images/frontLogo.png" class="coverLogo"/>
 	  </div>
@@ -33,7 +34,7 @@
 	  <div class="row-fluid">
 		<div class="span10 offset1 box">
 		  <div class="row-fluid">
-			<div class="span4 offset1">
+			<div class="span4 offset1 hidden-tablet hidden-phone">
 			    <a href="gallery" id="frontImageContainer">
               		<img class="rotating-item" src="gallery/images/10.jpg" alt="">
               		<img class="rotating-item" src="gallery/images/6.jpg" alt="">
@@ -41,7 +42,7 @@
               		<img class="rotating-item" src="gallery/images/5.jpg" alt="">
               	</a>			
             </div>
-			<div class="span6">
+			<div class="span6 frontContent" id="frontContent">
 			  <p class="front" style="text-align:center"><span class="bolded"> Booking EP for your event is
 				  easy.</span><br><span style="text-align:left;"> Feel free to browse our setups to find
 				one that suits your event, or begin the step by step
@@ -64,7 +65,7 @@
 	</div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
     <script>
 	    $(window).load(function() { //start after HTML, images have loaded
 		 	// Photo carosuel function
