@@ -37,11 +37,8 @@ if (!$_SESSION['loggedIn']): ?>
 <html lang="en">
   <head>
 	<?php include "../includes/meta.php"; ?>
-	<title>EP Staff</title>
-	<!-- Styles -->
-	<link href="../styles/bootstrap.css" rel="stylesheet">
-	<link href="../styles/styles.css" rel="stylesheet">
 	<link href="../styles/color.css" rel="stylesheet">
+	<title>EP Staff</title>
 	<style>
 		body {
 			background-color: #141414;
