@@ -24,7 +24,7 @@
 	<!-- End Cover Section -->
 	<div class="container">
 	  <div class="spacer"></div>
-	  <div class="row">
+	  <div class="row-fluid">
 		<div class="span10 offset1 box">
 	 		<a href="logout.php">
 				<div class="greyButton" id="logout-btn">
@@ -38,18 +38,14 @@
 			</div>
 			<div class="spacer"></div>
 			<div class="row-fluid">
-			 	<div class="span5 offset1">
-			 		<a href="staffContacts.php">
-						<div class="greyButton" id="techContact-btn">
-							<h3 class="greyButtonText">Employee Contacts</h3>
-						</div>
+			 	<div class="span6">
+			 		<a class="staffButton" id="techContact-btn" href="staffContacts.php">
+    			 		<h3 class="greyButton greyButtonText staffButtonText">Employee Contacts</h3>
 			 		</a>
 			 	</div>
-			 	<div class="span5">
-			 		<a href="<?php include "get_schedule_href.php"; ?>">
-						<div class="greyButton" id="eventSchedule-btn">
-							<h3 class="greyButtonText">Event Schedule</h3>
-						</div>
+			 	<div class="span6">
+			 		<a class="staffButton" id="eventSchedule-btn" href="<?php include "get_schedule_href.php"; ?>">
+    			 		<h3 class="greyButton greyButtonText staffButtonText">Event Schedule</h3>
 			 		</a>
 			 	</div>
 			</div>

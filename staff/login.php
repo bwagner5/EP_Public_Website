@@ -68,13 +68,13 @@ if (!$_SESSION['loggedIn']): ?>
 	<!-- End Cover Section -->
 	<div class="container">
 	  <div class="spacer"></div>
-	  <div class="row">
-		<div class="span10 offset1 box">
+	  <div class="row-fluid">
+		<div class="span8 offset2 box">
 			<div class="row-fluid">
-				<div class="span3 offset4">
+				<div class="span6 offset4" id="login-box">
 			    	<p><?php print $message ?></p>
 				    <form method="post">
-				      Password: <input type="password" name="password" autofocus="true"> <br/>
+				      Password: <br><input type="password" name="password" autofocus="true"> <br/>
 				      <span style="text-align:right;">
 				      	<input type="submit" name="submit" value="Login" id="login">
 				      </span>

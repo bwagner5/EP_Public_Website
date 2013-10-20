@@ -25,11 +25,11 @@
 	<!-- End Cover Section -->
 	<div class="container">
 		<div class="spacer"></div>
-		 <div class="row">
+		 <div class="row-fluid">
 		 	<div class="span10 offset1 box">
 		 		<h2 class="pageTitle">Photo Gallery</h2>
-		 		<div class="row">	
-		 			<div class="span8 offset1 mainContainer alignCell">
+		 		<div class="row-fluid">	
+		 			<div class="mainContainer alignCell">
 		 				<img class="leftArrow" src="../images/arrowLeft.png">
 		 				<img class="rightArrow" src="../images/arrowRight.png">
 		 				<div class="alignWrapper">
@@ -37,8 +37,8 @@
 		 				</div>
 		 			</div>
 		 		</div>
-		 		<div class="row">
-			  		<div class="span10">
+		 		<div class="row-fluid hidden-tablet hidden-phone">
+			  		<div class="span12">
 			  			<div class="galleryBar">
 				   			<input type="radio" name="slideSwitch" id="img0" value="0" checked="checked"/>
 				   			<label class="selectDisplay" for="img0">

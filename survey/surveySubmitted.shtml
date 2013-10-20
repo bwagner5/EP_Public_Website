@@ -16,7 +16,7 @@
     <!-- End Cover Section -->
     <div class="container">
       <div class="spacer"></div>
-      <div class="row">
+      <div class="row-fluid">
         <div class="span10 offset1 box">
         	<h2 class="pageTitle">Survey Submitted</h2>
         	<div class="row-fluid" style="margin-top:25px;">

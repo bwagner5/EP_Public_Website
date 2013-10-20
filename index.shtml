@@ -4,16 +4,6 @@
   <head>
 	<!--#include virtual ="includes/meta.php" --> 
 	<title>Home</title>
-	<style type="text/css">
-		body{
-			overflow: auto;
-		}
-		.footer{
-			/*footer overflow fix*/
-			margin-bottom: -140px;
-			margin-top: 18px;
-		}
-	</style>
 	<!-- IE <= 8 Support -->
     <!--[if lt IE 9]>
 	  <script src="scripts/html5shiv.js"></script>

@@ -22,12 +22,12 @@
     <div class="container">
 	<div class="spacer"></div>
 	<div class="row-fluid">
-		<div class="span12 box">
+		<div class="span12 box clearfix">
 			<div class="row-fluid">
-				<div class="span5 offset1" id="eventOptionsColumn">
+				<div class="span4 offset1" id="eventOptionsColumn">
 					<h3 class="pageTitle" style="margin-left: -30px;">Event Options</h3>
-					<div class="row-fluid">
-						<div class="span10">
+					<div class="row-fluid" id="eventButton">
+						<div class="span10" id="eventType-btn-container">
 						  <div class="btn-group padded" style="width:100%;"> 
 							<a class="btn btn-large dropdown-toggle" id="eventType-btn" data-toggle="dropdown">Select Event Type
 								<span class="caret"></span>
@@ -73,7 +73,7 @@
 						</div>	
 					</div>
 				</div>
-				<div class="span6" id="eventImageWrapper">
+				<div class="span6 offset1" id="eventImageWrapper">
 					<h3 class="pageTitle" style="padding-left: -60px;">&nbsp;</h3>
 					<div id="eventImages">
 						<img class="eventImg" src="images/placeholder.png" style="display:block">
@@ -90,6 +90,7 @@
 					<ul>
 						<li style="display: none;" class="captionText"></li>
 					</ul>
+					<div id="eventImgPush"></div>
 				</div>
 			</div>
 		</div>
