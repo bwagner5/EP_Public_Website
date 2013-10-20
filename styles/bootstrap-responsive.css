@@ -1006,15 +1006,16 @@
   .navList li {	
   	display: block;
   	border: none;
-  	background-color: rgba(20,20,20,0.78);
 	padding-left: 0;
     padding-right: 0;
     margin: 0;
     font-size: 19px;
     width: 100%;
+    background-color:  rgba(20,20,20,0.82);
   }
   .navList li:hover {
 	border: none;
+	background-color: #141414;
   }
   .bookButton {
 	padding: 10px 10px;
@@ -1041,6 +1042,59 @@
   }
   .footer p {
 	line-height: 24px;
+  }
+  #eventOptionsColumn {
+      display: inline;
+      width: 90%;
+  }
+  #eventButton {
+      text-align: center;
+  }
+  #eventImageWrapper {
+    width: 100%;
+  }
+  .eventImg {
+    margin-left: 9.96353591160221%;
+  }
+  #eventImgPush {
+      height: 444px;
+  }
+  #eventType-btn {
+    width: 91%;
+  }
+  #eventType-btn-container {
+    width: 92%;
+  }
+  #eventType-menu {
+      right: 0;
+      float: right;
+  }
+  .mainContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .mainContainer .leftArrow {
+    top: 50%;
+    left: 6%;
+    z-index: 5;
+  }
+  .mainContainer .rightArrow {
+    top: 50%;
+    right: 6%;
+    z-index: 5;
+  }
+  .formBox {
+    display: block;
+    float: none;
+    width: 100% !important;
+    margin-left: 0 !important;
+    border: none;
+    box-shadow: none;
+  }
+  .sectionTitle {
+      width: inherit;
   }
 }
 /* Tablets */
@@ -1165,6 +1219,31 @@
     top: 0;
     margin-bottom: 0;
   }
+  #eventOptionsColumn {
+      display: inline;
+      width: 90%;
+  }
+  #eventImageWrapper {
+    width: 100%;
+  }
+  .eventImg {
+    margin-left: 0;
+  }
+  #eventImgPush {
+      height: 474px;
+  }
+  #eventType-btn-container {
+    width: 100%;
+  }
+  .eventImg {
+      width: 100%;
+  }
+  #details {
+      margin-left: 0;
+  }
+  #login-box{
+      margin-left: 20%;
+  }
 }
 /* Mobile Phones */
 @media (max-width: 480px) {
@@ -1246,6 +1325,9 @@
   .coverBar {
     height: 63%;
     top: 20.2%;
+  }
+  #eventImgPush {
+      height: 289px;
   }
 }
 @media (min-width: 980px) {

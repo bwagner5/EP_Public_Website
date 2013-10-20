@@ -15,18 +15,40 @@ No carosuel
     -webkit-box-shadow: 0 0 4px rgba(99, 99, 99, 0.4);
     box-shadow: 0 0 4px rgba(99, 99, 99, 0.4)
 }
-
-body {
-    /*background-color: #141414;
-*/
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
 }
-
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
 a {
     cursor: pointer
 }
 
 /*Link Green: #31802e*/
 /*Utilities*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
 .center {
     text-align: center
 }
@@ -235,16 +257,16 @@ a:hover {
     border: solid #d4d4d4 1px;
     color: #333;
     background-color: #fafafa;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
-    background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
-    background-image: -o-linear-gradient(top, #fff, #e6e6e6);
-    background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #e6e6e6));
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(230,230,230,0.55) 100%);
+    background-image: -o-linear-gradient(top, #fff, rgba(230,230,230,0.55));
+    background-image: -webkit-linear-gradient(top, #fff, rgba(230,230,230,0.55));
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, rgba(230,230,230,0.55)));
     filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, EndColorStr=#e6e6e6)";
-    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
-    -moz-box-shadow: 0 0 6px #CCC;
-    -webkit-box-shadow: 0 0 6px #CCC;
-    box-shadow: 0 0 6px #CCC;
+    background-image: linear-gradient(to bottom, #fff, rgba(230,230,230,0.55));
+    -moz-box-shadow: 0 0 3px #CCC;
+    -webkit-box-shadow: 0 0 3px #CCC;
+    box-shadow: 0 0 3px #CCC;
     -moz-transition: background-color 0.1s;
     -o-transition: background-color 0.1s;
     -webkit-transition: background-color 0.1s;
@@ -525,6 +547,7 @@ a:hover {
 .alignWrapper {
     /*Allows the photos to be centered vertically no matter what height they are*/
     display: table-cell;
+    position: static;
     vertical-align: middle;
 }
 
@@ -545,36 +568,41 @@ a:hover {
 
 .mainContainer .leftArrow {
     top: 38%;
-    left: 8%
+    left: 4%;
+    z-index: 5;
 }
 
 .mainContainer .rightArrow {
     top: 38%;
-    right: 8%
+    right: 4%;
+    z-index: 5;
 }
 
 .mainContainer {
+    width: 90%;
     height: 540px;
-    margin-top: 10px
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .mainDisplay {
     max-height: 95%;
-    max-width: 90%;
+    width: 90%;
     display: block;
     margin: 0 auto;
     cursor: pointer;
     cursor: -moz-zoom-in;
     cursor: -webkit-zoom-in;
-    -moz-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.75);
 }
 
 .galleryBar {
     width: 83%;
     text-align: center;
-    margin: 0 auto
+    position: relative;
+    left: 8%;
 }
 
 .selectDisplay {
@@ -753,20 +781,6 @@ input.error {
 .staffStyles .footer p {
 	color: white;
 }
-#techContact-btn {
-    height: 42px;
-    width: 220px;
-    margin-left: 0;
-    padding: 10px 60px 10px 60px;
-    text-align: left;
-}
-#eventSchedule-btn {
-	height: 42px;
-    width: 220px;
-    margin-right: 0;
-    padding: 10px 60px 10px 60px;
-    text-align: right;
-}
 #logout-btn {
 	position: absolute;
 	top:20px;
@@ -797,4 +811,11 @@ input.error {
 .staffContacts tr td:nth-child(3) {
 	font-size: 14pt;
 	text-align: right;
+}
+.staffButtonText{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #141414;
 }
