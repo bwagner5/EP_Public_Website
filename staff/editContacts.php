@@ -1,4 +1,11 @@
 <?php   
+    // Require login and admin privliedges
+	require("login.php");
+	if (!$_SESSION['admin']){
+	    header("Location: index.php");
+		die(); 
+	}
+	  
     if(isset($_POST['submit'])){
         $file = file_get_contents('files/contacts/contactData.json');
         $data = json_decode(stripslashes($file), true);

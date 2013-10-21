@@ -1,3 +1,10 @@
+<?php
+	require("login.php");
+	if (!$_SESSION['admin']){
+	    header("Location: index.php");
+		die(); 
+	}
+?>	
 <div class="row-fluid">		
 	<div class="span10 offset1">	
 		<div class="sectionTitle">Upload Schedule</div>
