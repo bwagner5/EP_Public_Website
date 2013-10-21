@@ -8,7 +8,7 @@
 	}
 ?>
 <div class="footer">
-    <p>Copyright © <?php echo date('Y'); ?> George Mason University</p>
+    <p>Copyright © <?php  date_default_timezone_set('America/New_York'); echo date('Y'); ?> George Mason University</p>
     <div class="socialBar">
         <a href="http://twitter.com/epgmu"><img src="<?php if(!$home){ print('../');} ?>images/fc-webicon-twitter.png"></a>
         <a href="http://instagram.com/gmueventsproduction"><img src="<?php if(!$home){ print('../');} ?>images/fc-webicon-instagram.png"></a>
