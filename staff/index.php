@@ -1,5 +1,6 @@
 <?php
 	require("login.php");
+	include("find_file_href.php");
 ?>	
 <!DOCTYPE html>
 <!--#include virtual ="../includes/header.php" --> 
@@ -44,11 +45,12 @@
 			 		</a>
 			 	</div>
 			 	<div class="span6">
-			 		<a class="staffButton" id="eventSchedule-btn" href="<?php include "get_schedule_href.php"; ?>">
+			 		<a class="staffButton" id="eventSchedule-btn" href="<?php find_file_href("files/schedule") ?>">
     			 		<h3 class="greyButton greyButtonText staffButtonText">Event Schedule</h3>
 			 		</a>
 			 	</div>
 			</div>
+
 			<div class="spacer"></div>
 			<?php 
 				if ($_SESSION['admin']){
