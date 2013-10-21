@@ -104,7 +104,10 @@
     		// Add the contacts to the table in alphabetical order
 			$.each(sortedContacts, function(idx, name){
 			    contact = contactData[name];
-				$('#techContacts').append("<tr><td>"+name+"</td><td>"+contact['email']+"</td><td>"+contact['phone']+"</td></tr>");
+			    email = contact['email'];
+			    // Format phone number via regex
+			    phone = contact['phone'].replace(/.*(\d{3}).*(\d{3}).*(\d{3})/, "($1) $2 $3");
+				$('#techContacts').append("<tr><td>" + name + "</td><td>" + email + "</td><td>" + phone + "</td></tr>");
 			});
 		});
 	</script>
