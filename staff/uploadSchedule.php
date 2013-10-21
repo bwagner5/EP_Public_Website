@@ -55,15 +55,15 @@
 	<!-- End Cover Section -->
 	<div class="container">
 	  <div class="spacer"></div>
-	  <div class="row">
-		<div class="span10 offset1 box">
+	  <div class="row-fluid">
+		<div class="span8 offset2 box">
 	 		<a href="logout.php">
 				<div class="greyButton" id="logout-btn">
 					Logout
 				</div>
 	 		</a>
 			<div class="row-fluid">
-				<div class="span5 offset2">
+				<div class="span4 offset2">
 					<p><?php print $message ?></p>
 					<a href="../staff">Back to staff homepage >></a>
 				</div>
