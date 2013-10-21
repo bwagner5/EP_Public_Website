@@ -90,12 +90,21 @@
 		});
 		var contactData;
 		
-		$.getJSON('contactData.json', function(data){
+		$.getJSON('files/contacts/contactData.json', function(data){
+		    // Fetch the contacts data from the JSON and created a sorted array of names
 			contactData = data;
+			sortedContacts = [];
+			
+			$.each(contactData, function(name, info){
+				sortedContacts.push(name);
+			});
+			sortedContacts.sort();
 		});
 		$(document).ready(function() {
-			$.each(contactData, function(name, info){
-				$('#techContacts').append("<tr><td>"+name+"</td><td>"+info['email']+"</td><td>"+info['phone']+"</td></tr>");
+    		// Add the contacts to the table in alphabetical order
+			$.each(sortedContacts, function(idx, name){
+			    contact = contactData[name];
+				$('#techContacts').append("<tr><td>"+name+"</td><td>"+contact['email']+"</td><td>"+contact['phone']+"</td></tr>");
 			});
 		});
 	</script>
