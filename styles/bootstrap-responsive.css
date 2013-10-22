@@ -1096,6 +1096,10 @@
   .sectionTitle {
       width: inherit;
   }
+  .staffButtonText {
+    width: 80%;
+    padding: 10px 3px;
+  }
 }
 /* Tablets */
 @media (max-width: 767px) {

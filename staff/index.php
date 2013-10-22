@@ -45,12 +45,35 @@
 			 		</a>
 			 	</div>
 			 	<div class="span6">
-			 		<a class="staffButton" id="eventSchedule-btn" href="<?php find_file_href("files/schedule") ?>">
+			 		<a class="staffButton" id="eventSchedule-btn" href="<?php print find_file_href("files/schedule") ?>">
     			 		<h3 class="greyButton greyButtonText staffButtonText">Event Schedule</h3>
 			 		</a>
 			 	</div>
 			</div>
-
+			<div class="row-fluid">
+			 	<div class="span6">
+			 		<a class="staffButton" id="techContact-btn" href="pullSheets.php">
+    			 		<h3 class="greyButton greyButtonText staffButtonText">Pull Sheets</h3>
+			 		</a>
+			 	</div>
+			 	<div class="span6">
+			 		<a class="staffButton" id="eventSchedule-btn" href="miscFiles.php">
+    			 		<h3 class="greyButton greyButtonText staffButtonText">Miscellaneous Files</h3>
+			 		</a>
+			 	</div>
+			</div>
+			<div class="row-fluid">
+			 	<div class="span6">
+			 		<a class="staffButton" id="techContact-btn" href="<?php print find_file_href("files/techInfo") ?>">
+    			 		<h3 class="greyButton greyButtonText staffButtonText">Technical References</h3>
+			 		</a>
+			 	</div>
+			 	<div class="span6">
+			 		<a class="staffButton" id="eventSchedule-btn" href="<?php print find_file_href("files/manual") ?>">
+    			 		<h3 class="greyButton greyButtonText staffButtonText">Training Manual</h3>
+			 		</a>
+			 	</div>
+			</div>
 			<div class="spacer"></div>
 			<?php 
 				if ($_SESSION['admin']){

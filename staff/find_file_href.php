@@ -8,15 +8,15 @@
     function find_file_href($directory){
     	// Find the first non-hidden file in the schedule directory
     	// and print its path
-    	$directory = "files/schedule";
     	$handle = opendir($directory); 
     	while (false !== ($fileName = readdir($handle))) {
     		// Hidden files being with a "."; they are skipped
     		if (substr($fileName, 0, 1) != "."){
-    			print "$directory/$fileName";
+    			$path = "$directory/$fileName";
     			break;
     		} 
         } 
     	closedir($handle);
+    	return $path;
 	}
 ?>
