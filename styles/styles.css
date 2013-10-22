@@ -790,25 +790,28 @@ input.error {
     padding: 3px 10px 3px 10px;
     text-align: center;
 }
-.staffContacts {
+.staffTable {
 	width: 100%;
 	margin-bottom: 25px;
 }
-.staffContacts td{
+.staffTable td{
 	padding: 5px;
 }
-.staffContacts tr:nth-child(2n-1) {
+.staffTable tr:nth-child(2n-1) {
 	background-color: #ebebeb;
 }
-.staffContacts tr td:first-child {
+.staffTable tr td:first-child {
 	font-size: 14pt;
 	width:45%;
 }
-.staffContacts tr td:nth-child(2) {
+.fileTable tr td:first-child {
+	width:65%;
+}
+.staffTable tr td:nth-child(2) {
 	font-size: 14pt;
 	text-align: left;
 }
-.staffContacts tr td:nth-child(3) {
+.staffTable tr td:nth-child(3) {
 	font-size: 14pt;
 	text-align: right;
 }
