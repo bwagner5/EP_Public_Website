@@ -7,18 +7,44 @@
 ?>	
 <div class="row-fluid">		
 	<div class="span10 offset1">	
-		<div class="sectionTitle">Upload Schedule</div>
-		<form action="uploadSchedule.php" method="POST" class="form-inline" enctype="multipart/form-data">
+		<div class="sectionTitle">Upload File</div>
+		<form action="uploadFile.php" method="POST" class="form-inline" enctype="multipart/form-data">
 			<fieldset>
-				<!-- Schedule Upload --> 
+				<!-- File Upload -->
 				<div class="control-group">
-				  <label class="control-label" for="upload"><b>Upload Schedule:</b></label>
+				  <label class="control-label" for="upload"><b>Upload File:</b></label>
 				  <div class="controls">
-				    <input id="upload" name="upload" class="input-file" type="file">
-				    <!-- Schedule Submit --> 
+				    <input id="upload"  class="input-file" type="file" name="upload[]" multiple>
+				    <!-- File Submit --> 
 				    <input type="submit" value="Upload" name="submit" class="btn btn-primary"/>
 				  </div>
 				</div>
+				<!-- File Type -->
+                <div class="control-group">
+                  <label class="control-label" for="fileType"><b>File Type:</b></label>
+                  <div class="controls">
+                    <label class="radio inline" for="fileType-0">
+                      <input type="radio" name="fileType" id="fileType-0" value="Schedule" checked="checked">
+                      Schedule
+                    </label>
+                    <label class="radio inline" for="fileType-1">
+                      <input type="radio" name="fileType" id="fileType-1" value="Pull Sheets">
+                      Pull Sheets
+                    </label>
+                    <label class="radio inline" for="fileType-2">
+                      <input type="radio" name="fileType" id="fileType-2" value="Technical Info">
+                      Technical Info
+                    </label>
+                    <label class="radio inline" for="fileType-3">
+                      <input type="radio" name="fileType" id="fileType-3" value="Manual">
+                      Manual
+                    </label>
+                    <label class="radio inline" for="fileType-4">
+                      <input type="radio" name="fileType" id="fileType-4" value="Misc">
+                      Miscellaneous
+                    </label>
+                  </div>
+                </div>
 			</fieldset>
 		</form>
 	</div>
