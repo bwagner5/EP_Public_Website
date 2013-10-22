@@ -1,11 +1,15 @@
-<?php   
+<?php
+    // This script loads contacts from the contactData.json into an array for editing
+	// and then saves them back into the json file so they can be viewed from the 
+	// staffContacts.php page
+	
     // Require login and admin privliedges
 	require("login.php");
 	if (!$_SESSION['admin']){
 	    header("Location: index.php");
 		die(); 
 	}
-	  
+
     if(isset($_POST['submit'])){
         $file = file_get_contents('files/contacts/contactData.json');
         $data = json_decode(stripslashes($file), true);

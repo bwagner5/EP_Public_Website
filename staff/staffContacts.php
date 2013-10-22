@@ -40,7 +40,7 @@
 			<div class="row-fluid">
 				<div class="span10 offset1">
 					<div class="sectionTitle">EP Staff Contacts</div>
-					<table class="staffContacts">
+					<table class="staffTable">
 						<tr>
 							<td>Ken Locke</td>
 							<td>klocke</td>
