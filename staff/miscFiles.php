@@ -45,7 +45,7 @@
                           <td><b>Name</b></td>
                           <td><b>Upload Date</b></td>
                         </tr>
-						<?php print_files("files/misc")?>
+						<?php print_files("files/misc", "table")?>
 					</table>
 				</div>
 		  </div>

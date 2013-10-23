@@ -24,7 +24,7 @@
     	// On upload, remove the old directory with the schedule file in it and create a new one. 
     	// Apache will retain permissions over the folder so it will not matter what permissions
     	// are set on the file it contains. Otherwise, PHP may have trouble modifiying uploaded files.
-    	rmdir($uploadDir);
+    	rrmdir($uploadDir);
     	mkdir($uploadDir, $mode = 0775);
     	// Assigning file attributes 
     	$name  = $_FILES['upload']['name'][0];
@@ -69,7 +69,7 @@
         	$error = $_FILES['upload']['error'][$i];
         	
             $uploadDir = $mainDir."/".removeExtension($name);
-        	rmdir($uploadDir);
+        	rrmdir($uploadDir);
         	mkdir($uploadDir, $mode = 0775);
         	$filelocation = $uploadDir."/".$name;
         	
