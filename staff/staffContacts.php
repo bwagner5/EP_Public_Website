@@ -68,7 +68,7 @@
 						</tr>
 					</table>
 					<div class="sectionTitle">EP Technician Contacts</div>
-					<table class="staffContacts" id="techContacts">
+					<table class="staffTable" id="techContacts">
 					</table>
 				</div>
 		  </div>
