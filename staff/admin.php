@@ -4,6 +4,7 @@
 	    header("Location: index.php");
 		die(); 
 	}
+	include_once("file_utilities.php");
 ?>	
 <div class="row-fluid">		
 	<div class="span10 offset1">	

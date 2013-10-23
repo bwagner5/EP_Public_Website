@@ -8,12 +8,8 @@
 	    header("Location: index.php");
 		die(); 
 	}
+	include_once("file_utilities.php");
 	
-	function removeExtension($filename) {
-    	// Remove extension from a filename
-        $file = substr($filename, 0,strrpos($filename,'.'));   
-        return $file;
-    }
 	$fileDirs = array("Schedule" => "files/schedule", 
 	                  "Technical Info" => "files/techInfo",
 	                  "Manual" => "files/manual",

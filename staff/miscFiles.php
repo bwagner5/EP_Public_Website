@@ -1,6 +1,6 @@
 <?php
 	require("login.php");
-	include "print_files.php"
+	include "file_utilities.php";
 ?>
 <!DOCTYPE html>
 <!--#include virtual ="../includes/header.php" --> 
