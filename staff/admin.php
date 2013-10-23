@@ -50,6 +50,36 @@
 		</form>
 	</div>
 </div>
+<div class="row-fluid">		
+	<div class="span10 offset1">	
+		<div class="sectionTitle">Delete File</div>
+		<form action="deleteFiles.php" method="POST" class="form-inline" enctype="multipart/form-data">
+			<fieldset>
+    			<div class="control-group">
+                  <label class="control-label" for="selectmultiple">Pull Sheets</label>
+                  <div class="controls">
+                    <select id="selectmultiple" name="pullSheets[]" class="input-xlarge" multiple="multiple">
+                      <?php 
+                          print_files("files/pullSheets", "options");
+                      ?>
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="selectmultiple">Files</label>
+                  <div class="controls">
+                    <select id="selectmultiple" name="miscFiles[]" class="input-xlarge" multiple="multiple">
+                      <?php 
+                          print_files("files/misc", "options");
+                      ?>
+                    </select>
+                  </div>
+                </div>
+                <input type="submit" value="Delete" name="submit" class="btn btn-primary"/>
+			</fieldset>
+		</form>
+	</div>
+</div>
 <div class="row-fluid">
     <div class="span10 offset1">
         <div class="sectionTitle">Add Employee Contact</div>
