@@ -294,7 +294,6 @@ a:hover {
 #viewSetups-btn {
     height: 42px;
     width: 230px;
-    margin-left: 260px;
     margin-top: 11px;
     padding: 10px 60px 10px 60px
 }
@@ -366,8 +365,9 @@ a:hover {
 
 .coverLogo {
     position: relative;
-    top: 10%;
-    height: 79%;
+    top: 0;
+    height: auto;
+    width: auto;
 }
 
 .bottomedImg {

@@ -14,8 +14,9 @@
 	<!--#include virtual ="includes/navbar.php" -->
 	<!-- Cover Section -->
 	<div class="coverPhoto"> 
-	  <img src="images/Cover1.JPG" class="heroImg"/>
-	  <div class="coverBar"> 
+	  <img src="images/frontLogo.png" class="coverLogo hidden-desktop"/>
+	  <img src="images/Cover1.JPG" class="heroImg"/> 
+	  <div class="coverBar hidden-tablet hidden-phone"> 
 	  	<img src="images/frontLogo.png" class="coverLogo"/>
 	  </div>
 	</div>

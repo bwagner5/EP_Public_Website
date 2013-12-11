@@ -506,6 +506,12 @@
 	float:right;
 	left:37%;
   }
+  .coverLogo {
+    position: relative;
+    top: 10%;
+    height: auto;
+    width: 897px;
+  }
 }
 /* Tablets to small Screens only */
 @media (min-width: 768px) and (max-width: 979px) {
@@ -1033,12 +1039,14 @@
     margin-bottom: -45px;
   }
   .coverLogo {
-    top: 10%;
-    height: 79%;
-  }
-  .coverBar {
-    height: 51%;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
     top: 23.4%;
+    height: auto;
+    width: 79%;
   }
   .footer p {
 	line-height: 24px;
@@ -1248,6 +1256,16 @@
   #login-box{
       margin-left: 20%;
   }
+  .coverLogo {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: 23.4%;
+    height: auto;
+    width: 79%;
+  }
 }
 /* Mobile Phones */
 @media (max-width: 480px) {
@@ -1321,14 +1339,6 @@
 	font-size: 14px;
 	margin-top: 1px;
 	line-height: 19px;
-  }
-  .coverLogo {
-    top: 10%;
-    height: 79%;
-  }
-  .coverBar {
-    height: 63%;
-    top: 20.2%;
   }
   #eventImgPush {
       height: 289px;
