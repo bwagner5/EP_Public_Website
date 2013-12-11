@@ -1333,6 +1333,17 @@
   #eventImgPush {
       height: 289px;
   }
+  .staffTable tr td{
+	font-size: 15px !important;
+  }
+  .tableContainer {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  #logout-btn { 
+      top: 10px;
+      right: 10px;
+  }
 }
 @media (min-width: 980px) {
   .nav-collapse.collapse {

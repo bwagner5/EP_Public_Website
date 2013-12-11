@@ -23,7 +23,7 @@
 	<?php include "../includes/navbar.php"; ?>
 	<!-- Cover Section -->
 	<!-- End Cover Section -->
-	<div class="container">
+	<div class="container tableContainer">
 	  <div class="spacer"></div>
 	  <div class="row">
 		<div class="span10 offset1 box">
