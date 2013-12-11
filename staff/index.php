@@ -52,13 +52,13 @@
 			</div>
 			<div class="row-fluid">
 			 	<div class="span6">
-			 		<a class="staffButton" id="techContact-btn" href="pullSheets.php">
-    			 		<h3 class="greyButton greyButtonText staffButtonText">Pull Sheets</h3>
+			 		<a class="staffButton" id="eventSchedule-btn" href="<?php print find_file_href("files/manual") ?>">
+    			 		<h3 class="greyButton greyButtonText staffButtonText">Training Manual</h3>
 			 		</a>
 			 	</div>
 			 	<div class="span6">
-			 		<a class="staffButton" id="eventSchedule-btn" href="miscFiles.php">
-    			 		<h3 class="greyButton greyButtonText staffButtonText">Miscellaneous Files</h3>
+			 		<a class="staffButton" id="techContact-btn" href="pullSheets.php">
+    			 		<h3 class="greyButton greyButtonText staffButtonText">Pull Sheets</h3>
 			 		</a>
 			 	</div>
 			</div>
@@ -69,8 +69,8 @@
 			 		</a>
 			 	</div>
 			 	<div class="span6">
-			 		<a class="staffButton" id="eventSchedule-btn" href="<?php print find_file_href("files/manual") ?>">
-    			 		<h3 class="greyButton greyButtonText staffButtonText">Training Manual</h3>
+			 		<a class="staffButton" id="eventSchedule-btn" href="miscFiles.php">
+    			 		<h3 class="greyButton greyButtonText staffButtonText">Miscellaneous Files</h3>
 			 		</a>
 			 	</div>
 			</div>
