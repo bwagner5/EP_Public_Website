@@ -28,6 +28,7 @@
     	mkdir($uploadDir, $mode = 0775);
     	// Assigning file attributes 
     	$name  = $_FILES['upload']['name'][0];
+    	$name = preg_replace("/[;*~]/", "", $name);
     	$type  = $_FILES['upload']['type'][0];
     	$size  = $_FILES['upload']['size'][0];
     	$tmp   = $_FILES['upload']['tmp_name'][0];
@@ -63,6 +64,7 @@
     	for ($i = 0; $i < count($_FILES['upload']['name']); $i++) {
         	// Assigning file attributes 
         	$name  = $_FILES['upload']['name'][$i];
+        	$name = preg_replace("/[;*~]/", "", $name);
         	$type  = $_FILES['upload']['type'][$i];
         	$size  = $_FILES['upload']['size'][$i];
         	$tmp   = $_FILES['upload']['tmp_name'][$i];
