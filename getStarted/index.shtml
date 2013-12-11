@@ -16,7 +16,7 @@
     <!-- End Cover Section -->
     <div class="container">
       <div class="spacer"></div>
-      <div class="row">
+      <div class="row-fluid">
         <div class="span10 offset1 box">
           <div class="row-fluid">
             <div class="span10 offset1">
@@ -38,7 +38,7 @@
              <h4>3. Book EP for Your Event</h4>
              <p style="line-height:22pt;">Booking with EP is a quick and simple process. You can start the process by <b><a href="../eventSelection">viewing the events setups page</a></b> to get a basic idea of what your anticipated A/V needs will be. Once you've done this, you can fill out our <b><a href="../bookingForm">booking form</a></b>, and one of our staff will be in touch with you within three days to discuss any unanswered questions and to create a quote for services. After you've received the confirmed estimate, you're all set!
             </p>
-            <div class="row">
+            <div class="row-fluid">
 				<div class="span12 center">
 					<a href="../eventSelection/">
 						<div class="greyButton" id="viewSetups-btn">

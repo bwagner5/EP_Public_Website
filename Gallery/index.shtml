@@ -25,7 +25,7 @@
 	<!-- End Cover Section -->
 	<div class="container">
 		<div class="spacer"></div>
-		 <div class="row-fluid">
+		 <div class="row">
 		 	<div class="span10 offset1 box">
 		 		<h2 class="pageTitle">Photo Gallery</h2>
 		 		<div class="row-fluid">	
