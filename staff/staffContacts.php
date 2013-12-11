@@ -106,7 +106,7 @@
 			    contact = contactData[name];
 			    email = contact['email'];
 			    // Format phone number via regex
-			    phone = contact['phone'].replace(/.*(\d{3}).*(\d{3}).*(\d{3})/, "($1) $2 $3");
+			    phone = contact['phone'].replace(/.*(\d{3}).*(\d{3}).*(\d{4})/, "($1) $2 $3");
 				$('#techContacts').append("<tr><td>" + name + "</td><td>" + email + "</td><td>" + phone + "</td></tr>");
 			});
 		});
